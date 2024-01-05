@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ChatAppMainPage extends StatefulWidget {
   const ChatAppMainPage({super.key});
 
@@ -15,7 +14,19 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Row(
+              children: [
+                Text("Messages"),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.pink[50],
+                  ),
+                  child: Icon(
+                    Icons.edit,
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
