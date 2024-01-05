@@ -1,5 +1,14 @@
 # flutter_notebook_chapter_35
 
+## EP1751
+
+- Chat Mobile Application Design
+- by NIKITIN Bogdan Nikitin for NIKITIN
+- https://dribbble.com/shots/23270995-Chat-Mobile-Application-Design
+
+<img src="https://cdn.dribbble.com/userupload/11997032/file/original-3bc8b0f2bda851f8448bb09a2bdc0d2a.png?resize=1600x1200"/>
+
+
 A new Flutter project.
 
 ## Getting Started
