@@ -19,10 +19,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
               children: [
                 Text(
                   "Messages",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16
-                  ),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -34,18 +31,28 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                 )
               ],
             ),
-            SizedBox(height: 82,
-            child: Placeholder(),),
-            SizedBox(height: 64,
-              child: Placeholder(),),
+            SizedBox(
+              height: 82,
+              child: Placeholder(),
+            ),
+            SizedBox(
+              height: 64,
+              child: Placeholder(),
+            ),
             Row(
               children: [
                 Text("Pinned Chats"),
-
               ],
             ),
-            SizedBox(height: 260,
-              child: Placeholder(),),
+            SizedBox(
+              height: 260,
+              child: Placeholder(),
+            ),
+            Row(
+              children: [
+                Text("Pinned Chats"),
+              ],
+            ),
           ],
         ),
       ),
