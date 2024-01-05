@@ -15,8 +15,15 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Messages"),
+                Text(
+                  "Messages",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16
+                  ),
+                ),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.pink[50],
