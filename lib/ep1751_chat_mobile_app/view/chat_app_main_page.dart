@@ -33,7 +33,19 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                   ),
                 )
               ],
-            )
+            ),
+            SizedBox(height: 82,
+            child: Placeholder(),),
+            SizedBox(height: 64,
+              child: Placeholder(),),
+            Row(
+              children: [
+                Text("Pinned Chats"),
+
+              ],
+            ),
+            SizedBox(height: 260,
+              child: Placeholder(),),
           ],
         ),
       ),
