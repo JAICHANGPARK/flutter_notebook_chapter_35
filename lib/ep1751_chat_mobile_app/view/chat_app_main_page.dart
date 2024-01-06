@@ -28,7 +28,10 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(color: Colors.pink[50], borderRadius: BorderRadius.circular(8)),
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(241, 240, 243, 1),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                     padding: EdgeInsets.all(8),
                     child: Icon(
                       Icons.edit,
