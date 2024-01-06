@@ -46,7 +46,9 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(12)
                 ),
+                padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
                 child: TextFormField(
+                  decoration: InputDecoration(),
                 ),
               ),
               Row(
