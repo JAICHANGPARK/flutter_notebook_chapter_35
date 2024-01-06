@@ -266,9 +266,18 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                 height: 260,
                 child: Placeholder(),
               ),
+              Gap(24),
               Row(
                 children: [
-                  Text("Pinned Chats"),
+                  Icon(Icons.chat),
+                  Gap(12),
+                  Text(
+                    "All Chats",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
             ],
