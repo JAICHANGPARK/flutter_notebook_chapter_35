@@ -43,10 +43,10 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
               Gap(16),
               Container(
                 decoration: BoxDecoration(
-
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(12)
                 ),
                 child: TextFormField(
-
                 ),
               ),
               Row(
