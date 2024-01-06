@@ -220,10 +220,8 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                     Container(
                       margin: EdgeInsets.only(right: 8),
                       width: 68,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(31, 0, 47, 1),
-                        borderRadius: BorderRadius.circular(12)
-                      ),
+                      decoration:
+                          BoxDecoration(color: Color.fromRGBO(31, 0, 47, 1), borderRadius: BorderRadius.circular(12)),
                       child: Stack(
                         children: [],
                       ),
@@ -249,11 +247,21 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                   ),
                 ),
               ),
+              Gap(24),
               Row(
                 children: [
-                  Text("Pinned Chats"),
+                  Icon(Icons.pin_drop),
+                  Gap(12),
+                  Text(
+                    "Pinned Chats",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ],
               ),
+              Gap(16),
               SizedBox(
                 height: 260,
                 child: Placeholder(),
