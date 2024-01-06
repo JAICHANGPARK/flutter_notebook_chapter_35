@@ -39,11 +39,17 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                   )
                 ],
               ),
+              Gap(24),
               SizedBox(
                 height: 82,
-                child: Placeholder(),
+                child: ListView(
+                  children: [
+
+                    
+                  ],
+                ),
               ),
-              Gap(16),
+              Gap(24),
               Container(
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(241, 240, 243, 1),
