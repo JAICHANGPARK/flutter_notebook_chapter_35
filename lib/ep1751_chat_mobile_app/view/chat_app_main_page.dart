@@ -287,9 +287,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                     Column(
                       children: List.generate(
                         10,
-                        (index) => Row(
-                          children: [],
-                        ),
+                        (index) => Placeholder(),
                       ),
                     )
                   ],
