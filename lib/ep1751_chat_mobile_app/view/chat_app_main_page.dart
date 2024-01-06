@@ -41,11 +41,12 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
               ),
               Gap(24),
               SizedBox(
-                height: 82,
+                height: 86,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
+                      margin: EdgeInsets.only(right: 8),
                       width: 62,
                       child: Stack(
                         children: [
@@ -80,7 +81,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                             right: 0,
                             top: 0,
                             child: CircleAvatar(
-                              radius: 8,
+                              radius: 6,
                               backgroundColor: Colors.green,
                             ),
                           )
