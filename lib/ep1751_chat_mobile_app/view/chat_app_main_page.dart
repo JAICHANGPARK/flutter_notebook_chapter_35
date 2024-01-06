@@ -47,7 +47,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                   children: [
                     Container(
                       margin: EdgeInsets.only(right: 8),
-                      width: 62,
+                      width: 68,
                       child: Stack(
                         children: [
                           Positioned(
@@ -87,7 +87,8 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                           )
                         ],
                       ),
-                    )
+                    ),
+
                   ],
                 ),
               ),
