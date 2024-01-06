@@ -43,12 +43,15 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
               Gap(16),
               Container(
                 decoration: BoxDecoration(
-                  color: Colors.grey[200],
-                  borderRadius: BorderRadius.circular(12)
+                  color: Color.fromRGBO(241, 240, 243, 1),
+                  borderRadius: BorderRadius.circular(12),
                 ),
                 padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
                 child: TextFormField(
-                  decoration: InputDecoration(),
+                  decoration: InputDecoration(
+                    hintText: "Search or start of message",
+                    hintStyle: TextStyle(),
+                  ),
                 ),
               ),
               Row(
