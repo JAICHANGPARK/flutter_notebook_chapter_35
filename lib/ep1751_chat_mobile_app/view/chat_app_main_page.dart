@@ -43,9 +43,14 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
               SizedBox(
                 height: 82,
                 child: ListView(
+                  scrollDirection: Axis.horizontal,
                   children: [
-
-                    
+                    Container(
+                      width: 72,
+                      decoration: BoxDecoration(
+                        color: Colors.orange[100],
+                      ),
+                    )
                   ],
                 ),
               ),
