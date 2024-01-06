@@ -53,7 +53,9 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: "Search or start of message",
-                    hintStyle: TextStyle(),
+                    hintStyle: TextStyle(
+                      color: Color.fromRGBO(143, 130, 155, 1),
+                    ),
                   ),
                 ),
               ),
