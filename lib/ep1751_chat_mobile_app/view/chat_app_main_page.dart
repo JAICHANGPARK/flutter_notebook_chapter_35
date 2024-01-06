@@ -247,39 +247,54 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                   ),
                 ),
               ),
-              Gap(24),
-              Row(
-                children: [
-                  Icon(Icons.pin_drop),
-                  Gap(12),
-                  Text(
-                    "Pinned Chats",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+              Expanded(
+                  child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Gap(24),
+                    Row(
+                      children: [
+                        Icon(Icons.pin_drop),
+                        Gap(12),
+                        Text(
+                          "Pinned Chats",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                ],
-              ),
-              Gap(16),
-              SizedBox(
-                height: 260,
-                child: Placeholder(),
-              ),
-              Gap(24),
-              Row(
-                children: [
-                  Icon(Icons.chat),
-                  Gap(12),
-                  Text(
-                    "All Chats",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                    Gap(16),
+                    SizedBox(
+                      height: 260,
+                      child: Placeholder(),
                     ),
-                  ),
-                ],
-              ),
+                    Gap(24),
+                    Row(
+                      children: [
+                        Icon(Icons.chat),
+                        Gap(12),
+                        Text(
+                          "All Chats",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: List.generate(
+                        10,
+                        (index) => Row(
+                          children: [],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              )),
             ],
           ),
         ),
