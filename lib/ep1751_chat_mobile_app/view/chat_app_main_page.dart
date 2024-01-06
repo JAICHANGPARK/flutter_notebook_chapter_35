@@ -88,7 +88,146 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                         ],
                       ),
                     ),
-
+                    Container(
+                      margin: EdgeInsets.only(right: 8),
+                      width: 68,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 2,
+                            top: 2,
+                            right: 2,
+                            bottom: 0,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.orange[50],
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              padding: EdgeInsets.all(4),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                    ),
+                                  ),
+                                  Gap(4),
+                                  Text("Danial")
+                                ],
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            right: 0,
+                            top: 0,
+                            child: CircleAvatar(
+                              radius: 6,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(right: 8),
+                      width: 68,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 2,
+                            top: 2,
+                            right: 2,
+                            bottom: 0,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.orange[50],
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              padding: EdgeInsets.all(4),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                    ),
+                                  ),
+                                  Gap(4),
+                                  Text("Danial")
+                                ],
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            right: 0,
+                            top: 0,
+                            child: CircleAvatar(
+                              radius: 6,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(right: 8),
+                      width: 68,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 2,
+                            top: 2,
+                            right: 2,
+                            bottom: 0,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.orange[50],
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              padding: EdgeInsets.all(4),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange[100],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                    ),
+                                  ),
+                                  Gap(4),
+                                  Text("Danial")
+                                ],
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            right: 0,
+                            top: 0,
+                            child: CircleAvatar(
+                              radius: 6,
+                              backgroundColor: Colors.green,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(right: 8),
+                      width: 68,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(31, 0, 47, 1),
+                        borderRadius: BorderRadius.circular(12)
+                      ),
+                      child: Stack(
+                        children: [],
+                      ),
+                    ),
                   ],
                 ),
               ),
