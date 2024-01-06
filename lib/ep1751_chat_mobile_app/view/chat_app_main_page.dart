@@ -46,7 +46,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
-                      width: 72,
+                      width: 68,
                       child: Stack(
                         children: [
                           Positioned(
@@ -66,10 +66,11 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.orange[50],
-                                        borderRadius: BorderRadius.circular(6),
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                     ),
                                   ),
+                                  Gap(4),
                                   Text("Danial")
                                 ],
                               ),
