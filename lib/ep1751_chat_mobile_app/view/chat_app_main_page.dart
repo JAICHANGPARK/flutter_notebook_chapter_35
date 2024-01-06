@@ -46,7 +46,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
-                      width: 68,
+                      width: 62,
                       child: Stack(
                         children: [
                           Positioned(
@@ -56,16 +56,16 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                             bottom: 0,
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Colors.grey[50],
+                                color: Colors.orange[50],
                                 borderRadius: BorderRadius.circular(4),
                               ),
-                              padding: EdgeInsets.all(3),
+                              padding: EdgeInsets.all(4),
                               child: Column(
                                 children: [
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.orange[50],
+                                        color: Colors.orange[100],
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                     ),
