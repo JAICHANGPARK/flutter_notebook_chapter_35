@@ -56,6 +56,8 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                     hintStyle: TextStyle(
                       color: Color.fromRGBO(143, 130, 155, 1),
                     ),
+                    suffixIcon: Icon(Icons.search),
+                    border: InputBorder.none,
                   ),
                 ),
               ),
