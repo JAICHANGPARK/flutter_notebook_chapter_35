@@ -392,7 +392,9 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                               height: 64,
                               width: 64,
                             ),
-                            Expanded(child: Column(children: [
+                            Expanded(child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
                               Text("Unknown Human No.1"),
                               Row(
                                 children: [
