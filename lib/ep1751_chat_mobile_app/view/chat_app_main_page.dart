@@ -305,9 +305,9 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                       ),
                                     ),
                                     Gap(4),
-                                    Text("Thanks for the quick..",
+                                    Text(
+                                      "Thanks for the quick..",
                                       style: TextStyle(
-
                                         fontSize: 14,
                                       ),
                                     ),
@@ -315,7 +315,52 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                 ),
                               ),
                             ),
-                            Expanded(child: Container()),
+                            Gap(16),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(152, 210, 215, 1),
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                padding: EdgeInsets.all(16),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Icon(Icons.done_all),
+                                        CircleAvatar(
+                                          backgroundColor: Colors.white,
+                                          radius: 10,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(3.0),
+                                            child: CircleAvatar(
+                                              backgroundColor: Colors.grey,
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Spacer(),
+                                    Text(
+                                      "Unknown Human",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                    Gap(4),
+                                    Text(
+                                      "Thanks for the quick..",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
                           ],
                         )),
                     const Gap(24),
