@@ -297,9 +297,20 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                       ],
                                     ),
                                     Spacer(),
-                                    Text("Unknown Human"),
+                                    Text(
+                                      "Unknown Human",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),
+                                    ),
                                     Gap(8),
-                                    Text("Thanks for the quick.."),
+                                    Text("Thanks for the quick..",
+                                      style: TextStyle(
+
+                                        fontSize: 14,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),
