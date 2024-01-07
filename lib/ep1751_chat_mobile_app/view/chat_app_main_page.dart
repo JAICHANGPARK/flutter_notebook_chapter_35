@@ -423,13 +423,27 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                   child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Unknown Human No.1"),
+                                  Text("Unknown Human No.1",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16
+                                    ),
+                                  ),
+                                  Gap(4),
                                   Row(
                                     children: [
-                                      index == 0 ? Icon(Icons.mic,
-                                      ) : Container(),
+                                      index == 0
+                                          ? Icon(
+                                              Icons.mic,
+                                            )
+                                          : Container(),
                                       Gap(4),
-                                      Text("Records a voice message")
+                                      Text(
+                                        "Records a voice message",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
                                     ],
                                   )
                                 ],
