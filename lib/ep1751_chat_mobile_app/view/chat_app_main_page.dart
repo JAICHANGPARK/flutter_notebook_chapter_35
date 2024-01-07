@@ -386,24 +386,32 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                     Column(
                       children: List.generate(
                         10,
-                        (index) => Row(
-                          children: [
-                            Container(
-                              height: 64,
-                              width: 64,
-                            ),
-                            Expanded(child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                              Text("Unknown Human No.1"),
-                              Row(
+                        (index) => Padding(
+                          padding: const EdgeInsets.only(bottom: 12),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 64,
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Expanded(
+                                  child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                index == 0?   Icon(Icons.mic) : Container(),
-                                  Text("Records a voice message")
+                                  Text("Unknown Human No.1"),
+                                  Row(
+                                    children: [
+                                      index == 0 ? Icon(Icons.mic) : Container(),
+                                      Text("Records a voice message")
+                                    ],
+                                  )
                                 ],
-                              )
-                            ],))
-                          ],
+                              ))
+                            ],
+                          ),
                         ),
                       ),
                     )
