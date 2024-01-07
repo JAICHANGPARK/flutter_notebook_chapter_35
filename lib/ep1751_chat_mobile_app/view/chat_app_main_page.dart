@@ -427,6 +427,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                   Row(
                                     children: [
                                       index == 0 ? Icon(Icons.mic) : Container(),
+                                      Gap(4),
                                       Text("Records a voice message")
                                     ],
                                   )
@@ -434,10 +435,14 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                               )),
                               Gap(12),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
                                   Text("12:23"),
                                   switch (index) {
-                                    0 => CircleAvatar(),
+                                    0 => CircleAvatar(
+                                        radius: 10,
+                                        backgroundColor: Colors.black,
+                                      ),
                                     1 => Icon(Icons.done_all),
                                     2 => Icon(
                                         Icons.done,
