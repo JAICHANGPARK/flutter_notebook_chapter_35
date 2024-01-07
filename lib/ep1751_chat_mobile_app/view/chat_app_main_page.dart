@@ -396,6 +396,17 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.grey,
                                 ),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                               Gap(12),
                               Expanded(
