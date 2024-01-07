@@ -274,7 +274,23 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Color.fromRGBO(225, 233, 192, 1),
-                                  
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Icon(Icons.done_all),
+                                        CircleAvatar(
+                                          backgroundColor: Colors.white,
+                                          radius: 12,
+                                          child: CircleAvatar(
+                                            backgroundColor: Colors.grey,
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
                                 ),
                               ),
                             ),
