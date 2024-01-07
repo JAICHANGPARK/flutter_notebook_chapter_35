@@ -267,7 +267,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                     ),
                     const Gap(16),
                     SizedBox(
-                        height: 260,
+                        height: 240,
                         child: Row(
                           children: [
                             Expanded(
@@ -276,7 +276,9 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                   color: Color.fromRGBO(225, 233, 192, 1),
                                   borderRadius: BorderRadius.circular(12),
                                 ),
+                                padding: EdgeInsets.all(16),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -293,7 +295,11 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                           ),
                                         )
                                       ],
-                                    )
+                                    ),
+                                    Spacer(),
+                                    Text("Unknown Human"),
+                                    Gap(8),
+                                    Text("Thanks for the quick.."),
                                   ],
                                 ),
                               ),
