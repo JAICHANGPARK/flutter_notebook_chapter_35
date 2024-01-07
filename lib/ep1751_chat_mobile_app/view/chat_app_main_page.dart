@@ -268,7 +268,12 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                     const Gap(16),
                     const SizedBox(
                       height: 260,
-                      child: Placeholder(),
+                      child: Row(
+                        children: [
+                          Expanded(child: Container()),
+                          Expanded(child: Container()),
+                        ],
+                      )
                     ),
                     const Gap(24),
                     const Row(
