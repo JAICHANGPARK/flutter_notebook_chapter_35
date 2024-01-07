@@ -391,18 +391,30 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                           child: Row(
                             children: [
                               Container(
-                                height: 64,
-                                width: 64,
+                                height: 68,
+                                width: 68,
                                 decoration: BoxDecoration(
                                   color: Colors.grey,
                                 ),
                                 child: Stack(
                                   children: [
                                     Positioned(
+                                      left: 2,
+                                      right: 4,
+                                      top: 4,
+                                      bottom: 2,
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: Colors.black,
+                                          borderRadius: BorderRadius.circular(8),
                                         ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      right: 0,
+                                      top: 0,
+                                      child: CircleAvatar(
+                                        radius: 7,
                                       ),
                                     )
                                   ],
