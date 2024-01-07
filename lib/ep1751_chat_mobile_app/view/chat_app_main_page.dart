@@ -412,6 +412,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                       top: 0,
                                       child: CircleAvatar(
                                         radius: 7,
+                                        backgroundColor: Colors.green,
                                       ),
                                     )
                                   ],
