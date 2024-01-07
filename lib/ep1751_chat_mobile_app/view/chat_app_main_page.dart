@@ -20,7 +20,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "Messages",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -29,24 +29,24 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      color: Color.fromRGBO(241, 240, 243, 1),
+                      color: const Color.fromRGBO(241, 240, 243, 1),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    padding: EdgeInsets.all(8),
-                    child: Icon(
+                    padding: const EdgeInsets.all(8),
+                    child: const Icon(
                       Icons.edit,
                     ),
                   )
                 ],
               ),
-              Gap(24),
+              const Gap(24),
               SizedBox(
                 height: 86,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(right: 8),
+                      margin: const EdgeInsets.only(right: 8),
                       width: 68,
                       child: Stack(
                         children: [
@@ -60,7 +60,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                 color: Colors.orange[50],
                                 borderRadius: BorderRadius.circular(4),
                               ),
-                              padding: EdgeInsets.all(4),
+                              padding: const EdgeInsets.all(4),
                               child: Column(
                                 children: [
                                   Expanded(
@@ -71,13 +71,13 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                       ),
                                     ),
                                   ),
-                                  Gap(4),
-                                  Text("Danial")
+                                  const Gap(4),
+                                  const Text("Danial")
                                 ],
                               ),
                             ),
                           ),
-                          Positioned(
+                          const Positioned(
                             right: 0,
                             top: 0,
                             child: CircleAvatar(
@@ -89,7 +89,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(right: 8),
+                      margin: const EdgeInsets.only(right: 8),
                       width: 68,
                       child: Stack(
                         children: [
@@ -103,7 +103,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                 color: Colors.orange[50],
                                 borderRadius: BorderRadius.circular(4),
                               ),
-                              padding: EdgeInsets.all(4),
+                              padding: const EdgeInsets.all(4),
                               child: Column(
                                 children: [
                                   Expanded(
@@ -114,13 +114,13 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                       ),
                                     ),
                                   ),
-                                  Gap(4),
-                                  Text("Danial")
+                                  const Gap(4),
+                                  const Text("Danial")
                                 ],
                               ),
                             ),
                           ),
-                          Positioned(
+                          const Positioned(
                             right: 0,
                             top: 0,
                             child: CircleAvatar(
@@ -132,7 +132,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(right: 8),
+                      margin: const EdgeInsets.only(right: 8),
                       width: 68,
                       child: Stack(
                         children: [
@@ -146,7 +146,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                 color: Colors.orange[50],
                                 borderRadius: BorderRadius.circular(4),
                               ),
-                              padding: EdgeInsets.all(4),
+                              padding: const EdgeInsets.all(4),
                               child: Column(
                                 children: [
                                   Expanded(
@@ -157,13 +157,13 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                       ),
                                     ),
                                   ),
-                                  Gap(4),
-                                  Text("Danial")
+                                  const Gap(4),
+                                  const Text("Danial")
                                 ],
                               ),
                             ),
                           ),
-                          Positioned(
+                          const Positioned(
                             right: 0,
                             top: 0,
                             child: CircleAvatar(
@@ -175,7 +175,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(right: 8),
+                      margin: const EdgeInsets.only(right: 8),
                       width: 68,
                       child: Stack(
                         children: [
@@ -189,7 +189,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                 color: Colors.orange[50],
                                 borderRadius: BorderRadius.circular(4),
                               ),
-                              padding: EdgeInsets.all(4),
+                              padding: const EdgeInsets.all(4),
                               child: Column(
                                 children: [
                                   Expanded(
@@ -200,13 +200,13 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                       ),
                                     ),
                                   ),
-                                  Gap(4),
-                                  Text("Danial")
+                                  const Gap(4),
+                                  const Text("Danial")
                                 ],
                               ),
                             ),
                           ),
-                          Positioned(
+                          const Positioned(
                             right: 0,
                             top: 0,
                             child: CircleAvatar(
@@ -218,26 +218,26 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(right: 8),
+                      margin: const EdgeInsets.only(right: 8),
                       width: 68,
-                      decoration:
-                          BoxDecoration(color: Color.fromRGBO(31, 0, 47, 1), borderRadius: BorderRadius.circular(12)),
-                      child: Stack(
+                      decoration: BoxDecoration(
+                          color: const Color.fromRGBO(31, 0, 47, 1), borderRadius: BorderRadius.circular(12)),
+                      child: const Stack(
                         children: [],
                       ),
                     ),
                   ],
                 ),
               ),
-              Gap(24),
+              const Gap(24),
               Container(
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(241, 240, 243, 1),
+                  color: const Color.fromRGBO(241, 240, 243, 1),
                   borderRadius: BorderRadius.circular(12),
                 ),
-                padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
+                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
                 child: TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: "Search or start of message",
                     hintStyle: TextStyle(
                       color: Color.fromRGBO(143, 130, 155, 1),
@@ -251,8 +251,8 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                   child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    Gap(24),
-                    Row(
+                    const Gap(24),
+                    const Row(
                       children: [
                         Icon(Icons.pin_drop),
                         Gap(12),
@@ -265,13 +265,13 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                         ),
                       ],
                     ),
-                    Gap(16),
-                    SizedBox(
+                    const Gap(16),
+                    const SizedBox(
                       height: 260,
                       child: Placeholder(),
                     ),
-                    Gap(24),
-                    Row(
+                    const Gap(24),
+                    const Row(
                       children: [
                         Icon(Icons.chat),
                         Gap(12),
@@ -287,7 +287,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                     Column(
                       children: List.generate(
                         10,
-                        (index) => Placeholder(),
+                        (index) => const Placeholder(),
                       ),
                     )
                   ],
