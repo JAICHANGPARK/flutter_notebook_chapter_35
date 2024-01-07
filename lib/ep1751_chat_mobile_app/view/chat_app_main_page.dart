@@ -329,7 +329,12 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Icon(Icons.done_all),
+                                        CircleAvatar(
+                                          radius: 10,
+                                          backgroundColor: Colors.black,
+                                          foregroundColor: Colors.white,
+                                          child: Text("2"),
+                                        ),
                                         CircleAvatar(
                                           backgroundColor: Colors.white,
                                           radius: 10,
