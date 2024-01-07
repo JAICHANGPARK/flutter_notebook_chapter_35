@@ -304,7 +304,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                         fontSize: 18,
                                       ),
                                     ),
-                                    Gap(8),
+                                    Gap(4),
                                     Text("Thanks for the quick..",
                                       style: TextStyle(
 
