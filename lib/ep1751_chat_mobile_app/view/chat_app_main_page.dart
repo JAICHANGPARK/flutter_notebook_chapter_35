@@ -341,7 +341,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                           child: Padding(
                                             padding: const EdgeInsets.all(3.0),
                                             child: CircleAvatar(
-                                              backgroundColor: Colors.grey,
+                                              backgroundColor: Colors.green,
                                             ),
                                           ),
                                         )
