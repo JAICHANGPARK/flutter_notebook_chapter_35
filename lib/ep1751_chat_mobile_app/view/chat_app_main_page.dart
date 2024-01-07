@@ -397,6 +397,7 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                   color: Colors.grey,
                                 ),
                               ),
+                              Gap(12),
                               Expanded(
                                   child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -409,7 +410,23 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                     ],
                                   )
                                 ],
-                              ))
+                              )),
+                              Gap(12),
+                              Column(
+                                children: [
+                                  Text("12:23"),
+                                  switch (index) {
+                                    0 => CircleAvatar(),
+                                    1 => Icon(Icons.done_all),
+                                    2 => Icon(
+                                        Icons.done,
+                                      ),
+                                    _ => Icon(
+                                        Icons.done,
+                                      ),
+                                  }
+                                ],
+                              )
                             ],
                           ),
                         ),
