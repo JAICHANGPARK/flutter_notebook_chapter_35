@@ -426,7 +426,8 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                                   Text("Unknown Human No.1"),
                                   Row(
                                     children: [
-                                      index == 0 ? Icon(Icons.mic) : Container(),
+                                      index == 0 ? Icon(Icons.mic,
+                                      ) : Container(),
                                       Gap(4),
                                       Text("Records a voice message")
                                     ],
