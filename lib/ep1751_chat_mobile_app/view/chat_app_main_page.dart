@@ -382,10 +382,27 @@ class _ChatAppMainPageState extends State<ChatAppMainPage> {
                         ),
                       ],
                     ),
+                    Gap(12),
                     Column(
                       children: List.generate(
                         10,
-                        (index) => const Placeholder(),
+                        (index) => Row(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                            ),
+                            Expanded(child: Column(children: [
+                              Text("Unknown Human No.1"),
+                              Row(
+                                children: [
+                                index == 0?   Icon(Icons.mic) : Container(),
+                                  Text("Records a voice message")
+                                ],
+                              )
+                            ],))
+                          ],
+                        ),
                       ),
                     )
                   ],
