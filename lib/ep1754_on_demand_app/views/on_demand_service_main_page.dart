@@ -20,13 +20,24 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
             ),
           ),
           Expanded(
-              child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Placeholder(),
-              ],
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Placeholder(),
+                ],
+              ),
             ),
-          ))
+          )
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_filled,
+            ),
+            label: "Home",
+          )
         ],
       ),
     );
