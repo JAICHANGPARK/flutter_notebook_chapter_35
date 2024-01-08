@@ -24,7 +24,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                 Positioned(
                   left: 0,
                   right: 0,
-                  bottom: 32,
+                  bottom: 50,
                   top: 0,
                   child: Container(
                     color: Colors.purpleAccent,
@@ -33,7 +33,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                 Positioned(
                   left: 24,
                   right: 24,
-                  bottom: 0,
+                  bottom: 16,
                   child: Container(
                     color: Colors.white,
                     height: 72,
@@ -42,7 +42,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
               ],
             ),
           ),
-          Gap(24),
+          Gap(16),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
