@@ -37,7 +37,19 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
               Icons.home_filled,
             ),
             label: "Home",
-          )
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.library_books_outlined,
+            ),
+            label: "Bookings",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.library_books_outlined,
+            ),
+            label: "Bookings",
+          ),
         ],
       ),
     );
