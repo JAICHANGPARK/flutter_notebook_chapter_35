@@ -19,6 +19,21 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
             decoration: BoxDecoration(
               color: Colors.grey,
             ),
+            child: Stack(
+              children: [
+                Positioned(
+                  child: Container(
+                    color: Colors.purpleAccent,
+                  ),
+                ),
+                Positioned(
+                  left: 24,
+                  right: 24,
+                  bottom: 0,
+                  child: Container(),
+                )
+              ],
+            ),
           ),
           Expanded(
             child: SingleChildScrollView(
