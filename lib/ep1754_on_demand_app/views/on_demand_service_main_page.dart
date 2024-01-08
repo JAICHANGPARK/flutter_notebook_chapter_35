@@ -22,6 +22,10 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
             child: Stack(
               children: [
                 Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 32,
+                  top: 0,
                   child: Container(
                     color: Colors.purpleAccent,
                   ),
@@ -30,23 +34,30 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   left: 24,
                   right: 24,
                   bottom: 0,
-                  child: Container(),
+                  child: Container(
+                    color: Colors.white,
+                    height: 72,
+                  ),
                 )
               ],
             ),
           ),
+          Gap(24),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Text("Services"),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text("See more"),
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Text("Services"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See more"),
+                        ),
+                      ],
+                    ),
                   ),
                   Container(
                     height: 200,
