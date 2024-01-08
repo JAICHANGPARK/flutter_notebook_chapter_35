@@ -46,9 +46,15 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.library_books_outlined,
+              Icons.chat_outlined,
             ),
-            label: "Bookings",
+            label: "Messages",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.account_circle_outlined,
+            ),
+            label: "Profile",
           ),
         ],
       ),
