@@ -23,7 +23,29 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Placeholder(),
+                  Row(
+                    children: [
+                      Text("Services"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See more"),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    height: 200,
+                    color: Colors.blue,
+                  ),
+                  Card(
+                    child: Container(
+                      height: 140,
+                    ),
+                  ),
+                  Card(
+                    child: Container(
+                      height: 140,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -31,6 +53,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
