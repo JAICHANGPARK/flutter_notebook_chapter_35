@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class OnDemandServiceMainPage extends StatefulWidget {
   const OnDemandServiceMainPage({super.key});
@@ -36,11 +37,13 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                     height: 200,
                     color: Colors.blue,
                   ),
+                  Gap(16),
                   Card(
                     child: Container(
                       height: 140,
                     ),
                   ),
+                  Gap(16),
                   Card(
                     child: Container(
                       height: 140,
