@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_35/ep1754_on_demand_app/views/on_demand_service_main_page.dart';
 
 
 void main() {
@@ -10,6 +11,8 @@ class OnDemandServiceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: OnDemandServiceMainPage(),
+    );
   }
 }
