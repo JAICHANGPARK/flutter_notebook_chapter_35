@@ -1,6 +1,16 @@
 # flutter_notebook_chapter_35
 
-## EP1751
+## EP1754
+
+- Chat Mobile Application Design
+- by NIKITIN Bogdan Nikitin for NIKITIN
+- https://dribbble.com/shots/23363389-On-demand-Service-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/11997032/file/original-3bc8b0f2bda851f8448bb09a2bdc0d2a.png?resize=1600x1200"/>
+
+
+
+## EP1751-1753
 
 - Chat Mobile Application Design
 - by NIKITIN Bogdan Nikitin for NIKITIN
