@@ -11,6 +11,13 @@ class OnDemandServiceMainPage extends StatefulWidget {
 class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+      
+    );
   }
 }
