@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class OnDemandServiceMainPage extends StatefulWidget {
   const OnDemandServiceMainPage({super.key});
 
@@ -14,10 +13,22 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Container(
+            height: 320,
+            decoration: BoxDecoration(
+              color: Colors.grey,
+            ),
+          ),
+          Expanded(
+              child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Placeholder(),
+              ],
+            ),
+          ))
         ],
       ),
-      
     );
   }
 }
