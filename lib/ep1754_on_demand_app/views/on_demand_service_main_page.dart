@@ -50,8 +50,15 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Services"),
+                        Text(
+                          "Services",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
                         TextButton(
                           onPressed: () {},
                           child: Text("See more"),
