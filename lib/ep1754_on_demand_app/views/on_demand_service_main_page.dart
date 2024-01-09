@@ -140,6 +140,10 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   Container(
                     height: 200,
                     color: Colors.blue,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {},
+                    ),
                   ),
                   const Gap(16),
                   Card(
