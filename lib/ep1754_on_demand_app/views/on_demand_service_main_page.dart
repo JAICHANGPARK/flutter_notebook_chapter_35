@@ -43,11 +43,10 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                                 Gap(2),
                                 Row(
                                   children: [
-                                    Text("Republic of Korea",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16
-                                    ),),
+                                    Text(
+                                      "Republic of Korea",
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                    ),
                                     Gap(3),
                                     Icon(Icons.arrow_drop_down_circle_outlined),
                                   ],
@@ -65,10 +64,13 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   right: 24,
                   bottom: 20,
                   child: Container(
-
-                    decoration: BoxDecoration(color: Colors.white,
-
-                      borderRadius: BorderRadius.circular(12)
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 4,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(12),
                     ),
                     height: 82,
                     child: Row(
@@ -79,13 +81,11 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                           children: [
                             Text("Get PRO"),
                             Row(
-
                               children: [
                                 Text("One membership for all benefits"),
-                                Icon(Icons.arrow_forward_ios)
+                                Icon(Icons.arrow_forward_ios),
                               ],
                             ),
-
                           ],
                         )
                       ],
