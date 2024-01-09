@@ -8,8 +8,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/12253983/file/original-d63ac3ba88ae7c9614e03dddb5d54739.jpg?resize=1600x1200"/>
 
-
-
 ## EP1751-1753
 
 - Chat Mobile Application Design
