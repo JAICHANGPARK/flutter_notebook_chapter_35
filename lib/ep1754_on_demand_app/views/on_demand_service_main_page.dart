@@ -72,9 +72,16 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                       vertical: 4,
                     ),
                     decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(12),
-                        boxShadow: [BoxShadow(color: Colors.black.withOpacity(.2), blurRadius: 5, spreadRadius: 3)]),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(12),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(.2),
+                          blurRadius: 8,
+                          spreadRadius: 4,
+                        ),
+                      ],
+                    ),
                     height: 82,
                     child: const Row(
                       children: [
