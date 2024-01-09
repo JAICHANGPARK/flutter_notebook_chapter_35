@@ -28,6 +28,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   top: 0,
                   child: Container(
                     color: Colors.purpleAccent,
+                    padding: EdgeInsets.only(top: 64,left: 24),
                     child: Column(
                       children: [
                         Row(
