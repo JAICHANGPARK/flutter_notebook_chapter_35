@@ -71,11 +71,14 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                       children: [
                         CircleAvatar(),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Get PRO"),
                             Row(
+
                               children: [
                                 Text("One membership for all benefits"),
+                                Icon(Icons.arrow_forward_ios)
                               ],
                             ),
 
