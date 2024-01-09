@@ -28,6 +28,25 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   top: 0,
                   child: Container(
                     color: Colors.purpleAccent,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(),
+                            Column(
+                              children: [
+                                Text("Service at"),
+                                Row(
+                                  children: [
+                                    Text("Republic of Korea")
+                                  ],
+                                )
+                              ],
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 Positioned(
@@ -37,6 +56,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   child: Container(
                     color: Colors.white,
                     height: 72,
+
                   ),
                 )
               ],
