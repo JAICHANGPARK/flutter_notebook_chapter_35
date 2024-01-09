@@ -28,18 +28,22 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   top: 0,
                   child: Container(
                     color: Colors.purpleAccent,
-                    padding: EdgeInsets.only(top: 64,left: 24),
+                    padding: EdgeInsets.only(top: 64, left: 24),
                     child: Column(
                       children: [
                         Row(
                           children: [
                             CircleAvatar(),
+                            Gap(12),
                             Column(
                               children: [
                                 Text("Service at"),
+                                Gap(4),
                                 Row(
                                   children: [
-                                    Text("Republic of Korea")
+                                    Text("Republic of Korea"),
+                                    Gap(3),
+                                    Icon(Icons.arrow_drop_down_circle_outlined),
                                   ],
                                 )
                               ],
@@ -57,7 +61,6 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   child: Container(
                     color: Colors.white,
                     height: 72,
-
                   ),
                 )
               ],
