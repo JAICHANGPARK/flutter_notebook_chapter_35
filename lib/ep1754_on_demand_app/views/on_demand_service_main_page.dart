@@ -16,9 +16,9 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
         children: [
           Container(
             height: 320,
-            decoration: const BoxDecoration(
-              color: Colors.grey,
-            ),
+            // decoration: const BoxDecoration(
+            //   color: Colors.grey,
+            // ),
             child: Stack(
               children: [
                 Positioned(
@@ -27,7 +27,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   bottom: 60,
                   top: 0,
                   child: Container(
-                    color: Colors.purpleAccent,
+                    color: Color.fromRGBO(205, 158, 254, 1),
                     padding: const EdgeInsets.only(top: 64, left: 24),
                     child: const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
