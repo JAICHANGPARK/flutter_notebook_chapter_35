@@ -110,7 +110,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
               ],
             ),
           ),
-          const Gap(16),
+          const Gap(8),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
@@ -129,7 +129,10 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: const Text("See more"),
+                          child: const Text(
+                            "See more",
+                            style: TextStyle(fontSize: 16),
+                          ),
                         ),
                       ],
                     ),
