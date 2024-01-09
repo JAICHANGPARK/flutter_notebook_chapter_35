@@ -138,11 +138,36 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                     ),
                   ),
                   Container(
-                    height: 200,
+                    height: 180,
                     color: Colors.blue,
+                    padding: EdgeInsets.only(
+                      left: 16,
+                    ),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {},
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 16),
+                          child: Column(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  width: 110,
+                                  decoration:
+                                      BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                                ),
+                              ),
+                              Gap(6),
+                              Text(
+                                "Salon for\nwomen",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
                     ),
                   ),
                   const Gap(16),
