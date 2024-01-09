@@ -67,6 +67,22 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   child: Container(
                     color: Colors.white,
                     height: 82,
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        Column(
+                          children: [
+                            Text("Get PRO"),
+                            Row(
+                              children: [
+                                Text("One membership for all benefits"),
+                              ],
+                            ),
+
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
