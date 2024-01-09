@@ -76,10 +76,15 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                     child: Row(
                       children: [
                         CircleAvatar(),
+                        Gap(6),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Get PRO"),
+                            Text("Get PRO",style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18
+                            ),),
                             Row(
                               children: [
                                 Text("One membership for all benefits"),
