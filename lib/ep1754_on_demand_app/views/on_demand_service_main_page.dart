@@ -138,7 +138,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                     ),
                   ),
                   Container(
-                    height: 180,
+                    height: 182,
                     padding: EdgeInsets.only(
                       left: 16,
                     ),
