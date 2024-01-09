@@ -16,7 +16,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
         children: [
           Container(
             height: 320,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.grey,
             ),
             child: Stack(
@@ -28,8 +28,8 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   top: 0,
                   child: Container(
                     color: Colors.purpleAccent,
-                    padding: EdgeInsets.only(top: 64, left: 24),
-                    child: Column(
+                    padding: const EdgeInsets.only(top: 64, left: 24),
+                    child: const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
@@ -45,7 +45,10 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                                   children: [
                                     Text(
                                       "Republic of Korea",
-                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16,
+                                      ),
                                     ),
                                     Gap(3),
                                     Icon(Icons.arrow_drop_down_circle_outlined),
@@ -64,23 +67,16 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   right: 24,
                   bottom: 20,
                   child: Container(
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 12,
                       vertical: 4,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(12),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(.2),
-                          blurRadius: 5,
-                          spreadRadius: 3
-                        )
-                      ]
-                    ),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(12),
+                        boxShadow: [BoxShadow(color: Colors.black.withOpacity(.2), blurRadius: 5, spreadRadius: 3)]),
                     height: 82,
-                    child: Row(
+                    child: const Row(
                       children: [
                         CircleAvatar(),
                         Gap(6),
@@ -88,10 +84,10 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Get PRO",style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                            ),),
+                            Text(
+                              "Get PRO",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
                             Row(
                               children: [
                                 Text("One membership for all benefits"),
@@ -107,7 +103,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
               ],
             ),
           ),
-          Gap(16),
+          const Gap(16),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
@@ -117,7 +113,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Services",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -126,7 +122,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("See more"),
+                          child: const Text("See more"),
                         ),
                       ],
                     ),
@@ -135,13 +131,13 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                     height: 200,
                     color: Colors.blue,
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Card(
                     child: Container(
                       height: 140,
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Card(
                     child: Container(
                       height: 140,
@@ -156,25 +152,25 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.home_filled,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.library_books_outlined,
             ),
             label: "Bookings",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.chat_outlined,
             ),
             label: "Messages",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.account_circle_outlined,
             ),
