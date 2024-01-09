@@ -65,7 +65,11 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   right: 24,
                   bottom: 20,
                   child: Container(
-                    color: Colors.white,
+
+                    decoration: BoxDecoration(color: Colors.white,
+
+                      borderRadius: BorderRadius.circular(12)
+                    ),
                     height: 82,
                     child: Row(
                       children: [
