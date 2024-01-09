@@ -77,7 +77,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black.withOpacity(.2),
-                          blurRadius: 8,
+                          blurRadius: 16,
                           spreadRadius: 4,
                         ),
                       ],
