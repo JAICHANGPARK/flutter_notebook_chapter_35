@@ -30,18 +30,24 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                     color: Colors.purpleAccent,
                     padding: EdgeInsets.only(top: 64, left: 24),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
                             CircleAvatar(),
                             Gap(12),
                             Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Service at"),
-                                Gap(4),
+                                Gap(2),
                                 Row(
                                   children: [
-                                    Text("Republic of Korea"),
+                                    Text("Republic of Korea",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16
+                                    ),),
                                     Gap(3),
                                     Icon(Icons.arrow_drop_down_circle_outlined),
                                   ],
