@@ -24,7 +24,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                 Positioned(
                   left: 0,
                   right: 0,
-                  bottom: 50,
+                  bottom: 60,
                   top: 0,
                   child: Container(
                     color: Colors.purpleAccent,
@@ -63,10 +63,10 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                 Positioned(
                   left: 24,
                   right: 24,
-                  bottom: 16,
+                  bottom: 20,
                   child: Container(
                     color: Colors.white,
-                    height: 72,
+                    height: 82,
                   ),
                 )
               ],
