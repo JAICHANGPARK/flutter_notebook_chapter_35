@@ -171,7 +171,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   ),
                   const Gap(16),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16 ,vertical: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     child: Card(
                       elevation: 10,
                       surfaceTintColor: Colors.white,
@@ -221,11 +221,18 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                         height: 140,
                         child: Column(
                           children: [
-                            Row(
-                              children: [
-                                CircleAvatar(radius: 6,),
-                                Text("On going appointment"),
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 6,
+                                    backgroundColor: Colors.green,
+                                  ),
+                                  Gap(2),
+                                  Text("On going appointment"),
+                                ],
+                              ),
                             )
                           ],
                         ),
