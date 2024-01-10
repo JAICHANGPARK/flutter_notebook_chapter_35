@@ -190,7 +190,9 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                                 ),
                               ),
                             ),
-                            Expanded(child: Container()),
+                            Expanded(child: Container(
+                              height: 82,
+                            )),
                           ],
                         ),
                       ),
