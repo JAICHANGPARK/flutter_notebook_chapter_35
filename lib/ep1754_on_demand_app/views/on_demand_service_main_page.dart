@@ -180,7 +180,12 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                         height: 140,
                         child: Row(
                           children: [
-                            
+                            Column(
+                              children: [
+                                Text("Refer and get free services"),
+                                Text("Invite and get \$10 off")
+                              ],
+                            )
                           ],
                         ),
                       ),
