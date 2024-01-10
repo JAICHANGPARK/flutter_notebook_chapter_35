@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_35/ep1754_on_demand_app/views/ondemand_service_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class OnDemandServiceMainPage extends StatefulWidget {
@@ -143,27 +144,36 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 16),
-                          child: Column(
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  width: 110,
-                                  decoration: BoxDecoration(
-                                    color: Colors.orange,
-                                    borderRadius: BorderRadius.circular(8),
+                        return GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => OnDemandServiceDetailPage(),
+                              ),
+                            );
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 16),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    width: 110,
+                                    decoration: BoxDecoration(
+                                      color: Colors.orange,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
                                   ),
                                 ),
-                              ),
-                              const Gap(6),
-                              const Text(
-                                "Salon for\nwomen",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
+                                const Gap(6),
+                                const Text(
+                                  "Salon for\nwomen",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         );
                       },
@@ -230,7 +240,8 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                                     backgroundColor: Colors.green,
                                   ),
                                   Gap(2),
-                                  Text("On going appointment",
+                                  Text(
+                                    "On going appointment",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
