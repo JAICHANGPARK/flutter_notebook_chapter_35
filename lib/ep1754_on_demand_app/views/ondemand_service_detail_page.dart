@@ -11,6 +11,12 @@ class OnDemandServiceDetailPage extends StatefulWidget {
 class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
