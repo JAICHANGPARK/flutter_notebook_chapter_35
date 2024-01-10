@@ -219,6 +219,16 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                       color: Colors.white,
                       child: Container(
                         height: 140,
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                CircleAvatar(radius: 6,),
+                                Text("On going appointment"),
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
