@@ -14,7 +14,9 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Container(
+            height: 180,
+          )
         ],
       ),
     );
