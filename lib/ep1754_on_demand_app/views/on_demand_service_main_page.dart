@@ -14,7 +14,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
     return Scaffold(
       body: Column(
         children: [
-          Container(
+          SizedBox(
             height: 320,
             // decoration: const BoxDecoration(
             //   color: Colors.grey,
@@ -181,9 +181,9 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
 
                         child: Row(
                           children: [
-                            Expanded(
+                            const Expanded(
                               child: Padding(
-                                padding: const EdgeInsets.all(16),
+                                padding: EdgeInsets.all(16),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -211,18 +211,18 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                     ),
                   ),
                   const Gap(16),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     child: Card(
                       elevation: 10,
                       surfaceTintColor: Colors.white,
                       color: Colors.white,
-                      child: Container(
+                      child: SizedBox(
                         height: 140,
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(16.0),
+                              padding: EdgeInsets.all(16.0),
                               child: Row(
                                 children: [
                                   CircleAvatar(
@@ -239,7 +239,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.symmetric(
+                              padding: EdgeInsets.symmetric(
                                 horizontal: 16,
                               ),
                               child: Row(
