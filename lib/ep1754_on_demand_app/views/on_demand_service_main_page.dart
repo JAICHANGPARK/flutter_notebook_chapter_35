@@ -171,7 +171,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   ),
                   const Gap(16),
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 16 ,vertical: 8),
                     child: Card(
                       elevation: 10,
                       surfaceTintColor: Colors.white,
@@ -183,7 +183,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 16 ,vertical: 8),
+                                padding: const EdgeInsets.all(16),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
