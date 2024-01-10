@@ -139,9 +139,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   ),
                   Container(
                     height: 182,
-                    padding: EdgeInsets.only(
-                      left: 16,
-                    ),
+                    padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
