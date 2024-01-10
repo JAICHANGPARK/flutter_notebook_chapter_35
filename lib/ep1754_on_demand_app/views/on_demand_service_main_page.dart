@@ -170,15 +170,27 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                     ),
                   ),
                   const Gap(16),
-                  Card(
-                    child: Container(
-                      height: 140,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Card(
+                      elevation: 10,
+                      surfaceTintColor: Colors.white,
+                      color: Colors.white,
+                      child: Container(
+                        height: 140,
+                      ),
                     ),
                   ),
                   const Gap(16),
-                  Card(
-                    child: Container(
-                      height: 140,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Card(
+                      elevation: 10,
+                      surfaceTintColor: Colors.white,
+                      color: Colors.white,
+                      child: Container(
+                        height: 140,
+                      ),
                     ),
                   ),
                 ],
