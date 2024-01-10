@@ -183,7 +183,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: const EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.symmetric(horizontal: 16 ,vertical: 8),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
