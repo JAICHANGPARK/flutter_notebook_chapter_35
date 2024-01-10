@@ -186,7 +186,17 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                                 padding: const EdgeInsets.all(16.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [Text("Refer and get free services"), Text("Invite and get \$10 off")],
+                                  children: [
+                                    Text(
+                                      "Refer and get free services",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 17,
+                                      ),
+                                    ),
+                                    Gap(4),
+                                    Text("Invite and get \$10 off"),
+                                  ],
                                 ),
                               ),
                             ),
