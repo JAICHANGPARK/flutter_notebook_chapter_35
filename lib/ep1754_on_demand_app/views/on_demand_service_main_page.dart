@@ -233,6 +233,13 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                                   Text("On going appointment"),
                                 ],
                               ),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("Friday, 4th Jan"),
+                                Text("02:30 PM"),
+                              ],
                             )
                           ],
                         ),
