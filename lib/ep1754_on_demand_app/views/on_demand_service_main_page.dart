@@ -27,7 +27,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   bottom: 60,
                   top: 0,
                   child: Container(
-                    color: Color.fromRGBO(205, 158, 254, 1),
+                    color: const Color.fromRGBO(205, 158, 254, 1),
                     padding: const EdgeInsets.only(top: 64, left: 24),
                     child: const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -139,7 +139,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   ),
                   Container(
                     height: 182,
-                    padding: EdgeInsets.only(left: 16),
+                    padding: const EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
@@ -150,12 +150,14 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                               Expanded(
                                 child: Container(
                                   width: 110,
-                                  decoration:
-                                      BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                                  decoration: BoxDecoration(
+                                    color: Colors.orange,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
                                 ),
                               ),
-                              Gap(6),
-                              Text(
+                              const Gap(6),
+                              const Text(
                                 "Salon for\nwomen",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
