@@ -178,13 +178,18 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                       color: Colors.white,
                       child: Container(
                         height: 140,
+
                         child: Row(
                           children: [
-                            Column(
-                              children: [
-                                Text("Refer and get free services"),
-                                Text("Invite and get \$10 off")
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Refer and get free services"),
+                                  Text("Invite and get \$10 off")
+                                ],
+                              ),
                             )
                           ],
                         ),
