@@ -178,6 +178,11 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                       color: Colors.white,
                       child: Container(
                         height: 140,
+                        child: Row(
+                          children: [
+                            
+                          ],
+                        ),
                       ),
                     ),
                   ),
