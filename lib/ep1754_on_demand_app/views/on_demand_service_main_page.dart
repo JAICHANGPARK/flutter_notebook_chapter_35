@@ -183,7 +183,7 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                   ),
                   const Gap(16),
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Card(
                       elevation: 10,
                       surfaceTintColor: Colors.white,
