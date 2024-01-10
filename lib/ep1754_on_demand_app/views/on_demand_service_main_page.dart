@@ -230,17 +230,33 @@ class _OnDemandServiceMainPageState extends State<OnDemandServiceMainPage> {
                                     backgroundColor: Colors.green,
                                   ),
                                   Gap(2),
-                                  Text("On going appointment"),
+                                  Text("On going appointment",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16,),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                              ),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text("Friday, 4th Jan"),
-                                  Text("02:30 PM"),
+                                  Text(
+                                    "Friday, 4th Jan",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "02:30 PM",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ],
                               ),
                             )
