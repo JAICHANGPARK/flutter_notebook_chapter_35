@@ -12,19 +12,18 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(Duration(microseconds: 1), (){
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text("Continue"),
-          duration: Duration(days: 1),
-        ),
-
-      );
-    });
-
+    Future.delayed(
+      Duration(microseconds: 1),
+      () {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text("Continue"),
+            duration: Duration(days: 1),
+          ),
+        );
+      },
+    );
   }
-
-
 
   @override
   Widget build(BuildContext context) {
