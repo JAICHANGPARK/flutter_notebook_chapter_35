@@ -72,11 +72,14 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                 return Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(8)
                   ),
                   height: 160,
                   child: Stack(
                     children: [
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
