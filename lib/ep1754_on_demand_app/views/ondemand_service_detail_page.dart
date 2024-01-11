@@ -40,7 +40,13 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                 children: [
                   Row(
                     children: [
-                      
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.arrow_circle_left_outlined),
+                      ),
+                      Text(
+                        "Laundary & Dry Cleaning",
+                      ),
                     ],
                   )
                 ],
@@ -52,10 +58,7 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Text(
               "Select your services",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 18
-              ),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
           ),
           Gap(16),
