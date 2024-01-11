@@ -34,7 +34,12 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
             height: 240,
             color: Colors.tealAccent,
           ),
-          Text("Select your services"),
+          Text(
+            "Select your services",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           Expanded(
             child: ListView.builder(
               padding: EdgeInsets.zero,
