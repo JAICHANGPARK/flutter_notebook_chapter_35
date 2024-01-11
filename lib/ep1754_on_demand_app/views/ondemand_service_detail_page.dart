@@ -92,6 +92,7 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                                       "Wash",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
+                                        fontSize: 16
                                       ),
                                     ),
                                     Text.rich(
@@ -101,10 +102,14 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                                             text: "from",
                                           ),
                                           TextSpan(
-                                            text: "\$17.94 /6kg",
+                                            text: " \$17.94 /6kg",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 16
+                                            ),
                                           ),
                                           TextSpan(
-                                            text: "Price per weight",
+                                            text: " Price per weight",
                                           ),
                                         ],
                                       ),
@@ -116,7 +121,35 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                           ),
                           Gap(8),
                           Wrap(
+                            spacing: 8,
+                            runSpacing: 8,
                             children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+                                child: Text(
+                                  "WASH",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+                                child: Text(
+                                  "WASH",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.grey[100],
