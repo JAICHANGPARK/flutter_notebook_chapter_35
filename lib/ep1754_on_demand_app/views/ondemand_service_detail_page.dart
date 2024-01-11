@@ -73,12 +73,13 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                   decoration:
                       BoxDecoration(color: Colors.white, border: Border.all(), borderRadius: BorderRadius.circular(8)),
                   margin: EdgeInsets.only(left: 16, right: 16, bottom: 18),
-                  padding: EdgeInsets.all(8),
+                  padding: EdgeInsets.all(12),
                   height: 140,
                   child: Stack(
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
                             children: [
@@ -90,10 +91,7 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                                   children: [
                                     Text(
                                       "Wash",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16
-                                      ),
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                     ),
                                     Text.rich(
                                       TextSpan(
@@ -103,10 +101,7 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                                           ),
                                           TextSpan(
                                             text: " \$17.94 /6kg",
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 16
-                                            ),
+                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                           ),
                                           TextSpan(
                                             text: " Price per weight",
@@ -164,6 +159,11 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                                 ),
                               )
                             ],
+                          ),
+                          Gap(8),
+                          Text(
+                            "For everyday laundry, bedsheets and towels",
+
                           )
                         ],
                       ),
