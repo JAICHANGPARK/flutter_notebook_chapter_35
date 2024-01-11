@@ -46,6 +46,9 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                       ),
                       Text(
                         "Laundary & Dry Cleaning",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ],
                   )
