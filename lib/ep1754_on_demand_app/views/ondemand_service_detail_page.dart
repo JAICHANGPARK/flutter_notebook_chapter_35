@@ -34,7 +34,7 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
         children: [
           Container(
             height: 240,
-            color: Colors.tealAccent,
+            color: Color.fromRGBO(147, 209, 206, 1),
             child: SafeArea(
               child: Stack(
                 children: [
