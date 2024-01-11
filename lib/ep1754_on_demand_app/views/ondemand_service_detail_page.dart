@@ -83,11 +83,17 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                           Row(
                             children: [
                               CircleAvatar(),
+                              Gap(8),
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Wash"),
+                                    Text(
+                                      "Wash",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     Text.rich(
                                       TextSpan(
                                         children: [
@@ -102,8 +108,26 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                                           ),
                                         ],
                                       ),
-                                    )
+                                    ),
                                   ],
+                                ),
+                              ),
+                            ],
+                          ),
+                          Gap(8),
+                          Wrap(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+                                child: Text(
+                                  "WASH",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                  ),
                                 ),
                               )
                             ],
