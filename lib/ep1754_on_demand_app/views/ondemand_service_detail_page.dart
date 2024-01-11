@@ -42,7 +42,9 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                   Row(
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
                         icon: Icon(Icons.arrow_circle_left_outlined),
                       ),
                       Text(
