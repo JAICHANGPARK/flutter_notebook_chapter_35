@@ -75,7 +75,9 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(8)
                   ),
-                  height: 160,
+                  margin: EdgeInsets.only(left: 16, right: 16, bottom: 18),
+                  padding: EdgeInsets.all(8),
+                  height: 140,
                   child: Stack(
                     children: [
                       Column(
