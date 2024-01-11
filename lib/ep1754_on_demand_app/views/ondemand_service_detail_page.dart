@@ -20,6 +20,7 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
           SnackBar(
             content: Text("Continue"),
             duration: Duration(days: 1),
+            behavior: SnackBarBehavior.floating,
           ),
         );
       },
