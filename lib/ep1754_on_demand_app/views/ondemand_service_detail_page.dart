@@ -87,7 +87,17 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                                   Text("Wash"),
                                   Text.rich(
                                     TextSpan(
-                                      children: [],
+                                      children: [
+                                        TextSpan(
+                                          text: "from",
+                                        ),
+                                        TextSpan(
+                                          text: "\$17.94 /6kg",
+                                        ),
+                                        TextSpan(
+                                          text: "Price per weight",
+                                        ),
+                                      ],
                                     ),
                                   )
                                 ],
