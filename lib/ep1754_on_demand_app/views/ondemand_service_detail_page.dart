@@ -163,9 +163,15 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                           Gap(8),
                           Text(
                             "For everyday laundry, bedsheets and towels",
-
                           )
                         ],
+                      ),
+                      Positioned(
+                        right: 4,
+                        top: 8,
+                        child: CircleAvatar(
+                          child: Icon(Icons.check),
+                        ),
                       ),
                     ],
                   ),
