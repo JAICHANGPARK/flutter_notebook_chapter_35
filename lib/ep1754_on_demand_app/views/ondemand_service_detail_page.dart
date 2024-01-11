@@ -70,11 +70,8 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
               padding: EdgeInsets.zero,
               itemBuilder: (context, index) {
                 return Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(),
-                    borderRadius: BorderRadius.circular(8)
-                  ),
+                  decoration:
+                      BoxDecoration(color: Colors.white, border: Border.all(), borderRadius: BorderRadius.circular(8)),
                   margin: EdgeInsets.only(left: 16, right: 16, bottom: 18),
                   padding: EdgeInsets.all(8),
                   height: 140,
@@ -87,26 +84,28 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
                             children: [
                               CircleAvatar(),
                               Expanded(
-                                  child: Column(
-                                children: [
-                                  Text("Wash"),
-                                  Text.rich(
-                                    TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: "from",
-                                        ),
-                                        TextSpan(
-                                          text: "\$17.94 /6kg",
-                                        ),
-                                        TextSpan(
-                                          text: "Price per weight",
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ))
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Wash"),
+                                    Text.rich(
+                                      TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: "from",
+                                          ),
+                                          TextSpan(
+                                            text: "\$17.94 /6kg",
+                                          ),
+                                          TextSpan(
+                                            text: "Price per weight",
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
                             ],
                           )
                         ],
