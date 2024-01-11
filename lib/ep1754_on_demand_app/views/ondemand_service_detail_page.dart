@@ -69,7 +69,23 @@ class _OnDemandServiceDetailPageState extends State<OnDemandServiceDetailPage> {
             child: ListView.builder(
               padding: EdgeInsets.zero,
               itemBuilder: (context, index) {
-                return Placeholder();
+                return Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+
+                  ),
+                  height: 160,
+                  child: Stack(
+
+                    children: [
+                      Column(
+                        children: [
+
+                        ],
+                      ),
+                    ],
+                  ),
+                );
               },
             ),
           ),
