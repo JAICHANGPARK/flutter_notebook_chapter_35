@@ -35,12 +35,17 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                     Text.rich(
                       TextSpan(
                         children: [
-                          TextSpan(text:"OUT",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 52
-                          )),
-                          TextSpan(text: "TOGETHER",)
+                          TextSpan(
+                            text: "OUT",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 64,
+                            ),
+                          ),
+                          TextSpan(
+                            text: " TOGETHER",
+
+                          )
                         ],
                       ),
                     )
