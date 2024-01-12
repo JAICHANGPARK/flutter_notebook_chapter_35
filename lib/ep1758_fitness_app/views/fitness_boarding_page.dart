@@ -139,8 +139,23 @@ class TextLinePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint
     var path = Path();
-    path.moveTo(0, size.height - 64);
+    canvas.drawCircle(
+      Offset(23, size.height - 42),
+      5,
+      Paint()..color = Colors.yellow,
+    );
+    canvas.drawCircle(
+      Offset(120, size.height / 2),
+      5,
+      Paint()..color = Colors.yellow,
+    );
+    path.moveTo(23, size.height - 42);
+        path.lineTo(64, size.height / 1.4);
+    path.lineTo(64, size.height / 1.4);
+    path.lineTo(100, size.height / 1.5);
+    path.lineTo(120, size.height / 2);
     canvas.drawPath(path, _paint);
+
   }
 
   @override
