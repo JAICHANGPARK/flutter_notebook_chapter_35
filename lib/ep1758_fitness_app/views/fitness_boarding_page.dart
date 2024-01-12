@@ -29,7 +29,15 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 100,
-                        height: 0.9
+                        height: 0.9,
+                      ),
+                    ),
+                    Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(text:"OUT"),
+                          TextSpan(text: "TOGETHER",)
+                        ],
                       ),
                     )
                   ],
