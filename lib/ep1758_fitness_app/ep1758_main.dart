@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_35/ep1758_fitness_app/views/fitness_boarding_page.dart';
 
 void main() {
   runApp(FitnessMobileApp());
@@ -9,6 +10,10 @@ class FitnessMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      routes: {
+        "/": (context) => FitnessBoardingPage(),
+      },
+    );
   }
 }
