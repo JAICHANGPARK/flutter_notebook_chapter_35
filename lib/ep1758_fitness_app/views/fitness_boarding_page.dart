@@ -61,7 +61,9 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                       ),
                     ),
                     Positioned.fill(
-                      child: CustomPaint(),
+                      child: CustomPaint(
+                        painter: TextLinePainter(),
+                      ),
                     ),
                   ],
                 ),
@@ -79,10 +81,11 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                     ),
                     color: Colors.tealAccent,
                     image: DecorationImage(
-                        image: NetworkImage(
-                          "https://cdn.pixabay.com/photo/2018/02/06/14/07/ease-3134828_1280.jpg",
-                        ),
-                        fit: BoxFit.cover),
+                      image: NetworkImage(
+                        "https://cdn.pixabay.com/photo/2018/02/06/14/07/ease-3134828_1280.jpg",
+                      ),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),
@@ -127,9 +130,17 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
 }
 
 class TextLinePainter extends CustomPainter {
+  Paint _paint = Paint()
+    ..color = Colors.black
+    ..style = PaintingStyle.stroke
+    ..strokeWidth = 2.0;
+
   @override
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint
+    var path = Path();
+    path.moveTo(0, size.height - 64);
+    canvas.drawPath(path, _paint);
   }
 
   @override
