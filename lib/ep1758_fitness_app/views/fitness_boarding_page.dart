@@ -22,12 +22,11 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
             children: [
               Container(
                 // height: 320,
-                color: Colors.green,
                 width: double.infinity,
                 margin: const EdgeInsets.only(left: 24, right: 24, top: 24),
                 child: Stack(
                   children: [
-                    Positioned(
+                    const Positioned(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -70,7 +69,7 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                   ],
                 ),
               ),
-              Gap(42),
+              const Gap(24),
               Expanded(
                 child: Container(
                   margin: const EdgeInsets.only(
