@@ -16,11 +16,13 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 24),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 height: 360,
                 margin: const EdgeInsets.only(left: 24, right: 24),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "LET'S\nWORK",
