@@ -19,16 +19,16 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
             children: [
               Container(
                 height: 360,
-                margin: EdgeInsets.only(left: 24, right: 24),
-                child: Placeholder(),
+                margin: const EdgeInsets.only(left: 24, right: 24),
+                child: const Placeholder(),
               ),
-              Gap(24),
+              const Gap(24),
               Expanded(
                 child: Container(
-                  margin: EdgeInsets.only(
+                  margin: const EdgeInsets.only(
                     left: 24,
                   ),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(24),
                       bottomLeft: Radius.circular(24),
@@ -37,11 +37,11 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                   ),
                 ),
               ),
-              Gap(24),
+              const Gap(24),
               Container(
-                height: 72,
-                margin: EdgeInsets.symmetric(horizontal: 24),
-                decoration: ShapeDecoration(
+                height: 64,
+                margin: const EdgeInsets.symmetric(horizontal: 24),
+                decoration: const ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.black,
                 ),
@@ -50,7 +50,7 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                     Expanded(
                       child: Container(),
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Text(
                         "Start Training",
                         style: TextStyle(
@@ -60,7 +60,7 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                         ),
                       ),
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Icon(
                         Icons.arrow_forward_ios,
                         color: Colors.white,
