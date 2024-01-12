@@ -45,6 +45,21 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                   shape: StadiumBorder(),
                   color: Colors.black,
                 ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(),
+                    ),
+                    Expanded(
+                      child: Text("Start Training"),
+                    ),
+                    Expanded(
+                      child: Icon(
+                        Icons.arrow_forward_ios,
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
