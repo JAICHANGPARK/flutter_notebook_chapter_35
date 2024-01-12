@@ -20,7 +20,7 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
             children: [
               Container(
                 height: 360,
-                margin: const EdgeInsets.only(left: 24, right: 24),
+                margin: const EdgeInsets.only(left: 24, right: 24, top: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -35,7 +35,11 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                     Text.rich(
                       TextSpan(
                         children: [
-                          TextSpan(text:"OUT"),
+                          TextSpan(text:"OUT",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 52
+                          )),
                           TextSpan(text: "TOGETHER",)
                         ],
                       ),
@@ -43,7 +47,6 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                   ],
                 ),
               ),
-              const Gap(24),
               Expanded(
                 child: Container(
                   margin: const EdgeInsets.only(
@@ -58,7 +61,7 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                   ),
                 ),
               ),
-              const Gap(24),
+              const Gap(32),
               Container(
                 height: 64,
                 margin: const EdgeInsets.symmetric(horizontal: 24),
