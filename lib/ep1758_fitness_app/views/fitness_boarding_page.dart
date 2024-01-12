@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FitnessBoardingPage extends StatefulWidget {
   const FitnessBoardingPage({super.key});
 
@@ -11,6 +10,18 @@ class FitnessBoardingPage extends StatefulWidget {
 class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              height: 300,
+              child: Placeholder(),
+            ),
+            Expanded(child: Placeholder()),
+          ],
+        ),
+      ),
+    );
   }
 }
