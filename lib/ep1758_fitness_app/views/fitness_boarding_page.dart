@@ -19,7 +19,8 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 320,
+                // height: 320,
+                color: Colors.green,
                 margin: const EdgeInsets.only(left: 24, right: 24, top: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,6 +56,7 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                   ],
                 ),
               ),
+              Gap(42),
               Expanded(
                 child: Container(
                   margin: const EdgeInsets.only(
@@ -66,6 +68,12 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                       bottomLeft: Radius.circular(24),
                     ),
                     color: Colors.tealAccent,
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        "https://cdn.pixabay.com/photo/2018/02/06/14/07/ease-3134828_1280.jpg",
+                      ),
+                      fit: BoxFit.cover
+                    ),
                   ),
                 ),
               ),
