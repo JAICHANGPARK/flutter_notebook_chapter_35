@@ -20,7 +20,18 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
               Container(
                 height: 360,
                 margin: const EdgeInsets.only(left: 24, right: 24),
-                child: const Placeholder(),
+                child: Column(
+                  children: [
+                    Text(
+                      "LET'S\nWORK",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 100,
+                        height: 0.9
+                      ),
+                    )
+                  ],
+                ),
               ),
               const Gap(24),
               Expanded(
