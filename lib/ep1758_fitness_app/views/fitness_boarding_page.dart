@@ -12,14 +12,23 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              height: 300,
-              child: Placeholder(),
-            ),
-            Expanded(child: Placeholder()),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 16),
+          child: Column(
+            children: [
+              Container(
+                height: 320,
+                child: Placeholder(),
+              ),
+              Expanded(child: Placeholder()),
+              Container(
+                height: 72,
+                decoration: BoxDecoration(
+
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
