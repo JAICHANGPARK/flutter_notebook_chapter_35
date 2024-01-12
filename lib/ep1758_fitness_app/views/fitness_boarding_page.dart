@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -130,10 +132,10 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
 }
 
 class TextLinePainter extends CustomPainter {
-  Paint _paint = Paint()
+  final Paint _paint = Paint()
     ..color = Colors.black
     ..style = PaintingStyle.stroke
-    ..strokeWidth = 2.0;
+    ..strokeWidth = 1.0;
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -145,15 +147,24 @@ class TextLinePainter extends CustomPainter {
       Paint()..color = Colors.yellow,
     );
     canvas.drawCircle(
-      Offset(120, size.height / 2),
-      5,
+      Offset(124, size.height / 2),
+      8,
       Paint()..color = Colors.yellow,
     );
+    canvas.drawCircle(
+      Offset(23, size.height - 42),
+      2,
+      Paint()..color = Colors.black,
+    );
+    canvas.drawCircle(
+      Offset(124, size.height / 2),
+      2,
+      Paint()..color = Colors.black,
+    );
     path.moveTo(23, size.height - 42);
-        path.lineTo(64, size.height / 1.4);
-    path.lineTo(64, size.height / 1.4);
+    path.lineTo(58, size.height / 1.4);
     path.lineTo(100, size.height / 1.5);
-    path.lineTo(120, size.height / 2);
+    path.lineTo(124, size.height / 2);
     canvas.drawPath(path, _paint);
 
   }
