@@ -51,11 +51,19 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                       child: Container(),
                     ),
                     Expanded(
-                      child: Text("Start Training"),
+                      child: Text(
+                        "Start Training",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                     Expanded(
                       child: Icon(
                         Icons.arrow_forward_ios,
+                        color: Colors.white,
                       ),
                     )
                   ],
