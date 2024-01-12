@@ -19,7 +19,7 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 360,
+                height: 320,
                 margin: const EdgeInsets.only(left: 24, right: 24, top: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,7 +44,10 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                           ),
                           TextSpan(
                             text: " TOGETHER",
-
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 32,
+                            ),
                           )
                         ],
                       ),
