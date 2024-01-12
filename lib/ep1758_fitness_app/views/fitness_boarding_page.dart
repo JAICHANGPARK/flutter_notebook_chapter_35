@@ -20,12 +20,20 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                 height: 320,
                 child: Placeholder(),
               ),
-              Expanded(child: Placeholder()),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(24),
+                      bottomLeft: Radius.circular(24),
+                    ),
+                    
+                  ),
+                ),
+              ),
               Container(
                 height: 72,
-                decoration: BoxDecoration(
-
-                ),
+                decoration: BoxDecoration(),
               )
             ],
           ),
