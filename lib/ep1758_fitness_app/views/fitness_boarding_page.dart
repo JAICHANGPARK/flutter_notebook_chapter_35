@@ -60,6 +60,9 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                         ],
                       ),
                     ),
+                    Positioned.fill(
+                      child: CustomPaint(),
+                    ),
                   ],
                 ),
               ),
@@ -76,11 +79,10 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                     ),
                     color: Colors.tealAccent,
                     image: DecorationImage(
-                      image: NetworkImage(
-                        "https://cdn.pixabay.com/photo/2018/02/06/14/07/ease-3134828_1280.jpg",
-                      ),
-                      fit: BoxFit.cover
-                    ),
+                        image: NetworkImage(
+                          "https://cdn.pixabay.com/photo/2018/02/06/14/07/ease-3134828_1280.jpg",
+                        ),
+                        fit: BoxFit.cover),
                   ),
                 ),
               ),
@@ -121,5 +123,17 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
         ),
       ),
     );
+  }
+}
+
+class TextLinePainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    // TODO: implement paint
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return false;
   }
 }
