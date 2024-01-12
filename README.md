@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_35
 
-## EP1754
+## EP1758
+
+- Fitness Mobile iOS App
+- by Kristina Taskaeva for Purrweb UI/UX Agency
+- https://dribbble.com/shots/23393776-Fitness-Mobile-iOS-App
+
+<img src="https://cdn.dribbble.com/userupload/12339975/file/original-c8526b49bc7f1b0481c52e7b783267f2.jpg?resize=1905x1429"/>
+
+## EP1754-1757
 
 - On-demand Service Mobile App
 - by Mahima Mahajan
