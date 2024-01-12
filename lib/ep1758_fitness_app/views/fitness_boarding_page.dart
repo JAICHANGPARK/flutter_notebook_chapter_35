@@ -14,15 +14,15 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16),
+          padding: const EdgeInsets.symmetric(vertical: 24),
           child: Column(
             children: [
               Container(
                 height: 360,
-                margin: EdgeInsets.only(left: 24,right: 24),
+                margin: EdgeInsets.only(left: 24, right: 24),
                 child: Placeholder(),
               ),
-              Gap(16),
+              Gap(24),
               Expanded(
                 child: Container(
                   margin: EdgeInsets.only(
@@ -37,10 +37,14 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                   ),
                 ),
               ),
-              Gap(16),
+              Gap(24),
               Container(
                 height: 72,
-                decoration: BoxDecoration(),
+                margin: EdgeInsets.symmetric(horizontal: 24),
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.black,
+                ),
               )
             ],
           ),
