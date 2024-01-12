@@ -21,38 +21,45 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
               Container(
                 // height: 320,
                 color: Colors.green,
+                width: double.infinity,
                 margin: const EdgeInsets.only(left: 24, right: 24, top: 24),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: Stack(
                   children: [
-                    Text(
-                      "LET'S\nWORK",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 100,
-                        height: 0.9,
-                      ),
-                    ),
-                    Text.rich(
-                      TextSpan(
+                    Positioned(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          TextSpan(
-                            text: "OUT",
+                          Text(
+                            "LET'S\nWORK",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 64,
+                              fontSize: 100,
+                              height: 0.9,
                             ),
                           ),
-                          TextSpan(
-                            text: " TOGETHER",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 32,
+                          Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(
+                                  text: "OUT",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 64,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: " TOGETHER",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 32,
+                                  ),
+                                )
+                              ],
                             ),
                           )
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
