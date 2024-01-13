@@ -18,6 +18,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
           children: [
             Positioned.fill(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(16.0),
