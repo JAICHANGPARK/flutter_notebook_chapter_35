@@ -14,13 +14,28 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-
             Positioned.fill(
               child: Column(
                 children: [],
               ),
             ),
-
+            Positioned(
+              bottom: 24,
+              left: 24,
+              right: 24,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: Border.all(),
+                ),
+                child: Row(
+                  children: [
+                    Expanded(child: Container()),
+                    Expanded(child: Text("Workout history")),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
