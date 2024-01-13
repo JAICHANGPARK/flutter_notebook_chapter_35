@@ -24,18 +24,28 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
               left: 24,
               right: 24,
               child: Container(
+                height: 64,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   border: Border.all(),
+                  borderRadius: BorderRadius.circular(32),
                 ),
                 child: Row(
                   children: [
-                    Expanded(child: Container()),
-                    Expanded(child: Text("Workout history")),
+                    Expanded(
+                      child: Container(),
+                    ),
+                    Expanded(
+                      child: Text(
+                        "Workout history",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                     const Expanded(
                       child: Icon(
                         Icons.arrow_forward_ios,
-                        color: Colors.white,
                       ),
                     )
                   ],
