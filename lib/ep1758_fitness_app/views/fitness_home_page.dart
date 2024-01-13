@@ -57,15 +57,16 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         Container(
                           height: 84,
                           color: Colors.blue,
-                        )
+                        ),
+                        Gap(16),
+                        Container(
+                          height: 300,
+                          color: Colors.blue,
+                        ),
                       ],
                     ),
                   ),
-                  Gap(16),
-                  Container(
-                    height: 300,
-                    color: Colors.blue,
-                  ),
+
                   Gap(16),
                   Padding(
                     padding: const EdgeInsets.only(left: 16),
