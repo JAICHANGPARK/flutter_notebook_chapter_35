@@ -91,35 +91,40 @@ class _FitnessBoardingPageState extends State<FitnessBoardingPage> {
                 ),
               ),
               const Gap(32),
-              Container(
-                height: 64,
-                margin: const EdgeInsets.symmetric(horizontal: 24),
-                decoration: const ShapeDecoration(
-                  shape: StadiumBorder(),
-                  color: Colors.black,
-                ),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Container(),
-                    ),
-                    const Expanded(
-                      child: Text(
-                        "Start Training",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+              InkWell(
+                onTap: (){
+                  Navigator.of(context).pushNamed("/home");
+                },
+                child: Container(
+                  height: 64,
+                  margin: const EdgeInsets.symmetric(horizontal: 24),
+                  decoration: const ShapeDecoration(
+                    shape: StadiumBorder(),
+                    color: Colors.black,
+                  ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(),
+                      ),
+                      const Expanded(
+                        child: Text(
+                          "Start Training",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
-                    ),
-                    const Expanded(
-                      child: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.white,
-                      ),
-                    )
-                  ],
+                      const Expanded(
+                        child: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               )
             ],
