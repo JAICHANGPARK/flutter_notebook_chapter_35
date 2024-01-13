@@ -38,7 +38,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       ],
                     ),
                   ),
-                  Gap(24),
+                  Gap(12),
                   Padding(
                     padding: const EdgeInsets.only(
                       left: 16,
