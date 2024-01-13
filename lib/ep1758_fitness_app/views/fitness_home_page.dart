@@ -32,6 +32,12 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                   children: [
                     Expanded(child: Container()),
                     Expanded(child: Text("Workout history")),
+                    const Expanded(
+                      child: Icon(
+                        Icons.arrow_forward_ios,
+                        color: Colors.white,
+                      ),
+                    )
                   ],
                 ),
               ),
