@@ -74,7 +74,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         "Near you",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                          fontSize: 28,
                         ),
                       ),
                       TextButton(
