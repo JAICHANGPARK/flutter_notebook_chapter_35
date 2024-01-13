@@ -20,7 +20,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 children: [],
               ),
             ),
-            
+
           ],
         ),
       ),
