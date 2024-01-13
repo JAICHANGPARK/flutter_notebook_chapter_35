@@ -40,6 +40,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         "Workout history",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 16,
                         ),
                       ),
                     ),
