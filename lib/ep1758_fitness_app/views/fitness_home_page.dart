@@ -38,22 +38,46 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       ],
                     ),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  Gap(24),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      left: 16,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "My activity",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 28,
+                          ),
+                        ),
+                        Gap(12),
+                        Container(
+                          height: 84,
+                          color: Colors.blue,
+                        )
+                      ],
+                    ),
+                  ),
+                  Gap(16),
+                  Container(
+                    height: 300,
+                    color: Colors.blue,
+                  ),
+                  Gap(16),
+                  Row(
                     children: [
                       Text(
-                        "My activity",
+                        "Near you",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 28,
+                          fontSize: 18,
                         ),
-                      ),
-                      Container(
-                        height: 84,
-                        color: Colors.blue,
                       )
                     ],
-                  ),
+                  )
                 ],
               ),
             ),
