@@ -39,60 +39,77 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     ),
                   ),
                   Gap(12),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      left: 16,
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "My activity",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 28,
-                          ),
-                        ),
-                        Gap(12),
-                        Container(
-                          height: 84,
-                          color: Colors.blue,
-                        ),
-                        Gap(16),
-                        Container(
-                          height: 300,
-                          color: Colors.blue,
-                        ),
-                      ],
-                    ),
-                  ),
-
-                  Gap(16),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          "Near you",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 28,
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            "See all",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey,
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "My activity",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 28,
+                                  ),
+                                ),
+                                Gap(12),
+                                Container(
+                                  height: 84,
+                                  color: Colors.blue,
+                                ),
+                                Gap(16),
+                                Container(
+                                  height: 300,
+                                  color: Colors.blue,
+                                ),
+                              ],
                             ),
                           ),
-                        )
-                      ],
+                          Gap(16),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Near you",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 28,
+                                  ),
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "See all",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Column(
+                            children: List.generate(
+                              10,
+                              (index) => Container(
+                                height: 200,
+                                color: Colors.purple[100],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
