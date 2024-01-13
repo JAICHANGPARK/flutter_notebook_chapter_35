@@ -3,7 +3,7 @@ import 'package:flutter_notebook_chapter_35/ep1758_fitness_app/views/fitness_boa
 import 'package:flutter_notebook_chapter_35/ep1758_fitness_app/views/fitness_home_page.dart';
 
 void main() {
-  runApp(FitnessMobileApp());
+  runApp(const FitnessMobileApp());
 }
 
 class FitnessMobileApp extends StatelessWidget {
@@ -13,8 +13,8 @@ class FitnessMobileApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/": (context) => FitnessBoardingPage(),
-        "/home": (context) => FitnessHomePage(),
+        "/": (context) => const FitnessBoardingPage(),
+        "/home": (context) => const FitnessHomePage(),
       },
     );
   }
