@@ -68,12 +68,23 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                   ),
                   Gap(16),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         "Near you",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "See all",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey,
+                          ),
                         ),
                       )
                     ],
