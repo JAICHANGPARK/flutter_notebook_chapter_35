@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FitnessHomePage extends StatefulWidget {
   const FitnessHomePage({super.key});
 
@@ -11,6 +10,20 @@ class FitnessHomePage extends StatefulWidget {
 class _FitnessHomePageState extends State<FitnessHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+
+            Positioned.fill(
+              child: Column(
+                children: [],
+              ),
+            ),
+            
+          ],
+        ),
+      ),
+    );
   }
 }
