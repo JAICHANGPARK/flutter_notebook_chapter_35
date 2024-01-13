@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class FitnessHomePage extends StatefulWidget {
   const FitnessHomePage({super.key});
@@ -17,7 +18,30 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
           children: [
             Positioned.fill(
               child: Column(
-                children: [],
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        Gap(6),
+                        Text("Hello Dreamwalker"),
+                        Spacer(),
+                        CircleAvatar(
+                          child: Icon(
+                            Icons.apps,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Text(
+                    "My activity",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
             ),
             Positioned(
