@@ -26,7 +26,9 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       children: [
                         CircleAvatar(),
                         Gap(6),
-                        Text("Hello Dreamwalker"),
+                        Text(
+                          "Hello Dreamwalker",
+                        ),
                         Spacer(),
                         CircleAvatar(
                           child: Icon(
@@ -36,11 +38,21 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       ],
                     ),
                   ),
-                  Text(
-                    "My activity",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "My activity",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 28,
+                        ),
+                      ),
+                      Container(
+                        height: 84,
+                        color: Colors.blue,
+                      )
+                    ],
                   ),
                 ],
               ),
