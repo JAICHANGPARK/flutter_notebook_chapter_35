@@ -11,6 +11,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Stack(
           children: [
