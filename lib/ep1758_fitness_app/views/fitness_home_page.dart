@@ -20,8 +20,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
+                  const Padding(
+                    padding: EdgeInsets.all(16.0),
                     child: Row(
                       children: [
                         CircleAvatar(),
@@ -38,7 +38,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       ],
                     ),
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
@@ -51,23 +51,22 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
+                                const Text(
                                   "My activity",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 28,
                                   ),
                                 ),
-                                Gap(12),
+                                const Gap(12),
                                 Container(
                                   height: 68,
-                                  color: Colors.blue,
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
                                     itemCount: 10,
                                     itemBuilder: (context, index) {
                                       return Container(
-                                        margin: EdgeInsets.only(right: 12),
+                                        margin: const EdgeInsets.only(right: 12),
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(42),
                                           border: Border.all(),
@@ -75,10 +74,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                         ),
                                         child: Row(
                                           children: [
-                                            CircleAvatar(
+                                            const CircleAvatar(
                                               radius: 34,
                                             ),
-                                            Gap(8),
+                                            const Gap(8),
                                             Text(
                                               "Run",
                                               style: TextStyle(
@@ -87,14 +86,14 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                                 color: index == 0 ? Colors.white : Colors.black,
                                               ),
                                             ),
-                                            Gap(16),
+                                            const Gap(16),
                                           ],
                                         ),
                                       );
                                     },
                                   ),
                                 ),
-                                Gap(16),
+                                const Gap(16),
                                 Container(
                                   height: 300,
                                   color: Colors.blue,
@@ -102,13 +101,13 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               ],
                             ),
                           ),
-                          Gap(16),
+                          const Gap(16),
                           Padding(
                             padding: const EdgeInsets.only(left: 16),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Near you",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -117,7 +116,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 ),
                                 TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     "See all",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -160,7 +159,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     Expanded(
                       child: Container(),
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Text(
                         "Workout history",
                         style: TextStyle(
