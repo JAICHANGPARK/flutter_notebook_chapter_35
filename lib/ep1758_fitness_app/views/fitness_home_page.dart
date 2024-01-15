@@ -96,7 +96,6 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 const Gap(16),
                                 Container(
                                   height: 280,
-                                  color: Colors.blue,
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
                                     itemCount: 10,
@@ -105,7 +104,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                         width: 180,
                                         margin: EdgeInsets.only(right: 12),
                                         decoration: BoxDecoration(
-                                          color: Colors.cyanAccent[100],
+                                          color: Colors.cyan[50],
                                           borderRadius: BorderRadius.circular(12),
                                         ),
                                         padding: EdgeInsets.all(16),
