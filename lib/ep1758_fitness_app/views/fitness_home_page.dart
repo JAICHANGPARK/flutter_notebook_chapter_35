@@ -76,6 +76,11 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                             CircleAvatar(
                                               radius: 34,
                                             ),
+                                            Gap(8),
+                                            Text("Run", style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+
+                                            ),)
                                           ],
                                         ),
                                       );
