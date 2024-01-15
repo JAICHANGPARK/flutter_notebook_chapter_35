@@ -112,7 +112,9 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            CircleAvatar(),
+                                            CircleAvatar(
+                                              radius: 28,
+                                            ),
                                             Text("Monday run"),
                                             Container(
                                               decoration: BoxDecoration(
