@@ -68,19 +68,18 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     itemBuilder: (context, index) {
                                       return Container(
                                         decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(42),
-                                          border: Border.all()
-                                        ),
+                                            borderRadius: BorderRadius.circular(42), border: Border.all()),
                                         child: Row(
                                           children: [
                                             CircleAvatar(
                                               radius: 34,
                                             ),
                                             Gap(8),
-                                            Text("Run", style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-
-                                            ),)
+                                            Text(
+                                              "Run",
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                            ),
+                                            Gap(16),
                                           ],
                                         ),
                                       );
