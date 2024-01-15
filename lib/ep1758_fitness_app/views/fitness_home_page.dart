@@ -98,6 +98,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   height: 300,
                                   color: Colors.blue,
                                   child: ListView.builder(
+                                    scrollDirection: Axis.horizontal,
+                                    itemCount: 10,
                                     itemBuilder: (context, index) {
                                       return Container(
                                         width: 180,
