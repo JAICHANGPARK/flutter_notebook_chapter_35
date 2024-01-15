@@ -60,8 +60,27 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 ),
                                 Gap(12),
                                 Container(
-                                  height: 84,
+                                  height: 72,
                                   color: Colors.blue,
+                                  child: ListView.builder(
+                                    scrollDirection: Axis.horizontal,
+                                    itemCount: 10,
+                                    itemBuilder: (context, index) {
+                                      return Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(42),
+                                          border: Border.all()
+                                        ),
+                                        child: Row(
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 34,
+                                            ),
+                                          ],
+                                        ),
+                                      );
+                                    },
+                                  ),
                                 ),
                                 Gap(16),
                                 Container(
