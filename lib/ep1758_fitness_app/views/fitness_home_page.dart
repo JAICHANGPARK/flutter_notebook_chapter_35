@@ -178,6 +178,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
 
                                 decoration: BoxDecoration(
                                   color: Colors.indigo[50],
+                                  borderRadius: BorderRadius.circular(24)
                                 ),
                               ),
                             ),
