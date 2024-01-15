@@ -59,7 +59,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   ),
                                 ),
                                 const Gap(12),
-                                Container(
+                                SizedBox(
                                   height: 68,
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
@@ -97,6 +97,16 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 Container(
                                   height: 300,
                                   color: Colors.blue,
+                                  child: ListView.builder(
+                                    itemBuilder: (context, index) {
+                                      return Container(
+                                        width: 180,
+                                        decoration: BoxDecoration(
+                                          color: Colors.cyanAccent[100],
+                                        ),
+                                      );
+                                    },
+                                  ),
                                 ),
                               ],
                             ),
