@@ -108,6 +108,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                           color: Colors.cyanAccent[100],
                                           borderRadius: BorderRadius.circular(12),
                                         ),
+                                        padding: EdgeInsets.all(16),
                                         child: Column(
                                           children: [
                                             CircleAvatar(),
