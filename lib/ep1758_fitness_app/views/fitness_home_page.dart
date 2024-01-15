@@ -110,6 +110,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                         ),
                                         padding: EdgeInsets.all(16),
                                         child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             CircleAvatar(),
                                             Text("Monday run"),
@@ -117,7 +118,15 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                               decoration: BoxDecoration(
                                                 color: Colors.white,
                                               ),
-                                            )
+                                              child: Text('Total time: 4:03'),
+                                            ),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                              ),
+                                              child: Text('6490 kcal'),
+                                            ),
+                                              
                                           ],
                                         ),
                                       );
