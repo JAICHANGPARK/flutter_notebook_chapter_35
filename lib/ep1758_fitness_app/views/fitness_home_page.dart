@@ -68,7 +68,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     itemBuilder: (context, index) {
                                       return Container(
                                         decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(42), border: Border.all()),
+                                          borderRadius: BorderRadius.circular(42),
+                                          border: Border.all(),
+                                          color: index == 0 ? Colors.black : Colors.white,
+                                        ),
                                         child: Row(
                                           children: [
                                             CircleAvatar(
@@ -77,7 +80,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                             Gap(8),
                                             Text(
                                               "Run",
-                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
                                             ),
                                             Gap(16),
                                           ],
