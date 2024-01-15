@@ -95,7 +95,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 ),
                                 const Gap(16),
                                 Container(
-                                  height: 280,
+                                  height: 260,
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
                                     itemCount: 10,
@@ -143,7 +143,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               ],
                             ),
                           ),
-                          const Gap(16),
+                          const Gap(24),
                           Padding(
                             padding: const EdgeInsets.only(left: 16),
                             child: Row(
@@ -169,12 +169,16 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               ],
                             ),
                           ),
+                          const Gap(16),
                           Column(
                             children: List.generate(
                               10,
                               (index) => Container(
                                 height: 200,
-                                color: Colors.purple[100],
+
+                                decoration: BoxDecoration(
+                                  color: Colors.indigo[50],
+                                ),
                               ),
                             ),
                           )
