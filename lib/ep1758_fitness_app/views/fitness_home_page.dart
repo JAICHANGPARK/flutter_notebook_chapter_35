@@ -60,13 +60,14 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 ),
                                 Gap(12),
                                 Container(
-                                  height: 72,
+                                  height: 68,
                                   color: Colors.blue,
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
                                     itemCount: 10,
                                     itemBuilder: (context, index) {
                                       return Container(
+                                        margin: EdgeInsets.only(right: 12),
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(42),
                                           border: Border.all(),
@@ -83,6 +84,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 18,
+                                                color: index == 0 ? Colors.white : Colors.black,
                                               ),
                                             ),
                                             Gap(16),
