@@ -126,7 +126,13 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                               ),
                                               child: Text('6490 kcal'),
                                             ),
-                                              
+                                            Text(
+                                              "9,45 km",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 20,
+                                              ),
+                                            )
                                           ],
                                         ),
                                       );
