@@ -117,13 +117,18 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                             const Gap(8),
                                             const Text(
                                               "Monday run",
-                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 16,
+                                              ),
                                             ),
                                             const Gap(12),
                                             Container(
                                               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                               decoration: BoxDecoration(
-                                                  color: Colors.white, borderRadius: BorderRadius.circular(32)),
+                                                color: Colors.white,
+                                                borderRadius: BorderRadius.circular(32),
+                                              ),
                                               child: const Text('Total time: 4:03'),
                                             ),
                                             const Gap(4),
