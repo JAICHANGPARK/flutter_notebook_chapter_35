@@ -186,14 +186,29 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   color: Colors.indigo[50],
                                   borderRadius: BorderRadius.circular(24),
                                 ),
+                                padding: EdgeInsets.all(16),
                                 child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text("Boston spring"),
-                                        Text("Virtual Run")
-                                      ],
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("Boston spring",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 24
+                                          ),),
+                                          Text("Virtual Run"),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.yellow,
+                                      ),
+                                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                                      child: Text("Online"),
                                     )
                                   ],
                                 ),
