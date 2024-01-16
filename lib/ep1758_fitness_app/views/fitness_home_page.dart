@@ -226,6 +226,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                       decoration: BoxDecoration(
                                         color: Colors.grey[200],
                                       ),
+                                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
