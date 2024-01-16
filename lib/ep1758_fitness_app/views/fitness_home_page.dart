@@ -186,6 +186,17 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   color: Colors.indigo[50],
                                   borderRadius: BorderRadius.circular(24),
                                 ),
+                                child: Row(
+                                  children: [
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Boston spring"),
+                                        Text("Virtual Run")
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           )
