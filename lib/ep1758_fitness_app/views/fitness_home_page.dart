@@ -186,33 +186,51 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   color: Colors.indigo[50],
                                   borderRadius: BorderRadius.circular(24),
                                 ),
+                                margin: EdgeInsets.only(bottom: 8),
                                 padding: EdgeInsets.all(16),
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                child: Column(
                                   children: [
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            "Boston spring",
-                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                                    Row(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "Boston spring",
+                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                                              ),
+                                              Text("Virtual Run"),
+                                            ],
                                           ),
-                                          Text("Virtual Run"),
-                                        ],
-                                      ),
+                                        ),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.limeAccent,
+                                            borderRadius: BorderRadius.circular(16),
+                                          ),
+                                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                                          child: Text(
+                                            "Online",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        )
+                                      ],
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.limeAccent,
-                                        borderRadius: BorderRadius.circular(16),
+                                        color: Colors.grey[200],
                                       ),
-                                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                                      child: Text(
-                                        "Online",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.location_on_outlined),
+                                          Text(
+                                            "Unknown",
+                                          )
+                                        ],
                                       ),
                                     )
                                   ],
