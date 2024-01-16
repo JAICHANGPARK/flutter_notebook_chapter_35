@@ -115,24 +115,30 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                               radius: 28,
                                             ),
                                             Text("Monday run"),
+                                            Gap(12),
                                             Container(
                                               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                               decoration: BoxDecoration(
                                                 color: Colors.white,
+                                                borderRadius: BorderRadius.circular(32)
                                               ),
                                               child: Text('Total time: 4:03'),
                                             ),
+                                            Gap(4),
                                             Container(
+                                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                  color: Colors.white,
+                                                  borderRadius: BorderRadius.circular(32)
                                               ),
                                               child: Text('6490 kcal'),
                                             ),
+                                            Gap(23),
                                             Text(
                                               "9,45 km",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
-                                                fontSize: 20,
+                                                fontSize: 28,
                                               ),
                                             )
                                           ],
