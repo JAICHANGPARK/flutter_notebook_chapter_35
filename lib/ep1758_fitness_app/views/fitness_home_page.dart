@@ -205,7 +205,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.yellow,
+                                        color: Colors.limeAccent,
+                                        borderRadius: BorderRadius.circular(16)
                                       ),
                                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                                       child: Text("Online"),
