@@ -102,44 +102,39 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     itemBuilder: (context, index) {
                                       return Container(
                                         width: 180,
-                                        margin: EdgeInsets.only(right: 12),
+                                        margin: const EdgeInsets.only(right: 12),
                                         decoration: BoxDecoration(
                                           color: Colors.cyan[50],
                                           borderRadius: BorderRadius.circular(12),
                                         ),
-                                        padding: EdgeInsets.all(16),
+                                        padding: const EdgeInsets.all(16),
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            CircleAvatar(
+                                            const CircleAvatar(
                                               radius: 28,
                                             ),
-                                            Gap(8),
-                                            Text("Monday run",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 16
-                                            ),),
-                                            Gap(12),
-                                            Container(
-                                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                borderRadius: BorderRadius.circular(32)
-                                              ),
-                                              child: Text('Total time: 4:03'),
+                                            const Gap(8),
+                                            const Text(
+                                              "Monday run",
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                             ),
-                                            Gap(4),
+                                            const Gap(12),
                                             Container(
-                                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                               decoration: BoxDecoration(
-                                                  color: Colors.white,
-                                                  borderRadius: BorderRadius.circular(32)
-                                              ),
-                                              child: Text('6490 kcal'),
+                                                  color: Colors.white, borderRadius: BorderRadius.circular(32)),
+                                              child: const Text('Total time: 4:03'),
                                             ),
-                                            Gap(23),
-                                            Text(
+                                            const Gap(4),
+                                            Container(
+                                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white, borderRadius: BorderRadius.circular(32)),
+                                              child: const Text('6490 kcal'),
+                                            ),
+                                            const Gap(23),
+                                            const Text(
                                               "9,45 km",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
@@ -187,8 +182,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               10,
                               (index) => Container(
                                 height: 200,
-                                decoration:
-                                    BoxDecoration(color: Colors.indigo[50], borderRadius: BorderRadius.circular(24)),
+                                decoration: BoxDecoration(
+                                  color: Colors.indigo[50],
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
                               ),
                             ),
                           )
