@@ -94,7 +94,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   ),
                                 ),
                                 const Gap(16),
-                                Container(
+                                SizedBox(
                                   height: 260,
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
