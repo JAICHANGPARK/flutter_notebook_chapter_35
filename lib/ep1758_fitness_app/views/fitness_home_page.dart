@@ -186,8 +186,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   color: Colors.indigo[50],
                                   borderRadius: BorderRadius.circular(24),
                                 ),
-                                margin: EdgeInsets.only(bottom: 8),
-                                padding: EdgeInsets.all(16),
+                                margin: const EdgeInsets.only(bottom: 8),
+                                padding: const EdgeInsets.all(16),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -195,7 +195,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     Row(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Expanded(
+                                        const Expanded(
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
@@ -212,8 +212,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                             color: Colors.limeAccent,
                                             borderRadius: BorderRadius.circular(16),
                                           ),
-                                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                                          child: Text(
+                                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                                          child: const Text(
                                             "Online",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
@@ -227,8 +227,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                         color: Colors.grey[200],
                                         borderRadius: BorderRadius.circular(32)
                                       ),
-                                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                                      child: Row(
+                                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                      child: const Row(
                                         mainAxisSize: MainAxisSize.min,
                                         children: [
                                           Icon(Icons.location_on_outlined),
