@@ -116,6 +116,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                             ),
                                             Text("Monday run"),
                                             Container(
+                                              padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                               decoration: BoxDecoration(
                                                 color: Colors.white,
                                               ),
@@ -175,11 +176,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               10,
                               (index) => Container(
                                 height: 200,
-
-                                decoration: BoxDecoration(
-                                  color: Colors.indigo[50],
-                                  borderRadius: BorderRadius.circular(24)
-                                ),
+                                decoration:
+                                    BoxDecoration(color: Colors.indigo[50], borderRadius: BorderRadius.circular(24)),
                               ),
                             ),
                           )
