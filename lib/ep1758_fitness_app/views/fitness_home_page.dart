@@ -114,7 +114,12 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                             CircleAvatar(
                                               radius: 28,
                                             ),
-                                            Text("Monday run"),
+                                            Gap(8),
+                                            Text("Monday run",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16
+                                            ),),
                                             Gap(12),
                                             Container(
                                               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
