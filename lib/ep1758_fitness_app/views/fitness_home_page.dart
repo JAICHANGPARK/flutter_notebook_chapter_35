@@ -189,6 +189,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 margin: EdgeInsets.only(bottom: 8),
                                 padding: EdgeInsets.all(16),
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Row(
                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -225,6 +227,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                         color: Colors.grey[200],
                                       ),
                                       child: Row(
+                                        mainAxisSize: MainAxisSize.min,
                                         children: [
                                           Icon(Icons.location_on_outlined),
                                           Text(
