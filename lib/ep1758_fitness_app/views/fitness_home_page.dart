@@ -130,7 +130,9 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                             Container(
                                               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                               decoration: BoxDecoration(
-                                                  color: Colors.white, borderRadius: BorderRadius.circular(32)),
+                                                color: Colors.white,
+                                                borderRadius: BorderRadius.circular(32),
+                                              ),
                                               child: const Text('6490 kcal'),
                                             ),
                                             const Gap(23),
@@ -201,7 +203,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                             children: [
                                               Text(
                                                 "Boston spring",
-                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 24,
+                                                ),
                                               ),
                                               Text("Virtual Run"),
                                             ],
@@ -224,9 +229,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.grey[200],
-                                        borderRadius: BorderRadius.circular(32)
-                                      ),
+                                          color: Colors.grey[200], borderRadius: BorderRadius.circular(32)),
                                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                       child: const Row(
                                         mainAxisSize: MainAxisSize.min,
