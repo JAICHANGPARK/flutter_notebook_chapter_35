@@ -225,6 +225,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     Container(
                                       decoration: BoxDecoration(
                                         color: Colors.grey[200],
+                                        borderRadius: BorderRadius.circular(32)
                                       ),
                                       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                                       child: Row(
