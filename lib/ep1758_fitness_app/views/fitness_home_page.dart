@@ -194,22 +194,24 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Boston spring",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 24
-                                          ),),
+                                          Text(
+                                            "Boston spring",
+                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                                          ),
                                           Text("Virtual Run"),
                                         ],
                                       ),
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.limeAccent,
-                                        borderRadius: BorderRadius.circular(16)
-                                      ),
+                                          color: Colors.limeAccent, borderRadius: BorderRadius.circular(16)),
                                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                                      child: Text("Online"),
+                                      child: Text(
+                                        "Online",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                     )
                                   ],
                                 ),
