@@ -12,36 +12,38 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.white,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
+                  ),
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.search,
+                    ),
                   ),
                 ),
-                child: IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.search,
+                Expanded(
+                    child: Center(
+                  child: Text(
+                    "Bags",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
-                ),
-              ),
-              Expanded(
-                  child: Center(
-                child: Text(
-                  "Bags",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-              ))
-            ],
-          )
-        ],
+                ))
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
