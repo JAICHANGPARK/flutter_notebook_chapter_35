@@ -41,18 +41,25 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                     ),
                   ),
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.white,
+                Stack(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.white,
+                        ),
+                      ),
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.person_outline,
+                        ),
+                      ),
                     ),
-                  ),
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.person_outline,
-                    ),
-                  ),
+                    Positioned(child: CircleAvatar(
+                      backgroundColor: Colors.orange,
+                    ))
+                  ],
                 ),
               ],
             )
