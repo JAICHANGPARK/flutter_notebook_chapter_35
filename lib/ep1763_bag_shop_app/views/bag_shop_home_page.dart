@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class BagShopHomePage extends StatefulWidget {
   const BagShopHomePage({super.key});
@@ -74,6 +75,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                 ],
               ),
             ),
+            Gap(8),
             Container(height: 360,
             child: Placeholder(),),
             Container(height: 280,
