@@ -31,15 +31,29 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                   ),
                 ),
                 Expanded(
-                    child: Center(
-                  child: Text(
-                    "Bags",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                  child: Center(
+                    child: Text(
+                      "Bags",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
                       color: Colors.white,
                     ),
                   ),
-                ))
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.person_outline,
+                    ),
+                  ),
+                ),
               ],
             )
           ],
