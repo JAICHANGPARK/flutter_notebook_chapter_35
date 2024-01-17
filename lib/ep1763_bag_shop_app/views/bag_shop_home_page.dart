@@ -19,15 +19,16 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.white,
-                    ),
-                  ),
+                      border: Border.all(
+                        color: Colors.white,
+                      ),
+                      shape: BoxShape.circle),
                   child: IconButton(
                     onPressed: () {},
                     icon: Icon(
                       Icons.search,
                     ),
+                    color: Colors.white,
                   ),
                 ),
                 Expanded(
@@ -45,20 +46,26 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.white,
-                        ),
-                      ),
+                          border: Border.all(
+                            color: Colors.white,
+                          ),
+                          shape: BoxShape.circle),
                       child: IconButton(
                         onPressed: () {},
                         icon: Icon(
                           Icons.person_outline,
                         ),
+                        color: Colors.white,
                       ),
                     ),
-                    Positioned(child: CircleAvatar(
-                      backgroundColor: Colors.orange,
-                    ))
+                    Positioned(
+                      right: 0,
+                      top: 0,
+                      child: CircleAvatar(
+                        radius: 6,
+                        backgroundColor: Colors.orange,
+                      ),
+                    )
                   ],
                 ),
               ],
