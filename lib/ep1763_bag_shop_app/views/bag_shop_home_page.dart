@@ -28,7 +28,17 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                     Icons.search,
                   ),
                 ),
-              )
+              ),
+              Expanded(
+                  child: Center(
+                child: Text(
+                  "Bags",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              ))
             ],
           )
         ],
