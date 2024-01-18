@@ -164,39 +164,45 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             ),
             const Gap(4),
             Container(
-                height: 72,
-                decoration: BoxDecoration(
-                  color: Color(0xff3e3e3a),
-                  borderRadius: BorderRadius.circular(32),
-                ),
-                margin: EdgeInsets.symmetric(horizontal: 4),
-                child: Stack(
-                  children: [
-                    Positioned(
-                      left: 0,
-                      top: 0,
-                      right: 0,
-                      child: Center(
+              height: 72,
+              decoration: BoxDecoration(
+                color: Color(0xff3e3e3a),
+                borderRadius: BorderRadius.circular(32),
+              ),
+              margin: EdgeInsets.symmetric(horizontal: 4),
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 0,
+                    top: 0,
+                    right: 0,
+                    child: Center(
+                      child: Container(
+                        height: 8,
+                        width: 82,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
                         child: Container(
-                          height: 8,
-                          width: 82,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(8)
-                          ),
-                          padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
-                          child: Container(
                           height: 2,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(8)
-                            ),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
                           ),
                         ),
                       ),
-                    )
-                  ],
-                )),
+                    ),
+                  ),
+                  Positioned(
+                    child: Row(
+                      children: [],
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
