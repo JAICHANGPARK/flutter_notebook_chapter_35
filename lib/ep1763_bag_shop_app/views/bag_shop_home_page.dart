@@ -128,9 +128,17 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             ),
             const Gap(4),
             Container(
-              height: 280,
-              child: const Placeholder(),
-            ),
+                height: 280,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                  image: NetworkImage(
+                    "https://cdn.pixabay.com/photo/2016/11/29/01/36/businessman-1866582_1280.jpg",
+                  ),
+                  fit: BoxFit.cover,
+                )),
+                child: Stack(
+                  children: [],
+                )),
             const Gap(4),
             Container(
               height: 72,
