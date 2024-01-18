@@ -86,13 +86,19 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                   ),
                   borderRadius: BorderRadius.circular(32),
                 ),
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(23),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
                       "Professional\nLeather Bags",
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 46, height: 1.1),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 46,
+                        height: 1.1,
+                      ),
                     ),
                     Container(
                       decoration: ShapeDecoration(
@@ -105,10 +111,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                       ),
                       child: Text(
                         "Explore",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                     )
                   ],
