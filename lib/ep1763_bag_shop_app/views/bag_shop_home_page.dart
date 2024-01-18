@@ -88,12 +88,15 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                 ),
                 padding: EdgeInsets.all(16),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "Professional\nLeather Bags",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
+                        fontSize: 46,
+                        height: 1.1
                       ),
                     ),
                     Container(
