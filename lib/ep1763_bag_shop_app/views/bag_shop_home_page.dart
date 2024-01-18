@@ -116,7 +116,10 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                       ),
                       child: Text(
                         "Explore",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
                       ),
                     )
                   ],
