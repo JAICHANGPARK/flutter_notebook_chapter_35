@@ -147,13 +147,20 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Travel Bags ProSeries",
-                        style: TextStyle(
-                          
-                        ),),
+                        Text(
+                          "Travel Bags ProSeries",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 32
+                          ),
+                        ),
                         Gap(16),
                         Text(
                           "Highest quality.\nMordern style.",
+                          style: TextStyle(
+                            
+                              fontSize: 16
+                          ),
                         ),
                       ],
                     ),
