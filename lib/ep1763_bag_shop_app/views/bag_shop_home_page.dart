@@ -129,6 +129,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             const Gap(4),
             Container(
               height: 280,
+              width: double.infinity,
               margin: EdgeInsets.symmetric(horizontal: 4),
               decoration: BoxDecoration(
                   image: DecorationImage(
@@ -140,13 +141,22 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                   borderRadius: BorderRadius.circular(32)),
               child: Stack(
                 children: [
-                  Column(
-                    children: [
-                      Text("Travel Bags ProSeries"),
-                      Text(
-                        "Highest quality.\nMordern style.",
-                      ),
-                    ],
+                  Positioned(
+                    left: 24,
+                    top: 24,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Travel Bags ProSeries",
+                        style: TextStyle(
+                          
+                        ),),
+                        Gap(16),
+                        Text(
+                          "Highest quality.\nMordern style.",
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),
