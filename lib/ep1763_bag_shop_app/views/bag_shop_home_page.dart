@@ -74,6 +74,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             const Gap(16),
             Container(
               height: 360,
+              width: double.infinity,
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.green,
