@@ -77,7 +77,14 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             ),
             Gap(16),
             Container(height: 360,
-            child: Placeholder(),),
+            child: Container(
+              decoration: BoxDecoration(),
+              child: Column(
+                children: [
+
+                ],
+              ),
+            ),),
             Gap(4),
             Container(height: 280,
               child: Placeholder(),),
