@@ -38,11 +38,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                     child: Center(
                       child: Text(
                         "Bags",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 18
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
                       ),
                     ),
                   ),
@@ -76,21 +72,32 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
               ),
             ),
             Gap(16),
-            Container(height: 360,
-            child: Container(
-              decoration: BoxDecoration(),
-              child: Column(
-                children: [
-
-                ],
+            Container(
+              height: 360,
+              child: Container(
+                decoration: BoxDecoration(
+                    color: Colors.green,
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        "https://cdn.pixabay.com/photo/2016/11/22/19/25/man-1850181_1280.jpg",
+                      ),
+                      fit: BoxFit.cover,
+                    )),
+                child: Column(
+                  children: [],
+                ),
               ),
-            ),),
+            ),
             Gap(4),
-            Container(height: 280,
-              child: Placeholder(),),
+            Container(
+              height: 280,
+              child: Placeholder(),
+            ),
             Gap(4),
-            Container(height: 72,
-              child: Placeholder(),),
+            Container(
+              height: 72,
+              child: Placeholder(),
+            ),
           ],
         ),
       ),
