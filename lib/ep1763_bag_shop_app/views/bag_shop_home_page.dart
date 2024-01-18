@@ -164,12 +164,31 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             ),
             const Gap(4),
             Container(
-              height: 72,
-              decoration: BoxDecoration(
-                color: Color(0xff3e3e3a),
-              ),
-              child: const Placeholder(),
-            ),
+                height: 72,
+                decoration: BoxDecoration(
+                  color: Color(0xff3e3e3a),
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                margin: EdgeInsets.symmetric(horizontal: 4),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 0,
+                      top: 0,
+                      right: 0,
+                      child: Center(
+                        child: Container(
+                          height: 6,
+                          width: 82,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                )),
           ],
         ),
       ),
