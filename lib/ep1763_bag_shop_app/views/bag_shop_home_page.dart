@@ -38,7 +38,11 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                     child: Center(
                       child: Text(
                         "Bags",
-                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
                       ),
                     ),
                   ),
@@ -75,6 +79,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             Container(
               height: 360,
               width: double.infinity,
+              margin: EdgeInsets.symmetric(horizontal: 4),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.green,
