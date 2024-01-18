@@ -178,11 +178,19 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                       right: 0,
                       child: Center(
                         child: Container(
-                          height: 6,
+                          height: 8,
                           width: 82,
                           decoration: BoxDecoration(
                             color: Colors.black,
-                            
+                            borderRadius: BorderRadius.circular(8)
+                          ),
+                          padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                          child: Container(
+                          height: 2,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8)
+                            ),
                           ),
                         ),
                       ),
