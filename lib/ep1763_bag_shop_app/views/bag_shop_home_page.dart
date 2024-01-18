@@ -92,19 +92,23 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                   children: [
                     Text(
                       "Professional\nLeather Bags",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        fontSize: 46,
-                        height: 1.1
-                      ),
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 46, height: 1.1),
                     ),
                     Container(
                       decoration: ShapeDecoration(
                         color: Color(0xffffc736),
                         shape: StadiumBorder(),
                       ),
-                      child: Text("Explore"),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 24,
+                        vertical: 12,
+                      ),
+                      child: Text(
+                        "Explore",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     )
                   ],
                 ),
