@@ -76,14 +76,16 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
               height: 360,
               child: Container(
                 decoration: BoxDecoration(
-                    color: Colors.green,
-                    image: const DecorationImage(
-                      image: NetworkImage(
-                        "https://cdn.pixabay.com/photo/2016/11/22/19/25/man-1850181_1280.jpg",
-                      ),
-                      fit: BoxFit.cover,
+                  color: Colors.green,
+                  image: const DecorationImage(
+                    image: NetworkImage(
+                      "https://cdn.pixabay.com/photo/2016/11/22/19/25/man-1850181_1280.jpg",
                     ),
-                    borderRadius: BorderRadius.circular(32)),
+                    fit: BoxFit.cover,
+                  ),
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
                     Text(
