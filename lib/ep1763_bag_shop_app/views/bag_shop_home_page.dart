@@ -28,13 +28,13 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                         shape: BoxShape.circle),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.search,
                       ),
                       color: Colors.white,
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Center(
                       child: Text(
                         "Bags",
@@ -52,13 +52,13 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                             shape: BoxShape.circle),
                         child: IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.person_outline,
                           ),
                           color: Colors.white,
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         right: 0,
                         top: 0,
                         child: CircleAvatar(
@@ -71,13 +71,13 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                 ],
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Container(
               height: 360,
               child: Container(
                 decoration: BoxDecoration(
                     color: Colors.green,
-                    image: DecorationImage(
+                    image: const DecorationImage(
                       image: NetworkImage(
                         "https://cdn.pixabay.com/photo/2016/11/22/19/25/man-1850181_1280.jpg",
                       ),
@@ -92,20 +92,27 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
+                    ),
+                    Container(
+                      decoration: ShapeDecoration(
+                        color: Color(0xffffc736),
+                        shape: StadiumBorder(),
+                      ),
+                      child: Text("Explore"),
                     )
                   ],
                 ),
               ),
             ),
-            Gap(4),
+            const Gap(4),
             Container(
               height: 280,
-              child: Placeholder(),
+              child: const Placeholder(),
             ),
-            Gap(4),
+            const Gap(4),
             Container(
               height: 72,
-              child: Placeholder(),
+              child: const Placeholder(),
             ),
           ],
         ),
