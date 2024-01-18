@@ -129,16 +129,26 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             const Gap(4),
             Container(
               height: 280,
+              margin: EdgeInsets.symmetric(horizontal: 4),
               decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage(
-                    "https://cdn.pixabay.com/photo/2016/11/29/01/36/businessman-1866582_1280.jpg",
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      "https://cdn.pixabay.com/photo/2016/11/29/01/36/businessman-1866582_1280.jpg",
+                    ),
+                    fit: BoxFit.cover,
                   ),
-                  fit: BoxFit.cover,
-                ),
-              ),
+                  borderRadius: BorderRadius.circular(32)),
               child: Stack(
-                children: [],
+                children: [
+                  Column(
+                    children: [
+                      Text("Travel Bags ProSeries"),
+                      Text(
+                        "Highest quality.\nMordern style.",
+                      ),
+                    ],
+                  )
+                ],
               ),
             ),
             const Gap(4),
