@@ -82,9 +82,18 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                         "https://cdn.pixabay.com/photo/2016/11/22/19/25/man-1850181_1280.jpg",
                       ),
                       fit: BoxFit.cover,
-                    )),
+                    ),
+                    borderRadius: BorderRadius.circular(32)),
                 child: Column(
-                  children: [],
+                  children: [
+                    Text(
+                      "Professional\nLeather Bags",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
                 ),
               ),
             ),
