@@ -195,9 +195,22 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                       ),
                     ),
                   ),
-                  Positioned(
+                  Positioned.fill(
+                    left: 4,
+                    right: 4,
+                    top: 8,
+                    bottom: 8,
                     child: Row(
-                      children: [],
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        CircleAvatar(
+                          child: Icon(Icons.shopping_bag_outlined),
+                        ),
+                        Text("Cart"),
+                        Text("(2 items)"),
+                        CircleAvatar(),
+                        CircleAvatar(),
+                      ],
                     ),
                   )
                 ],
