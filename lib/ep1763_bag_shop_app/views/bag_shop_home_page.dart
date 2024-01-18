@@ -100,13 +100,14 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                         shape: StadiumBorder(),
                       ),
                       padding: EdgeInsets.symmetric(
-                        horizontal: 24,
-                        vertical: 12,
+                        horizontal: 32,
+                        vertical: 16,
                       ),
                       child: Text(
                         "Explore",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 18
                         ),
                       ),
                     )
