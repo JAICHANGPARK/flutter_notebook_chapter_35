@@ -149,18 +149,12 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                       children: [
                         Text(
                           "Travel Bags ProSeries",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 32
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
                         ),
                         Gap(16),
                         Text(
                           "Highest quality.\nMordern style.",
-                          style: TextStyle(
-                            
-                              fontSize: 16
-                          ),
+                          style: TextStyle(fontSize: 16),
                         ),
                       ],
                     ),
@@ -171,6 +165,9 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             const Gap(4),
             Container(
               height: 72,
+              decoration: BoxDecoration(
+                color: Color(0xff3e3e3a),
+              ),
               child: const Placeholder(),
             ),
           ],
