@@ -210,7 +210,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                   ),
                   const Positioned.fill(
                     left: 4,
-                    right: 4,
+                    right: 8,
                     top: 8,
                     bottom: 8,
                     child: Row(
