@@ -27,7 +27,9 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                         ),
                         shape: BoxShape.circle),
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
                       icon: const Icon(
                         Icons.arrow_back,
                       ),
