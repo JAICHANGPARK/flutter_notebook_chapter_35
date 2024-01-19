@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_35/ep1763_bag_shop_app/views/bag_shop_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class BagShopHomePage extends StatefulWidget {
@@ -105,20 +106,29 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                         height: 1.1,
                       ),
                     ),
-                    Container(
-                      decoration: const ShapeDecoration(
-                        color: Color(0xffffc736),
-                        shape: StadiumBorder(),
-                      ),
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 32,
-                        vertical: 16,
-                      ),
-                      child: const Text(
-                        "Explore",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => BagShopDetailPage(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        decoration: const ShapeDecoration(
+                          color: Color(0xffffc736),
+                          shape: StadiumBorder(),
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 32,
+                          vertical: 16,
+                        ),
+                        child: const Text(
+                          "Explore",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
                         ),
                       ),
                     )
