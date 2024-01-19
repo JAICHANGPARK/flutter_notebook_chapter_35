@@ -100,7 +100,12 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                   )
                 ],
               ),
-            )
+            ),
+            Expanded(child: Placeholder()),
+            Container(height: 72,
+            child: Placeholder(),),
+            Container(height: 72,
+              child: Placeholder(),),
           ],
         ),
       ),
