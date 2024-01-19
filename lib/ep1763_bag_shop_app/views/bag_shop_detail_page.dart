@@ -80,7 +80,7 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Row(
                 children: [
-                  Expanded(
+                  const Expanded(
                     child: Text(
                       "Black Leather\nBackpack",
                       style: TextStyle(
@@ -94,24 +94,24 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                     height: 64,
                     width: 64,
                     decoration: BoxDecoration(
-                      color: Color(0xff3e3e3a),
+                      color: const Color(0xff3e3e3a),
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.shopping_bag_outlined,
                     ),
                   )
                 ],
               ),
             ),
-            Expanded(child: Placeholder()),
+            const Expanded(child: Placeholder()),
             Container(
               height: 72,
-              child: Placeholder(),
+              child: const Placeholder(),
             ),
             Container(
               height: 72,
-              child: Placeholder(),
+              child: const Placeholder(),
             ),
           ],
         ),
