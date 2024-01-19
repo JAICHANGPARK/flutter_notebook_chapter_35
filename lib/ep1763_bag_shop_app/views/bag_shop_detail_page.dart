@@ -76,6 +76,24 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
               ),
             ),
             const Gap(16),
+            Row(
+              children: [
+                Expanded(
+                  child: Text("Black Leather Backpack"),
+                ),
+                Container(
+                  height: 64,
+                  width: 64,
+                  decoration: BoxDecoration(
+                    color: Color(0xff3e3e3a),
+                    borderRadius: BorderRadius.circular(16)
+                  ),
+                  child: Icon(
+                    Icons.shopping_bag_outlined,
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
