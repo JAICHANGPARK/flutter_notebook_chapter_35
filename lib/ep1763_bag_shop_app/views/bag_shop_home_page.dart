@@ -164,7 +164,11 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                     ),
                   ),
                   Positioned(
+                    right: 16,
+                    bottom: 16,
                     child: Container(
+                      height: 64,
+                      width: 64,
                       decoration: const BoxDecoration(
                         color: Color(0xffffc736),
                       ),
