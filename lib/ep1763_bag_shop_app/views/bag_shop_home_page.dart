@@ -79,7 +79,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             Container(
               height: 360,
               width: double.infinity,
-              margin: EdgeInsets.symmetric(horizontal: 4),
+              margin: const EdgeInsets.symmetric(horizontal: 4),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.green,
@@ -91,12 +91,12 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                   ),
                   borderRadius: BorderRadius.circular(32),
                 ),
-                padding: EdgeInsets.all(23),
+                padding: const EdgeInsets.all(23),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Professional\nLeather Bags",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -106,15 +106,15 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                       ),
                     ),
                     Container(
-                      decoration: ShapeDecoration(
+                      decoration: const ShapeDecoration(
                         color: Color(0xffffc736),
                         shape: StadiumBorder(),
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 32,
                         vertical: 16,
                       ),
-                      child: Text(
+                      child: const Text(
                         "Explore",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -130,9 +130,9 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             Container(
               height: 280,
               width: double.infinity,
-              margin: EdgeInsets.symmetric(horizontal: 4),
+              margin: const EdgeInsets.symmetric(horizontal: 4),
               decoration: BoxDecoration(
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: NetworkImage(
                     "https://cdn.pixabay.com/photo/2016/11/29/01/36/businessman-1866582_1280.jpg",
                   ),
@@ -142,7 +142,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
               ),
               child: Stack(
                 children: [
-                  Positioned(
+                  const Positioned(
                     left: 24,
                     top: 24,
                     child: Column(
@@ -165,7 +165,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                   ),
                   Positioned(
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xffffc736),
                       ),
                     ),
@@ -177,10 +177,10 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
             Container(
               height: 72,
               decoration: BoxDecoration(
-                color: Color(0xff3e3e3a),
+                color: const Color(0xff3e3e3a),
                 borderRadius: BorderRadius.circular(32),
               ),
-              margin: EdgeInsets.symmetric(horizontal: 4),
+              margin: const EdgeInsets.symmetric(horizontal: 4),
               child: Stack(
                 children: [
                   Positioned(
@@ -195,7 +195,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(8),
                         ),
-                        padding: EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                        padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
                         child: Container(
                           height: 2,
                           decoration: BoxDecoration(
@@ -206,7 +206,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                       ),
                     ),
                   ),
-                  Positioned.fill(
+                  const Positioned.fill(
                     left: 4,
                     right: 4,
                     top: 8,
