@@ -169,10 +169,7 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                     child: Container(
                       height: 82,
                       width: 82,
-                      decoration:  BoxDecoration(
-                        color: Color(0xffffc736),
-                        borderRadius: BorderRadius.circular(24)
-                      ),
+                      decoration: BoxDecoration(color: Color(0xffffc736), borderRadius: BorderRadius.circular(24)),
                     ),
                   ),
                 ],
@@ -221,8 +218,19 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                       children: [
                         CircleAvatar(
                           child: Icon(Icons.shopping_bag_outlined),
+                          backgroundColor: Colors.black,
+                          foregroundColor: Color(0xffffc736),
+                          radius: 32,
                         ),
-                        Text("Cart"),
+                        Gap(15),
+                        Text(
+                          "Cart",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
                         Text("(2 items)"),
                         CircleAvatar(),
                         CircleAvatar(),
