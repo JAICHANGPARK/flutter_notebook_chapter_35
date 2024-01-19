@@ -83,13 +83,20 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                   Expanded(
                     child: Text(
                       "Black Leather\nBackpack",
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
                     ),
                   ),
                   Container(
                     height: 64,
                     width: 64,
-                    decoration: BoxDecoration(color: Color(0xff3e3e3a), borderRadius: BorderRadius.circular(16)),
+                    decoration: BoxDecoration(
+                      color: Color(0xff3e3e3a),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
                     child: Icon(
                       Icons.shopping_bag_outlined,
                     ),
