@@ -76,23 +76,30 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
               ),
             ),
             const Gap(16),
-            Row(
-              children: [
-                Expanded(
-                  child: Text("Black Leather Backpack"),
-                ),
-                Container(
-                  height: 64,
-                  width: 64,
-                  decoration: BoxDecoration(
-                    color: Color(0xff3e3e3a),
-                    borderRadius: BorderRadius.circular(16)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      "Black Leather\nBackpack",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20
+                      ),
+                    ),
                   ),
-                  child: Icon(
-                    Icons.shopping_bag_outlined,
-                  ),
-                )
-              ],
+                  Container(
+                    height: 64,
+                    width: 64,
+                    decoration: BoxDecoration(color: Color(0xff3e3e3a), borderRadius: BorderRadius.circular(16)),
+                    child: Icon(
+                      Icons.shopping_bag_outlined,
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
