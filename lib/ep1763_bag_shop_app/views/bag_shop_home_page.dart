@@ -231,7 +231,12 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                             fontSize: 16,
                           ),
                         ),
-                        Text("(2 items)"),
+                        Text(
+                          " (2 items)",
+                          style: TextStyle(
+                            color: Color(0xffffc736),
+                          ),
+                        ),
                         CircleAvatar(),
                         CircleAvatar(),
                       ],
