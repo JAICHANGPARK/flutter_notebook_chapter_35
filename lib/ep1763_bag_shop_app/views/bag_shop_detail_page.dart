@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class BagShopDetailPage extends StatefulWidget {
   const BagShopDetailPage({super.key});
 
@@ -11,6 +10,15 @@ class BagShopDetailPage extends StatefulWidget {
 class _BagShopDetailPageState extends State<BagShopDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
