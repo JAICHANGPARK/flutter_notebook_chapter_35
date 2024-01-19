@@ -132,13 +132,14 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
               width: double.infinity,
               margin: EdgeInsets.symmetric(horizontal: 4),
               decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(
-                      "https://cdn.pixabay.com/photo/2016/11/29/01/36/businessman-1866582_1280.jpg",
-                    ),
-                    fit: BoxFit.cover,
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://cdn.pixabay.com/photo/2016/11/29/01/36/businessman-1866582_1280.jpg",
                   ),
-                  borderRadius: BorderRadius.circular(32)),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(32),
+              ),
               child: Stack(
                 children: [
                   Positioned(
@@ -149,7 +150,10 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                       children: [
                         Text(
                           "Travel Bags ProSeries",
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 32,
+                          ),
                         ),
                         Gap(16),
                         Text(
