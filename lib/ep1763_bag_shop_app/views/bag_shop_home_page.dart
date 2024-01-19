@@ -158,7 +158,14 @@ class _BagShopHomePageState extends State<BagShopHomePage> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  Positioned(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Color(0xffffc736),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
