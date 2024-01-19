@@ -83,11 +83,7 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                   Expanded(
                     child: Text(
                       "Black Leather\nBackpack",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20
-                      ),
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
                     ),
                   ),
                   Container(
@@ -102,10 +98,14 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
               ),
             ),
             Expanded(child: Placeholder()),
-            Container(height: 72,
-            child: Placeholder(),),
-            Container(height: 72,
-              child: Placeholder(),),
+            Container(
+              height: 72,
+              child: Placeholder(),
+            ),
+            Container(
+              height: 72,
+              child: Placeholder(),
+            ),
           ],
         ),
       ),
