@@ -15,7 +15,7 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+
           ],
         ),
       ),
