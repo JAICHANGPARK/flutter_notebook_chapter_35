@@ -177,8 +177,75 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                 )),
             const Gap(6),
             Container(
-              height: 82,
-              child: const Placeholder(),
+              height: 72,
+              decoration: BoxDecoration(
+                color: const Color(0xff3e3e3a),
+                borderRadius: BorderRadius.circular(32),
+              ),
+              margin: const EdgeInsets.symmetric(horizontal: 4),
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 0,
+                    top: 0,
+                    right: 0,
+                    child: Center(
+                      child: Container(
+                        height: 8,
+                        width: 82,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 4),
+                        child: Container(
+                          height: 2,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const Positioned.fill(
+                    left: 4,
+                    right: 8,
+                    top: 8,
+                    bottom: 8,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        CircleAvatar(
+                          child: Icon(Icons.shopping_bag_outlined),
+                          backgroundColor: Colors.black,
+                          foregroundColor: Color(0xffffc736),
+                          radius: 32,
+                        ),
+                        Gap(15),
+                        Text(
+                          "Cart",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        Text(
+                          " (2 items)",
+                          style: TextStyle(
+                            color: Color(0xffffc736),
+                          ),
+                        ),
+                        Spacer(),
+                        CircleAvatar(),
+                        Gap(8),
+                        CircleAvatar(),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
             const Gap(6),
           ],
