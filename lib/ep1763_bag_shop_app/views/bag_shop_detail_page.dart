@@ -108,16 +108,19 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
               ),
             ),
             Expanded(
-                child: Container(
-              decoration: BoxDecoration(
+              child: Container(
+                decoration: BoxDecoration(
                   color: Colors.green,
                   image: DecorationImage(
                     image: NetworkImage(
                       "https://cdn.pixabay.com/photo/2017/04/05/01/12/traveler-2203666_1280.jpg",
                     ),
                     fit: BoxFit.cover,
-                  ),),
-            )),
+                  ),
+                ),
+                margin: EdgeInsets.all(4),
+              ),
+            ),
             Gap(6),
             Container(
               height: 82,
