@@ -123,8 +123,12 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                 ),
                 child: Stack(
                   children: [
-                    CircleAvatar(
-                      backgroundColor: Colors.white.withOpacity(.4),
+                    Positioned(
+                      left: 24,
+                      top: 24,
+                      child: CircleAvatar(
+                        backgroundColor: Colors.white.withOpacity(.4),
+                      ),
                     ),
                   ],
                 ),
