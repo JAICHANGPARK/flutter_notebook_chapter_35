@@ -166,6 +166,7 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                         alignment: Alignment.centerRight,
                         child: CircleAvatar(
                           radius: 32,
+                          backgroundColor: Colors.white,
                         ),
                       ),
                     ),
