@@ -112,7 +112,6 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                 margin: const EdgeInsets.all(4),
                 decoration: BoxDecoration(
                   color: Colors.green,
-
                   borderRadius: BorderRadius.circular(32),
                   image: const DecorationImage(
                     image: NetworkImage(
@@ -127,12 +126,18 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                       left: 24,
                       top: 24,
                       child: CircleAvatar(
-                        backgroundColor: Colors.white.withOpacity(.4),
+                        backgroundColor: Colors.white.withOpacity(
+                          .7,
+                        ),
+                        
+                        child: IconButton(
+                          icon: Icon(Icons.expand), onPressed: () {  },
+                        ),
+
                       ),
                     ),
                   ],
                 ),
-
               ),
             ),
             const Gap(6),
