@@ -142,14 +142,23 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
             ),
             const Gap(6),
             Container(
-                height: 82,
-                decoration: BoxDecoration(
-                  color: const Color(0xffffc736),
-                ),
+                height: 72,
+                decoration: BoxDecoration(color: const Color(0xffffc736), borderRadius: BorderRadius.circular(32)),
                 child: Row(
                   children: [
-                    Expanded(child: Text("\$240.00")),
-                    Expanded(child: Text("\$240.00")),
+                    Expanded(
+                      child: Center(
+                        child: Text("\$240.00"),
+                      ),
+                    ),
+                    Expanded(
+                      child: Text(
+                        "Add to cart",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                     Expanded(child: Text("\$240.00")),
                   ],
                 )),
