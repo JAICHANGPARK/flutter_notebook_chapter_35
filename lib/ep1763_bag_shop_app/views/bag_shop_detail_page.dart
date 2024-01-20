@@ -161,9 +161,12 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                         ),
                       ),
                     ),
-                    Expanded(child: Align(
+                    Expanded(
+                      child: Align(
                         alignment: Alignment.centerRight,
-                        child: Text("\$240.00"))),
+                        child: CircleAvatar(),
+                      ),
+                    ),
                   ],
                 )),
             const Gap(6),
