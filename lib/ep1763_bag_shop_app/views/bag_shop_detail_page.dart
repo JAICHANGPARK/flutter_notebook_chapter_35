@@ -143,7 +143,9 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
             const Gap(6),
             Container(
                 height: 82,
-                
+                decoration: BoxDecoration(
+                  color: const Color(0xffffc736),
+                ),
                 child: Row(
                   children: [
                     Expanded(child: Text("\$240.00")),
