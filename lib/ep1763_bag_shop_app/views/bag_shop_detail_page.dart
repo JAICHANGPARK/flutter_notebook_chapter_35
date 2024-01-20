@@ -101,6 +101,7 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                     ),
                     child: const Icon(
                       Icons.shopping_bag_outlined,
+                      color: Colors.white,
                     ),
                   )
                 ],
