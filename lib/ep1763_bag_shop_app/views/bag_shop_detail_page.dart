@@ -121,14 +121,12 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                     fit: BoxFit.cover,
                   ),
                 ),
-                child: Center(
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        backgroundColor: Colors.white.withOpacity(.4),
-                      )
-                    ],
-                  ),
+                child: Stack(
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.white.withOpacity(.4),
+                    ),
+                  ],
                 ),
 
               ),
