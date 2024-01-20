@@ -157,6 +157,7 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                           "Add to cart",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            fontSize: 18
                           ),
                         ),
                       ),
@@ -167,6 +168,7 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                         child: CircleAvatar(
                           radius: 32,
                           backgroundColor: Colors.white,
+                          child: Icon(Icons.add),
                         ),
                       ),
                     ),
