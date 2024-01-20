@@ -123,13 +123,13 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 24,
-                      top: 24,
+                      left: 16,
+                      top: 16,
                       child: CircleAvatar(
                         backgroundColor: Colors.white.withOpacity(
                           .7,
                         ),
-                        
+                        radius: 28,
                         child: IconButton(
                           icon: Icon(Icons.expand), onPressed: () {  },
                         ),
