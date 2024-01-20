@@ -152,14 +152,18 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                       ),
                     ),
                     Expanded(
-                      child: Text(
-                        "Add to cart",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                      child: Center(
+                        child: Text(
+                          "Add to cart",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
-                    Expanded(child: Text("\$240.00")),
+                    Expanded(child: Align(
+                        alignment: Alignment.centerRight,
+                        child: Text("\$240.00"))),
                   ],
                 )),
             const Gap(6),
