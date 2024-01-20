@@ -164,9 +164,12 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                     Expanded(
                       child: Align(
                         alignment: Alignment.centerRight,
-                        child: CircleAvatar(),
+                        child: CircleAvatar(
+                          radius: 32,
+                        ),
                       ),
                     ),
+                    Gap(3)
                   ],
                 )),
             const Gap(6),
