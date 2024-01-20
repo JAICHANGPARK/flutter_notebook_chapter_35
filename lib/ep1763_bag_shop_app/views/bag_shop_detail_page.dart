@@ -131,9 +131,9 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
                         ),
                         radius: 28,
                         child: IconButton(
-                          icon: Icon(Icons.expand), onPressed: () {  },
+                          icon: Icon(Icons.expand),
+                          onPressed: () {},
                         ),
-
                       ),
                     ),
                   ],
@@ -142,9 +142,15 @@ class _BagShopDetailPageState extends State<BagShopDetailPage> {
             ),
             const Gap(6),
             Container(
-              height: 82,
-              child: const Placeholder(),
-            ),
+                height: 82,
+                
+                child: Row(
+                  children: [
+                    Expanded(child: Text("\$240.00")),
+                    Expanded(child: Text("\$240.00")),
+                    Expanded(child: Text("\$240.00")),
+                  ],
+                )),
             const Gap(6),
             Container(
               height: 82,
