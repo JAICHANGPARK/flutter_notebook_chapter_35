@@ -58,7 +58,25 @@ class _BankingHomePageState extends State<BankingHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.credit_card,
+                    Icons.offline_bolt_outlined,
+                    size: 28,
+                    color: Colors.grey,
+                    // color: Color.fromRGBO(229, 76, 112, 1),
+                  ),
+                  SizedBox(
+                    height: 6,
+                  ),
+                  CircleAvatar(
+                    radius: 3,
+                    backgroundColor: Colors.transparent,
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.chat_outlined,
                     size: 28,
                     color: Colors.grey,
                     // color: Color.fromRGBO(229, 76, 112, 1),
