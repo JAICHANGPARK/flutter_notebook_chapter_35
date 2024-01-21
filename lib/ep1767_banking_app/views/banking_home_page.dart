@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class BankingHomePage extends StatefulWidget {
   const BankingHomePage({super.key});
@@ -15,6 +16,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
       body: SafeArea(
         child: Column(
           children: [
+            Gap(16),
             SizedBox(height: 72, child: Placeholder(),),
             SizedBox(height: 140, child: Placeholder(),),
             SizedBox(height: 140, child: Placeholder(),),
