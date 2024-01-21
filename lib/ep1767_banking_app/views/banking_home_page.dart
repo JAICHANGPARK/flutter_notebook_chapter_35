@@ -15,7 +15,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            SizedBox(height: 72, child: Placeholder(),),
+            SizedBox(height: 140, child: Placeholder(),),
+            SizedBox(height: 140, child: Placeholder(),),
+            SizedBox(height: 100, child: Placeholder(),),
+            SizedBox(height: 100, child: Placeholder(),),
 
           ],
         ),
