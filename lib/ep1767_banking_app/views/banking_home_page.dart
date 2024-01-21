@@ -13,6 +13,8 @@ class _BankingHomePageState extends State<BankingHomePage> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(21, 23, 28, 1),
       bottomNavigationBar: BottomAppBar(
+        color: Color.fromRGBO(21, 23, 28, 1),
+        surfaceTintColor: Color.fromRGBO(21, 23, 28, 1),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Row(
