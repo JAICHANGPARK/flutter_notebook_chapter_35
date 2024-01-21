@@ -18,9 +18,13 @@ class _BankingHomePageState extends State<BankingHomePage> {
           children: [
             Gap(16),
             SizedBox(height: 72, child: Placeholder(),),
+            Gap(16),
             SizedBox(height: 140, child: Placeholder(),),
+            Gap(16),
             SizedBox(height: 140, child: Placeholder(),),
+            Gap(16),
             SizedBox(height: 100, child: Placeholder(),),
+            Gap(16),
             SizedBox(height: 100, child: Placeholder(),),
 
           ],
