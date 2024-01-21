@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class BankingHomePage extends StatefulWidget {
   const BankingHomePage({super.key});
 
@@ -12,7 +11,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: Color.fromRGBO(21, 23, 28, 1),
     );
   }
 }
