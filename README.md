@@ -2,9 +2,9 @@
 
 ## EP1763-1766
 
-- #136 - Concept shots
-- by Matt Wojtaś
-- https://dribbble.com/shots/23399642--136-Concept-shots
+- Mobile Banking App
+- by Conceptzilla
+- https://dribbble.com/shots/23410083-Mobile-Banking-App
 
 <img src="https://cdn.dribbble.com/userupload/12355853/file/original-2e71037d55df0c8bea02d86bfffed7b9.png?resize=1504x1128"/>
 
