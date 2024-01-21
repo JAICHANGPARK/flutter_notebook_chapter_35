@@ -13,23 +13,27 @@ class _BankingHomePageState extends State<BankingHomePage> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(21, 23, 28, 1),
       bottomNavigationBar: BottomAppBar(
-        child: Row(
-          children: [
-            Column(
-              children: [
-                Icon(
-                  Icons.home_filled,
-                  size: 28,
-                  color: Color.fromRGBO(229, 76, 112, 1),
-                ),
-                SizedBox(height: 8,),
-                CircleAvatar(
-                  radius: 3,
-                  backgroundColor: Color.fromRGBO(229, 76, 112, 1),
-                ),
-              ],
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.home_filled,
+                    size: 28,
+                    color: Color.fromRGBO(229, 76, 112, 1),
+                  ),
+                  SizedBox(height: 6,),
+                  CircleAvatar(
+                    radius: 3,
+                    backgroundColor: Color.fromRGBO(229, 76, 112, 1),
+                  ),
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
