@@ -22,8 +22,9 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   size: 28,
                   color: Color.fromRGBO(229, 76, 112, 1),
                 ),
+                SizedBox(height: 8,),
                 CircleAvatar(
-                  radius: 4,
+                  radius: 3,
                   backgroundColor: Color.fromRGBO(229, 76, 112, 1),
                 ),
               ],
