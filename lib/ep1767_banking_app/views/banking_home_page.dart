@@ -17,7 +17,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
           children: [
             Column(
               children: [
-                Icon(Icons.home_filled),
+                Icon(
+                  Icons.home_filled,
+                  size: 28,
+                  color: Color.fromRGBO(229, 76, 112, 1),
+                ),
                 CircleAvatar(
                   radius: 4,
                   backgroundColor: Color.fromRGBO(229, 76, 112, 1),
