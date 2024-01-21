@@ -12,6 +12,14 @@ class _BankingHomePageState extends State<BankingHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(21, 23, 28, 1),
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         color: Color.fromRGBO(21, 23, 28, 1),
         surfaceTintColor: Color.fromRGBO(21, 23, 28, 1),
