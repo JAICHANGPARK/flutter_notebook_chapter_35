@@ -17,16 +17,30 @@ class _BankingHomePageState extends State<BankingHomePage> {
         child: Column(
           children: [
             Gap(16),
-            SizedBox(height: 72, child: Placeholder(),),
+            SizedBox(
+              height: 72,
+              child: Placeholder(),
+            ),
             Gap(16),
-            SizedBox(height: 160, child: Placeholder(),),
+            SizedBox(
+              height: 160,
+              child: Placeholder(),
+            ),
             Gap(16),
-            SizedBox(height: 160, child: Placeholder(),),
+            SizedBox(
+              height: 160,
+              child: Placeholder(),
+            ),
             Gap(16),
-            SizedBox(height: 120, child: Placeholder(),),
+            SizedBox(
+              height: 120,
+              child: Placeholder(),
+            ),
             Gap(16),
-            SizedBox(height: 160, child: Placeholder(),),
-
+            SizedBox(
+              height: 160,
+              child: Placeholder(),
+            ),
           ],
         ),
       ),
@@ -127,7 +141,6 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   ),
                 ],
               ),
-
             ],
           ),
         ),
