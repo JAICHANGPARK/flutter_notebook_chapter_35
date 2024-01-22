@@ -75,7 +75,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                 )),
             Gap(16),
             SizedBox(
-                height: 160,
+                height: 140,
                 child: Row(
                   children: [
                     Expanded(
@@ -125,13 +125,13 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ),
                     ),
                     SizedBox(
-                      width: 100,
+                      width: 120,
                       child: Stack(
                         children: [
                           Positioned(
                             left: 0,
-                            top: 32,
-                            bottom: 32,
+                            top: 24,
+                            bottom: 24,
                             right: 0,
                             child: Container(
                               color: Colors.blue,
@@ -139,8 +139,8 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           ),
                           Positioned(
                             left: 16,
-                            top: 0,
-                            bottom: 0,
+                            top: 8,
+                            bottom: 8,
                             right: 0,
                             child: Container(
                               color: Colors.orange,
