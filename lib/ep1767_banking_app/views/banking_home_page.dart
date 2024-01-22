@@ -18,9 +18,29 @@ class _BankingHomePageState extends State<BankingHomePage> {
           children: [
             Gap(16),
             SizedBox(
-              height: 72,
-              child: Placeholder(),
-            ),
+                height: 72,
+                child: Row(
+                  children: [
+                    Container(),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.search),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.notifications_active_outlined),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(.3),
+
+                      ),
+                      child: IconButton(
+                        icon: Icon(Icons.document_scanner_outlined), onPressed: () {  },
+                      ),
+                    )
+                  ],
+                )),
             Gap(16),
             SizedBox(
               height: 160,
