@@ -24,6 +24,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.4),
+                        
                       ),
                       child: Row(
                         children: [
@@ -39,8 +40,9 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           Gap(6),
                           Icon(
                             Icons.arrow_forward_outlined,
-                            
+                            size: 16,
                           ),
+                          Gap(6),
                         ],
                       ),
                     ),
