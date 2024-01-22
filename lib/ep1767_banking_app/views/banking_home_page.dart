@@ -81,8 +81,18 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("TOTAL BALANCE"),
-                        Text("\$13,370.96"),
+                        Text(
+                          "TOTAL BALANCE",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Text(
+                          "\$13,370.96",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                         Row(
                           children: [
                             Container(
@@ -91,7 +101,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               ),
                               child: Row(
                                 children: [
-                                  Icon(Icons.)
+                                  Icon(Icons.monetization_on_outlined),
+                                  Text(
+                                    "\$39.33",
+                                  ),
                                 ],
                               ),
                             )
