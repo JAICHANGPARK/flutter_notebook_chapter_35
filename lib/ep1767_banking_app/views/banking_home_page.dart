@@ -32,11 +32,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(.3),
-
+                        color: Colors.white.withOpacity(.4),
+                        borderRadius: BorderRadius.circular(8),
                       ),
                       child: IconButton(
-                        icon: Icon(Icons.document_scanner_outlined), onPressed: () {  },
+                        icon: Icon(Icons.document_scanner_outlined),
+                        onPressed: () {},
                       ),
                     )
                   ],
