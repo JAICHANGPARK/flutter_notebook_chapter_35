@@ -124,7 +124,31 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         ],
                       ),
                     ),
-                    
+                    SizedBox(
+                      width: 100,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 0,
+                            top: 32,
+                            bottom: 32,
+                            right: 0,
+                            child: Container(
+                              color: Colors.blue,
+                            ),
+                          ),
+                          Positioned(
+                            left: 16,
+                            top: 0,
+                            bottom: 0,
+                            right: 0,
+                            child: Container(
+                              color: Colors.orange,
+                            ),
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 )),
             Gap(16),
