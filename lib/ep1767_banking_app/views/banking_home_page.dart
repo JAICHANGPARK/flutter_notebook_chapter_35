@@ -110,9 +110,13 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             ),
                             Text(
                               "Cashback saved",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
                             ),
                             Icon(
                               Icons.keyboard_arrow_right,
+                              color: Colors.grey,
                             )
                           ],
                         )
