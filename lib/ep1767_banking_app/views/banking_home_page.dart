@@ -33,7 +33,14 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.blue,
                             ),
-                          )
+                          ),
+                          Gap(6),
+                          Text("Dream W."),
+                          Gap(6),
+                          Icon(
+                            Icons.arrow_forward_outlined,
+                            
+                          ),
                         ],
                       ),
                     ),
