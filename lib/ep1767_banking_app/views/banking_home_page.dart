@@ -89,7 +89,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(.4),
                               ),
-                              
+                              child: Row(
+                                children: [
+                                  Icon(Icons.)
+                                ],
+                              ),
                             )
                           ],
                         )
