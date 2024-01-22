@@ -78,50 +78,53 @@ class _BankingHomePageState extends State<BankingHomePage> {
                 height: 160,
                 child: Row(
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "TOTAL BALANCE",
-                          style: TextStyle(
-                            color: Colors.grey,
-                          ),
-                        ),
-                        Text(
-                          "\$13,370.96",
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(.4),
-                              ),
-                              child: Row(
-                                children: [
-                                  Icon(Icons.monetization_on_outlined),
-                                  Text(
-                                    "\$39.33",
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Text(
-                              "Cashback saved",
-                              style: TextStyle(
-                                color: Colors.grey,
-                              ),
-                            ),
-                            Icon(
-                              Icons.keyboard_arrow_right,
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "TOTAL BALANCE",
+                            style: TextStyle(
                               color: Colors.grey,
-                            )
-                          ],
-                        )
-                      ],
-                    )
+                            ),
+                          ),
+                          Text(
+                            "\$13,370.96",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(.4),
+                                ),
+                                child: Row(
+                                  children: [
+                                    Icon(Icons.monetization_on_outlined),
+                                    Text(
+                                      "\$39.33",
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Text(
+                                "Cashback saved",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Icon(
+                                Icons.keyboard_arrow_right,
+                                color: Colors.grey,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    
                   ],
                 )),
             Gap(16),
