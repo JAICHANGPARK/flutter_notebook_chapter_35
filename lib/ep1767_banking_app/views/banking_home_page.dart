@@ -21,14 +21,24 @@ class _BankingHomePageState extends State<BankingHomePage> {
                 height: 72,
                 child: Row(
                   children: [
-                    Container(),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.4),
+                      ),
+                      child: Row(
+                        children: [],
+                      ),
+                    ),
+                    Spacer(),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.search),
+                      color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.notifications_active_outlined),
+                      color: Colors.white,
                     ),
                     Container(
                       decoration: BoxDecoration(
