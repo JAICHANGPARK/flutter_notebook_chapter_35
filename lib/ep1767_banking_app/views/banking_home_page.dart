@@ -24,7 +24,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.4),
-                        
+                        borderRadius: BorderRadius.circular(8),
                       ),
                       child: Row(
                         children: [
@@ -33,6 +33,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             height: 46,
                             decoration: BoxDecoration(
                               color: Colors.blue,
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
+                                color: Colors.pink,
+                              ),
                             ),
                           ),
                           Gap(6),
@@ -71,9 +75,28 @@ class _BankingHomePageState extends State<BankingHomePage> {
                 )),
             Gap(16),
             SizedBox(
-              height: 160,
-              child: Placeholder(),
-            ),
+                height: 160,
+                child: Row(
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("TOTAL BALANCE"),
+                        Text("\$13,370.96"),
+                        Row(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(.4),
+                              ),
+                              
+                            )
+                          ],
+                        )
+                      ],
+                    )
+                  ],
+                )),
             Gap(16),
             SizedBox(
               height: 160,
