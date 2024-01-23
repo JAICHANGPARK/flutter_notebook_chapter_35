@@ -295,30 +295,15 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               decoration: BoxDecoration(
                                 color: Color.fromRGBO(26, 46, 45, 1),
                               ),
-                              child: Text("Next payment in 6 days"),
+                              child: Text(
+                                "Next payment in 6 days",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                  color: Colors.green,
+                                ),
+                              ),
                             ),
-                            Container(
-                              height: 8,
-                              decoration: const BoxDecoration(
-                                color: Colors.grey,
-                              ),
-                              child: const Row(
-                                children: [
-                                  ColoredBox(
-                                    color: Colors.yellow,
-                                  ),
-                                  ColoredBox(
-                                    color: Colors.purpleAccent,
-                                  ),
-                                  ColoredBox(
-                                    color: Colors.blue,
-                                  ),
-                                  ColoredBox(
-                                    color: Colors.red,
-                                  ),
-                                ],
-                              ),
-                            )
                           ],
                         ),
                       ),
