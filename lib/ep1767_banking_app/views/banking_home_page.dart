@@ -293,7 +293,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             const Gap(6),
                             Container(
                               decoration: BoxDecoration(
-                                color: Colors.teal[100],
+                                color: Color.fromRGBO(26, 46, 45, 1),
                               ),
                               child: Text("Next payment in 6 days"),
                             ),
