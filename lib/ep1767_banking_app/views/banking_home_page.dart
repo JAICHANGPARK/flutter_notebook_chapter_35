@@ -12,11 +12,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(21, 23, 28, 1),
+      backgroundColor: const Color.fromRGBO(21, 23, 28, 1),
       body: SafeArea(
         child: Column(
           children: [
-            Gap(16),
+            const Gap(16),
             SizedBox(
                 height: 72,
                 child: Row(
@@ -39,26 +39,26 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               ),
                             ),
                           ),
-                          Gap(6),
-                          Text("Dream W."),
-                          Gap(6),
-                          Icon(
+                          const Gap(6),
+                          const Text("Dream W."),
+                          const Gap(6),
+                          const Icon(
                             Icons.arrow_forward_outlined,
                             size: 16,
                           ),
-                          Gap(6),
+                          const Gap(6),
                         ],
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.search),
+                      icon: const Icon(Icons.search),
                       color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.notifications_active_outlined),
+                      icon: const Icon(Icons.notifications_active_outlined),
                       color: Colors.white,
                     ),
                     Container(
@@ -67,13 +67,13 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: IconButton(
-                        icon: Icon(Icons.document_scanner_outlined),
+                        icon: const Icon(Icons.document_scanner_outlined),
                         onPressed: () {},
                       ),
                     )
                   ],
                 )),
-            Gap(16),
+            const Gap(16),
             SizedBox(
                 height: 140,
                 child: Row(
@@ -84,12 +84,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               "TOTAL BALANCE",
                               style: TextStyle(color: Colors.grey, fontSize: 12),
                             ),
-                            Gap(8),
-                            Text(
+                            const Gap(8),
+                            const Text(
                               "\$13,370.96",
                               style: TextStyle(
                                 color: Colors.white,
@@ -97,7 +97,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Row(
                               children: [
                                 Container(
@@ -105,11 +105,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     color: Colors.white.withOpacity(.4),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                     horizontal: 4,
                                     vertical: 4,
                                   ),
-                                  child: Row(
+                                  child: const Row(
                                     children: [
                                       Icon(
                                         Icons.monetization_on_outlined,
@@ -121,14 +121,14 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                     ],
                                   ),
                                 ),
-                                Gap(8),
-                                Text(
+                                const Gap(8),
+                                const Text(
                                   "Cashback saved",
                                   style: TextStyle(
                                     color: Colors.grey,
                                   ),
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.keyboard_arrow_right,
                                   color: Colors.grey,
                                 )
@@ -160,7 +160,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             bottom: 8,
                             right: 0,
                             child: Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(16),
                                   bottomLeft: Radius.circular(16),
@@ -174,7 +174,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     )
                   ],
                 )),
-            Gap(16),
+            const Gap(16),
             SizedBox(
               height: 160,
               child: Padding(
@@ -184,10 +184,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(29, 31, 39, 1),
+                          color: const Color.fromRGBO(29, 31, 39, 1),
                           borderRadius: BorderRadius.circular(16),
                         ),
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -197,20 +197,20 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 color: Colors.white.withOpacity(.6),
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              padding: EdgeInsets.all(4),
-                              child: Icon(
+                              padding: const EdgeInsets.all(4),
+                              child: const Icon(
                                 Icons.account_balance_wallet_outlined,
                               ),
                             ),
-                            Gap(12),
-                            Text(
+                            const Gap(12),
+                            const Text(
                               "ALL OPERATIONS",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 12,
                               ),
                             ),
-                            Gap(12),
+                            const Gap(12),
                             Text(
                               "Expenses in Dec, 2023",
                               style: TextStyle(
@@ -218,20 +218,20 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 color: Colors.white.withOpacity(.6),
                               ),
                             ),
-                            Text(
+                            const Text(
                               "\$2,186.53",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),
                             ),
-                            Gap(6),
+                            const Gap(6),
                             Container(
                               height: 8,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.grey,
                               ),
-                              child: Row(
+                              child: const Row(
                                 children: [
                                   ColoredBox(
                                     color: Colors.yellow,
@@ -252,11 +252,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         ),
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(29, 31, 39, 1),
+                          color: const Color.fromRGBO(29, 31, 39, 1),
                           borderRadius: BorderRadius.circular(16),
                         ),
                       ),
@@ -265,24 +265,24 @@ class _BankingHomePageState extends State<BankingHomePage> {
                 ),
               ),
             ),
-            Gap(16),
-            SizedBox(
+            const Gap(16),
+            const SizedBox(
               height: 120,
               child: Placeholder(),
             ),
-            Gap(16),
-            SizedBox(
+            const Gap(16),
+            const SizedBox(
               height: 160,
               child: Placeholder(),
             ),
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
+      bottomNavigationBar: const BottomAppBar(
         color: Color.fromRGBO(21, 23, 28, 1),
         surfaceTintColor: Color.fromRGBO(21, 23, 28, 1),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
