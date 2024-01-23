@@ -187,6 +187,15 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           color: Color.fromRGBO(29, 31, 39, 1),
                           borderRadius: BorderRadius.circular(16),
                         ),
+                        child: Column(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(.6),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     Gap(12),
