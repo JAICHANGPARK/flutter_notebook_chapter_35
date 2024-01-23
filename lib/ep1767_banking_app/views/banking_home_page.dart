@@ -199,8 +199,18 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 Icons.account_balance_wallet_outlined,
                               ),
                             ),
-                            Text("ALL OPERATIONS"),
-                            Text("Expenses in Dec, 2023"),
+                            Text(
+                              "ALL OPERATIONS",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 12,
+                              ),
+                            ),
+                            Gap(12),
+                            Text(
+                              "Expenses in Dec, 2023",
+                              style: TextStyle(fontSize: 12, color: Colors.white.withOpacity(.6)),
+                            ),
                             Text(
                               "\$2,186.53",
                             ),
