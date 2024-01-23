@@ -86,8 +86,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             "TOTAL BALANCE",
                             style: TextStyle(
                               color: Colors.grey,
+                              fontSize: 12
                             ),
                           ),
+                          Gap(8),
                           Text(
                             "\$13,370.96",
                             style: TextStyle(
@@ -96,7 +98,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Gap(4),
+                          Gap(8),
                           Row(
                             children: [
                               Container(
