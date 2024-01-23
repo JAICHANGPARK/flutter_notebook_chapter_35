@@ -92,17 +92,23 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             "\$13,370.96",
                             style: TextStyle(
                               color: Colors.white,
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
+                          Gap(4),
                           Row(
                             children: [
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(.4),
+                                  borderRadius: BorderRadius.circular(8)
                                 ),
+                                padding: EdgeInsets.symmetric(horizontal: 4),
                                 child: Row(
                                   children: [
-                                    Icon(Icons.monetization_on_outlined),
+                                    Icon(Icons.monetization_on_outlined,
+                                    size: 15,),
                                     Text(
                                       "\$39.33",
                                     ),
