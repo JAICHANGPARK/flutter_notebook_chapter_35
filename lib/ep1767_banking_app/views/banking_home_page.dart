@@ -200,6 +200,9 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             ),
                             Text("ALL OPERATIONS"),
                             Text("Expenses in Dec, 2023"),
+                            Text(
+                              "\$2,186.53",
+                            ),
                           ],
                         ),
                       ),
