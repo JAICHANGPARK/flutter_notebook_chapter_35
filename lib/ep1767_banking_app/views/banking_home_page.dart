@@ -102,19 +102,25 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(.4),
-                                  borderRadius: BorderRadius.circular(8)
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 4),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 4,
+                                  vertical: 4,
+                                ),
                                 child: Row(
                                   children: [
-                                    Icon(Icons.monetization_on_outlined,
-                                    size: 15,),
+                                    Icon(
+                                      Icons.monetization_on_outlined,
+                                      size: 15,
+                                    ),
                                     Text(
                                       "\$39.33",
                                     ),
                                   ],
                                 ),
                               ),
+                              Gap(8),
                               Text(
                                 "Cashback saved",
                                 style: TextStyle(
