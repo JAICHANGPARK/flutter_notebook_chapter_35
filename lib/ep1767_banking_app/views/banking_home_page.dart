@@ -151,8 +151,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             bottom: 24,
                             right: 0,
                             child: Container(
-                              color: Colors.blue,
-                              
+
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(16)
+                              ),
                             ),
                           ),
                           Positioned(
