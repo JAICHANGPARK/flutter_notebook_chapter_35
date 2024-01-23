@@ -139,7 +139,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                       ),
                     ),
                     SizedBox(
-                      width: 120,
+                      width: 130,
                       child: Stack(
                         children: [
                           Positioned(
@@ -177,7 +177,30 @@ class _BankingHomePageState extends State<BankingHomePage> {
             Gap(16),
             SizedBox(
               height: 160,
-              child: Placeholder(),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(29, 31, 39, 1),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                      ),
+                    ),
+                    Gap(12),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(29, 31, 39, 1),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ),
             Gap(16),
             SizedBox(
