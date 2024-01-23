@@ -187,6 +187,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           color: Color.fromRGBO(29, 31, 39, 1),
                           borderRadius: BorderRadius.circular(16),
                         ),
+                        padding: EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
