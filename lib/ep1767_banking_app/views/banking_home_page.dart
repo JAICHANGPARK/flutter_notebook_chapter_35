@@ -274,7 +274,6 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 Icons.account_balance_wallet_outlined,
                               ),
                             ),
-                            const Gap(12),
                             const Text(
                               "CONSUMER LOAN",
                               style: TextStyle(
@@ -282,7 +281,6 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 fontSize: 12,
                               ),
                             ),
-                            const Gap(12),
                             const Text(
                               "\$-2,186.53",
                               style: TextStyle(
@@ -290,17 +288,20 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 color: Colors.white,
                               ),
                             ),
-                            const Gap(6),
+
                             Container(
                               decoration: BoxDecoration(
                                 color: Color.fromRGBO(26, 46, 45, 1),
                               ),
-                              child: Text(
-                                "Next payment in 6 days",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 12,
-                                  color: Colors.green,
+                              padding: EdgeInsets.symmetric(vertical: 6),
+                              child: Center(
+                                child: Text(
+                                  "Next payment in 6 days",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12,
+                                    color: Colors.green,
+                                  ),
                                 ),
                               ),
                             ),
