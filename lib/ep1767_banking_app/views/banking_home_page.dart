@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -288,7 +290,6 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 color: Colors.white,
                               ),
                             ),
-
                             Container(
                               decoration: BoxDecoration(
                                 color: Color.fromRGBO(26, 46, 45, 1),
@@ -314,9 +315,14 @@ class _BankingHomePageState extends State<BankingHomePage> {
               ),
             ),
             const Gap(16),
-            const SizedBox(
+            SizedBox(
               height: 120,
-              child: Placeholder(),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color.fromRGBO(29, 31, 39, 1),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
             ),
             const Gap(16),
             const SizedBox(
