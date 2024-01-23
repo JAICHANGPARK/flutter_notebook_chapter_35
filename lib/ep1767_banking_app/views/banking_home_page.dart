@@ -326,9 +326,15 @@ class _BankingHomePageState extends State<BankingHomePage> {
               ),
             ),
             const Gap(16),
-            const SizedBox(
+            SizedBox(
               height: 160,
-              child: Placeholder(),
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 12),
+                decoration: BoxDecoration(
+                  color: const Color.fromRGBO(29, 31, 39, 1),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
             ),
           ],
         ),
