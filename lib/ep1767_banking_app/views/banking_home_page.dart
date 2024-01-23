@@ -86,10 +86,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           children: [
                             Text(
                               "TOTAL BALANCE",
-                              style: TextStyle(
-                                color: Colors.grey,
-                                fontSize: 12
-                              ),
+                              style: TextStyle(color: Colors.grey, fontSize: 12),
                             ),
                             Gap(8),
                             Text(
@@ -151,10 +148,9 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             bottom: 24,
                             right: 0,
                             child: Container(
-
                               decoration: BoxDecoration(
                                 color: Colors.blue,
-                                borderRadius: BorderRadius.circular(16)
+                                borderRadius: BorderRadius.circular(16),
                               ),
                             ),
                           ),
@@ -164,7 +160,13 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             bottom: 8,
                             right: 0,
                             child: Container(
-                              color: Colors.orange,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(16),
+                                  bottomLeft: Radius.circular(16),
+                                ),
+                                color: Colors.orange,
+                              ),
                             ),
                           )
                         ],
