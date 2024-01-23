@@ -259,6 +259,68 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           color: const Color.fromRGBO(29, 31, 39, 1),
                           borderRadius: BorderRadius.circular(16),
                         ),
+                        padding: const EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(.6),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              padding: const EdgeInsets.all(4),
+                              child: const Icon(
+                                Icons.account_balance_wallet_outlined,
+                              ),
+                            ),
+                            const Gap(12),
+                            const Text(
+                              "CONSUMER LOAN",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                              ),
+                            ),
+                            const Gap(12),
+                            const Text(
+                              "\$-2,186.53",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const Gap(6),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal[100],
+                              ),
+                              child: Text("Next payment in 6 days"),
+                            ),
+                            Container(
+                              height: 8,
+                              decoration: const BoxDecoration(
+                                color: Colors.grey,
+                              ),
+                              child: const Row(
+                                children: [
+                                  ColoredBox(
+                                    color: Colors.yellow,
+                                  ),
+                                  ColoredBox(
+                                    color: Colors.purpleAccent,
+                                  ),
+                                  ColoredBox(
+                                    color: Colors.blue,
+                                  ),
+                                  ColoredBox(
+                                    color: Colors.red,
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     )
                   ],
