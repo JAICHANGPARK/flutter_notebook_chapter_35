@@ -190,6 +190,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         padding: EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Container(
                               decoration: BoxDecoration(
@@ -199,20 +200,28 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 Icons.account_balance_wallet_outlined,
                               ),
                             ),
+                            Gap(12),
                             Text(
                               "ALL OPERATIONS",
                               style: TextStyle(
-                                color: Colors.grey,
+                                color: Colors.white,
                                 fontSize: 12,
                               ),
                             ),
                             Gap(12),
                             Text(
                               "Expenses in Dec, 2023",
-                              style: TextStyle(fontSize: 12, color: Colors.white.withOpacity(.6)),
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white.withOpacity(.6),
+                              ),
                             ),
                             Text(
                               "\$2,186.53",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
                             ),
                             Container(
                               height: 8,
