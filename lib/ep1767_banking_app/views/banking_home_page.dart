@@ -195,7 +195,9 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(.6),
+                                borderRadius: BorderRadius.circular(8)
                               ),
+                              padding: EdgeInsets.all(4),
                               child: Icon(
                                 Icons.account_balance_wallet_outlined,
                               ),
