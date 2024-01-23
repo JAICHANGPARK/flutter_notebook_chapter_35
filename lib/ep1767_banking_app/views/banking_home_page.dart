@@ -194,9 +194,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(.6),
-                                borderRadius: BorderRadius.circular(8)
-                              ),
+                                  color: Colors.white.withOpacity(.6), borderRadius: BorderRadius.circular(8)),
                               padding: EdgeInsets.all(4),
                               child: Icon(
                                 Icons.account_balance_wallet_outlined,
@@ -225,6 +223,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 color: Colors.white,
                               ),
                             ),
+                            Gap(6),
                             Container(
                               height: 8,
                               decoration: BoxDecoration(
