@@ -204,6 +204,28 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             Text(
                               "\$2,186.53",
                             ),
+                            Container(
+                              height: 12,
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                              ),
+                              child: Row(
+                                children: [
+                                  ColoredBox(
+                                    color: Colors.yellow,
+                                  ),
+                                  ColoredBox(
+                                    color: Colors.purpleAccent,
+                                  ),
+                                  ColoredBox(
+                                    color: Colors.blue,
+                                  ),
+                                  ColoredBox(
+                                    color: Colors.red,
+                                  ),
+                                ],
+                              ),
+                            )
                           ],
                         ),
                       ),
