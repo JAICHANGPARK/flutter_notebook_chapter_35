@@ -318,6 +318,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
             SizedBox(
               height: 120,
               child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 12),
                 decoration: BoxDecoration(
                   color: const Color.fromRGBO(29, 31, 39, 1),
                   borderRadius: BorderRadius.circular(16),
