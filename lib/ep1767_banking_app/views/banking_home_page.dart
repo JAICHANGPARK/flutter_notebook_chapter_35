@@ -79,63 +79,66 @@ class _BankingHomePageState extends State<BankingHomePage> {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "TOTAL BALANCE",
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 12
-                            ),
-                          ),
-                          Gap(8),
-                          Text(
-                            "\$13,370.96",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 28,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Gap(8),
-                          Row(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(.4),
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 4,
-                                  vertical: 4,
-                                ),
-                                child: Row(
-                                  children: [
-                                    Icon(
-                                      Icons.monetization_on_outlined,
-                                      size: 15,
-                                    ),
-                                    Text(
-                                      "\$39.33",
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Gap(8),
-                              Text(
-                                "Cashback saved",
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                ),
-                              ),
-                              Icon(
-                                Icons.keyboard_arrow_right,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "TOTAL BALANCE",
+                              style: TextStyle(
                                 color: Colors.grey,
-                              )
-                            ],
-                          )
-                        ],
+                                fontSize: 12
+                              ),
+                            ),
+                            Gap(8),
+                            Text(
+                              "\$13,370.96",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Gap(8),
+                            Row(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(.4),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 4,
+                                    vertical: 4,
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.monetization_on_outlined,
+                                        size: 15,
+                                      ),
+                                      Text(
+                                        "\$39.33",
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Gap(8),
+                                Text(
+                                  "Cashback saved",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                                Icon(
+                                  Icons.keyboard_arrow_right,
+                                  color: Colors.grey,
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(
@@ -149,6 +152,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             right: 0,
                             child: Container(
                               color: Colors.blue,
+                              
                             ),
                           ),
                           Positioned(
