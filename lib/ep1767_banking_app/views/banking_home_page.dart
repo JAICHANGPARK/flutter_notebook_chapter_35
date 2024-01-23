@@ -188,12 +188,18 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           borderRadius: BorderRadius.circular(16),
                         ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(.6),
                               ),
-                            )
+                              child: Icon(
+                                Icons.account_balance_wallet_outlined,
+                              ),
+                            ),
+                            Text("ALL OPERATIONS"),
+                            Text("Expenses in Dec, 2023"),
                           ],
                         ),
                       ),
