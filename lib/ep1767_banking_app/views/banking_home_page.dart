@@ -359,8 +359,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             child: Stack(
                               children: [
                                 Positioned(
+                                  right: 0,
+                                  bottom: 0,
                                   child: CircleAvatar(
                                     backgroundColor: Colors.pink,
+                                    radius: 8,
                                   ),
                                 )
                               ],
