@@ -359,8 +359,8 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             child: Stack(
                               children: [
                                 Positioned.fill(
-                                 left: 6,
-                                  bottom: 4,
+                                 right: 2,
+                                  bottom: 2,
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: Colors.orange,
