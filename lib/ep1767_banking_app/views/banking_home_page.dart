@@ -291,11 +291,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               ),
                             ),
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Color.fromRGBO(26, 46, 45, 1),
                               ),
-                              padding: EdgeInsets.symmetric(vertical: 6),
-                              child: Center(
+                              padding: const EdgeInsets.symmetric(vertical: 6),
+                              child: const Center(
                                 child: Text(
                                   "Next payment in 6 days",
                                   style: TextStyle(
@@ -318,7 +318,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
             SizedBox(
               height: 120,
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 decoration: BoxDecoration(
                   color: const Color.fromRGBO(29, 31, 39, 1),
                   borderRadius: BorderRadius.circular(16),
@@ -329,7 +329,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
             SizedBox(
               height: 160,
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 decoration: BoxDecoration(
                   color: const Color.fromRGBO(29, 31, 39, 1),
                   borderRadius: BorderRadius.circular(16),
