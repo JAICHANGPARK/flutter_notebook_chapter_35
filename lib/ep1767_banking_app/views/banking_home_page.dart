@@ -327,11 +327,16 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   children: [
                     Row(
                       children: [
-                        Text("QUICK MONEY TRANSFERS"),
-                        Text("SEE MORE",
-                        style: TextStyle(
-                          color: Colors.pink
-                        ),),
+                        Text(
+                          "QUICK MONEY TRANSFERS",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Text(
+                          "SEE MORE",
+                          style: TextStyle(color: Colors.pink),
+                        ),
                         Icon(
                           Icons.keyboard_arrow_right,
                           color: Colors.pink,
