@@ -478,8 +478,14 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             height: 64,
                             width: 64,
                             decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(.6),
+                              color: Colors.white.withOpacity(.4),
                               borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Center(
+                              child: Icon(
+                                Icons.add,
+                                color: Colors.white,
+                              ),
                             ),
                           )
                         ],
