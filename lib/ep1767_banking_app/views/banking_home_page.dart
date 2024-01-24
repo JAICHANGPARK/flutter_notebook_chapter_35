@@ -475,7 +475,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           ),
                           Gap(8),
                           Container(
-                            
+                            height: 64,
+                            width: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(.6),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
                           )
                         ],
                       ),
