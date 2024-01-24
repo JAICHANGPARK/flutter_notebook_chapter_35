@@ -323,6 +323,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   color: const Color.fromRGBO(29, 31, 39, 1),
                   borderRadius: BorderRadius.circular(16),
                 ),
+                padding: EdgeInsets.all(12),
                 child: Column(
                   children: [
                     Row(
@@ -333,10 +334,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             color: Colors.grey,
                           ),
                         ),
+                        Spacer(),
                         Text(
                           "SEE MORE",
                           style: TextStyle(color: Colors.pink),
                         ),
+                        Gap(4),
                         Icon(
                           Icons.keyboard_arrow_right,
                           color: Colors.pink,
