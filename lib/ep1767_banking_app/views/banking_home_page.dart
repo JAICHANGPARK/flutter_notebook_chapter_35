@@ -325,7 +325,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                 ),
                 child: Column(
                   children: [
-                    
+                    Row(
+                      children: [
+                        Text("QUICK MONEY TRANSFERS"),
+                        Text("SEE MORE")
+                      ],
+                    )
                   ],
                 ),
               ),
