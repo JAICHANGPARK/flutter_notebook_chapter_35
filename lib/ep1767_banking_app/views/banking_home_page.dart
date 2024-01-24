@@ -323,10 +323,10 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   color: const Color.fromRGBO(29, 31, 39, 1),
                   borderRadius: BorderRadius.circular(16),
                 ),
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 child: Column(
                   children: [
-                    Row(
+                    const Row(
                       children: [
                         Text(
                           "QUICK MONEY TRANSFERS",
@@ -346,6 +346,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         )
                       ],
                     ),
+                    const Gap(8),
                     Expanded(
                       child: Row(
                         children: [
@@ -359,16 +360,16 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             child: Stack(
                               children: [
                                 Positioned.fill(
-                                 right: 2,
+                                  right: 2,
                                   bottom: 2,
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: Colors.orange,
                                       borderRadius: BorderRadius.circular(4),
                                     ),
-                                  )
+                                  ),
                                 ),
-                                Positioned(
+                                const Positioned(
                                   right: 0,
                                   bottom: 0,
                                   child: CircleAvatar(
