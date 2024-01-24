@@ -544,8 +544,11 @@ class _BankingHomePageState extends State<BankingHomePage> {
                                 ],
                               ),
                               Text('\$1.3650'),
-                              Icon(Icons.arrow_upward),
+                              Icon(Icons.arrow_downward),
+
                               Text('\$1.3650'),
+                              Icon(Icons.arrow_upward),
+
                             ],
                           )
                         ],
