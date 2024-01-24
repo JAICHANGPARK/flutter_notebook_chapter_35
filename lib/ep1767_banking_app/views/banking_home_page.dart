@@ -345,6 +345,19 @@ class _BankingHomePageState extends State<BankingHomePage> {
                           color: Colors.pink,
                         )
                       ],
+                    ),
+                    Expanded(
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 64,
+                            width: 64,
+                            decoration: BoxDecoration(
+                              color: Colors.orange
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
