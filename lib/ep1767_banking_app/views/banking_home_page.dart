@@ -334,16 +334,16 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             color: Colors.white.withOpacity(.8),
                           ),
                         ),
-                        Spacer(),
-                        Text(
+                        const Spacer(),
+                        const Text(
                           "SEE MORE",
                           style: TextStyle(
                             color: Colors.pink,
                             fontSize: 12,
                           ),
                         ),
-                        Gap(4),
-                        Icon(
+                        const Gap(4),
+                        const Icon(
                           Icons.keyboard_arrow_right,
                           color: Colors.pink,
                           size: 18,
@@ -384,7 +384,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               ],
                             ),
                           ),
-                          Gap(8),
+                          const Gap(8),
                           Container(
                             height: 64,
                             width: 64,
@@ -415,7 +415,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               ],
                             ),
                           ),
-                          Gap(8),
+                          const Gap(8),
                           Container(
                             height: 64,
                             width: 64,
@@ -446,7 +446,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               ],
                             ),
                           ),
-                          Gap(8),
+                          const Gap(8),
                           Container(
                             height: 64,
                             width: 64,
@@ -477,7 +477,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               ],
                             ),
                           ),
-                          Gap(8),
+                          const Gap(8),
                           Container(
                             height: 64,
                             width: 64,
@@ -485,7 +485,7 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               color: Colors.white.withOpacity(.4),
                               borderRadius: BorderRadius.circular(12),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Icon(
                                 Icons.add,
                                 color: Colors.white,
@@ -508,30 +508,49 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   color: const Color.fromRGBO(29, 31, 39, 1),
                   borderRadius: BorderRadius.circular(16),
                 ),
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 child: Column(
                   children: [
-                    const Row(
+                    Row(
                       children: [
                         Text(
                           "EXCHANGE RATE",
                           style: TextStyle(
-                            color: Colors.grey,
+                            color: Colors.white.withOpacity(.8),
                           ),
                         ),
-                        Spacer(),
-                        Text(
+                        const Spacer(),
+                        const Text(
                           "SEE MORE",
                           style: TextStyle(color: Colors.pink),
                         ),
-                        Gap(4),
-                        Icon(
+                        const Gap(4),
+                        const Icon(
                           Icons.keyboard_arrow_right,
                           color: Colors.pink,
                         )
                       ],
                     ),
                     const Gap(12),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text("CAD"),
+                                  Text("Canadian Dollar"),
+                                ],
+                              ),
+                              Text('\$1.3650'),
+                              Icon(Icons.arrow_upward),
+                              Text('\$1.3650'),
+                            ],
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
