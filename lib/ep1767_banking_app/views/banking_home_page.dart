@@ -540,15 +540,30 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               Column(
                                 children: [
                                   Text("CAD"),
-                                  Text("Canadian Dollar"),
+                                  Text(
+                                    "Canadian Dollar",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
                                 ],
                               ),
-                              Text('\$1.3650'),
+                              Spacer(),
+                              Text(
+                                '\$1.3650',
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
                               Icon(Icons.arrow_downward),
-
-                              Text('\$1.3650'),
+                              Gap(24),
+                              Text(
+                                '\$1.3650',
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
                               Icon(Icons.arrow_upward),
-
                             ],
                           ),
                           Divider(),
@@ -557,15 +572,30 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               Column(
                                 children: [
                                   Text("CAD"),
-                                  Text("Canadian Dollar"),
+                                  Text(
+                                    "Canadian Dollar",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
                                 ],
                               ),
-                              Text('\$1.3650'),
+                              Spacer(),
+                              Text(
+                                '\$1.3650',
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
                               Icon(Icons.arrow_downward),
-
-                              Text('\$1.3650'),
+                              Gap(24),
+                              Text(
+                                '\$1.3650',
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
                               Icon(Icons.arrow_upward),
-
                             ],
                           ),
                         ],
