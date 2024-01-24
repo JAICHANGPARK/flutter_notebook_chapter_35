@@ -539,7 +539,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             children: [
                               Column(
                                 children: [
-                                  Text("CAD"),
+                                  Text(
+                                    "CAD",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                   Text(
                                     "Canadian Dollar",
                                     style: TextStyle(
@@ -571,7 +576,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             children: [
                               Column(
                                 children: [
-                                  Text("CAD"),
+                                  Text(
+                                    "CAD",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                   Text(
                                     "Canadian Dollar",
                                     style: TextStyle(
