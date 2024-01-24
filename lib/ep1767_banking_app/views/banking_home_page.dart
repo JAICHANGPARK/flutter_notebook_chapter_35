@@ -326,12 +326,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                 padding: const EdgeInsets.all(12),
                 child: Column(
                   children: [
-                    const Row(
+                    Row(
                       children: [
                         Text(
                           "QUICK MONEY TRANSFERS",
                           style: TextStyle(
-                            color: Colors.grey,
+                            color: Colors.white.withOpacity(.8),
                           ),
                         ),
                         Spacer(),
