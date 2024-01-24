@@ -550,7 +550,24 @@ class _BankingHomePageState extends State<BankingHomePage> {
                               Icon(Icons.arrow_upward),
 
                             ],
-                          )
+                          ),
+                          Divider(),
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text("CAD"),
+                                  Text("Canadian Dollar"),
+                                ],
+                              ),
+                              Text('\$1.3650'),
+                              Icon(Icons.arrow_downward),
+
+                              Text('\$1.3650'),
+                              Icon(Icons.arrow_upward),
+
+                            ],
+                          ),
                         ],
                       ),
                     )
