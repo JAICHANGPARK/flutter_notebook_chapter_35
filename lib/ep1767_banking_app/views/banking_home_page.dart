@@ -353,7 +353,17 @@ class _BankingHomePageState extends State<BankingHomePage> {
                             height: 64,
                             width: 64,
                             decoration: BoxDecoration(
-                              color: Colors.orange
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  child: CircleAvatar(
+                                    backgroundColor: Colors.pink,
+                                  ),
+                                )
+                              ],
                             ),
                           )
                         ],
