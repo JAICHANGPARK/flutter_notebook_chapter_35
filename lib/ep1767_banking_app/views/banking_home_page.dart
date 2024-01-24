@@ -504,6 +504,15 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   color: const Color.fromRGBO(29, 31, 39, 1),
                   borderRadius: BorderRadius.circular(16),
                 ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ],
