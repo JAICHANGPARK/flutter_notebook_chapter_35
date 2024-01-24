@@ -337,12 +337,16 @@ class _BankingHomePageState extends State<BankingHomePage> {
                         Spacer(),
                         Text(
                           "SEE MORE",
-                          style: TextStyle(color: Colors.pink),
+                          style: TextStyle(
+                            color: Colors.pink,
+                            fontSize: 12,
+                          ),
                         ),
                         Gap(4),
                         Icon(
                           Icons.keyboard_arrow_right,
                           color: Colors.pink,
+                          size: 18,
                         )
                       ],
                     ),
