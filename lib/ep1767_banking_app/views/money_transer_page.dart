@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 class MoneyTransferPage extends StatefulWidget {
@@ -54,7 +55,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 ],
               ),
             ),
-
+            DotsIndicator()
           ],
         ),
       ),
