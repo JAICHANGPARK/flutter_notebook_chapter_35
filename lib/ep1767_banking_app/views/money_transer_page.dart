@@ -13,10 +13,14 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(21, 23, 28, 1),
       appBar: AppBar(
-        title: Text("Money transfer",),
+        title: Text(
+          "Money transfer",
+        ),
+        centerTitle: true,
+        backgroundColor: const Color.fromRGBO(21, 23, 28, 1),
+        foregroundColor: Colors.white,
       ),
       body: SafeArea(
-
         child: Column(
           children: [],
         ),
