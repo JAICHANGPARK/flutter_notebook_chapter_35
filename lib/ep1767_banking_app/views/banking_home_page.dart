@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_35/ep1767_banking_app/views/money_transer_page.dart';
 import 'package:gap/gap.dart';
 
 class BankingHomePage extends StatefulWidget {
@@ -315,187 +316,198 @@ class _BankingHomePageState extends State<BankingHomePage> {
               ),
             ),
             const Gap(16),
-            SizedBox(
-              height: 120,
-              child: Container(
-                margin: const EdgeInsets.symmetric(horizontal: 12),
-                decoration: BoxDecoration(
-                  color: const Color.fromRGBO(29, 31, 39, 1),
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                padding: const EdgeInsets.all(12),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Text(
-                          "QUICK MONEY TRANSFERS",
-                          style: TextStyle(
-                            color: Colors.white.withOpacity(.8),
-                          ),
-                        ),
-                        const Spacer(),
-                        const Text(
-                          "SEE MORE",
-                          style: TextStyle(
-                            color: Colors.pink,
-                            fontSize: 12,
-                          ),
-                        ),
-                        const Gap(4),
-                        const Icon(
-                          Icons.keyboard_arrow_right,
-                          color: Colors.pink,
-                          size: 18,
-                        )
-                      ],
-                    ),
-                    const Gap(12),
-                    Expanded(
-                      child: Row(
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return MoneyTransferPage();
+                    },
+                  ),
+                );
+              },
+              child: SizedBox(
+                height: 120,
+                child: Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 12),
+                  decoration: BoxDecoration(
+                    color: const Color.fromRGBO(29, 31, 39, 1),
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    children: [
+                      Row(
                         children: [
-                          Container(
-                            height: 64,
-                            width: 64,
-                            // decoration: BoxDecoration(
-                            //   color: Colors.orange,
-                            //   borderRadius: BorderRadius.circular(4),
-                            // ),
-                            child: Stack(
-                              children: [
-                                Positioned.fill(
-                                  right: 2,
-                                  bottom: 2,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.orange,
-                                      borderRadius: BorderRadius.circular(4),
-                                    ),
-                                  ),
-                                ),
-                                const Positioned(
-                                  right: 0,
-                                  bottom: 0,
-                                  child: CircleAvatar(
-                                    backgroundColor: Colors.pink,
-                                    radius: 6,
-                                  ),
-                                )
-                              ],
+                          Text(
+                            "QUICK MONEY TRANSFERS",
+                            style: TextStyle(
+                              color: Colors.white.withOpacity(.8),
                             ),
                           ),
-                          const Gap(8),
-                          Container(
-                            height: 64,
-                            width: 64,
-                            // decoration: BoxDecoration(
-                            //   color: Colors.orange,
-                            //   borderRadius: BorderRadius.circular(4),
-                            // ),
-                            child: Stack(
-                              children: [
-                                Positioned.fill(
-                                  right: 2,
-                                  bottom: 2,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.orange,
-                                      borderRadius: BorderRadius.circular(4),
-                                    ),
-                                  ),
-                                ),
-                                const Positioned(
-                                  right: 0,
-                                  bottom: 0,
-                                  child: CircleAvatar(
-                                    backgroundColor: Colors.pink,
-                                    radius: 6,
-                                  ),
-                                )
-                              ],
+                          const Spacer(),
+                          const Text(
+                            "SEE MORE",
+                            style: TextStyle(
+                              color: Colors.pink,
+                              fontSize: 12,
                             ),
                           ),
-                          const Gap(8),
-                          Container(
-                            height: 64,
-                            width: 64,
-                            // decoration: BoxDecoration(
-                            //   color: Colors.orange,
-                            //   borderRadius: BorderRadius.circular(4),
-                            // ),
-                            child: Stack(
-                              children: [
-                                Positioned.fill(
-                                  right: 2,
-                                  bottom: 2,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.orange,
-                                      borderRadius: BorderRadius.circular(4),
-                                    ),
-                                  ),
-                                ),
-                                const Positioned(
-                                  right: 0,
-                                  bottom: 0,
-                                  child: CircleAvatar(
-                                    backgroundColor: Colors.pink,
-                                    radius: 6,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                          const Gap(8),
-                          Container(
-                            height: 64,
-                            width: 64,
-                            // decoration: BoxDecoration(
-                            //   color: Colors.orange,
-                            //   borderRadius: BorderRadius.circular(4),
-                            // ),
-                            child: Stack(
-                              children: [
-                                Positioned.fill(
-                                  right: 2,
-                                  bottom: 2,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.orange,
-                                      borderRadius: BorderRadius.circular(4),
-                                    ),
-                                  ),
-                                ),
-                                const Positioned(
-                                  right: 0,
-                                  bottom: 0,
-                                  child: CircleAvatar(
-                                    backgroundColor: Colors.pink,
-                                    radius: 6,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                          const Gap(8),
-                          Container(
-                            height: 64,
-                            width: 64,
-                            decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(.4),
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: const Center(
-                              child: Icon(
-                                Icons.add,
-                                color: Colors.white,
-                              ),
-                            ),
+                          const Gap(4),
+                          const Icon(
+                            Icons.keyboard_arrow_right,
+                            color: Colors.pink,
+                            size: 18,
                           )
                         ],
                       ),
-                    )
-                  ],
+                      const Gap(12),
+                      Expanded(
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              // decoration: BoxDecoration(
+                              //   color: Colors.orange,
+                              //   borderRadius: BorderRadius.circular(4),
+                              // ),
+                              child: Stack(
+                                children: [
+                                  Positioned.fill(
+                                    right: 2,
+                                    bottom: 2,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    ),
+                                  ),
+                                  const Positioned(
+                                    right: 0,
+                                    bottom: 0,
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.pink,
+                                      radius: 6,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            const Gap(8),
+                            Container(
+                              height: 64,
+                              width: 64,
+                              // decoration: BoxDecoration(
+                              //   color: Colors.orange,
+                              //   borderRadius: BorderRadius.circular(4),
+                              // ),
+                              child: Stack(
+                                children: [
+                                  Positioned.fill(
+                                    right: 2,
+                                    bottom: 2,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    ),
+                                  ),
+                                  const Positioned(
+                                    right: 0,
+                                    bottom: 0,
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.pink,
+                                      radius: 6,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            const Gap(8),
+                            Container(
+                              height: 64,
+                              width: 64,
+                              // decoration: BoxDecoration(
+                              //   color: Colors.orange,
+                              //   borderRadius: BorderRadius.circular(4),
+                              // ),
+                              child: Stack(
+                                children: [
+                                  Positioned.fill(
+                                    right: 2,
+                                    bottom: 2,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    ),
+                                  ),
+                                  const Positioned(
+                                    right: 0,
+                                    bottom: 0,
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.pink,
+                                      radius: 6,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            const Gap(8),
+                            Container(
+                              height: 64,
+                              width: 64,
+                              // decoration: BoxDecoration(
+                              //   color: Colors.orange,
+                              //   borderRadius: BorderRadius.circular(4),
+                              // ),
+                              child: Stack(
+                                children: [
+                                  Positioned.fill(
+                                    right: 2,
+                                    bottom: 2,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    ),
+                                  ),
+                                  const Positioned(
+                                    right: 0,
+                                    bottom: 0,
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.pink,
+                                      radius: 6,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            const Gap(8),
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(.4),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: const Center(
+                                child: Icon(
+                                  Icons.add,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
