@@ -8,6 +8,14 @@ class MoneyTransferPage extends StatefulWidget {
 }
 
 class _MoneyTransferPageState extends State<MoneyTransferPage> {
+  PageController pageController = PageController(initialPage: 0, viewportFraction: 0.8);
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +30,31 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
       ),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            SizedBox(
+              height: 100,
+              child: PageView(
+                controller: pageController,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
