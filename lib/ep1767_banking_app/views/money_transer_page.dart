@@ -11,7 +11,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: const Color.fromRGBO(21, 23, 28, 1),
       appBar: AppBar(
         title: Text("Money transfer",),
       ),
