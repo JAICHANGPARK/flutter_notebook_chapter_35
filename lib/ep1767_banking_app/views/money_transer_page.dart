@@ -70,6 +70,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
               children: [
                 Expanded(
                     child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     TextField(),
                     Row(
@@ -97,6 +98,23 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                   ),
                 )
               ],
+            ),
+            Expanded(
+              child: Container(
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 52,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container();
+                        },
+                      ),
+                    )
+                  ],
+                ),
+              ),
             )
           ],
         ),
