@@ -11,7 +11,12 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      appBar: AppBar(
+        title: Text("Money transfer",),
+      ),
       body: SafeArea(
+
         child: Column(
           children: [],
         ),
