@@ -639,7 +639,12 @@ class _BankingHomePageState extends State<BankingHomePage> {
                   ),
                   CircleAvatar(
                     radius: 3,
-                    backgroundColor: Color.fromRGBO(229, 76, 112, 1),
+                    backgroundColor: Color.fromRGBO(
+                      229,
+                      76,
+                      112,
+                      1,
+                    ),
                   ),
                 ],
               ),
