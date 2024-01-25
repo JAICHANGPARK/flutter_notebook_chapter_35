@@ -54,6 +54,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 ],
               ),
             ),
+
           ],
         ),
       ),
