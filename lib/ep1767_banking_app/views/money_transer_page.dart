@@ -111,7 +111,11 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                           return Container();
                         },
                       ),
-                    )
+                    ),
+                    Divider(),
+                    Expanded(
+                      child: Placeholder(),
+                    ),
                   ],
                 ),
               ),
