@@ -68,7 +68,21 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
             ),
             Row(
               children: [
-                Column(),
+                Expanded(
+                    child: Column(
+                  children: [
+                    TextField(),
+                    Row(
+                      children: [
+                        Text('No commission'),
+                        Icon(
+                          Icons.info_outline,
+                          size: 14,
+                        )
+                      ],
+                    )
+                  ],
+                )),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.pinkAccent,
