@@ -55,7 +55,35 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 ],
               ),
             ),
-            DotsIndicator()
+            DotsIndicator(
+              dotsCount: 3,
+              position: pageController.page?.toInt() ?? 0,
+            ),
+            Container(
+              height: 100,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(16),
+              ),
+            ),
+            Row(
+              children: [
+                Column(),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.pinkAccent,
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Send money",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
