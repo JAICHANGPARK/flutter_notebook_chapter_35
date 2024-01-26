@@ -11,7 +11,7 @@ class MoneyTransferPage extends StatefulWidget {
 class _MoneyTransferPageState extends State<MoneyTransferPage> {
   PageController? pageController;
 
-  
+  var currentPageIndex = 0;
 
   @override
   void initState() {
@@ -39,6 +39,11 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
               height: 100,
               child: PageView(
                 controller: pageController,
+                onPageChanged: (idx) {
+                  setState(() {
+                    currentPageIndex = idx;
+                  });
+                },
                 children: [
                   Container(
                     decoration: BoxDecoration(
