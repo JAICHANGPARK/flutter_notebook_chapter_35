@@ -112,46 +112,63 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
               ],
             ),
             Expanded(
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 52,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(.7),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                          margin: EdgeInsets.only(right: 4),
-                          child: Text("\$${50 * (index + 1)}"),
-                        );
-                      },
-                    ),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
                   ),
-                  Divider(),
-                  Expanded(
-                    child: GridView.count(
-                      crossAxisCount: 3,
-                      children: [
-                        Text("1"),
-                        Text("2"),
-                        Text("3"),
-                        Text("4"),
-                        Text("5"),
-                        Text("6"),
-                        Text("7"),
-                        Text("8"),
-                        Text("9"),
-                        Text("."),
-                        Text("0"),
-                        Icon(Icons.clear),
-                      ],
+                ),
+                child: Column(
+                  children: [
+                    Center(
+                      child: Container(
+                        height: 4,
+                        width: 42,
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(.7),
+                        ),
+                      ),
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      height: 52,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(.7),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                            margin: EdgeInsets.only(right: 4),
+                            child: Text("\$${50 * (index + 1)}"),
+                          );
+                        },
+                      ),
+                    ),
+                    Divider(),
+                    Expanded(
+                      child: GridView.count(
+                        crossAxisCount: 3,
+                        children: [
+                          Text("1"),
+                          Text("2"),
+                          Text("3"),
+                          Text("4"),
+                          Text("5"),
+                          Text("6"),
+                          Text("7"),
+                          Text("8"),
+                          Text("9"),
+                          Text("."),
+                          Text("0"),
+                          Icon(Icons.clear),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             )
           ],
