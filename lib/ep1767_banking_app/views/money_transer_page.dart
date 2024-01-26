@@ -65,7 +65,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
             ),
             DotsIndicator(
               dotsCount: 3,
-              position: 0,
+              position: currentPageIndex,
             ),
             Container(
               height: 100,
@@ -80,7 +80,9 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TextField(),
+                    Expanded(
+                      child: TextField(),
+                    ),
                     Row(
                       children: [
                         Text('No commission'),
@@ -96,11 +98,13 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                   decoration: BoxDecoration(
                     color: Colors.pinkAccent,
                   ),
+                  padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
                   child: Center(
                     child: Text(
                       "Send money",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        color: Colors.white,
                       ),
                     ),
                   ),
