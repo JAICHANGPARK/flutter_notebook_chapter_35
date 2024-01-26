@@ -236,7 +236,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                         padding: const EdgeInsets.all(24.0),
                         child: GridView.count(
                           crossAxisCount: 3,
-                          childAspectRatio: 2,
+                          childAspectRatio: 1.8,
                           children: [
                             Center(
                               child: const Text(
