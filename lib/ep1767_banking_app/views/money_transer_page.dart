@@ -118,7 +118,9 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
                   ),
+                  
                 ),
+
                 child: Column(
                   children: [
                     Center(
