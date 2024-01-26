@@ -80,9 +80,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(
-                      child: TextField(),
-                    ),
+                    TextField(),
                     Row(
                       children: [
                         Text('No commission'),
@@ -98,7 +96,10 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                   decoration: const BoxDecoration(
                     color: Colors.pinkAccent,
                   ),
-                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 8,
+                  ),
                   child: const Center(
                     child: Text(
                       "Send money",
