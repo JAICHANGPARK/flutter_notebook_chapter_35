@@ -181,6 +181,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 ],
               ),
             ),
+            Gap(16),
             Expanded(
               child: Container(
                 decoration: const BoxDecoration(
@@ -192,17 +193,17 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 ),
                 child: Column(
                   children: [
-                    Gap(8),
+                    Gap(12),
                     Center(
                       child: Container(
-                        height: 4,
-                        width: 42,
+                        height: 3,
+                        width: 32,
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(.7),
                         ),
                       ),
                     ),
-                    Gap(8),
+                    Gap(12),
                     Container(
                       height: 28,
                       padding: EdgeInsets.only(left: 16),
@@ -231,22 +232,62 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     ),
                     const Divider(),
                     Expanded(
-                      child: GridView.count(
-                        crossAxisCount: 3,
-                        children: [
-                          const Text("1"),
-                          const Text("2"),
-                          const Text("3"),
-                          const Text("4"),
-                          const Text("5"),
-                          const Text("6"),
-                          const Text("7"),
-                          const Text("8"),
-                          const Text("9"),
-                          const Text("."),
-                          const Text("0"),
-                          const Icon(Icons.clear),
-                        ],
+                      child: Center(
+                        child: GridView.count(
+                          crossAxisCount: 3,
+                          childAspectRatio:2,
+                          children: [
+                            Center(
+                              child: const Text(
+                                "1",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                            const Text("2",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            const Text("3",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            const Text("4",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            const Text("5",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            const Text("6",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            const Text("7",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            const Text("8",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            const Text("9",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            const Text(".",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            const Text("0",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),),
+                            const Icon(Icons.clear),
+                          ],
+                        ),
                       ),
                     ),
                   ],
