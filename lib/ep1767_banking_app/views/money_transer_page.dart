@@ -232,62 +232,60 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     ),
                     const Divider(),
                     Expanded(
-                      child: Center(
-                        child: GridView.count(
-                          crossAxisCount: 3,
-                          childAspectRatio:2,
-                          children: [
-                            Center(
-                              child: const Text(
-                                "1",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
+                      child: GridView.count(
+                        crossAxisCount: 3,
+                        childAspectRatio:2,
+                        children: [
+                          Center(
+                            child: const Text(
+                              "1",
+                              style: TextStyle(
+                                color: Colors.white,
                               ),
                             ),
-                            const Text("2",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            const Text("3",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            const Text("4",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            const Text("5",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            const Text("6",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            const Text("7",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            const Text("8",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            const Text("9",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            const Text(".",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            const Text("0",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            const Icon(Icons.clear),
-                          ],
-                        ),
+                          ),
+                          const Text("2",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          const Text("3",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          const Text("4",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          const Text("5",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          const Text("6",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          const Text("7",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          const Text("8",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          const Text("9",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          const Text(".",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          const Text("0",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),),
+                          const Icon(Icons.clear),
+                        ],
                       ),
                     ),
                   ],
