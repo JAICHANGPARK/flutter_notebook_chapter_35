@@ -232,127 +232,130 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     ),
                     const Divider(),
                     Expanded(
-                      child: GridView.count(
-                        crossAxisCount: 3,
-                        childAspectRatio: 2,
-                        children: [
-                          Center(
-                            child: const Text(
-                              "1",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                      child: Padding(
+                        padding: const EdgeInsets.all(24.0),
+                        child: GridView.count(
+                          crossAxisCount: 3,
+                          childAspectRatio: 2,
+                          children: [
+                            Center(
+                              child: const Text(
+                                "1",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Text(
-                              "2",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                            Center(
+                              child: const Text(
+                                "2",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Text(
-                              "3",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                            Center(
+                              child: const Text(
+                                "3",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Text(
-                              "4",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                            Center(
+                              child: const Text(
+                                "4",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Text(
-                              "5",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                            Center(
+                              child: const Text(
+                                "5",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Text(
-                              "6",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                            Center(
+                              child: const Text(
+                                "6",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Text(
-                              "7",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                            Center(
+                              child: const Text(
+                                "7",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Text(
-                              "8",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                            Center(
+                              child: const Text(
+                                "8",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Text(
-                              "9",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                            Center(
+                              child: const Text(
+                                "9",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Text(
-                              ".",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                            Center(
+                              child: const Text(
+                                ".",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Text(
-                              "0",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                            Center(
+                              child: const Text(
+                                "0",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: const Icon(
-                              Icons.clear,
-                              color: Colors.white,
+                            Center(
+                              child: const Icon(
+                                Icons.clear,
+                                color: Colors.white,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ],
