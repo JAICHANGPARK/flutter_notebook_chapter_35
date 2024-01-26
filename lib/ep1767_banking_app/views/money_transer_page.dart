@@ -88,6 +88,16 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     decoration: BoxDecoration(
                       color: Colors.pink,
                     ),
+                  ),
+                  Expanded(
+                    child: ListTile(
+                      title: Text("Dream Walker"),
+                      subtitle: Row(
+                        children: [
+                          Text("VISA"),
+                        ],
+                      ),
+                    ),
                   )
                 ],
               ),
