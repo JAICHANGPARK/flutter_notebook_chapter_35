@@ -74,10 +74,22 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
             ),
             Gap(4),
             Container(
-              height: 100,
+              height: 82,
+              margin: EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Color.fromRGBO(29, 31, 39, 1),
                 borderRadius: BorderRadius.circular(16),
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    height: 64,
+                    width: 64,
+                    decoration: BoxDecoration(
+                      color: Colors.pink,
+                    ),
+                  )
+                ],
               ),
             ),
             Row(
