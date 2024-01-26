@@ -108,24 +108,38 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
               ],
             ),
             Expanded(
-              child: Container(
-                child: Column(
-                  children: [
-                    SizedBox(
-                      height: 52,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          return Container();
-                        },
-                      ),
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 52,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container();
+                      },
                     ),
-                    Divider(),
-                    Expanded(
-                      child: Placeholder(),
+                  ),
+                  Divider(),
+                  Expanded(
+                    child: GridView.count(
+                      crossAxisCount: 3,
+                      children: [
+                        Text("1"),
+                        Text("2"),
+                        Text("3"),
+                        Text("4"),
+                        Text("5"),
+                        Text("6"),
+                        Text("7"),
+                        Text("8"),
+                        Text("9"),
+                        Text("."),
+                        Text("0"),
+                        Icon(Icons.clear),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             )
           ],
