@@ -190,7 +190,6 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                   ),
                   color: Color.fromRGBO(29, 31, 39, 1),
                 ),
-
                 child: Column(
                   children: [
                     Gap(8),
@@ -211,12 +210,20 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                         itemBuilder: (context, index) {
                           return Container(
                             decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(.7),
+                              color: Colors.white.withOpacity(.3),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
                             margin: const EdgeInsets.only(right: 4),
-                            child: Center(child: Text("\$${50 * (index + 1)}")),
+                            child: Center(
+                              child: Text(
+                                "\$${50 * (index + 1)}",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ),
                           );
                         },
                       ),
