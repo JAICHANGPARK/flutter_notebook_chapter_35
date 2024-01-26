@@ -241,6 +241,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               "1",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
@@ -249,6 +251,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               "2",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
@@ -257,6 +261,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               "3",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
@@ -265,6 +271,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               "4",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
@@ -273,6 +281,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               "5",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
@@ -281,6 +291,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               "6",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
@@ -289,6 +301,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               "7",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
@@ -297,6 +311,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               "8",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
@@ -305,6 +321,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               "9",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
@@ -313,6 +331,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               ".",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
@@ -321,6 +341,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               "0",
                               style: TextStyle(
                                 color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
                             ),
                           ),
