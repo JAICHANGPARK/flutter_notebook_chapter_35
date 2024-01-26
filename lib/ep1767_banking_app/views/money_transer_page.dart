@@ -25,7 +25,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(21, 23, 28, 1),
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Money transfer",
         ),
         centerTitle: true,
@@ -46,17 +46,17 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 },
                 children: [
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.blue,
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.red,
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.orange,
                     ),
                   )
@@ -76,7 +76,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
             ),
             Row(
               children: [
-                Expanded(
+                const Expanded(
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -95,11 +95,11 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                   ],
                 )),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.pinkAccent,
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-                  child: Center(
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                  child: const Center(
                     child: Text(
                       "Send money",
                       style: TextStyle(
@@ -113,14 +113,13 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
             ),
             Expanded(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
                   ),
-                  
+                  color: Color.fromRGBO(29, 31, 39, 1),
                 ),
-
                 child: Column(
                   children: [
                     Center(
@@ -142,30 +141,30 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               color: Colors.white.withOpacity(.7),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                            margin: EdgeInsets.only(right: 4),
+                            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                            margin: const EdgeInsets.only(right: 4),
                             child: Text("\$${50 * (index + 1)}"),
                           );
                         },
                       ),
                     ),
-                    Divider(),
+                    const Divider(),
                     Expanded(
                       child: GridView.count(
                         crossAxisCount: 3,
                         children: [
-                          Text("1"),
-                          Text("2"),
-                          Text("3"),
-                          Text("4"),
-                          Text("5"),
-                          Text("6"),
-                          Text("7"),
-                          Text("8"),
-                          Text("9"),
-                          Text("."),
-                          Text("0"),
-                          Icon(Icons.clear),
+                          const Text("1"),
+                          const Text("2"),
+                          const Text("3"),
+                          const Text("4"),
+                          const Text("5"),
+                          const Text("6"),
+                          const Text("7"),
+                          const Text("8"),
+                          const Text("9"),
+                          const Text("."),
+                          const Text("0"),
+                          const Icon(Icons.clear),
                         ],
                       ),
                     ),
