@@ -135,12 +135,20 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                           color: Colors.white,
                         ),
                       ),
+                      Gap(9),
                       Row(
                         children: [
-                          Text('No commission'),
+                          Text(
+                            'No commission',
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          Gap(4),
                           Icon(
                             Icons.info_outline,
                             size: 14,
+                            color: Colors.grey,
                           )
                         ],
                       )
