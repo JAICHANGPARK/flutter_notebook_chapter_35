@@ -9,12 +9,15 @@ class MoneyTransferPage extends StatefulWidget {
 }
 
 class _MoneyTransferPageState extends State<MoneyTransferPage> {
-  PageController pageController = PageController(initialPage: 0, viewportFraction: 0.8);
+  PageController? pageController;
+
+  
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
+    pageController = PageController(initialPage: 0, viewportFraction: 0.8);
   }
 
   @override
@@ -57,7 +60,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
             ),
             DotsIndicator(
               dotsCount: 3,
-              position: pageController.page?.toInt() ?? 0,
+              position: 0,
             ),
             Container(
               height: 100,
