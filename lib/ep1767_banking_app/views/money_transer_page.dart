@@ -47,22 +47,23 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 },
                 children: [
                   Container(
-                    decoration:  BoxDecoration(
+                    decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     margin: EdgeInsets.symmetric(horizontal: 8),
                   ),
                   Container(
-                    decoration:  BoxDecoration(
+                    decoration: BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     margin: EdgeInsets.symmetric(horizontal: 8),
                   ),
                   Container(
-                    decoration:  BoxDecoration(
+                    decoration: BoxDecoration(
                       color: Colors.orange,
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     margin: EdgeInsets.symmetric(horizontal: 8),
                   )
@@ -118,13 +119,21 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 ],
               ),
             ),
+            Gap(64),
             Row(
               children: [
                 const Expanded(
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TextField(),
+                    TextField(
+
+                      decoration: InputDecoration(),
+                      style: TextStyle(
+                        fontSize: 24,
+                        color: Colors.white,
+                      ),
+                    ),
                     Row(
                       children: [
                         Text('No commission'),
