@@ -148,12 +148,13 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                   )),
                   Gap(16),
                   Container(
-                    decoration: const BoxDecoration(
+                    decoration: BoxDecoration(
                       color: Colors.pinkAccent,
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 24,
-                      vertical: 8,
+                      horizontal: 32,
+                      vertical: 12,
                     ),
                     child: const Center(
                       child: Text(
