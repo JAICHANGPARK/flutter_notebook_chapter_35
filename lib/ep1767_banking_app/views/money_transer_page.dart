@@ -129,7 +129,9 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TextField(
-                        decoration: InputDecoration(),
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                        ),
                         cursorColor: Colors.pink,
                         cursorHeight: 32,
                         style: TextStyle(
