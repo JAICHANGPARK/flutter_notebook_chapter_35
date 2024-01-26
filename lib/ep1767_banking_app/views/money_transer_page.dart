@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
 
 class MoneyTransferPage extends StatefulWidget {
@@ -124,7 +125,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
-                  const Expanded(
+                  Expanded(
                       child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -132,6 +133,9 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                         decoration: InputDecoration(
                           border: InputBorder.none,
                         ),
+                        inputFormatters: [
+                          FilteringTextInputFormatter.digitsOnly,
+                        ],
                         cursorColor: Colors.pink,
                         cursorHeight: 32,
                         style: TextStyle(
