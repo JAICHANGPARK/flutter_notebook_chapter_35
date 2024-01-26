@@ -92,9 +92,20 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                   Expanded(
                     child: ListTile(
                       title: Text("Dream Walker"),
+                      titleTextStyle: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                      ),
                       subtitle: Row(
                         children: [
-                          Text("VISA"),
+                          Text(
+                            "VISA",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12,
+                            ),
+                          ),
+                          Text("** 0012"),
                         ],
                       ),
                     ),
