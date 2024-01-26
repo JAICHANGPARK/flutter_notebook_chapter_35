@@ -190,8 +190,10 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                   ),
                   color: Color.fromRGBO(29, 31, 39, 1),
                 ),
+
                 child: Column(
                   children: [
+                    Gap(8),
                     Center(
                       child: Container(
                         height: 4,
@@ -201,8 +203,9 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                         ),
                       ),
                     ),
+                    Gap(8),
                     SizedBox(
-                      height: 52,
+                      height: 32,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -213,7 +216,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                             ),
                             padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                             margin: const EdgeInsets.only(right: 4),
-                            child: Text("\$${50 * (index + 1)}"),
+                            child: Center(child: Text("\$${50 * (index + 1)}")),
                           );
                         },
                       ),
