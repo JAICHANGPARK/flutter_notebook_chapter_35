@@ -119,7 +119,14 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Container();
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.7),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                          child: Text("\$${50 * (index + 1)}"),
+                        );
                       },
                     ),
                   ),
