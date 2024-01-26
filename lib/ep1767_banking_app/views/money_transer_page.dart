@@ -52,36 +52,36 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    margin: EdgeInsets.symmetric(horizontal: 8),
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
                   ),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    margin: EdgeInsets.symmetric(horizontal: 8),
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
                   ),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.orange,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    margin: EdgeInsets.symmetric(horizontal: 8),
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
                   )
                 ],
               ),
             ),
-            Gap(4),
+            const Gap(4),
             DotsIndicator(
               dotsCount: 3,
               position: currentPageIndex,
             ),
-            Gap(4),
+            const Gap(4),
             Container(
               height: 82,
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
-                color: Color.fromRGBO(29, 31, 39, 1),
+                color: const Color.fromRGBO(29, 31, 39, 1),
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Row(
@@ -89,11 +89,11 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                   Container(
                     height: 64,
                     width: 64,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.pink,
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: ListTile(
                       title: Text("Dream Walker"),
                       titleTextStyle: TextStyle(
@@ -120,7 +120,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 ],
               ),
             ),
-            Gap(64),
+            const Gap(64),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
@@ -130,21 +130,22 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TextField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           border: InputBorder.none,
                         ),
+                        keyboardType: TextInputType.number,
                         inputFormatters: [
                           FilteringTextInputFormatter.digitsOnly,
                         ],
                         cursorColor: Colors.pink,
                         cursorHeight: 32,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 24,
                           color: Colors.white,
                         ),
                       ),
-                      Gap(9),
-                      Row(
+                      const Gap(9),
+                      const Row(
                         children: [
                           Text(
                             'No commission',
@@ -162,7 +163,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                       )
                     ],
                   )),
-                  Gap(16),
+                  const Gap(16),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.pinkAccent,
@@ -185,7 +186,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 ],
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Expanded(
               child: Container(
                 decoration: const BoxDecoration(
@@ -197,7 +198,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                 ),
                 child: Column(
                   children: [
-                    Gap(12),
+                    const Gap(12),
                     Center(
                       child: Container(
                         height: 3,
@@ -207,10 +208,10 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                         ),
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                     Container(
                       height: 28,
-                      padding: EdgeInsets.only(left: 16),
+                      padding: const EdgeInsets.only(left: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -224,7 +225,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                             child: Center(
                               child: Text(
                                 "\$${50 * (index + 1)}",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
                                 ),
@@ -242,8 +243,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                           crossAxisCount: 3,
                           childAspectRatio: 1.8,
                           children: [
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 "1",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -252,8 +253,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 "2",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -262,8 +263,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 "3",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -272,8 +273,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 "4",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -282,8 +283,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 "5",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -292,8 +293,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 "6",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -302,8 +303,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 "7",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -312,8 +313,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 "8",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -322,8 +323,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 "9",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -332,8 +333,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 ".",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -342,8 +343,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Text(
+                            const Center(
+                              child: Text(
                                 "0",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -352,8 +353,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                                 ),
                               ),
                             ),
-                            Center(
-                              child: const Icon(
+                            const Center(
+                              child: Icon(
                                 Icons.clear,
                                 color: Colors.white,
                               ),
