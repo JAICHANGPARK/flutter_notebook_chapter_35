@@ -125,6 +125,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                          margin: EdgeInsets.only(right: 4),
                           child: Text("\$${50 * (index + 1)}"),
                         );
                       },
