@@ -120,50 +120,53 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
               ),
             ),
             Gap(64),
-            Row(
-              children: [
-                const Expanded(
-                    child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    TextField(
-
-                      decoration: InputDecoration(),
-                      style: TextStyle(
-                        fontSize: 24,
-                        color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  const Expanded(
+                      child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      TextField(
+                        decoration: InputDecoration(),
+                        style: TextStyle(
+                          fontSize: 24,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Text('No commission'),
+                          Icon(
+                            Icons.info_outline,
+                            size: 14,
+                          )
+                        ],
+                      )
+                    ],
+                  )),
+                  Gap(16),
+                  Container(
+                    decoration: const BoxDecoration(
+                      color: Colors.pinkAccent,
+                    ),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 24,
+                      vertical: 8,
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "Send money",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
-                    Row(
-                      children: [
-                        Text('No commission'),
-                        Icon(
-                          Icons.info_outline,
-                          size: 14,
-                        )
-                      ],
-                    )
-                  ],
-                )),
-                Container(
-                  decoration: const BoxDecoration(
-                    color: Colors.pinkAccent,
-                  ),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
-                    vertical: 8,
-                  ),
-                  child: const Center(
-                    child: Text(
-                      "Send money",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
             Expanded(
               child: Container(
