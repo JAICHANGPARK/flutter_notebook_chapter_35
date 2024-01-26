@@ -130,6 +130,8 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     children: [
                       TextField(
                         decoration: InputDecoration(),
+                        cursorColor: Colors.pink,
+                        cursorHeight: 32,
                         style: TextStyle(
                           fontSize: 24,
                           color: Colors.white,
