@@ -203,8 +203,9 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                       ),
                     ),
                     Gap(8),
-                    SizedBox(
-                      height: 32,
+                    Container(
+                      height: 28,
+                      padding: EdgeInsets.only(left: 16),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -214,7 +215,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                            margin: const EdgeInsets.only(right: 4),
+                            margin: const EdgeInsets.only(right: 8),
                             child: Center(
                               child: Text(
                                 "\$${50 * (index + 1)}",
