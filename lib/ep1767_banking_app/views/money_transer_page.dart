@@ -1,5 +1,6 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MoneyTransferPage extends StatefulWidget {
   const MoneyTransferPage({super.key});
@@ -17,7 +18,7 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    pageController = PageController(initialPage: 0, viewportFraction: 0.8);
+    pageController = PageController(initialPage: 1, viewportFraction: 0.8);
   }
 
   @override
@@ -49,24 +50,29 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                     decoration: const BoxDecoration(
                       color: Colors.blue,
                     ),
+                    margin: EdgeInsets.symmetric(horizontal: 8),
                   ),
                   Container(
                     decoration: const BoxDecoration(
                       color: Colors.red,
                     ),
+                    margin: EdgeInsets.symmetric(horizontal: 8),
                   ),
                   Container(
                     decoration: const BoxDecoration(
                       color: Colors.orange,
                     ),
+                    margin: EdgeInsets.symmetric(horizontal: 8),
                   )
                 ],
               ),
             ),
+            Gap(4),
             DotsIndicator(
               dotsCount: 3,
               position: currentPageIndex,
             ),
+            Gap(4),
             Container(
               height: 100,
               decoration: BoxDecoration(
