@@ -105,9 +105,12 @@ class _MoneyTransferPageState extends State<MoneyTransferPage> {
                               fontSize: 12,
                             ),
                           ),
+                          Gap(4),
                           Text("** 0012"),
                         ],
                       ),
+                      trailing: Icon(Icons.arrow_drop_down_outlined),
+                      iconColor: Colors.white,
                     ),
                   )
                 ],
