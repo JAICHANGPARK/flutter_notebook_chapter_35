@@ -61,7 +61,13 @@ class _LearningHomePageState extends State<LearningHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("My\nCourses"),
+                  Text(
+                    "My\nCourses",
+                    style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white,
+                    ),
+                  ),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -71,7 +77,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                     ),
                     child: IconButton(
                       icon: Icon(
-                        Icons.notifications_none,
+                        Icons.search,
                       ),
                       onPressed: () {},
                       color: Colors.white,
