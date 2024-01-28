@@ -55,6 +55,30 @@ class _LearningHomePageState extends State<LearningHomePage> {
                   ),
                 ],
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("My\nCourses"),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.white,
+                      ),
+                      shape: BoxShape.circle,
+                    ),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.notifications_none,
+                      ),
+                      onPressed: () {},
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),
