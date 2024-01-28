@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class LearningHomePage extends StatefulWidget {
   const LearningHomePage({super.key});
@@ -56,6 +57,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                 ],
               ),
             ),
+            Gap(12),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
