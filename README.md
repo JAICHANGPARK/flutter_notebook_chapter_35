@@ -2,11 +2,11 @@
 
 ## EP1774
 
-- Mobile Banking App
-- by Conceptzilla
-- https://dribbble.com/shots/23410083-Mobile-Banking-App
+- LearnLuxe! 🚀- e learning App
+- by Awe Mobile App for Awe Design Studio
+- https://dribbble.com/shots/23488444-LearnLuxe-e-learning-App
 
-<img src="https://cdn.dribbble.com/userupload/12384990/file/original-eed6bdf90416ba9da3ff19597d87eeda.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/12606520/file/original-49c94c893f7cc12ba4a9b8fb450b3fd4.png?resize=1504x1128"/>
 
 
 ## EP1767-1773
