@@ -18,8 +18,22 @@ class _LearningHomePageState extends State<LearningHomePage> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  Text("Cours"),
-                  Text("e"),
+                  Text(
+                    "Cours",
+                    style: TextStyle(
+                      color: Colors.yellow,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
+                  Text(
+                    "e",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
                   Spacer(),
                   Container(
                     decoration: BoxDecoration(
