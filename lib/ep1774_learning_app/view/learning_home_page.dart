@@ -19,10 +19,17 @@ class _LearningHomePageState extends State<LearningHomePage> {
                 Text("Cours"),
                 Text("e"),
                 Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
+                    shape: BoxShape.circle,
+                  ),
                   child: IconButton(
                     icon: Icon(
                       Icons.notifications_none,
                     ),
+                    onPressed: () {},
                   ),
                 )
               ],
