@@ -110,6 +110,11 @@ class _LearningHomePageState extends State<LearningHomePage> {
                   Container(
                     height: 160,
                     child: Placeholder(),
+                  ),
+                  Gap(4),
+                  Container(
+                    height: 160,
+                    child: Placeholder(),
                   )
                 ],
               ),
