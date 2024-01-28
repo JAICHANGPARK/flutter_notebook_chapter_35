@@ -1,6 +1,15 @@
 # flutter_notebook_chapter_35
 
-## EP1767
+## EP1774
+
+- Mobile Banking App
+- by Conceptzilla
+- https://dribbble.com/shots/23410083-Mobile-Banking-App
+
+<img src="https://cdn.dribbble.com/userupload/12384990/file/original-eed6bdf90416ba9da3ff19597d87eeda.png?resize=1905x1429"/>
+
+
+## EP1767-1773
 
 - Mobile Banking App
 - by Conceptzilla
