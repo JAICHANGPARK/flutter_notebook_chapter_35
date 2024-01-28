@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class LearningHomePage extends StatefulWidget {
   const LearningHomePage({super.key});
 
@@ -12,11 +11,22 @@ class _LearningHomePageState extends State<LearningHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: SafeArea(
         child: Column(
           children: [
-
+            Row(
+              children: [
+                Text("Cours"),
+                Text("e"),
+                Container(
+                  child: IconButton(
+                    icon: Icon(
+                      Icons.notifications_none,
+                    ),
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
