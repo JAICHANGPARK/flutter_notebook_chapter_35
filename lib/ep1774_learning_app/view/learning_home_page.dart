@@ -87,7 +87,33 @@ class _LearningHomePageState extends State<LearningHomePage> {
                   ),
                 ],
               ),
-            )
+            ),
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    height: 64,
+                    child: Placeholder(),
+                  ),
+                  Gap(16),
+                  Container(
+                    height: 200,
+                    child: Placeholder(),
+                  ),
+                  Gap(4),
+                  Container(
+                    height: 160,
+                    child: Placeholder(),
+                  ),
+                  Gap(4),
+                  Container(
+                    height: 160,
+                    child: Placeholder(),
+                  )
+                ],
+              ),
+            ))
           ],
         ),
       ),
