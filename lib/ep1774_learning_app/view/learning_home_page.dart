@@ -133,11 +133,17 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       children: [
                         Expanded(
                           child: Container(
-                            color: Color.fromRGBO(251, 255, 98, 1),
+                            decoration: BoxDecoration(
+                              color: Color.fromRGBO(251, 255, 98, 1),
+                              borderRadius: BorderRadius.circular(24),
+                            ),
                           ),
                         ),
                         Container(
                           width: 180,
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(r, g, b, opacity)
+                          ),
                         )
                       ],
                     ),
