@@ -95,14 +95,14 @@ class _LearningHomePageState extends State<LearningHomePage> {
               child: Column(
                 children: [
                   Container(
-                    height: 64,
+                    height: 58,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: tabDatas.length,
                       itemBuilder: (context, index) {
                         return Container(
                           margin: EdgeInsets.only(right: 8),
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 4),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(
                               32,
@@ -111,10 +111,13 @@ class _LearningHomePageState extends State<LearningHomePage> {
                               color: Colors.white,
                             ),
                           ),
-                          child: Text(
-                            tabDatas[index],
-                            style: TextStyle(
-                              color: index == 0 ? Colors.black : Colors.grey,
+                          child: Center(
+                            child: Text(
+                              tabDatas[index],
+                              style: TextStyle(
+                                color: index == 0 ? Colors.black : Colors.grey,
+                                fontSize: 18,
+                              ),
                             ),
                           ),
                         );
