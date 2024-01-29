@@ -127,14 +127,18 @@ class _LearningHomePageState extends State<LearningHomePage> {
                   ),
                   Gap(24),
                   Container(
-                    height: 200,
+                    height: 240,
+                    margin: EdgeInsets.symmetric(horizontal: 8),
                     child: Row(
                       children: [
                         Expanded(
                           child: Container(
-                            color: Colors.yellow,
+                            color: Color.fromRGBO(251, 255, 98, 1),
                           ),
                         ),
+                        Container(
+                          width: 180,
+                        )
                       ],
                     ),
                   ),
