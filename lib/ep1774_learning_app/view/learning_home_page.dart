@@ -97,13 +97,16 @@ class _LearningHomePageState extends State<LearningHomePage> {
                   Container(
                     height: 64,
                     child: ListView.builder(
-                      itemCount: 10,
+                      scrollDirection: Axis.horizontal,
+                      itemCount: tabDatas.length,
                       itemBuilder: (context, index) {
                         return Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: ),
-                          child: Center(
-                            child: Text(
-                              tabDatas[index],
+                          margin: EdgeInsets.only(left: 9),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                          child: Text(
+                            tabDatas[index],
+                            style: TextStyle(
+
                             ),
                           ),
                         );
