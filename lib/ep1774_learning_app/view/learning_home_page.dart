@@ -101,12 +101,13 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       itemCount: tabDatas.length,
                       itemBuilder: (context, index) {
                         return Container(
-                          margin: EdgeInsets.only(left: 9),
+                          margin: EdgeInsets.only(right: 8),
                           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                          decoration: BoxDecoration(),
                           child: Text(
                             tabDatas[index],
                             style: TextStyle(
-
+                              color: index == 0 ? Colors.black : Colors.grey,
                             ),
                           ),
                         );
