@@ -127,7 +127,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                   ),
                   Gap(24),
                   Container(
-                    height: 240,
+                    height: 250,
                     margin: EdgeInsets.symmetric(horizontal: 8),
                     child: Row(
                       children: [
@@ -139,9 +139,11 @@ class _LearningHomePageState extends State<LearningHomePage> {
                             ),
                           ),
                         ),
+                        Gap(8),
                         Container(
-                          width: 180,
+                          width: 160,
                           decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(24),
                             color: Color.fromRGBO(146, 228, 152, 1),
                           ),
                         )
