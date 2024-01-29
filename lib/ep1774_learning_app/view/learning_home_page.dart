@@ -150,9 +150,13 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       ],
                     ),
                   ),
-                  Gap(4),
+                  Gap(8),
                   Container(
                     height: 160,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(24),
+                      color: Color.fromRGBO(169, 235 , 249, 1),
+                    ),
                     child: Placeholder(),
                   ),
                   Gap(4),
