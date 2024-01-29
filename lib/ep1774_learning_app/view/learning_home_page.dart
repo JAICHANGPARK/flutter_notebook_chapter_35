@@ -17,6 +17,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
       body: SafeArea(
         child: Column(
           children: [
+            Gap(16),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -166,7 +167,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       color: const Color.fromRGBO(169, 235, 249, 1),
                     ),
                   ),
-                  const Gap(4),
+                  const Gap(8),
                   Container(
                     height: 180,
                     margin: const EdgeInsets.symmetric(horizontal: 8),
