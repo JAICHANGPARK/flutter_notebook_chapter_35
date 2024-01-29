@@ -96,7 +96,11 @@ class _LearningHomePageState extends State<LearningHomePage> {
                 children: [
                   Container(
                     height: 58,
-                    margin: EdgeInsets.symmetric(vertical: 24),
+                    margin: EdgeInsets.only(
+                      left: 12,
+                      top: 24,
+                      bottom: 24,
+                    ),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: tabDatas.length,
@@ -125,9 +129,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                         );
                       },
                     ),
-
                   ),
-
                   Container(
                     height: 250,
                     margin: EdgeInsets.symmetric(horizontal: 8),
