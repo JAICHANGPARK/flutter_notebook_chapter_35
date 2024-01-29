@@ -21,7 +21,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     "Cours",
                     style: TextStyle(
                       color: Colors.yellow,
@@ -29,7 +29,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       fontSize: 20,
                     ),
                   ),
-                  Text(
+                  const Text(
                     "e",
                     style: TextStyle(
                       color: Colors.white,
@@ -37,7 +37,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       fontSize: 20,
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -46,26 +46,26 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       shape: BoxShape.circle,
                     ),
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.notifications_none,
                       ),
                       onPressed: () {},
                       color: Colors.white,
                     ),
                   ),
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 26,
                   ),
                 ],
               ),
             ),
-            Gap(12),
+            const Gap(12),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "My\nCourses",
                     style: TextStyle(
                       fontSize: 24,
@@ -80,7 +80,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       shape: BoxShape.circle,
                     ),
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.search,
                       ),
                       onPressed: () {},
@@ -95,8 +95,8 @@ class _LearningHomePageState extends State<LearningHomePage> {
               child: Column(
                 children: [
                   Container(
-                    height: 58,
-                    margin: EdgeInsets.only(
+                    height: 52,
+                    margin: const EdgeInsets.only(
                       left: 12,
                       top: 24,
                       bottom: 24,
@@ -106,8 +106,11 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       itemCount: tabDatas.length,
                       itemBuilder: (context, index) {
                         return Container(
-                          margin: EdgeInsets.only(right: 8),
-                          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 4),
+                          margin: const EdgeInsets.only(right: 8),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 24,
+                            vertical: 4,
+                          ),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(
                               32,
@@ -115,7 +118,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                             border: Border.all(
                               color: Colors.white,
                             ),
-                            color: index == 0 ? Color.fromRGBO(254, 255, 215, 1) : Colors.transparent,
+                            color: index == 0 ? const Color.fromRGBO(254, 255, 215, 1) : Colors.transparent,
                           ),
                           child: Center(
                             child: Text(
@@ -132,46 +135,46 @@ class _LearningHomePageState extends State<LearningHomePage> {
                   ),
                   Container(
                     height: 250,
-                    margin: EdgeInsets.symmetric(horizontal: 8),
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
                     child: Row(
                       children: [
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Color.fromRGBO(251, 255, 98, 1),
+                              color: const Color.fromRGBO(251, 255, 98, 1),
                               borderRadius: BorderRadius.circular(24),
                             ),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                         Container(
                           width: 160,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24),
-                            color: Color.fromRGBO(146, 228, 152, 1),
+                            color: const Color.fromRGBO(146, 228, 152, 1),
                           ),
                         )
                       ],
                     ),
                   ),
-                  Gap(8),
+                  const Gap(8),
                   Container(
                     height: 180,
-                    margin: EdgeInsets.symmetric(horizontal: 8),
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(24),
-                      color: Color.fromRGBO(169, 235, 249, 1),
+                      color: const Color.fromRGBO(169, 235, 249, 1),
                     ),
                   ),
-                  Gap(4),
+                  const Gap(4),
                   Container(
                     height: 160,
-                    child: Placeholder(),
+                    child: const Placeholder(),
                   ),
-                  Gap(4),
+                  const Gap(4),
                   Container(
                     height: 160,
-                    child: Placeholder(),
+                    child: const Placeholder(),
                   )
                 ],
               ),
