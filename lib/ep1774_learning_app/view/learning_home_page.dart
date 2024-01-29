@@ -110,7 +110,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                             border: Border.all(
                               color: Colors.white,
                             ),
-                            color: index == 0 ?  Color.fromRGBO(254, 255, 215, 1),
+                            color: index == 0 ? Color.fromRGBO(254, 255, 215, 1) : Colors.transparent,
                           ),
                           child: Center(
                             child: Text(
