@@ -9,6 +9,16 @@ class LearningHomePage extends StatefulWidget {
 }
 
 class _LearningHomePageState extends State<LearningHomePage> {
+  List<String> tabDatas = [
+    "All",
+    "Coding",
+    "Statics",
+    "Design",
+    "Illustration",
+    "AI",
+    "LLM"
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
