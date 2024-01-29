@@ -103,7 +103,14 @@ class _LearningHomePageState extends State<LearningHomePage> {
                         return Container(
                           margin: EdgeInsets.only(right: 8),
                           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                          decoration: BoxDecoration(),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(
+                              32,
+                            ),
+                            border: Border.all(
+                              color: Colors.white,
+                            ),
+                          ),
                           child: Text(
                             tabDatas[index],
                             style: TextStyle(
