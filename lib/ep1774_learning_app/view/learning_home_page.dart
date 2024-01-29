@@ -9,15 +9,7 @@ class LearningHomePage extends StatefulWidget {
 }
 
 class _LearningHomePageState extends State<LearningHomePage> {
-  List<String> tabDatas = [
-    "All",
-    "Coding",
-    "Statics",
-    "Design",
-    "Illustration",
-    "AI",
-    "LLM"
-  ];
+  List<String> tabDatas = ["All", "Coding", "Statics", "Design", "Illustration", "AI", "LLM"];
 
   @override
   Widget build(BuildContext context) {
@@ -104,7 +96,19 @@ class _LearningHomePageState extends State<LearningHomePage> {
                 children: [
                   Container(
                     height: 64,
-                    child: Placeholder(),
+                    child: ListView.builder(
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: ),
+                          child: Center(
+                            child: Text(
+                              tabDatas[index],
+                            ),
+                          ),
+                        );
+                      },
+                    ),
                   ),
                   Gap(16),
                   Container(
