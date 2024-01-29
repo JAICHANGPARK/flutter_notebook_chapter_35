@@ -96,6 +96,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                 children: [
                   Container(
                     height: 58,
+                    margin: EdgeInsets.symmetric(vertical: 24),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: tabDatas.length,
@@ -124,8 +125,9 @@ class _LearningHomePageState extends State<LearningHomePage> {
                         );
                       },
                     ),
+
                   ),
-                  Gap(24),
+
                   Container(
                     height: 250,
                     margin: EdgeInsets.symmetric(horizontal: 8),
@@ -152,12 +154,12 @@ class _LearningHomePageState extends State<LearningHomePage> {
                   ),
                   Gap(8),
                   Container(
-                    height: 160,
+                    height: 180,
+                    margin: EdgeInsets.symmetric(horizontal: 8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(24),
-                      color: Color.fromRGBO(169, 235 , 249, 1),
+                      color: Color.fromRGBO(169, 235, 249, 1),
                     ),
-                    child: Placeholder(),
                   ),
                   Gap(4),
                   Container(
