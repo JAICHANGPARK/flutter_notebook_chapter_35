@@ -125,10 +125,18 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       },
                     ),
                   ),
-                  Gap(16),
+                  Gap(24),
                   Container(
                     height: 200,
-                    child: Placeholder(),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            color: Colors.yellow,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   Gap(4),
                   Container(
