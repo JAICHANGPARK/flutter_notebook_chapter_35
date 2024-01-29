@@ -142,7 +142,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                         Container(
                           width: 180,
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(r, g, b, opacity)
+                            color: Color.fromRGBO(146, 228, 152, 1),
                           ),
                         )
                       ],
