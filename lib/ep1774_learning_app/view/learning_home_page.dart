@@ -168,8 +168,12 @@ class _LearningHomePageState extends State<LearningHomePage> {
                   ),
                   const Gap(4),
                   Container(
-                    height: 160,
-                    child: const Placeholder(),
+                    height: 180,
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(24),
+                      color: const Color.fromRGBO(254, 255, 215, 1),
+                    ),
                   ),
                   const Gap(4),
                   Container(
