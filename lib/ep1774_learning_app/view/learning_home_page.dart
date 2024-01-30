@@ -227,7 +227,15 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                 ),
                                 Expanded(
                                   child: Stack(
-                                    children: [],
+                                    children: List.generate(
+                                      3,
+                                      (index) => Positioned.fill(
+                                        left: (24.0 * index),
+                                        child: CircleAvatar(
+                                          radius: 24,
+                                        ),
+                                      ),
+                                    ),
                                   ),
                                 )
                               ],
