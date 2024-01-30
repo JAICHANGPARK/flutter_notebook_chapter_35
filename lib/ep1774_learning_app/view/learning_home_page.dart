@@ -294,6 +294,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                     ),
                     padding: EdgeInsets.all(12),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
@@ -330,13 +331,23 @@ class _LearningHomePageState extends State<LearningHomePage> {
                           children: [
                             Expanded(
                               child: Column(
-                                children: [Text("Course"), Text("Graphic Design"), Text("6 Hours    4.8 Rating")],
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Course"),
+                                  Text("Graphic Design"),
+                                  Text("6 Hours    4.8 Rating"),
+                                ],
                               ),
                             ),
                             VerticalDivider(),
                             Expanded(
                               child: Column(
-                                children: [Text("Course"), Text("Graphic Design"), Text("6 Hours    4.8 Rating")],
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Course"),
+                                  Text("Graphic Design"),
+                                  Text("6 Hours    4.8 Rating"),
+                                ],
                               ),
                             )
                           ],
