@@ -150,12 +150,17 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                 Row(
                                   children: [
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      width: 48,
+                                      height: 48,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(
+                                        color: Colors.grey,
+                                      )),
                                     ),
                                     CircleAvatar(
                                       radius: 24,
                                       backgroundColor: Colors.black,
-                                      
+                                      foregroundColor: Colors.white,
                                       child: Icon(
                                         Icons.arrow_forward,
                                       ),
