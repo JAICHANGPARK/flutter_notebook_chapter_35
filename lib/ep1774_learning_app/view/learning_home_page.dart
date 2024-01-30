@@ -335,6 +335,16 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                   Text("6 Hours    4.8 Rating")
                                 ],
                               ),
+                            ),
+                            VerticalDivider(),
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Text("Course"),
+                                  Text("Graphic Design"),
+                                  Text("6 Hours    4.8 Rating")
+                                ],
+                              ),
                             )
                           ],
                         )
