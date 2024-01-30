@@ -17,7 +17,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Gap(16),
+            const Gap(16),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -145,7 +145,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                               color: const Color.fromRGBO(251, 255, 98, 1),
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.all(12),
+                            padding: const EdgeInsets.all(12),
                             child: Column(
                               children: [
                                 Row(
@@ -161,7 +161,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                         shape: BoxShape.circle,
                                       ),
                                     ),
-                                    CircleAvatar(
+                                    const CircleAvatar(
                                       radius: 24,
                                       backgroundColor: Colors.black,
                                       foregroundColor: Colors.white,
