@@ -171,15 +171,32 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                     )
                                   ],
                                 ),
+                                Gap(16),
                                 Row(
                                   children: [
-                                    Expanded(child: Text("Web\nDesign")),
-                                    Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text("Dream Mask"),
-                                        Text("Teacher")
-                                      ],
+                                    Expanded(
+                                      child: Text(
+                                        "Web\nDesign",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 24,
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Dream Mask",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Gap(6),
+                                          Text("Teacher"),
+                                        ],
+                                      ),
                                     )
                                   ],
                                 )
