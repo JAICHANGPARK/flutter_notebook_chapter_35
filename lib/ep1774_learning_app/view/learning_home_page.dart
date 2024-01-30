@@ -145,6 +145,25 @@ class _LearningHomePageState extends State<LearningHomePage> {
                               color: const Color.fromRGBO(251, 255, 98, 1),
                               borderRadius: BorderRadius.circular(24),
                             ),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(),
+                                    ),
+                                    CircleAvatar(
+                                      radius: 24,
+                                      backgroundColor: Colors.black,
+                                      
+                                      child: Icon(
+                                        Icons.arrow_forward,
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         const Gap(8),
