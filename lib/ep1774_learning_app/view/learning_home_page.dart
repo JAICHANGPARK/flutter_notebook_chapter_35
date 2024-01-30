@@ -233,7 +233,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                       (index) => Positioned(
                                         top: 0,
                                         bottom: 0,
-                                        left: (28.0 * index) ,
+                                        left: (28.0 * index),
                                         child: CircleAvatar(
                                           radius: 24,
                                         ),
@@ -252,10 +252,11 @@ class _LearningHomePageState extends State<LearningHomePage> {
                             borderRadius: BorderRadius.circular(24),
                             color: const Color.fromRGBO(146, 228, 152, 1),
                           ),
+                          padding: EdgeInsets.all(12),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
-
                                 children: [
                                   Spacer(),
                                   const CircleAvatar(
@@ -267,7 +268,9 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                     ),
                                   )
                                 ],
-                              )
+                              ),
+                              Text("Teachers"),
+                              Text("125 members"),
                             ],
                           ),
                         )
