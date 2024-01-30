@@ -269,7 +269,14 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                   )
                                 ],
                               ),
-                              Text("Teachers"),
+                              Gap(8),
+                              Text(
+                                "Teachers",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
                               Text("125 members"),
                             ],
                           ),
@@ -293,6 +300,18 @@ class _LearningHomePageState extends State<LearningHomePage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(24),
                       color: const Color.fromRGBO(254, 255, 215, 1),
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(),
+                            Expanded(child: Column(children: [
+                              
+                            ],))
+                          ],
+                        )
+                      ],
                     ),
                   ),
                   const Gap(4),
