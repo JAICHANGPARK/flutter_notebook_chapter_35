@@ -172,8 +172,8 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                   ],
                                 ),
                                 const Gap(16),
-                                 Row(
-                                   crossAxisAlignment: CrossAxisAlignment.end,
+                                Row(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Expanded(
                                       child: Text(
@@ -181,7 +181,6 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 28,
-
                                         ),
                                       ),
                                     ),
@@ -204,11 +203,15 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                     )
                                   ],
                                 ),
+                                Gap(6),
                                 Row(
                                   children: [
                                     Text("8"),
+                                    Gap(2),
                                     Text("Hours"),
+                                    Gap(12),
                                     Text("4.9"),
+                                    Gap(2),
                                     Text("Rating"),
                                   ],
                                 )
