@@ -286,7 +286,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                   ),
                   const Gap(8),
                   Container(
-                    height: 180,
+                    height: 168,
                     margin: const EdgeInsets.symmetric(horizontal: 8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(32),
@@ -325,25 +325,18 @@ class _LearningHomePageState extends State<LearningHomePage> {
                             )
                           ],
                         ),
+                        Gap(12),
                         Row(
                           children: [
                             Expanded(
                               child: Column(
-                                children: [
-                                  Text("Course"),
-                                  Text("Graphic Design"),
-                                  Text("6 Hours    4.8 Rating")
-                                ],
+                                children: [Text("Course"), Text("Graphic Design"), Text("6 Hours    4.8 Rating")],
                               ),
                             ),
                             VerticalDivider(),
                             Expanded(
                               child: Column(
-                                children: [
-                                  Text("Course"),
-                                  Text("Graphic Design"),
-                                  Text("6 Hours    4.8 Rating")
-                                ],
+                                children: [Text("Course"), Text("Graphic Design"), Text("6 Hours    4.8 Rating")],
                               ),
                             )
                           ],
