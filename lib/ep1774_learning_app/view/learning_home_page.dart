@@ -324,7 +324,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                     height: 180,
                     margin: const EdgeInsets.symmetric(horizontal: 8),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(24),
+                      borderRadius: BorderRadius.circular(32),
                       color: const Color.fromRGBO(254, 255, 215, 1),
                     ),
                     child: Column(
