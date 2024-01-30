@@ -147,6 +147,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                             ),
                             padding: const EdgeInsets.all(12),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -229,8 +230,10 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                   child: Stack(
                                     children: List.generate(
                                       3,
-                                      (index) => Positioned.fill(
-                                        left: (24.0 * index),
+                                      (index) => Positioned(
+                                        top: 0,
+                                        bottom: 0,
+                                        left: (28.0 * index) ,
                                         child: CircleAvatar(
                                           radius: 24,
                                         ),
