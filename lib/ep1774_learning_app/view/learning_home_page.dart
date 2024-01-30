@@ -297,11 +297,19 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       children: [
                         Row(
                           children: [
-                            CircleAvatar(),
+                            CircleAvatar(
+                              radius: 24,
+                            ),
                             Expanded(
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Dreamwalker"),
+                                  Text(
+                                    "Dreamwalker",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Text("Tutor"),
                                 ],
                               ),
