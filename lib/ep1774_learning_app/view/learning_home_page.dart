@@ -367,15 +367,26 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       borderRadius: BorderRadius.circular(32),
                       color: const Color.fromRGBO(254, 255, 215, 1),
                     ),
+                    padding: EdgeInsets.all(12),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
-                            CircleAvatar(),
+                            CircleAvatar(
+                              radius: 24,
+                            ),
+                            Gap(12),
                             Expanded(
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Dreamwalker"),
+                                  Text(
+                                    "Dreamwalker",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Text("Tutor"),
                                 ],
                               ),
@@ -389,6 +400,36 @@ class _LearningHomePageState extends State<LearningHomePage> {
                               ),
                             )
                           ],
+                        ),
+                        Gap(12),
+                        IntrinsicHeight(
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Course"),
+                                    Text("Graphic Design"),
+                                    Text("6 Hours    4.8 Rating"),
+                                  ],
+                                ),
+                              ),
+                              VerticalDivider(
+                                width: 32,
+                              ),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Course"),
+                                    Text("Graphic Design"),
+                                    Text("6 Hours    4.8 Rating"),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
