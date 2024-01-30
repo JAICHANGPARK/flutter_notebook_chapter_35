@@ -327,30 +327,34 @@ class _LearningHomePageState extends State<LearningHomePage> {
                           ],
                         ),
                         Gap(12),
-                        Row(
-                          children: [
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Course"),
-                                  Text("Graphic Design"),
-                                  Text("6 Hours    4.8 Rating"),
-                                ],
+                        IntrinsicHeight(
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Course"),
+                                    Text("Graphic Design"),
+                                    Text("6 Hours    4.8 Rating"),
+                                  ],
+                                ),
                               ),
-                            ),
-                            VerticalDivider(),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Course"),
-                                  Text("Graphic Design"),
-                                  Text("6 Hours    4.8 Rating"),
-                                ],
+                              VerticalDivider(
+                                width: 32,
                               ),
-                            )
-                          ],
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Course"),
+                                    Text("Graphic Design"),
+                                    Text("6 Hours    4.8 Rating"),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
