@@ -252,6 +252,15 @@ class _LearningHomePageState extends State<LearningHomePage> {
                             borderRadius: BorderRadius.circular(24),
                             color: const Color.fromRGBO(146, 228, 152, 1),
                           ),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  
+                                ],
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
