@@ -171,15 +171,17 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                     )
                                   ],
                                 ),
-                                Gap(16),
-                                Row(
+                                const Gap(16),
+                                 Row(
+                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Expanded(
                                       child: Text(
                                         "Web\nDesign",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
-                                          fontSize: 24,
+                                          fontSize: 28,
+
                                         ),
                                       ),
                                     ),
@@ -193,11 +195,21 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
-                                          Gap(6),
+                                          Gap(
+                                            4,
+                                          ),
                                           Text("Teacher"),
                                         ],
                                       ),
                                     )
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text("8"),
+                                    Text("Hours"),
+                                    Text("4.9"),
+                                    Text("Rating"),
                                   ],
                                 )
                               ],
