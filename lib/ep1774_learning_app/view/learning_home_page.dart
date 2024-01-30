@@ -145,17 +145,21 @@ class _LearningHomePageState extends State<LearningHomePage> {
                               color: const Color.fromRGBO(251, 255, 98, 1),
                               borderRadius: BorderRadius.circular(24),
                             ),
+                            padding: EdgeInsets.all(12),
                             child: Column(
                               children: [
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Container(
                                       width: 48,
                                       height: 48,
                                       decoration: BoxDecoration(
-                                          border: Border.all(
-                                        color: Colors.grey,
-                                      )),
+                                        border: Border.all(
+                                          color: Colors.grey,
+                                        ),
+                                        shape: BoxShape.circle,
+                                      ),
                                     ),
                                     CircleAvatar(
                                       radius: 24,
