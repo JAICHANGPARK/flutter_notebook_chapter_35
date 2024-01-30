@@ -289,8 +289,34 @@ class _LearningHomePageState extends State<LearningHomePage> {
                     height: 180,
                     margin: const EdgeInsets.symmetric(horizontal: 8),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(24),
+                      borderRadius: BorderRadius.circular(32),
                       color: const Color.fromRGBO(169, 235, 249, 1),
+                    ),
+                    padding: EdgeInsets.all(12),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(),
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Text("Dreamwalker"),
+                                  Text("Tutor"),
+                                ],
+                              ),
+                            ),
+                            const CircleAvatar(
+                              radius: 24,
+                              backgroundColor: Colors.black,
+                              foregroundColor: Colors.white,
+                              child: Icon(
+                                Icons.arrow_forward,
+                              ),
+                            )
+                          ],
+                        )
+                      ],
                     ),
                   ),
                   const Gap(8),
@@ -306,9 +332,22 @@ class _LearningHomePageState extends State<LearningHomePage> {
                         Row(
                           children: [
                             CircleAvatar(),
-                            Expanded(child: Column(children: [
-                              
-                            ],))
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Text("Dreamwalker"),
+                                  Text("Tutor"),
+                                ],
+                              ),
+                            ),
+                            const CircleAvatar(
+                              radius: 24,
+                              backgroundColor: Colors.black,
+                              foregroundColor: Colors.white,
+                              child: Icon(
+                                Icons.arrow_forward,
+                              ),
+                            )
                           ],
                         )
                       ],
