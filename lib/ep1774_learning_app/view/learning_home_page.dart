@@ -255,8 +255,17 @@ class _LearningHomePageState extends State<LearningHomePage> {
                           child: Column(
                             children: [
                               Row(
+
                                 children: [
-                                  
+                                  Spacer(),
+                                  const CircleAvatar(
+                                    radius: 24,
+                                    backgroundColor: Colors.black,
+                                    foregroundColor: Colors.white,
+                                    child: Icon(
+                                      Icons.arrow_forward,
+                                    ),
+                                  )
                                 ],
                               )
                             ],
