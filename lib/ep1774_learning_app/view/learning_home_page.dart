@@ -170,6 +170,18 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                       ),
                                     )
                                   ],
+                                ),
+                                Row(
+                                  children: [
+                                    Expanded(child: Text("Web\nDesign")),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Dream Mask"),
+                                        Text("Teacher")
+                                      ],
+                                    )
+                                  ],
                                 )
                               ],
                             ),
