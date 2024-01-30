@@ -300,6 +300,7 @@ class _LearningHomePageState extends State<LearningHomePage> {
                             CircleAvatar(
                               radius: 24,
                             ),
+                            Gap(12),
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -320,6 +321,19 @@ class _LearningHomePageState extends State<LearningHomePage> {
                               foregroundColor: Colors.white,
                               child: Icon(
                                 Icons.arrow_forward,
+                              ),
+                            )
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Text("Course"),
+                                  Text("Graphic Design"),
+                                  Text("6 Hours    4.8 Rating")
+                                ],
                               ),
                             )
                           ],
