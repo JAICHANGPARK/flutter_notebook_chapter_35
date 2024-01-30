@@ -206,14 +206,29 @@ class _LearningHomePageState extends State<LearningHomePage> {
                                 Gap(6),
                                 Row(
                                   children: [
-                                    Text("8"),
+                                    Text(
+                                      "8",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     Gap(2),
                                     Text("Hours"),
                                     Gap(12),
-                                    Text("4.9"),
+                                    Text(
+                                      "4.9",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     Gap(2),
                                     Text("Rating"),
                                   ],
+                                ),
+                                Expanded(
+                                  child: Stack(
+                                    children: [],
+                                  ),
                                 )
                               ],
                             ),
