@@ -18,7 +18,6 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
               "Course you\nEnrolled",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-
               ),
             )
           ],
