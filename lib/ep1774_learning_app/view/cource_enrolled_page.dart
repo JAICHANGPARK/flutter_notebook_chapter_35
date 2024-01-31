@@ -12,15 +12,18 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Text(
-              "Course you\nEnrolled",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(top: 32, left: 12, right: 12),
+          child: Column(
+            children: [
+              Text(
+                "Course you\nEnrolled",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
