@@ -13,13 +13,15 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(top: 32, left: 12, right: 12),
+          padding: const EdgeInsets.only(top: 42, left: 12, right: 12),
           child: Column(
             children: [
               Text(
                 "Course you\nEnrolled",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 42,
                 ),
               )
             ],
