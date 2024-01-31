@@ -52,19 +52,24 @@ class _LearningHomePageState extends State<LearningHomePage> {
                         Icons.notifications_none,
                       ),
                       onPressed: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) {
-                              return const CourseEnrolledPage();
-                            },
-                          ),
-                        );
+
                       },
                       color: Colors.white,
                     ),
                   ),
-                  const CircleAvatar(
-                    radius: 26,
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const CourseEnrolledPage();
+                          },
+                        ),
+                      );
+                    },
+                    child: const CircleAvatar(
+                      radius: 26,
+                    ),
                   ),
                 ],
               ),
