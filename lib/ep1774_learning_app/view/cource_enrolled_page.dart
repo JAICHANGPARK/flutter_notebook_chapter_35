@@ -29,7 +29,21 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
                   itemBuilder: (context, index) {
                     return Container(
                       decoration: BoxDecoration(
-                        color:
+                        color: const Color.fromRGBO(169, 235, 249, 1),
+                      ),
+                      child: Column(
+                        children: [
+                          CircleAvatar(),
+                          Expanded(
+                            child: Column(
+                              children: [
+                                Text("Dream Walker"),
+                                Text("Tutor"),
+                              ],
+                            ),
+                          ),
+                          CircleAvatar(),
+                        ],
                       ),
                     );
                   },
