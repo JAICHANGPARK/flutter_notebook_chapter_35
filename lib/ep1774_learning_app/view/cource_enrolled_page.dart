@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class CourseEnrolledPage extends StatefulWidget {
   const CourseEnrolledPage({super.key});
@@ -54,10 +55,13 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
                             ],
                           ),
                           Text("Course"),
+                          Gap(4),
                           Text("Flutter Basic"),
+                          Gap(4),
                           Text(
                             "8 Hours   4.9 Rating",
                           ),
+                          Gap(8),
                           SizedBox(
                             height: 42,
                             child: Stack(
