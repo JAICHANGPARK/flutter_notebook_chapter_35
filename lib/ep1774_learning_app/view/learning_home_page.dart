@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_35/ep1774_learning_app/view/cource_enrolled_page.dart';
 import 'package:gap/gap.dart';
 
 class LearningHomePage extends StatefulWidget {
@@ -50,7 +51,15 @@ class _LearningHomePageState extends State<LearningHomePage> {
                       icon: const Icon(
                         Icons.notifications_none,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const CourseEnrolledPage();
+                            },
+                          ),
+                        );
+                      },
                       color: Colors.white,
                     ),
                   ),
