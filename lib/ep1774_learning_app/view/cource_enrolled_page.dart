@@ -15,6 +15,7 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
         child: Padding(
           padding: const EdgeInsets.only(top: 42, left: 12, right: 12),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 "Course you\nEnrolled",
@@ -42,6 +43,7 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
                               CircleAvatar(),
                               Expanded(
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text("Dream Walker"),
                                     Text("Tutor"),
@@ -55,7 +57,23 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
                           Text("Flutter Basic"),
                           Text(
                             "8 Hours   4.9 Rating",
-                          )
+                          ),
+                          SizedBox(
+                            height: 42,
+                            child: Stack(
+                              children: List.generate(
+                                4,
+                                    (index) => Positioned(
+                                  top: 0,
+                                  bottom: 0,
+                                  left: (28.0 * index),
+                                  child: const CircleAvatar(
+                                    radius: 24,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     );
