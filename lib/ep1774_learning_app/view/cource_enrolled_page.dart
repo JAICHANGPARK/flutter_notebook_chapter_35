@@ -30,8 +30,12 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
                     return Container(
                       decoration: BoxDecoration(
                         color: const Color.fromRGBO(169, 235, 249, 1),
+                        borderRadius: BorderRadius.circular(32),
                       ),
+                      padding: EdgeInsets.all(14),
+                      margin: EdgeInsets.only(bottom: 12),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
