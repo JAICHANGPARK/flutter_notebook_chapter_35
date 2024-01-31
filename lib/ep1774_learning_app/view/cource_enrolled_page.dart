@@ -41,7 +41,10 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
                         children: [
                           Row(
                             children: [
-                              CircleAvatar(),
+                              CircleAvatar(
+                                radius: 28,
+                              ),
+                              Gap(8),
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,12 +54,20 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
                                   ],
                                 ),
                               ),
-                              CircleAvatar(),
+                              CircleAvatar(
+                                radius: 28,
+                              ),
                             ],
                           ),
                           Text("Course"),
                           Gap(4),
-                          Text("Flutter Basic"),
+                          Text(
+                            "Flutter Basic",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 26,
+                            ),
+                          ),
                           Gap(4),
                           Text(
                             "8 Hours   4.9 Rating",
@@ -67,7 +78,7 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
                             child: Stack(
                               children: List.generate(
                                 4,
-                                    (index) => Positioned(
+                                (index) => Positioned(
                                   top: 0,
                                   bottom: 0,
                                   left: (28.0 * index),
