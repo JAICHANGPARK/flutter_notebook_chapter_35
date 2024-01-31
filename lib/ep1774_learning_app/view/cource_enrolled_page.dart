@@ -23,6 +23,17 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
                   color: Colors.white,
                   fontSize: 42,
                 ),
+              ),
+              Expanded(
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container(
+                      decoration: BoxDecoration(
+                        color:
+                      ),
+                    );
+                  },
+                ),
               )
             ],
           ),
