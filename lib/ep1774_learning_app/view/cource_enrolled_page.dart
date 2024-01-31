@@ -33,16 +33,25 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
                       ),
                       child: Column(
                         children: [
-                          CircleAvatar(),
-                          Expanded(
-                            child: Column(
-                              children: [
-                                Text("Dream Walker"),
-                                Text("Tutor"),
-                              ],
-                            ),
+                          Row(
+                            children: [
+                              CircleAvatar(),
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Text("Dream Walker"),
+                                    Text("Tutor"),
+                                  ],
+                                ),
+                              ),
+                              CircleAvatar(),
+                            ],
                           ),
-                          CircleAvatar(),
+                          Text("Course"),
+                          Text("Flutter Basic"),
+                          Text(
+                            "8 Hours   4.9 Rating",
+                          )
                         ],
                       ),
                     );
