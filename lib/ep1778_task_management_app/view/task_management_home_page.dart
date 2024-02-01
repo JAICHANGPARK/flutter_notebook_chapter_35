@@ -29,7 +29,18 @@ class _TaskHomePageState extends State<TaskHomePage> {
                           Text("Good Morning Dream"),
                         ],
                       ),
-                    )
+                    ),
+                    Badge(
+                      child: Icon(
+                        Icons.notifications_active_outlined,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.more_horiz,
+                      ),
+                    ),
                   ],
                 )
               ],
