@@ -25,6 +25,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                       CircleAvatar(),
                       Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Dream Walker"),
                             Text("Good Morning Dream"),
