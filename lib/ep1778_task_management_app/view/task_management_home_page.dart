@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class TaskHomePage extends StatefulWidget {
@@ -15,7 +13,14 @@ class _TaskHomePageState extends State<TaskHomePage> {
     return SafeArea(
       child: Stack(
         children: [
-          
+          Positioned.fill(
+            left: 16,
+            right: 16,
+            top: 16,
+            child: Column(
+              children: [],
+            ),
+          )
         ],
       ),
     );
