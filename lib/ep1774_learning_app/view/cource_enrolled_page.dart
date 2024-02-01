@@ -18,7 +18,7 @@ class _CourseEnrolledPageState extends State<CourseEnrolledPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Course you\nEnrolled",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
