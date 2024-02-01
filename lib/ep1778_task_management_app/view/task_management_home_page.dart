@@ -46,6 +46,39 @@ class _TaskHomePageState extends State<TaskHomePage> {
                   )
                 ],
               ),
+            ),
+            Positioned(
+              left: 32,
+              right: 32,
+              bottom: 16,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                ),
+                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.home_filled),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.home_filled),
+                    ),
+                    CircleAvatar(),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.home_filled),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.home_filled),
+                    ),
+                  ],
+                ),
+              ),
             )
           ],
         ),
