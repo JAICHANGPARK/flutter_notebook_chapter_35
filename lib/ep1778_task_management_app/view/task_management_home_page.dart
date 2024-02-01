@@ -18,7 +18,21 @@ class _TaskHomePageState extends State<TaskHomePage> {
             right: 16,
             top: 16,
             child: Column(
-              children: [],
+              children: [
+                Row(
+                  children: [
+                    CircleAvatar(),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Text("Dream Walker"),
+                          Text("Good Morning Dream"),
+                        ],
+                      ),
+                    )
+                  ],
+                )
+              ],
             ),
           )
         ],
