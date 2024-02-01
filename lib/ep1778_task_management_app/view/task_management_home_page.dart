@@ -54,6 +54,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.black,
+                  borderRadius: BorderRadius.circular(32),
                 ),
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                 child: Row(
