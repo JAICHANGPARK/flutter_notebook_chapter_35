@@ -117,7 +117,12 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("Mobile Flick "),
+                                      Text(
+                                        "Mobile Flick ",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                       Text("20 Jan"),
                                     ],
                                   ),
