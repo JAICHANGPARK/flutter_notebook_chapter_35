@@ -52,6 +52,12 @@ class _TaskHomePageState extends State<TaskHomePage> {
                         ),
                       ),
                     ],
+                  ),
+                  Container(
+                    height: 64,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   )
                 ],
               ),
