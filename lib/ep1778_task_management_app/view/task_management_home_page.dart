@@ -55,7 +55,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     ],
                   ),
                   Container(
-                    padding: EdgeInsets.all(12),
+                    padding: EdgeInsets.all(16),
                     margin: EdgeInsets.symmetric(vertical: 16),
                     height: 82,
                     decoration: BoxDecoration(
