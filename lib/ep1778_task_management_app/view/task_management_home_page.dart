@@ -99,6 +99,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                   Expanded(
                     child: ListView.builder(itemBuilder: (context, index) {
                       return Container(
+                        margin: EdgeInsets.only(top: 16),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(8),
@@ -108,14 +109,17 @@ class _TaskHomePageState extends State<TaskHomePage> {
                         ),
                         padding: EdgeInsets.all(16),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               children: [
-                                Column(
-                                  children: [
-                                    Text("Mobile Flick "),
-                                    Text("20 Jan"),
-                                  ],
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      Text("Mobile Flick "),
+                                      Text("20 Jan"),
+                                    ],
+                                  ),
                                 ),
                                 Container(
                                   decoration: BoxDecoration(),
