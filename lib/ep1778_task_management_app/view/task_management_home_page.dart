@@ -68,12 +68,15 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Column(
-                          children: [
-                            Text("Sun"),
-                            Gap(8),
-                            Text("12"),
-                          ],
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 16),
+                          child: Column(
+                            children: [
+                              Text("Sun"),
+                              Gap(8),
+                              Text("12"),
+                            ],
+                          ),
                         );
                       },
                     ),
