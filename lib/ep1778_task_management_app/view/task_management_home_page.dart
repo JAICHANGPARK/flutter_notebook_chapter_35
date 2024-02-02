@@ -106,9 +106,30 @@ class _TaskHomePageState extends State<TaskHomePage> {
                             color: Colors.grey[100]!,
                           ),
                         ),
+                        padding: EdgeInsets.all(16),
                         child: Column(
                           children: [
-
+                            Row(
+                              children: [
+                                Column(
+                                  children: [
+                                    Text("Mobile Flick "),
+                                    Text("20 Jan"),
+                                  ],
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(),
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        child: Text("High"),
+                                      ),
+                                      Icon(Icons.keyboard_arrow_down),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            )
                           ],
                         ),
                       );
