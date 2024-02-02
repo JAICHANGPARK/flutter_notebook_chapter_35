@@ -12,6 +12,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Stack(
           children: [
@@ -55,7 +56,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(
-                      horizontal: 16,
+                      vertical: 16,
                     ),
                     height: 64,
                     decoration: BoxDecoration(
@@ -63,7 +64,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                         borderRadius: BorderRadius.circular(8),
                         boxShadow: [],
                         border: Border.all(
-                          color: Colors.grey[100],
+                          color: Colors.grey[100]!,
                         )),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
