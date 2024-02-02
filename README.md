@@ -1,6 +1,15 @@
 # flutter_notebook_chapter_35
 
-## EP1774
+## EP1774-1777
+
+- LearnLuxe! 🚀- e learning App
+- by Awe Mobile App for Awe Design Studio
+- https://dribbble.com/shots/23488444-LearnLuxe-e-leaning-App
+
+<img src="https://cdn.dribbble.com/userupload/12606520/file/original-49c94c893f7cc12ba4a9b8fb450b3fd4.png?resize=1504x1128"/>
+
+
+## EP1774-1777
 
 - LearnLuxe! 🚀- e learning App
 - by Awe Mobile App for Awe Design Studio
