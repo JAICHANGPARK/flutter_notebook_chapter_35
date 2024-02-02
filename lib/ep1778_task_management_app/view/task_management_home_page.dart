@@ -54,16 +54,26 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     ],
                   ),
                   Container(
+                    margin: EdgeInsets.symmetric(
+                      horizontal: 16,
+                    ),
                     height: 64,
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                        boxShadow: [],
+                        border: Border.all(
+                          color: Colors.grey[100],
+                        )),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Column(
-                          children: [Text("Sun"), Gap(8), Text("12")],
+                          children: [
+                            Text("Sun"),
+                            Gap(8),
+                            Text("12"),
+                          ],
                         );
                       },
                     ),
