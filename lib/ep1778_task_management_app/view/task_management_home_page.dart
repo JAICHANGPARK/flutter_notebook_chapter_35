@@ -124,14 +124,17 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                 ),
                                 Container(
                                   decoration: BoxDecoration(
-                                      border: Border.all(
-                                    color: Colors.grey,
-                                  )),
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                    ),
+                                    borderRadius: BorderRadius.circular(2),
+                                  ),
                                   child: Row(
                                     children: [
                                       Container(
                                         decoration: BoxDecoration(
                                           color: Colors.red[100],
+                                          borderRadius: BorderRadius.circular(2),
                                         ),
                                         padding: EdgeInsets.symmetric(
                                           horizontal: 12,
