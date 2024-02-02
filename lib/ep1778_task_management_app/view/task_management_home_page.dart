@@ -104,7 +104,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(8),
                           border: Border.all(
-                            color: Colors.grey[100]!,
+                            color: Colors.grey[200]!,
                           ),
                         ),
                         padding: EdgeInsets.all(16),
