@@ -58,6 +58,16 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                     ),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Column(
+                          children: [
+
+                          ],
+                        );
+                      },
+                    ),
                   )
                 ],
               ),
