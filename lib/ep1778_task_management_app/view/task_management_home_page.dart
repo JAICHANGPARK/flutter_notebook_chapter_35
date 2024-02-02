@@ -115,6 +115,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                               children: [
                                 Expanded(
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("Mobile Flick "),
                                       Text("20 Jan"),
@@ -122,10 +123,20 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                   ),
                                 ),
                                 Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                    color: Colors.grey,
+                                  )),
                                   child: Row(
                                     children: [
                                       Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.red[100],
+                                        ),
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 12,
+                                          vertical: 4,
+                                        ),
                                         child: Text("High"),
                                       ),
                                       Icon(Icons.keyboard_arrow_down),
