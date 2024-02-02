@@ -12,7 +12,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[50],
       body: SafeArea(
         child: Stack(
           children: [
@@ -81,18 +81,38 @@ class _TaskHomePageState extends State<TaskHomePage> {
                       },
                     ),
                   ),
+                  Gap(16),
                   Row(
                     children: [
                       Text(
                         "Today Task",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 18,
                         ),
                       ),
                       Icon(
                         Icons.keyboard_arrow_down,
                       )
                     ],
+                  ),
+                  Expanded(
+                    child: ListView.builder(itemBuilder: (context, index) {
+                      return Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: Colors.grey[100]!,
+                          ),
+                        ),
+                        child: Column(
+                          children: [
+
+                          ],
+                        ),
+                      );
+                    }),
                   )
                 ],
               ),
