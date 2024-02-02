@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TaskHomePage extends StatefulWidget {
   const TaskHomePage({super.key});
@@ -23,11 +24,13 @@ class _TaskHomePageState extends State<TaskHomePage> {
                   Row(
                     children: [
                       CircleAvatar(),
+                      Gap(6),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Dream Walker"),
+                            Gap(2),
                             Text("Good Morning Dream"),
                           ],
                         ),
