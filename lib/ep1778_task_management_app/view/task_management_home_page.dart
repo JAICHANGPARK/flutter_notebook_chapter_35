@@ -23,26 +23,31 @@ class _TaskHomePageState extends State<TaskHomePage> {
                 children: [
                   Row(
                     children: [
-                      CircleAvatar(),
-                      Gap(6),
-                      Expanded(
+                      const CircleAvatar(),
+                      const Gap(6),
+                      const Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Dream Walker"),
+                            Text(
+                              "Dream Walker",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                             Gap(2),
                             Text("Good Morning Dream"),
                           ],
                         ),
                       ),
-                      Badge(
+                      const Badge(
                         child: Icon(
                           Icons.notifications_active_outlined,
                         ),
                       ),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.more_horiz,
                         ),
                       ),
@@ -60,26 +65,26 @@ class _TaskHomePageState extends State<TaskHomePage> {
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(32),
                 ),
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.home_filled),
+                      icon: const Icon(Icons.home_filled),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.home_filled),
+                      icon: const Icon(Icons.home_filled),
                     ),
-                    CircleAvatar(),
+                    const CircleAvatar(),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.home_filled),
+                      icon: const Icon(Icons.home_filled),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.home_filled),
+                      icon: const Icon(Icons.home_filled),
                     ),
                   ],
                 ),
