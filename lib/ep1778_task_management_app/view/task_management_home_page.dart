@@ -134,13 +134,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                     ),
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(2),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey[100]!,
-                                        blurRadius: 3,
-                                        spreadRadius: 2
-                                      )
-                                    ],
+                                    boxShadow: [BoxShadow(color: Colors.grey[100]!, blurRadius: 3, spreadRadius: 2)],
                                   ),
                                   child: Row(
                                     children: [
@@ -155,7 +149,9 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                         ),
                                         child: const Text("High"),
                                       ),
-                                      const Icon(Icons.keyboard_arrow_down),
+                                      const Icon(
+                                        Icons.keyboard_arrow_down,
+                                      ),
                                     ],
                                   ),
                                 ),
