@@ -257,11 +257,11 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.home_filled),
+                      icon: const Icon(Icons.list_alt),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.home_filled),
+                      icon: const Icon(Icons.settings_outlined),
                     ),
                   ],
                 ),
