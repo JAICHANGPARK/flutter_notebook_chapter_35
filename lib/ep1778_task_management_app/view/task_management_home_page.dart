@@ -132,7 +132,13 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                     border: Border.all(
                                       color: Colors.grey,
                                     ),
+                                    color: Colors.white,
                                     borderRadius: BorderRadius.circular(2),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey,
+                                      )
+                                    ],
                                   ),
                                   child: Row(
                                     children: [
