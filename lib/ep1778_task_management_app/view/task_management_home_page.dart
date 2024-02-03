@@ -230,15 +230,15 @@ class _TaskHomePageState extends State<TaskHomePage> {
               ),
             ),
             Positioned(
-              left: 32,
-              right: 32,
+              left: 42,
+              right: 42,
               bottom: 16,
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(32),
                 ),
-                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -259,11 +259,11 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.list_alt),
+                      icon: const Icon(Icons.list_alt),color: Colors.grey,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.settings_outlined),
+                      icon: const Icon(Icons.settings_outlined),color: Colors.grey,
                     ),
                   ],
                 ),
