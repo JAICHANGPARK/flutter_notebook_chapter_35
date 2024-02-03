@@ -164,7 +164,8 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                 Container(
                                   width: 160,
                                   decoration: BoxDecoration(
-                                    
+                                    color: Colors.grey[100]!,
+                                    borderRadius: BorderRadius.circular(24),
                                   ),
                                 )
                               ],
