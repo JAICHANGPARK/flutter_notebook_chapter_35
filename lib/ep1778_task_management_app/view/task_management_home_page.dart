@@ -130,13 +130,15 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                 Container(
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.grey,
+                                      color: Colors.grey[200]!,
                                     ),
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(2),
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Colors.grey,
+                                        color: Colors.grey[100]!,
+                                        blurRadius: 3,
+                                        spreadRadius: 2
                                       )
                                     ],
                                   ),
