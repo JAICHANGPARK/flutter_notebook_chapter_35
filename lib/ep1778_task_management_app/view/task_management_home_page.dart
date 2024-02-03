@@ -169,11 +169,16 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                     color: Colors.grey[200]!,
                                     borderRadius: BorderRadius.circular(24),
                                   ),
-                                  child: Container(
-                                    width: 60,
-                                    decoration: BoxDecoration(
-                                      color: Colors.blue,
-                                    ),
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        width: 60,
+                                        decoration: BoxDecoration(
+                                          color: Colors.blue,
+                                          borderRadius: BorderRadius.circular(24),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                                 Gap(6),
