@@ -55,8 +55,8 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     ],
                   ),
                   Container(
-                    padding: EdgeInsets.all(16),
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.all(16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     height: 82,
                     decoration: BoxDecoration(
                         color: Colors.white,
@@ -68,8 +68,8 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 16),
+                        return const Padding(
+                          padding: EdgeInsets.only(right: 16),
                           child: Column(
                             children: [
                               Text("Sun"),
@@ -81,8 +81,8 @@ class _TaskHomePageState extends State<TaskHomePage> {
                       },
                     ),
                   ),
-                  Gap(16),
-                  Row(
+                  const Gap(16),
+                  const Row(
                     children: [
                       Text(
                         "Today Task",
@@ -99,7 +99,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                   Expanded(
                     child: ListView.builder(itemBuilder: (context, index) {
                       return Container(
-                        margin: EdgeInsets.only(top: 16),
+                        margin: const EdgeInsets.only(top: 16),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(8),
@@ -113,7 +113,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                           children: [
                             Row(
                               children: [
-                                Expanded(
+                                const Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -141,25 +141,25 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                           color: Colors.red[100],
                                           borderRadius: BorderRadius.circular(2),
                                         ),
-                                        padding: EdgeInsets.symmetric(
+                                        padding: const EdgeInsets.symmetric(
                                           horizontal: 12,
                                           vertical: 4,
                                         ),
-                                        child: Text("High"),
+                                        child: const Text("High"),
                                       ),
-                                      Icon(Icons.keyboard_arrow_down),
+                                      const Icon(Icons.keyboard_arrow_down),
                                     ],
                                   ),
                                 ),
                               ],
                             ),
-                            Gap(8),
-                            Text(
+                            const Gap(8),
+                            const Text(
                               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D",
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Row(
                               children: [
                                 Container(
@@ -181,9 +181,24 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                     ],
                                   ),
                                 ),
-                                Gap(6),
-                                Text("40%")
+                                const Gap(6),
+                                const Text("40%")
                               ],
+                            ),
+                            SizedBox(
+                              height: 40,
+                              child: Row(
+                                children: [
+                                  Stack(
+                                    children: List.generate(
+                                      3,
+                                      (index) => Positioned(
+                                        child: CircleAvatar(),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),
