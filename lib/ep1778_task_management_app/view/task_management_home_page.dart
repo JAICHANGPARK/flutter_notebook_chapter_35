@@ -206,7 +206,18 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                         ),
                                       ),
                                     ),
-                                  )
+                                  ),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.chat_outlined),
+                                    iconSize: 20,
+                                  ),
+                                  Text(
+                                    "9",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ],
                               ),
                             )
