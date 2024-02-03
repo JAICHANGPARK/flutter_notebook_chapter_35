@@ -245,10 +245,12 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     IconButton(
                       onPressed: () {},
                       icon: const Icon(Icons.home_filled),
+                      color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: const Icon(Icons.search),
+                      color: Colors.grey,
                     ),
                     const CircleAvatar(
                       backgroundColor: Colors.blue,
