@@ -189,11 +189,16 @@ class _TaskHomePageState extends State<TaskHomePage> {
                               height: 40,
                               child: Row(
                                 children: [
-                                  Stack(
-                                    children: List.generate(
-                                      3,
-                                      (index) => Positioned(
-                                        child: CircleAvatar(),
+                                  Expanded(
+                                    child: Stack(
+                                      children: List.generate(
+                                        3,
+                                        (index) => Positioned(
+                                          left: 24.0 * index,
+                                          bottom: 0,
+                                          top: 0,
+                                          child: CircleAvatar(),
+                                        ),
                                       ),
                                     ),
                                   )
