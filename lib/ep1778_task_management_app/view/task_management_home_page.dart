@@ -159,15 +159,25 @@ class _TaskHomePageState extends State<TaskHomePage> {
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                             ),
+                            Gap(8),
                             Row(
                               children: [
                                 Container(
                                   width: 160,
+                                  height: 12,
                                   decoration: BoxDecoration(
-                                    color: Colors.grey[100]!,
+                                    color: Colors.grey[200]!,
                                     borderRadius: BorderRadius.circular(24),
                                   ),
-                                )
+                                  child: Container(
+                                    width: 60,
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
+                                Gap(6),
+                                Text("40%")
                               ],
                             )
                           ],
