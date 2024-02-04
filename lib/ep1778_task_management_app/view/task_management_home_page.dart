@@ -68,18 +68,22 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return const Padding(
+                        final dateTime = DateTime.now().add(Duration(days: index));
+                        return  Padding(
                           padding: EdgeInsets.only(right: 16),
                           child: Column(
                             children: [
                               Text(
-                                "Sun",
+                                "${dateTime.weekday}",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
+                                  color: Colors.blueGrey,
                                 ),
                               ),
                               Gap(8),
-                              Text("12"),
+                              Text(
+                                "12",
+                              ),
                             ],
                           ),
                         );
