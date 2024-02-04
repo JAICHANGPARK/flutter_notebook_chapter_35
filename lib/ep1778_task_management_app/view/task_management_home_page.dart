@@ -72,7 +72,12 @@ class _TaskHomePageState extends State<TaskHomePage> {
                           padding: EdgeInsets.only(right: 16),
                           child: Column(
                             children: [
-                              Text("Sun"),
+                              Text(
+                                "Sun",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               Gap(8),
                               Text("12"),
                             ],
@@ -259,11 +264,13 @@ class _TaskHomePageState extends State<TaskHomePage> {
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.list_alt),color: Colors.grey,
+                      icon: const Icon(Icons.list_alt),
+                      color: Colors.grey,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.settings_outlined),color: Colors.grey,
+                      icon: const Icon(Icons.settings_outlined),
+                      color: Colors.grey,
                     ),
                   ],
                 ),
