@@ -83,7 +83,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                   5 => "Fri",
                                   6 => "Sat",
                                   7 => "Sun",
-                                _ => "?"
+                                  _ => "?"
                                 },
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -177,10 +177,13 @@ class _TaskHomePageState extends State<TaskHomePage> {
                               ],
                             ),
                             Gap(12),
-                            const Text(
+                             Text(
                               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D",
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                color: Colors.blueGrey[200]!,
+                              ),
                             ),
                             Gap(12),
                             Row(
