@@ -8,7 +8,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/12779199/file/original-33dec48918632869dc429b78fa0240f3.png?resize=1504x1128"/>
 
-
 ## EP1774-1777
 
 - LearnLuxe! 🚀- e learning App
@@ -16,7 +15,6 @@
 - https://dribbble.com/shots/23488444-LearnLuxe-e-leaning-App
 
 <img src="https://cdn.dribbble.com/userupload/12606520/file/original-49c94c893f7cc12ba4a9b8fb450b3fd4.png?resize=1504x1128"/>
-
 
 ## EP1767-1773
 
