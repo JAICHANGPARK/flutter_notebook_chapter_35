@@ -74,7 +74,9 @@ class _TaskHomePageState extends State<TaskHomePage> {
                           child: Column(
                             children: [
                               Text(
-                                "${dateTime.weekday}",
+                                switch(dateTime.weekday){
+                                  1 => "Mon",
+                                },
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.blueGrey,
@@ -82,7 +84,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                               ),
                               Gap(8),
                               Text(
-                                "12",
+                                "${dateTime.day}",
                               ),
                             ],
                           ),
