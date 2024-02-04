@@ -69,13 +69,21 @@ class _TaskHomePageState extends State<TaskHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         final dateTime = DateTime.now().add(Duration(days: index));
-                        return  Padding(
+                        return Padding(
                           padding: EdgeInsets.only(right: 16),
                           child: Column(
                             children: [
                               Text(
-                                switch(dateTime.weekday){
+                                switch (dateTime.weekday) {
                                   1 => "Mon",
+                                  // TODO: Handle this case.
+                                  2 => "Tue",
+                                  3 => "Wed",
+                                  4 => "Thu",
+                                  5 => "Fri",
+                                  6 => "Sat",
+                                  7 => "Sun",
+                                _ => "?"
                                 },
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
