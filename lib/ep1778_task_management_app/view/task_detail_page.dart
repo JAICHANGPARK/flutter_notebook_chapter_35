@@ -11,25 +11,28 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.white,
         centerTitle: true,
-        title: Text("Detail Task"),
+        title: const Text("Detail Task"),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.share,
             ),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.more_horiz,
             ),
           ),
         ],
       ),
-      body: Column(
+      body: const Column(
         children: [
           Text("Design System"),
           Row(
