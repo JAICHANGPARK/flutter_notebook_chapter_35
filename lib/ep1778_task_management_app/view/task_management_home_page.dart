@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_35/ep1778_task_management_app/view/task_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class TaskHomePage extends StatefulWidget {
@@ -70,7 +71,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                       itemBuilder: (context, index) {
                         final dateTime = DateTime.now().add(Duration(days: index));
                         return Padding(
-                          padding: EdgeInsets.only(right: 16),
+                          padding: const EdgeInsets.only(right: 16),
                           child: Column(
                             children: [
                               Text(
@@ -85,12 +86,12 @@ class _TaskHomePageState extends State<TaskHomePage> {
                                   7 => "Sun",
                                   _ => "?"
                                 },
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.blueGrey,
                                 ),
                               ),
-                              Gap(8),
+                              const Gap(8),
                               Text(
                                 "${dateTime.day}",
                               ),
@@ -117,133 +118,142 @@ class _TaskHomePageState extends State<TaskHomePage> {
                   ),
                   Expanded(
                     child: ListView.builder(itemBuilder: (context, index) {
-                      return Container(
-                        margin: const EdgeInsets.only(top: 16),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(8),
-                          border: Border.all(
-                            color: Colors.grey[200]!,
+                      return InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => TaskDetailPage(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.only(top: 16),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: Colors.grey[200]!,
+                            ),
                           ),
-                        ),
-                        padding: const EdgeInsets.all(16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                const Expanded(
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "Mobile Flick ",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text("20 Jan"),
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.grey[300]!,
-                                    ),
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(2),
-                                    boxShadow: [BoxShadow(color: Colors.grey[100]!, blurRadius: 3, spreadRadius: 2)],
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.red[100],
-                                          borderRadius: BorderRadius.circular(2),
-                                        ),
-                                        padding: const EdgeInsets.symmetric(
-                                          horizontal: 12,
-                                          vertical: 4,
-                                        ),
-                                        child: const Text("High"),
-                                      ),
-                                      const Icon(
-                                        Icons.keyboard_arrow_down,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Gap(12),
-                             Text(
-                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D",
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                color: Colors.blueGrey[600]!,
-                              ),
-                            ),
-                            Gap(12),
-                            Row(
-                              children: [
-                                Container(
-                                  width: 160,
-                                  height: 12,
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey[200]!,
-                                    borderRadius: BorderRadius.circular(24),
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Container(
-                                        width: 60,
-                                        decoration: BoxDecoration(
-                                          color: Colors.blue,
-                                          borderRadius: BorderRadius.circular(24),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                const Gap(6),
-                                const Text("40%")
-                              ],
-                            ),
-                            Gap(12),
-                            SizedBox(
-                              height: 40,
-                              child: Row(
+                          padding: const EdgeInsets.all(16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
                                 children: [
-                                  Expanded(
-                                    child: Stack(
-                                      children: List.generate(
-                                        3,
-                                        (index) => Positioned(
-                                          left: 24.0 * index,
-                                          bottom: 0,
-                                          top: 0,
-                                          child: CircleAvatar(),
+                                  const Expanded(
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Mobile Flick ",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
+                                        Text("20 Jan"),
+                                      ],
                                     ),
                                   ),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(Icons.chat_outlined),
-                                    iconSize: 20,
-                                  ),
-                                  Text(
-                                    "9",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.grey[300]!,
+                                      ),
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(2),
+                                      boxShadow: [BoxShadow(color: Colors.grey[100]!, blurRadius: 3, spreadRadius: 2)],
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.red[100],
+                                            borderRadius: BorderRadius.circular(2),
+                                          ),
+                                          padding: const EdgeInsets.symmetric(
+                                            horizontal: 12,
+                                            vertical: 4,
+                                          ),
+                                          child: const Text("High"),
+                                        ),
+                                        const Icon(
+                                          Icons.keyboard_arrow_down,
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ],
                               ),
-                            )
-                          ],
+                              const Gap(12),
+                              Text(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. D",
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  color: Colors.blueGrey[600]!,
+                                ),
+                              ),
+                              const Gap(12),
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 160,
+                                    height: 12,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200]!,
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        Container(
+                                          width: 60,
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius: BorderRadius.circular(24),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  const Gap(6),
+                                  const Text("40%")
+                                ],
+                              ),
+                              const Gap(12),
+                              SizedBox(
+                                height: 40,
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      child: Stack(
+                                        children: List.generate(
+                                          3,
+                                          (index) => Positioned(
+                                            left: 24.0 * index,
+                                            bottom: 0,
+                                            top: 0,
+                                            child: const CircleAvatar(),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: const Icon(Icons.chat_outlined),
+                                      iconSize: 20,
+                                    ),
+                                    const Text(
+                                      "9",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       );
                     }),
