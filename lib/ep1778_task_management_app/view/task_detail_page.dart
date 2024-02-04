@@ -80,35 +80,60 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
             ],
           ),
           Divider(),
-          DefaultTabController(
-            length: 3,
-            child: Column(
-              children: [
-                TabBar(
-                  tabs: [
-                    Tab(text: "1",),
-                    Tab(text: "1",),
-                    Tab(text: "1",),
-                  ],
-                ),
-                TabBarView(children: [
-                  Container(
-                    height: 120,
-                    child: Placeholder(),
+          Container(
+            height: 240,
+            child: DefaultTabController(
+              length: 3,
+              child: Column(
+                children: [
+                  TabBar(
+                    tabs: [
+                      Tab(
+                        text: "1",
+                      ),
+                      Tab(
+                        text: "1",
+                      ),
+                      Tab(
+                        text: "1",
+                      ),
+                    ],
                   ),
-                  Container(
-                    height: 120,
-                    child: Placeholder(),
+                  Expanded(
+                    child: TabBarView(
+                      children: [
+                        Container(
+                          height: 120,
+                          child: Placeholder(),
+                        ),
+                        Container(
+                          height: 120,
+                          child: Placeholder(),
+                        ),
+                        Container(
+                          height: 120,
+                          child: Placeholder(),
+                        ),
+                      ],
+                    ),
                   ),
-                  Container(
-                    height: 120,
-                    child: Placeholder(),
-                  ),
-                ],),
-
-              ],
+                ],
+              ),
             ),
           ),
+          Divider(),
+          Row(
+            children: [
+              CircleAvatar(),
+              Column(
+                children: [
+                  Text("Christian"),
+                  Text("8m ago"),
+                ],
+              ),
+              
+            ],
+          )
         ],
       ),
     );
