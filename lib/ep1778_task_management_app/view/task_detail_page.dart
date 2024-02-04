@@ -32,110 +32,113 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
           ),
         ],
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text("Design System"),
-          Row(
-            children: [
-              Icon(Icons.calendar_today),
-              Text("Date"),
-              VerticalDivider(),
-              Text("18 February 2024"),
-            ],
-          ),
-          Divider(),
-          Row(
-            children: [
-              Icon(Icons.calendar_today),
-              Text("Date"),
-              VerticalDivider(),
-              Text("18 February 2024"),
-            ],
-          ),
-          Divider(),
-          Row(
-            children: [
-              Icon(Icons.calendar_today),
-              Text("Date"),
-              VerticalDivider(),
-              Text("18 February 2024"),
-            ],
-          ),
-          Divider(),
-          Row(
-            children: [
-              Icon(Icons.calendar_today),
-              Text("Date"),
-              VerticalDivider(),
-              Text("18 February 2024"),
-            ],
-          ),
-          Divider(),
-          Row(
-            children: [
-              Icon(Icons.calendar_today),
-              Text("Date"),
-              VerticalDivider(),
-              Text("18 February 2024"),
-            ],
-          ),
-          Divider(),
-          Container(
-            height: 240,
-            child: DefaultTabController(
-              length: 3,
-              child: Column(
-                children: [
-                  TabBar(
-                    tabs: [
-                      Tab(
-                        text: "1",
-                      ),
-                      Tab(
-                        text: "1",
-                      ),
-                      Tab(
-                        text: "1",
-                      ),
-                    ],
-                  ),
-                  Expanded(
-                    child: TabBarView(
-                      children: [
-                        Container(
-                          height: 120,
-                          child: Placeholder(),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Design System"),
+            Row(
+              children: [
+                Icon(Icons.calendar_today),
+                Text("Date"),
+                VerticalDivider(),
+                Text("18 February 2024"),
+              ],
+            ),
+            Divider(),
+            Row(
+              children: [
+                Icon(Icons.calendar_today),
+                Text("Date"),
+                VerticalDivider(),
+                Text("18 February 2024"),
+              ],
+            ),
+            Divider(),
+            Row(
+              children: [
+                Icon(Icons.calendar_today),
+                Text("Date"),
+                VerticalDivider(),
+                Text("18 February 2024"),
+              ],
+            ),
+            Divider(),
+            Row(
+              children: [
+                Icon(Icons.calendar_today),
+                Text("Date"),
+                VerticalDivider(),
+                Text("18 February 2024"),
+              ],
+            ),
+            Divider(),
+            Row(
+              children: [
+                Icon(Icons.calendar_today),
+                Text("Date"),
+                VerticalDivider(),
+                Text("18 February 2024"),
+              ],
+            ),
+            Divider(),
+            Container(
+              height: 240,
+              child: DefaultTabController(
+                length: 3,
+                child: Column(
+                  children: [
+                    TabBar(
+                      tabs: [
+                        Tab(
+                          text: "1",
                         ),
-                        Container(
-                          height: 120,
-                          child: Placeholder(),
+                        Tab(
+                          text: "1",
                         ),
-                        Container(
-                          height: 120,
-                          child: Placeholder(),
+                        Tab(
+                          text: "1",
                         ),
                       ],
                     ),
-                  ),
-                ],
+                    Expanded(
+                      child: TabBarView(
+                        children: [
+                          Container(
+                            height: 120,
+                            child: Placeholder(),
+                          ),
+                          Container(
+                            height: 120,
+                            child: Placeholder(),
+                          ),
+                          Container(
+                            height: 120,
+                            child: Placeholder(),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-          Divider(),
-          Row(
-            children: [
-              CircleAvatar(),
-              Column(
-                children: [
-                  Text("Christian"),
-                  Text("8m ago"),
-                ],
-              ),
+            Divider(),
+            Row(
+              children: [
+                CircleAvatar(),
+                Column(
+                  children: [
+                    Text("Christian"),
+                    Text("8m ago"),
+                  ],
+                ),
 
-            ],
-          )
-        ],
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
