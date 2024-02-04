@@ -33,6 +33,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
         ],
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text("Design System"),
           Row(
@@ -131,7 +132,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                   Text("8m ago"),
                 ],
               ),
-              
+
             ],
           )
         ],
