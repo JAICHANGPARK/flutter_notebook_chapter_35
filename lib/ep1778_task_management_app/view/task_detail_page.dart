@@ -32,7 +32,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
           ),
         ],
       ),
-      body: const Column(
+      body:  Column(
         children: [
           Text("Design System"),
           Row(
@@ -44,6 +44,49 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
             ],
           ),
           Divider(),
+          Row(
+            children: [
+              Icon(Icons.calendar_today),
+              Text("Date"),
+              VerticalDivider(),
+              Text("18 February 2024"),
+            ],
+          ),
+          Divider(),
+          Row(
+            children: [
+              Icon(Icons.calendar_today),
+              Text("Date"),
+              VerticalDivider(),
+              Text("18 February 2024"),
+            ],
+          ),
+          Divider(),
+          Row(
+            children: [
+              Icon(Icons.calendar_today),
+              Text("Date"),
+              VerticalDivider(),
+              Text("18 February 2024"),
+            ],
+          ),
+          Divider(),
+          Row(
+            children: [
+              Icon(Icons.calendar_today),
+              Text("Date"),
+              VerticalDivider(),
+              Text("18 February 2024"),
+            ],
+          ),
+          Divider(),
+          TabBar(
+            tabs: [],
+          ),
+          Container(
+            height: 120,
+            child: Placeholder(),
+          ),
         ],
       ),
     );
