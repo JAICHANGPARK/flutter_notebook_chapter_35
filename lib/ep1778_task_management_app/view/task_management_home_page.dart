@@ -182,7 +182,7 @@ class _TaskHomePageState extends State<TaskHomePage> {
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
-                                color: Colors.blueGrey[200]!,
+                                color: Colors.blueGrey[600]!,
                               ),
                             ),
                             Gap(12),
