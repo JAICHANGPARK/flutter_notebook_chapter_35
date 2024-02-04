@@ -32,7 +32,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
           ),
         ],
       ),
-      body:  Column(
+      body: Column(
         children: [
           Text("Design System"),
           Row(
@@ -80,12 +80,34 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
             ],
           ),
           Divider(),
-          TabBar(
-            tabs: [],
-          ),
-          Container(
-            height: 120,
-            child: Placeholder(),
+          DefaultTabController(
+            length: 3,
+            child: Column(
+              children: [
+                TabBar(
+                  tabs: [
+                    Tab(text: "1",),
+                    Tab(text: "1",),
+                    Tab(text: "1",),
+                  ],
+                ),
+                TabBarView(children: [
+                  Container(
+                    height: 120,
+                    child: Placeholder(),
+                  ),
+                  Container(
+                    height: 120,
+                    child: Placeholder(),
+                  ),
+                  Container(
+                    height: 120,
+                    child: Placeholder(),
+                  ),
+                ],),
+
+              ],
+            ),
           ),
         ],
       ),
