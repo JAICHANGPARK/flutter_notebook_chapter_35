@@ -41,6 +41,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
               "Design System",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
+                fontSize: 24
               ),
             ),
             Row(
