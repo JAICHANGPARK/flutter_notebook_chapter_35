@@ -63,6 +63,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                             "Date",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 16,
                             ),
                           ),
                         ],
@@ -71,7 +72,12 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                     VerticalDivider(
                       width: 32,
                     ),
-                    Text("18 February 2024"),
+                    Text("18 February 2024",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
                   ],
                 ),
               ),
