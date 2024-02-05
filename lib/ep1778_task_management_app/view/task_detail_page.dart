@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TaskDetailPage extends StatefulWidget {
   const TaskDetailPage({super.key});
@@ -46,13 +47,20 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                 fontSize: 24,
               ),
             ),
-            Row(
-              children: [
-                Icon(Icons.calendar_today),
-                Text("Date"),
-                VerticalDivider(),
-                Text("18 February 2024"),
-              ],
+            Gap(16),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IntrinsicHeight(
+                child: Row(
+                  children: [
+                    Icon(Icons.calendar_today),
+                    Gap(4),
+                    Text("Date"),
+                    VerticalDivider(),
+                    Text("18 February 2024"),
+                  ],
+                ),
+              ),
             ),
             Divider(),
             Row(
