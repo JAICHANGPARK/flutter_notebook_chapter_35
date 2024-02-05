@@ -315,11 +315,23 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         children: [
                           Container(
                             height: 120,
-                            child: Placeholder(),
+                            margin: EdgeInsets.symmetric(vertical: 8),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[100],
+                              borderRadius: BorderRadius.circular(
+                                12,
+                              ),
+                            ),
                           ),
                           Container(
                             height: 120,
-                            child: Placeholder(),
+                            margin: EdgeInsets.symmetric(vertical: 8),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[100],
+                              borderRadius: BorderRadius.circular(
+                                12,
+                              ),
+                            ),
                           ),
                           Container(
                             height: 120,
