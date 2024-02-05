@@ -267,10 +267,13 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.grey[400]!,
+                            color: Colors.grey[600]!,
+                            blurRadius: 1,
+
                           )
                         ],
                       ),
+                      padding: EdgeInsets.all(4),
                       child: Row(
                         children: [
                           Text("Research"),
