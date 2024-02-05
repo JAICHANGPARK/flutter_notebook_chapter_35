@@ -294,8 +294,10 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
               child: DefaultTabController(
                 length: 3,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     TabBar(
+                      isScrollable: true,
                       tabs: [
                         Tab(
                           text: "Completed",
