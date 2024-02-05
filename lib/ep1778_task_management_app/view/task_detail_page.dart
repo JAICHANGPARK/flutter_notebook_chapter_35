@@ -269,7 +269,6 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                           BoxShadow(
                             color: Colors.grey[600]!,
                             blurRadius: 1,
-
                           )
                         ],
                       ),
@@ -288,7 +287,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                 ),
               ),
             ),
-            Divider(),
+            Gap(16),
             Container(
               height: 240,
               child: DefaultTabController(
@@ -297,6 +296,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     TabBar(
+                      tabAlignment: TabAlignment.start,
                       isScrollable: true,
                       tabs: [
                         Tab(
