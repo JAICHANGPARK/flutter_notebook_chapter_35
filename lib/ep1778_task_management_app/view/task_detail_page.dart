@@ -118,13 +118,61 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
               ),
             ),
             Divider(),
-            Row(
-              children: [
-                Icon(Icons.calendar_today),
-                Text("Date"),
-                VerticalDivider(),
-                Text("18 February 2024"),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IntrinsicHeight(
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 110,
+                      child: Row(
+                        children: [
+                          Icon(Icons.list,size: 18,),
+                          Gap(8),
+                          Text(
+                            "Priority",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    VerticalDivider(
+                      width: 32,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(2),
+                        boxShadow: [BoxShadow(color: Colors.grey[100]!, blurRadius: 3, spreadRadius: 2)],
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.red[100],
+                              borderRadius: BorderRadius.circular(2),
+                            ),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 12,
+                              vertical: 4,
+                            ),
+                            child: const Text("High"),
+                          ),
+                          const Icon(
+                            Icons.keyboard_arrow_down,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
             Divider(),
             Row(
