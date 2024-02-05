@@ -195,13 +195,48 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
               ),
             ),
             Divider(),
-            Row(
-              children: [
-                Icon(Icons.calendar_today),
-                Text("Date"),
-                VerticalDivider(),
-                Text("18 February 2024"),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IntrinsicHeight(
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 110,
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.timelapse,
+                            size: 18,
+                          ),
+                          Gap(8),
+                          Text(
+                            "Assigned",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    VerticalDivider(
+                      width: 32,
+                    ),
+                    Expanded(
+                      child: Container(
+
+                        child: Stack(
+                          children: [
+                            CircleAvatar(
+                              
+                            ),
+                          ],
+                        )
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
             Divider(),
             Row(
