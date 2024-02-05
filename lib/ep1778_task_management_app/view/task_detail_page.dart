@@ -224,28 +224,66 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                     ),
                     Expanded(
                       child: Container(
-
-                        child: Stack(
-                          children: [
-                            CircleAvatar(
-                              
-                            ),
-                          ],
-                        )
-                      ),
+                          child: Stack(
+                        children: [
+                          CircleAvatar(),
+                        ],
+                      )),
                     ),
                   ],
                 ),
               ),
             ),
             Divider(),
-            Row(
-              children: [
-                Icon(Icons.calendar_today),
-                Text("Date"),
-                VerticalDivider(),
-                Text("18 February 2024"),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IntrinsicHeight(
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 110,
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.arrow_circle_down_sharp,
+                            size: 18,
+                          ),
+                          Gap(8),
+                          Text(
+                            "Stage",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    VerticalDivider(
+                      width: 32,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[400]!,
+                          )
+                        ],
+                      ),
+                      child: Row(
+                        children: [
+                          Text("Research"),
+                          Icon(
+                            Icons.search,
+                            size: 12,
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
             Divider(),
             Container(
