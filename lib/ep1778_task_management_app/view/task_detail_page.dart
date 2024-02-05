@@ -37,7 +37,12 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Design System"),
+            Text(
+              "Design System",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             Row(
               children: [
                 Icon(Icons.calendar_today),
@@ -134,7 +139,6 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                     Text("8m ago"),
                   ],
                 ),
-
               ],
             )
           ],
