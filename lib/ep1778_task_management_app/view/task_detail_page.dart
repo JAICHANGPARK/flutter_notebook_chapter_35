@@ -54,10 +54,10 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                 child: Row(
                   children: [
                     SizedBox(
-                      width: 80,
+                      width: 110,
                       child: Row(
                         children: [
-                          Icon(Icons.calendar_today),
+                          Icon(Icons.calendar_today,size: 18,),
                           Gap(8),
                           Text(
                             "Date",
@@ -83,13 +83,39 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
               ),
             ),
             Divider(),
-            Row(
-              children: [
-                Icon(Icons.calendar_today),
-                Text("Date"),
-                VerticalDivider(),
-                Text("18 February 2024"),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IntrinsicHeight(
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 110,
+                      child: Row(
+                        children: [
+                          Icon(Icons.list,size: 18,),
+                          Gap(8),
+                          Text(
+                            "Detail Task",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    VerticalDivider(
+                      width: 32,
+                    ),
+                    Text("18 February 2024",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
             Divider(),
             Row(
