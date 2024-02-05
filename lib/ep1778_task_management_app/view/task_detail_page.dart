@@ -130,7 +130,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                       width: 110,
                       child: Row(
                         children: [
-                          Icon(Icons.list,size: 18,),
+                          Icon(Icons.timelapse,size: 18,),
                           Gap(8),
                           Text(
                             "Priority",
