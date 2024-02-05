@@ -298,13 +298,13 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                     TabBar(
                       tabs: [
                         Tab(
-                          text: "1",
+                          text: "Completed",
                         ),
                         Tab(
-                          text: "1",
+                          text: "Subtask",
                         ),
                         Tab(
-                          text: "1",
+                          text: "Comments",
                         ),
                       ],
                     ),
