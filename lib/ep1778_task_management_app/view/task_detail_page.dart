@@ -53,16 +53,24 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
               child: IntrinsicHeight(
                 child: Row(
                   children: [
-                    SizedBox(width: 120,
-                    child: Row(
-                      children: [
-                        Icon(Icons.calendar_today),
-                        Gap(8),
-                        Text("Date"),
-                      ],
-                    ),),
-
-                    VerticalDivider(),
+                    SizedBox(
+                      width: 80,
+                      child: Row(
+                        children: [
+                          Icon(Icons.calendar_today),
+                          Gap(8),
+                          Text(
+                            "Date",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    VerticalDivider(
+                      width: 32,
+                    ),
                     Text("18 February 2024"),
                   ],
                 ),
