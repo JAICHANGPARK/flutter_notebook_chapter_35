@@ -57,7 +57,10 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                       width: 110,
                       child: Row(
                         children: [
-                          Icon(Icons.calendar_today,size: 18,),
+                          Icon(
+                            Icons.calendar_today,
+                            size: 18,
+                          ),
                           Gap(8),
                           Text(
                             "Date",
@@ -72,7 +75,8 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                     VerticalDivider(
                       width: 32,
                     ),
-                    Text("18 February 2024",
+                    Text(
+                      "18 February 2024",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
@@ -92,7 +96,10 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                       width: 110,
                       child: Row(
                         children: [
-                          Icon(Icons.list,size: 18,),
+                          Icon(
+                            Icons.list,
+                            size: 18,
+                          ),
                           Gap(8),
                           Text(
                             "Detail Task",
@@ -108,7 +115,8 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                       width: 32,
                     ),
                     Expanded(
-                      child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                      child: Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                         maxLines: 2,
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -130,7 +138,10 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                       width: 110,
                       child: Row(
                         children: [
-                          Icon(Icons.timelapse,size: 18,),
+                          Icon(
+                            Icons.timelapse,
+                            size: 18,
+                          ),
                           Gap(8),
                           Text(
                             "Priority",
@@ -152,7 +163,13 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
                         ),
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(2),
-                        boxShadow: [BoxShadow(color: Colors.grey[100]!, blurRadius: 3, spreadRadius: 2)],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[100]!,
+                            blurRadius: 3,
+                            spreadRadius: 2,
+                          ),
+                        ],
                       ),
                       child: Row(
                         children: [
