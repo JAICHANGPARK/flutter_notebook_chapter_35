@@ -33,7 +33,9 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 16,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -41,7 +43,7 @@ class _TaskDetailPageState extends State<TaskDetailPage> {
               "Design System",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 24
+                fontSize: 24,
               ),
             ),
             Row(
