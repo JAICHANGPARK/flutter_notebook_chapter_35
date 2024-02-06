@@ -18,6 +18,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
               children: [
                 Text(
                   "Hi Dream\nWelcome back",
+                ),
+                Badge(
+                  child: Icon(Icons.notifications_outlined),
+                  label: Text(""),
                 )
               ],
             )
