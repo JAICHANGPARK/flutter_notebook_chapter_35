@@ -1,12 +1,12 @@
 # flutter_notebook_chapter_35
 
-## EP1778-1782
+## EP1783
 
-- Task Management Mobile Apps Design
-- by Debora for Odama
-- https://dribbble.com/shots/23548050-Task-Management-Mobile-Apps-Design
+- Task Manager Mobile App
+- by Kate Zimina
+- https://dribbble.com/shots/23556291-Task-Manager-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/12779199/file/original-33dec48918632869dc429b78fa0240f3.png?resize=1504x1128"/>
+<img src="https://cdn.dribbble.com/userupload/12802994/file/original-fdca4c0be4c5aaa01f334e0a55232f57.jpg?resize=1905x1429"/>
 
 
 ## EP1778-1782
