@@ -42,6 +42,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                 ],
               ),
             ),
+            Gap(8),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
@@ -54,12 +55,12 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     Container(
                       height: 100,
                       child: Placeholder(),
-                    ),   Gap(4),
-                    Container(
-                      height: 100,
-                      child: Placeholder(),
                     ),
                     Gap(4),
+                    Container(
+                      height: 360,
+                      child: Placeholder(),
+                    ),
                   ],
                 ),
               ),
@@ -70,7 +71,6 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
       bottomNavigationBar: NavigationBar(
         backgroundColor: Colors.black,
         indicatorColor: Colors.white,
-
         labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
         destinations: [
           NavigationDestination(icon: Icon(Icons.apps), label: ""),
