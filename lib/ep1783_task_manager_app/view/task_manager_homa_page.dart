@@ -24,7 +24,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     "Hi Dream\nWelcome back",
                     style: TextStyle(
                       color: Colors.white,
-                     fontSize: 18,
+                      fontSize: 18,
                     ),
                   ),
                   Spacer(),
@@ -49,6 +49,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
         ),
       ),
       bottomNavigationBar: NavigationBar(
+        backgroundColor: Colors.black,
+        indicatorColor: Colors.white,
+
         labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
         destinations: [
           NavigationDestination(icon: Icon(Icons.apps), label: ""),
