@@ -20,9 +20,13 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                 Text(
                   "Hi Dream\nWelcome back",
                 ),
+                Spacer(),
                 Badge(
                   child: Icon(Icons.notifications_outlined),
                   label: Text(""),
+                ),
+                CircleAvatar(
+                  radius: 24,
                 )
               ],
             )
