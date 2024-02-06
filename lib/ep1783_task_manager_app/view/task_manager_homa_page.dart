@@ -15,23 +15,29 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Text(
-                  "Hi Dream\nWelcome back",
-                  style: TextStyle(
-                    color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Hi Dream\nWelcome back",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
-                ),
-                Spacer(),
-                Badge(
-                  child: Icon(Icons.notifications_outlined),
-                  label: Text(""),
-                ),
-                CircleAvatar(
-                  radius: 24,
-                )
-              ],
+                  Spacer(),
+                  Badge(
+                    child: Icon(
+                      Icons.notifications_outlined,
+                      color: Colors.white,
+                    ),
+                    label: Text("1"),
+                  ),
+                  CircleAvatar(
+                    radius: 24,
+                  )
+                ],
+              ),
             ),
             Expanded(
               child: SingleChildScrollView(),
@@ -40,8 +46,12 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
         ),
       ),
       bottomNavigationBar: NavigationBar(
+        labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
         destinations: [
           NavigationDestination(icon: Icon(Icons.apps), label: ""),
+          NavigationDestination(icon: Icon(Icons.apps), label: ""),
+          NavigationDestination(icon: Icon(Icons.settings), label: ""),
+          NavigationDestination(icon: Icon(Icons.person), label: ""),
         ],
       ),
     );
