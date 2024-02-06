@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_35/ep1783_task_manager_app/view/task_manager_homa_page.dart';
 
 void main() {
   runApp(TaskManagerApp());
@@ -10,7 +11,7 @@ class TaskManagerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+      home: TaskManagerHomePage(),
     );
   }
 }
