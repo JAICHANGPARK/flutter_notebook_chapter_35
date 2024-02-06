@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TaskManagerHomePage extends StatefulWidget {
   const TaskManagerHomePage({super.key});
@@ -23,6 +24,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     "Hi Dream\nWelcome back",
                     style: TextStyle(
                       color: Colors.white,
+                     fontSize: 18,
                     ),
                   ),
                   Spacer(),
@@ -33,6 +35,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     ),
                     label: Text("1"),
                   ),
+                  Gap(6),
                   CircleAvatar(
                     radius: 24,
                   )
