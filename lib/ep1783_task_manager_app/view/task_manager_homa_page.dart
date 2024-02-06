@@ -11,6 +11,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
           children: [
