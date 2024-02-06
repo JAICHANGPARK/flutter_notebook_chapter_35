@@ -43,7 +43,24 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
               ),
             ),
             Expanded(
-              child: SingleChildScrollView(),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 200,
+                      child: Placeholder(),
+                    ),
+                    Container(
+                      height: 100,
+                      child: Placeholder(),
+                    ),
+                    Container(
+                      height: 100,
+                      child: Placeholder(),
+                    )
+                  ],
+                ),
+              ),
             ),
           ],
         ),
