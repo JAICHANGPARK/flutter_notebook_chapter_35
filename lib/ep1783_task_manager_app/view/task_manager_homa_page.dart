@@ -19,6 +19,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
               children: [
                 Text(
                   "Hi Dream\nWelcome back",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
                 ),
                 Spacer(),
                 Badge(
@@ -29,9 +32,17 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                   radius: 24,
                 )
               ],
-            )
+            ),
+            Expanded(
+              child: SingleChildScrollView(),
+            ),
           ],
         ),
+      ),
+      bottomNavigationBar: NavigationBar(
+        destinations: [
+          NavigationDestination(icon: Icon(Icons.apps), label: ""),
+        ],
       ),
     );
   }
