@@ -50,14 +50,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                       height: 200,
                       child: Placeholder(),
                     ),
+                    Gap(4),
+                    Container(
+                      height: 100,
+                      child: Placeholder(),
+                    ),   Gap(4),
                     Container(
                       height: 100,
                       child: Placeholder(),
                     ),
-                    Container(
-                      height: 100,
-                      child: Placeholder(),
-                    )
+                    Gap(4),
                   ],
                 ),
               ),
