@@ -8,7 +8,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/12802994/file/original-fdca4c0be4c5aaa01f334e0a55232f57.jpg?resize=1905x1429"/>
 
-
 ## EP1778-1782
 
 - Task Management Mobile Apps Design
