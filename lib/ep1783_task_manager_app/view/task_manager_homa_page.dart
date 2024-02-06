@@ -12,10 +12,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
