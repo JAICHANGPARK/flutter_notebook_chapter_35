@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TaskManagerHomePage extends StatefulWidget {
   const TaskManagerHomePage({super.key});
 
@@ -17,7 +16,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
           children: [
             Row(
               children: [
-                
+                Text(
+                  "Hi Dream\nWelcome back",
+                )
               ],
             )
           ],
