@@ -9,6 +9,7 @@ class TaskManagerHomePage extends StatefulWidget {
 }
 
 class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
+  int pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -181,6 +182,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
         backgroundColor: Colors.black,
         indicatorColor: Colors.white,
         labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
+        selectedIndex: pageIndex,
+        
+
         destinations: [
           const NavigationDestination(icon: Icon(Icons.apps), label: ""),
           const NavigationDestination(icon: Icon(Icons.apps), label: ""),
@@ -189,5 +193,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
         ],
       ),
     );
+
+
   }
 }
