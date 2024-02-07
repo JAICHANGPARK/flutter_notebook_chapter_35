@@ -90,7 +90,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.white,
+                                  borderRadius: BorderRadius.circular(16),
                                 ),
+                                padding: EdgeInsets.symmetric(horizontal: 3, vertical: 2),
                                 child: Row(
                                   children: [
                                     Text(
@@ -98,11 +100,13 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         color: Colors.red,
+                                        fontSize: 12,
                                       ),
                                     ),
                                     Icon(
                                       Icons.ssid_chart,
                                       color: Colors.red,
+                                      size: 14,
                                     )
                                   ],
                                 ),
