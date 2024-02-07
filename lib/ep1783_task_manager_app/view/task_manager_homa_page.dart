@@ -48,16 +48,24 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 200,
-                      decoration: BoxDecoration(
-                        color: Colors.lightGreen[100]
-                      ),
-                      child: Column(
-                        children: [
-
-                        ],
-                      )
-                    ),
+                        height: 200,
+                        decoration: BoxDecoration(color: Colors.lightGreen[100]),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.calendar_month,
+                                  size: 12,
+                                ),
+                                Text("10 Thu"),
+                                Spacer(),
+                                CircleAvatar(),
+                                CircleAvatar(),
+                              ],
+                            ),
+                          ],
+                        )),
                     const Gap(4),
                     Container(
                       height: 100,
