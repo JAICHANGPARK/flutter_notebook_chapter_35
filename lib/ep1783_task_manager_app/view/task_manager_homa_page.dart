@@ -130,6 +130,18 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 ),
                               ),
                             ],
+                          ),
+                          Divider(),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("# shopping"),
+                              Text("# renovation"),
+                              Text("# planning"),
+                              Container(
+                                width: 100,
+                              ),
+                            ],
                           )
                         ],
                       ),
