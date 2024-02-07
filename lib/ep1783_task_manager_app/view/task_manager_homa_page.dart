@@ -56,6 +56,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                       padding: EdgeInsets.all(12),
                       margin: EdgeInsets.symmetric(horizontal: 4),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
