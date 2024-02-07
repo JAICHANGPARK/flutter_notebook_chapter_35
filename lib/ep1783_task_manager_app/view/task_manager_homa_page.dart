@@ -52,37 +52,37 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         color: Colors.lightGreen[100],
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      padding: EdgeInsets.all(12),
-                      margin: EdgeInsets.symmetric(horizontal: 4),
+                      padding: const EdgeInsets.all(12),
+                      margin: const EdgeInsets.symmetric(horizontal: 4),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.calendar_month,
                                 size: 12,
                               ),
-                              Text("10 Thu"),
-                              Spacer(),
+                              const Text("10 Thu"),
+                              const Spacer(),
                               CircleAvatar(
-                                child: Icon(Icons.share),
+                                child: const Icon(Icons.share),
                                 backgroundColor: Colors.white.withOpacity(.3),
                               ),
-                              Gap(4),
-                              CircleAvatar(
+                              const Gap(4),
+                              const CircleAvatar(
                                 backgroundColor: Colors.black,
                                 child: Icon(Icons.add),
                                 foregroundColor: Colors.white,
                               ),
                             ],
                           ),
-                          Gap(24),
-                          Text(
+                          const Gap(24),
+                          const Text(
                             "Current tasks",
                           ),
-                          Gap(6),
-                          Text(
+                          const Gap(6),
+                          const Text(
                             "You have 3",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -91,7 +91,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           ),
                           Row(
                             children: [
-                              Text(
+                              const Text(
                                 "tasks",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -103,8 +103,8 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(16),
                                 ),
-                                padding: EdgeInsets.symmetric(horizontal: 3, vertical: 2),
-                                child: Row(
+                                padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 2),
+                                child: const Row(
                                   children: [
                                     Text(
                                       "High",
@@ -122,7 +122,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                   ],
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 "for today",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -131,15 +131,15 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               ),
                             ],
                           ),
-                          Divider(
+                          const Divider(
                             height: 42,
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("# shopping"),
-                              Text("# renovation"),
-                              Text("# planning"),
+                              const Text("# shopping"),
+                              const Text("# renovation"),
+                              const Text("# planning"),
                               Container(
                                 width: 100,
                               ),
