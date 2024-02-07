@@ -54,6 +54,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           borderRadius: BorderRadius.circular(24),
                         ),
                         padding: EdgeInsets.all(12),
+                        margin: EdgeInsets.symmetric(horizontal: 4),
                         child: Column(
                           children: [
                             Row(
