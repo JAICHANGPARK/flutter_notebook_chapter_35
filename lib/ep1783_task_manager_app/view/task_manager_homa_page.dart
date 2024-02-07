@@ -29,11 +29,11 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                   ),
                   Spacer(),
                   Badge(
+                    label: Text("1"),
                     child: Icon(
                       Icons.notifications_outlined,
                       color: Colors.white,
                     ),
-                    label: Text("1"),
                   ),
                   Gap(6),
                   CircleAvatar(
