@@ -48,7 +48,6 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 200,
                       decoration: BoxDecoration(
                         color: Colors.lightGreen[100],
                         borderRadius: BorderRadius.circular(24),
@@ -78,6 +77,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               ),
                             ],
                           ),
+                          Gap(24),
                           Text(
                             "Current tasks",
                           ),
@@ -93,6 +93,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                             children: [
                               Text(
                                 "tasks",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
                               ),
                               Container(
                                 decoration: BoxDecoration(
@@ -120,6 +124,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               ),
                               Text(
                                 "for today",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
                               ),
                             ],
                           )
