@@ -16,8 +16,8 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(12.0),
+            const Padding(
+              padding: EdgeInsets.all(12.0),
               child: Row(
                 children: [
                   Text(
@@ -42,24 +42,24 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                 ],
               ),
             ),
-            Gap(8),
+            const Gap(8),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
                   children: [
                     Container(
                       height: 200,
-                      child: Placeholder(),
+                      child: const Placeholder(),
                     ),
-                    Gap(4),
+                    const Gap(4),
                     Container(
                       height: 100,
-                      child: Placeholder(),
+                      child: const Placeholder(),
                     ),
-                    Gap(4),
+                    const Gap(4),
                     Container(
                       height: 360,
-                      child: Placeholder(),
+                      child: const Placeholder(),
                     ),
                   ],
                 ),
@@ -73,10 +73,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
         indicatorColor: Colors.white,
         labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
         destinations: [
-          NavigationDestination(icon: Icon(Icons.apps), label: ""),
-          NavigationDestination(icon: Icon(Icons.apps), label: ""),
-          NavigationDestination(icon: Icon(Icons.settings), label: ""),
-          NavigationDestination(icon: Icon(Icons.person), label: ""),
+          const NavigationDestination(icon: Icon(Icons.apps), label: ""),
+          const NavigationDestination(icon: Icon(Icons.apps), label: ""),
+          const NavigationDestination(icon: Icon(Icons.settings), label: ""),
+          const NavigationDestination(icon: Icon(Icons.person), label: ""),
         ],
       ),
     );
