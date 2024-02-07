@@ -81,7 +81,14 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           Text(
                             "Current tasks",
                           ),
-                          Text("You have 3"),
+                          Gap(6),
+                          Text(
+                            "You have 3",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
+                          ),
                           Row(
                             children: [
                               Text(
