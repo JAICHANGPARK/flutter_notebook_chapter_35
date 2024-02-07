@@ -131,7 +131,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               ),
                             ],
                           ),
-                          Divider(),
+                          Divider(
+                            height: 42,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
