@@ -98,6 +98,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                   fontSize: 24,
                                 ),
                               ),
+                              Gap(6),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.white,
@@ -122,6 +123,8 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                   ],
                                 ),
                               ),
+                              Gap(6),
+                              
                               const Text(
                                 "for today",
                                 style: TextStyle(
