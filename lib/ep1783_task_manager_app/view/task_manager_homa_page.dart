@@ -68,14 +68,14 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               const Text("10 Thu"),
                               const Spacer(),
                               CircleAvatar(
-                                child: const Icon(Icons.share),
                                 backgroundColor: Colors.white.withOpacity(.3),
+                                child: const Icon(Icons.share),
                               ),
                               const Gap(4),
                               const CircleAvatar(
                                 backgroundColor: Colors.black,
-                                child: Icon(Icons.add),
                                 foregroundColor: Colors.white,
+                                child: Icon(Icons.add),
                               ),
                             ],
                           ),
