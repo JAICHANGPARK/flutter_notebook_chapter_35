@@ -189,11 +189,11 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
             pageIndex = idx;
           });
         },
-        destinations: [
-          const NavigationDestination(icon: Icon(Icons.apps), label: ""),
-          const NavigationDestination(icon: Icon(Icons.apps), label: ""),
-          const NavigationDestination(icon: Icon(Icons.settings), label: ""),
-          const NavigationDestination(icon: Icon(Icons.person), label: ""),
+        destinations: const [
+          NavigationDestination(icon: Icon(Icons.apps), label: ""),
+          NavigationDestination(icon: Icon(Icons.apps), label: ""),
+          NavigationDestination(icon: Icon(Icons.settings), label: ""),
+          NavigationDestination(icon: Icon(Icons.person), label: ""),
         ],
       ),
     );
