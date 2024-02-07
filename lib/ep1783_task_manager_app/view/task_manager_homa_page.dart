@@ -64,8 +64,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 ),
                                 Text("10 Thu"),
                                 Spacer(),
-                                CircleAvatar(),
-                                CircleAvatar(),
+                                CircleAvatar(
+                                  child: Icon(Icons.share),
+                                  backgroundColor: Colors.white.withOpacity(.3),
+                                ),
+                                Gap(4),
+                                CircleAvatar(
+                                  backgroundColor: Colors.black,
+                                  child: Icon(Icons.add),
+                                  foregroundColor: Colors.white,
+                                ),
                               ],
                             ),
                           ],
