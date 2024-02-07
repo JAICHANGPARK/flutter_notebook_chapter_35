@@ -48,37 +48,53 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                 child: Column(
                   children: [
                     Container(
-                        height: 200,
-                        decoration: BoxDecoration(
-                          color: Colors.lightGreen[100],
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        padding: EdgeInsets.all(12),
-                        margin: EdgeInsets.symmetric(horizontal: 4),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.calendar_month,
-                                  size: 12,
+                      height: 200,
+                      decoration: BoxDecoration(
+                        color: Colors.lightGreen[100],
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: EdgeInsets.all(12),
+                      margin: EdgeInsets.symmetric(horizontal: 4),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.calendar_month,
+                                size: 12,
+                              ),
+                              Text("10 Thu"),
+                              Spacer(),
+                              CircleAvatar(
+                                child: Icon(Icons.share),
+                                backgroundColor: Colors.white.withOpacity(.3),
+                              ),
+                              Gap(4),
+                              CircleAvatar(
+                                backgroundColor: Colors.black,
+                                child: Icon(Icons.add),
+                                foregroundColor: Colors.white,
+                              ),
+                            ],
+                          ),
+                          Text(
+                            "Current tasks",
+                          ),
+                          Text("You have 3"),
+                          Row(
+                            children: [
+                              Text("tasks"),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
                                 ),
-                                Text("10 Thu"),
-                                Spacer(),
-                                CircleAvatar(
-                                  child: Icon(Icons.share),
-                                  backgroundColor: Colors.white.withOpacity(.3),
-                                ),
-                                Gap(4),
-                                CircleAvatar(
-                                  backgroundColor: Colors.black,
-                                  child: Icon(Icons.add),
-                                  foregroundColor: Colors.white,
-                                ),
-                              ],
-                            ),
-                          ],
-                        )),
+                              ),
+                              Text("tasks"),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
                     const Gap(4),
                     Container(
                       height: 100,
