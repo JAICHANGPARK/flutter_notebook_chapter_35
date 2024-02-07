@@ -106,7 +106,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(16),
                                 ),
-                                padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 2),
+                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                                 child: const Row(
                                   children: [
                                     Text(
