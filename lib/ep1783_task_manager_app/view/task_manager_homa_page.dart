@@ -49,7 +49,14 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                   children: [
                     Container(
                       height: 200,
-                      child: const Placeholder(),
+                      decoration: BoxDecoration(
+                        color: Colors.lightGreen[100]
+                      ),
+                      child: Column(
+                        children: [
+
+                        ],
+                      )
                     ),
                     const Gap(4),
                     Container(
