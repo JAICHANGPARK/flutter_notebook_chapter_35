@@ -91,6 +91,21 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                 ),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      "High",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.red,
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.ssid_chart,
+                                      color: Colors.red,
+                                    )
+                                  ],
+                                ),
                               ),
                               Text(
                                 "for today",
