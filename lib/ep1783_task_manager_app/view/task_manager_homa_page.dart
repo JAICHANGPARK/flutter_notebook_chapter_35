@@ -83,13 +83,17 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           Text("You have 3"),
                           Row(
                             children: [
-                              Text("tasks"),
+                              Text(
+                                "tasks",
+                              ),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                 ),
                               ),
-                              Text("tasks"),
+                              Text(
+                                "for today",
+                              ),
                             ],
                           )
                         ],
