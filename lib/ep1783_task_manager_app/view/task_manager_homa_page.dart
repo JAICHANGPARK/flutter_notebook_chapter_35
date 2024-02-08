@@ -315,8 +315,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                   decoration: BoxDecoration(
                                     color: Colors.white,
+                                    borderRadius: BorderRadius.circular(16)
                                   ),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
