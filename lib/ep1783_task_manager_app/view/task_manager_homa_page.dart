@@ -413,6 +413,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                       ),
                       padding: EdgeInsets.fromLTRB(24, 16, 16, 16),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
@@ -424,6 +425,33 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           ),
                           Gap(32),
                           Text("Statistics"),
+                          Text("Hello Dream"),
+                          Row(
+                            children: [
+                              CircleAvatar(),
+                              Text("Your overall"),
+                            ],
+                          ),
+                          Text("score is above"),
+                          Text("average"),
+                          Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                foregroundColor: Colors.black,
+                              )
+                            ],
+                          )
                         ],
                       ),
                     ),
