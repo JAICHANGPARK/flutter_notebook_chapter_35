@@ -357,6 +357,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                         ],
                                       ),
                                     ),
+                                    Spacer(),
                                     Text("Liked\nby"),
                                     Container(
                                       decoration: BoxDecoration(
@@ -365,13 +366,17 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                       child: Row(
                                         children: [
                                           Container(
-                                            height: 32,
-                                            width: 32,
+                                            height: 42,
+                                            width: 42,
                                             decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                               border: Border.all(
                                                 color: Colors.white,
                                               ),
+                                            ),
+                                            child: Icon(
+                                              Icons.add,
+                                              color: Colors.white,
                                             ),
                                           )
                                         ],
