@@ -368,7 +368,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                             height: 32,
                                             width: 32,
                                             decoration: BoxDecoration(
-                                              shape: BoxShape.circle
+                                              shape: BoxShape.circle,
+                                              border: Border.all(
+                                                color: Colors.white,
+                                              ),
                                             ),
                                           )
                                         ],
