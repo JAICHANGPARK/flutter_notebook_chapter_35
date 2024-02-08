@@ -247,8 +247,15 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("By Habits.Journal"),
+                              Text(
+                                "By Habits.Journal",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16
+                                ),
+                              ),
                               Spacer(),
                               Container(
                                 decoration: BoxDecoration(
