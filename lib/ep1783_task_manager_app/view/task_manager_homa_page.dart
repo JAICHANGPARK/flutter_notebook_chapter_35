@@ -154,14 +154,21 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     ),
                     const Gap(4),
                     Container(
-                      height: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      margin: EdgeInsets.symmetric(horizontal: 4),
-                      child: const Placeholder(),
-                    ),
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        margin: EdgeInsets.symmetric(horizontal: 4),
+                        child: Row(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                              ),
+                            )
+                          ],
+                        )),
                     const Gap(4),
                     Container(
                       height: 360,
