@@ -336,6 +336,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                     CircleAvatar(
                                       radius: 28,
                                       child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
                                           Icon(
                                             Icons.visibility_outlined,
@@ -347,6 +348,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                             style: TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.bold,
+                                              fontSize: 12,
                                             ),
                                           )
                                         ],
