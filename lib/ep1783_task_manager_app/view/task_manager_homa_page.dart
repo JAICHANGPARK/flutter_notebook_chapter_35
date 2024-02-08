@@ -309,7 +309,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 bottomLeft: Radius.circular(32),
                               ),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: EdgeInsets.all(14),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
