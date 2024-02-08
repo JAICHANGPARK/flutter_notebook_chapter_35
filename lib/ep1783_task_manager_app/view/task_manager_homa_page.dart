@@ -199,6 +199,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               ],
                             ),
                           ),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                              shape: BoxShape.circle,
+                            ),
+                            child: IconButton(
+                              icon: Icon(Icons.more_horiz),
+                              onPressed: () {},
+                            ),
+                          )
                         ],
                       ),
                     ),
