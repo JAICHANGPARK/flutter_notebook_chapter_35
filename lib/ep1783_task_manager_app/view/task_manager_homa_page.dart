@@ -273,7 +273,13 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                             ],
                           ),
                           Text("Community"),
-                          Text("Productive routune."),
+                          Gap(8),
+                          Text(
+                            "Productive routune.",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Row(
                             children: [
                               Text("Read now"),
