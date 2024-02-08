@@ -237,50 +237,63 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     ),
                     const Gap(4),
                     Container(
-                        height: 360,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        margin: const EdgeInsets.symmetric(horizontal: 4),
-                        padding: EdgeInsets.all(16),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Text("By Habits.Journal"),
-                                Spacer(),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    border: Border.all(),
-                                    shape: BoxShape.circle,
-                                  ),
-                                  child: IconButton(
-                                    icon: const Icon(Icons.visibility_outlined),
-                                    onPressed: () {},
-                                  ),
+                      height: 360,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      margin: const EdgeInsets.symmetric(horizontal: 4),
+                      padding: EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text("By Habits.Journal"),
+                              Spacer(),
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  shape: BoxShape.circle,
                                 ),
-                                const Gap(4),
-                                const CircleAvatar(
-                                  backgroundColor: Colors.black,
-                                  foregroundColor: Colors.white,
-                                  radius: 26,
-                                  child: Icon(
-                                    Icons.arrow_forward,
-                                  ),
+                                child: IconButton(
+                                  icon: const Icon(Icons.visibility_outlined),
+                                  onPressed: () {},
                                 ),
-                              ],
-                            ),
-                            Text("Community"),
-                            Text("Productive routune."),
-                            Row(
-                              children: [
-                                Text("Read now"),
-                                Icon(Icons.arrow_circle_right),
-                              ],
-                            )
-                          ],
-                        )),
+                              ),
+                              const Gap(4),
+                              const CircleAvatar(
+                                backgroundColor: Colors.black,
+                                foregroundColor: Colors.white,
+                                radius: 26,
+                                child: Icon(
+                                  Icons.arrow_forward,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Text("Community"),
+                          Text("Productive routune."),
+                          Row(
+                            children: [
+                              Text("Read now"),
+                              Icon(Icons.arrow_circle_right),
+                            ],
+                          ),
+                          Gap(12),
+                          Container(
+                            height: 200,
+                            decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(32),
+                                  topLeft: Radius.circular(32),
+                                  bottomLeft: Radius.circular(32),
+                                )),
+                          )
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
