@@ -209,6 +209,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               onPressed: () {},
                             ),
                           ),
+                          Gap(4),
                           CircleAvatar(
                             backgroundColor: Colors.black,
                             foregroundColor: Colors.white,
