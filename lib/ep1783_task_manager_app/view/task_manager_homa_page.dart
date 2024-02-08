@@ -358,11 +358,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                       ),
                                     ),
                                     const Spacer(),
-                                    const Text("Liked\nby",textAlign: TextAlign.end,),
+                                    const Text(
+                                      "Liked\nby",
+                                      textAlign: TextAlign.end,
+                                    ),
                                     Gap(6),
                                     Container(
                                       decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(.6), borderRadius: BorderRadius.circular(32)),
+                                        color: Colors.white.withOpacity(.6),
+                                        borderRadius: BorderRadius.circular(32),
+                                      ),
                                       padding: const EdgeInsets.all(2),
                                       child: Row(
                                         children: [
