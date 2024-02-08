@@ -242,18 +242,18 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         borderRadius: BorderRadius.circular(24),
                       ),
                       margin: const EdgeInsets.symmetric(horizontal: 4),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 "By Habits.Journal",
                                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               Container(
                                 decoration: BoxDecoration(
                                   border: Border.all(),
@@ -275,16 +275,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               ),
                             ],
                           ),
-                          Text("Community"),
-                          Gap(6),
-                          Text(
+                          const Text("Community"),
+                          const Gap(6),
+                          const Text(
                             "Productive routune.",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 28,
                             ),
                           ),
-                          Row(
+                          const Row(
                             children: [
                               Text(
                                 "Read now",
@@ -298,10 +298,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               ),
                             ],
                           ),
-                          Gap(12),
+                          const Gap(12),
                           Container(
                             height: 200,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(32),
@@ -309,16 +309,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 bottomLeft: Radius.circular(32),
                               ),
                             ),
-                            padding: EdgeInsets.all(14),
+                            padding: const EdgeInsets.all(14),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                   decoration:
                                       BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
-                                  child: Row(
+                                  child: const Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Text(
@@ -336,7 +336,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 ),
                                 Row(
                                   children: [
-                                    CircleAvatar(
+                                    const CircleAvatar(
                                       radius: 28,
                                       child: Column(
                                         mainAxisAlignment: MainAxisAlignment.center,
@@ -357,14 +357,13 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                         ],
                                       ),
                                     ),
-                                    Spacer(),
-                                    Text("Liked\nby"),
+                                    const Spacer(),
+                                    const Text("Liked\nby",textAlign: TextAlign.end,),
+                                    Gap(6),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Colors.white.withOpacity(.6),
-                                        borderRadius: BorderRadius.circular(32)
-                                      ),
-                                      padding: EdgeInsets.all(2),
+                                          color: Colors.white.withOpacity(.6), borderRadius: BorderRadius.circular(32)),
+                                      padding: const EdgeInsets.all(2),
                                       child: Row(
                                         children: [
                                           Container(
@@ -376,18 +375,18 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                                 color: Colors.white,
                                               ),
                                             ),
-                                            child: Icon(
+                                            child: const Icon(
                                               Icons.add,
                                               color: Colors.white,
                                             ),
                                           ),
-                                          CircleAvatar(
+                                          const CircleAvatar(
                                             radius: 20,
                                           ),
-                                          CircleAvatar(
+                                          const CircleAvatar(
                                             radius: 20,
                                           ),
-                                          CircleAvatar(
+                                          const CircleAvatar(
                                             radius: 20,
                                           ),
                                         ],
