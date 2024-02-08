@@ -316,10 +316,8 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               children: [
                                 Container(
                                   padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(16)
-                                  ),
+                                  decoration:
+                                      BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -359,8 +357,25 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                         ],
                                       ),
                                     ),
+                                    Text("Liked\nby"),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white.withOpacity(.6),
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          Container(
+                                            height: 32,
+                                            width: 32,
+                                            decoration: BoxDecoration(
+                                              shape: BoxShape.circle
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    )
                                   ],
-                                )
+                                ),
                               ],
                             ),
                           )
