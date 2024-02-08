@@ -237,7 +237,6 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     ),
                     const Gap(4),
                     Container(
-                      height: 360,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
