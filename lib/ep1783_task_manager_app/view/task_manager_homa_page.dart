@@ -165,6 +165,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         children: [
                           Container(
                             decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(12)),
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
                             child: const Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -183,7 +184,6 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 ),
                               ],
                             ),
-                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
                           ),
                           const Gap(12),
                           const Expanded(
