@@ -154,42 +154,54 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     ),
                     const Gap(4),
                     Container(
-                        height: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        margin: EdgeInsets.symmetric(horizontal: 4),
-                        padding: EdgeInsets.all(16),
-                        child: Row(
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.black,
-                              ),
-                              child: Column(
-                                children: [
-                                  Text("11"),
-                                  Text("Fri"),
-                                ],
-                              ),
+                      height: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      margin: EdgeInsets.symmetric(horizontal: 4),
+                      padding: EdgeInsets.all(16),
+                      child: Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.black,
                             ),
-                            Expanded(
-                                child: Column(
+                            child: Column(
+                              children: [
+                                Text("11"),
+                                Text("Fri"),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
                               children: [
                                 Row(
                                   children: [
-                                    Text("Webinar"),
+                                    Text(
+                                      "Webinar",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                      ),
+                                    ),
+                                    Gap(4),
                                     Icon(
                                       Icons.sensors,
                                       color: Colors.cyanAccent,
                                     ),
                                   ],
+                                ),
+                                Text(
+                                  "Implementation of habits.",
                                 )
                               ],
-                            ))
-                          ],
-                        )),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                     const Gap(4),
                     Container(
                       height: 360,
