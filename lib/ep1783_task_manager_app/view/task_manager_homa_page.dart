@@ -169,11 +169,22 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                             ),
                             child: Column(
                               children: [
-                                Text("11"),
-                                Text("Fri"),
+                                Text(
+                                  "11",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                Text(
+                                  "Fri",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ],
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
                           ),
                           Gap(12),
                           Expanded(
