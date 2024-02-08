@@ -251,10 +251,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                             children: [
                               Text(
                                 "By Habits.Journal",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                               ),
                               Spacer(),
                               Container(
@@ -291,10 +288,8 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                             children: [
                               Text(
                                 "Read now",
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                  decoration: TextDecoration.underline,
-                                ),
+                                style:
+                                    TextStyle(color: Colors.grey, decoration: TextDecoration.underline, fontSize: 15),
                               ),
                               Gap(4),
                               Icon(
@@ -307,12 +302,36 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           Container(
                             height: 200,
                             decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.only(
-                                  topRight: Radius.circular(32),
-                                  topLeft: Radius.circular(32),
-                                  bottomLeft: Radius.circular(32),
-                                )),
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(32),
+                                topLeft: Radius.circular(32),
+                                bottomLeft: Radius.circular(32),
+                              ),
+                            ),
+                            child: Column(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Text(
+                                        "flutter.dev",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Icon(
+                                        Icons.link,
+                                        color: Colors.limeAccent,
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
