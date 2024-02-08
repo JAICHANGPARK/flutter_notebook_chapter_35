@@ -174,9 +174,20 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 ],
                               ),
                             ),
-                            Expanded(child: Column(children: [
-                              
-                            ],))
+                            Expanded(
+                                child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Text("Webinar"),
+                                    Icon(
+                                      Icons.sensors,
+                                      color: Colors.cyanAccent,
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ))
                           ],
                         )),
                     const Gap(4),
