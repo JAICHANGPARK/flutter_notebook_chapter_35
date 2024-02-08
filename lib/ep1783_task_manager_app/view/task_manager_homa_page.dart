@@ -309,7 +309,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 bottomLeft: Radius.circular(32),
                               ),
                             ),
+                            padding: EdgeInsets.all(16),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
                                   decoration: BoxDecoration(
@@ -341,7 +344,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                           Icon(
                                             Icons.visibility_outlined,
                                             color: Colors.white,
-                                            size: 16,
+                                            size: 18,
                                           ),
                                           Text(
                                             "1.4K",
