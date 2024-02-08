@@ -211,6 +211,8 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           ),
                           CircleAvatar(
                             backgroundColor: Colors.black,
+                            foregroundColor: Colors.white,
+                            radius: 26,
                             child: Icon(
                               Icons.link,
                             ),
