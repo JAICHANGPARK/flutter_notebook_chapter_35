@@ -173,9 +173,12 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 Text("Fri"),
                               ],
                             ),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                           ),
+                          Gap(12),
                           Expanded(
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   children: [
