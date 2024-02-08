@@ -362,12 +362,14 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                     Container(
                                       decoration: BoxDecoration(
                                         color: Colors.white.withOpacity(.6),
+                                        borderRadius: BorderRadius.circular(32)
                                       ),
+                                      padding: EdgeInsets.all(2),
                                       child: Row(
                                         children: [
                                           Container(
-                                            height: 42,
-                                            width: 42,
+                                            height: 40,
+                                            width: 40,
                                             decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                               border: Border.all(
@@ -378,7 +380,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                               Icons.add,
                                               color: Colors.white,
                                             ),
-                                          )
+                                          ),
+                                          CircleAvatar(
+                                            radius: 20,
+                                          ),
+                                          CircleAvatar(
+                                            radius: 20,
+                                          ),
+                                          CircleAvatar(
+                                            radius: 20,
+                                          ),
                                         ],
                                       ),
                                     )
