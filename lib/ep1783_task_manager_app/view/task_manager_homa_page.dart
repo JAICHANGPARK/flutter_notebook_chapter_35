@@ -100,7 +100,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                   fontSize: 24,
                                 ),
                               ),
-                              Gap(6),
+                              const Gap(6),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.white,
@@ -125,7 +125,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                   ],
                                 ),
                               ),
-                              Gap(6),
+                              const Gap(6),
                               const Text(
                                 "for today",
                                 style: TextStyle(
@@ -159,8 +159,8 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      margin: EdgeInsets.symmetric(horizontal: 4),
-                      padding: EdgeInsets.all(16),
+                      margin: const EdgeInsets.symmetric(horizontal: 4),
+                      padding: const EdgeInsets.all(16),
                       child: Row(
                         children: [
                           Container(
@@ -168,7 +168,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               color: Colors.black,
                               borderRadius: BorderRadius.circular(12)
                             ),
-                            child: Column(
+                            child: const Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
@@ -186,10 +186,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 ),
                               ],
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
                           ),
-                          Gap(12),
-                          Expanded(
+                          const Gap(12),
+                          const Expanded(
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -222,12 +222,12 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               shape: BoxShape.circle,
                             ),
                             child: IconButton(
-                              icon: Icon(Icons.more_horiz),
+                              icon: const Icon(Icons.more_horiz),
                               onPressed: () {},
                             ),
                           ),
-                          Gap(4),
-                          CircleAvatar(
+                          const Gap(4),
+                          const CircleAvatar(
                             backgroundColor: Colors.black,
                             foregroundColor: Colors.white,
                             radius: 26,
@@ -245,8 +245,33 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      margin: EdgeInsets.symmetric(horizontal: 4),
-                      child: const Placeholder(),
+                      margin: const EdgeInsets.symmetric(horizontal: 4),
+                      child: Row(
+                        children: [
+                          Text("By Habits.Journal"),
+                        Spacer(),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                              shape: BoxShape.circle,
+                            ),
+                            child: IconButton(
+                              icon: const Icon(Icons.visibility_outlined),
+                              onPressed: () {},
+                            ),
+                          ),
+                          const Gap(4),
+                          const CircleAvatar(
+                            backgroundColor: Colors.black,
+                            foregroundColor: Colors.white,
+                            radius: 26,
+                            child: Icon(
+                              Icons.arrow_forward,
+                            ),
+                          )
+
+                        ],
+                      )
                     ),
                   ],
                 ),
