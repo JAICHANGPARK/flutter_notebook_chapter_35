@@ -401,7 +401,29 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 ),
                               ],
                             ),
-                          )
+                          ),
+                        ],
+                      ),
+                    ),
+                    Gap(4),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[50],
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      padding: EdgeInsets.fromLTRB(24, 16, 16, 16),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.apps),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                              ),
+                            ],
+                          ),
+                          Gap(32),
+                          Text("Statistics"),
                         ],
                       ),
                     ),
