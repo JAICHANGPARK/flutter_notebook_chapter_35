@@ -316,6 +316,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                     color: Colors.white,
                                   ),
                                   child: Row(
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
                                       Text(
                                         "flutter.dev",
@@ -329,6 +330,29 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                       )
                                     ],
                                   ),
+                                ),
+                                Row(
+                                  children: [
+                                    CircleAvatar(
+                                      radius: 28,
+                                      child: Column(
+                                        children: [
+                                          Icon(
+                                            Icons.visibility_outlined,
+                                            color: Colors.white,
+                                            size: 16,
+                                          ),
+                                          Text(
+                                            "1.4K",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
                                 )
                               ],
                             ),
