@@ -455,6 +455,24 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         ],
                       ),
                     ),
+                    Gap(4),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.yellow,
+                      ),
+                      child: Row(
+                        children: [
+                          Text("Statistics shared to 1 friend"),
+                          Container(
+                            child: IconButton(
+                              icon: Icon(Icons.route),
+                              onPressed: () {},
+                            ),
+                          ),
+                          CircleAvatar(),
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
