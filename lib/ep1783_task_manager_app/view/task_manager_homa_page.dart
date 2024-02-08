@@ -289,7 +289,11 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                   decoration: TextDecoration.underline,
                                 ),
                               ),
-                              Icon(Icons.arrow_circle_right),
+                              Gap(4),
+                              Icon(
+                                Icons.arrow_circle_right,
+                                color: Colors.grey,
+                              ),
                             ],
                           ),
                           Gap(12),
