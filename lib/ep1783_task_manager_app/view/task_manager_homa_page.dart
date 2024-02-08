@@ -277,11 +277,18 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                             "Productive routune.",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 20,
                             ),
                           ),
                           Row(
                             children: [
-                              Text("Read now"),
+                              Text(
+                                "Read now",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  decoration: TextDecoration.underline,
+                                ),
+                              ),
                               Icon(Icons.arrow_circle_right),
                             ],
                           ),
