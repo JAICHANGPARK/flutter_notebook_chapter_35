@@ -164,10 +164,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                       child: Row(
                         children: [
                           Container(
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                              borderRadius: BorderRadius.circular(12)
-                            ),
+                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(12)),
                             child: const Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -240,44 +237,50 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     ),
                     const Gap(4),
                     Container(
-                      height: 360,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      margin: const EdgeInsets.symmetric(horizontal: 4),
-                      padding: EdgeInsets.all(16),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Text("By Habits.Journal"),
-                            Spacer(),
-                              Container(
-                                decoration: BoxDecoration(
-                                  border: Border.all(),
-                                  shape: BoxShape.circle,
+                        height: 360,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        margin: const EdgeInsets.symmetric(horizontal: 4),
+                        padding: EdgeInsets.all(16),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text("By Habits.Journal"),
+                                Spacer(),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(),
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: IconButton(
+                                    icon: const Icon(Icons.visibility_outlined),
+                                    onPressed: () {},
+                                  ),
                                 ),
-                                child: IconButton(
-                                  icon: const Icon(Icons.visibility_outlined),
-                                  onPressed: () {},
+                                const Gap(4),
+                                const CircleAvatar(
+                                  backgroundColor: Colors.black,
+                                  foregroundColor: Colors.white,
+                                  radius: 26,
+                                  child: Icon(
+                                    Icons.arrow_forward,
+                                  ),
                                 ),
-                              ),
-                              const Gap(4),
-                              const CircleAvatar(
-                                backgroundColor: Colors.black,
-                                foregroundColor: Colors.white,
-                                radius: 26,
-                                child: Icon(
-                                  Icons.arrow_forward,
-                                ),
-                              )
-
-                            ],
-                          ),
-                        ],
-                      )
-                    ),
+                              ],
+                            ),
+                            Text("Community"),
+                            Text("Productive routune."),
+                            Row(
+                              children: [
+                                Text("Read now"),
+                                Icon(Icons.arrow_circle_right),
+                              ],
+                            )
+                          ],
+                        )),
                   ],
                 ),
               ),
