@@ -246,30 +246,35 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         borderRadius: BorderRadius.circular(24),
                       ),
                       margin: const EdgeInsets.symmetric(horizontal: 4),
-                      child: Row(
+                      padding: EdgeInsets.all(16),
+                      child: Column(
                         children: [
-                          Text("By Habits.Journal"),
-                        Spacer(),
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(),
-                              shape: BoxShape.circle,
-                            ),
-                            child: IconButton(
-                              icon: const Icon(Icons.visibility_outlined),
-                              onPressed: () {},
-                            ),
-                          ),
-                          const Gap(4),
-                          const CircleAvatar(
-                            backgroundColor: Colors.black,
-                            foregroundColor: Colors.white,
-                            radius: 26,
-                            child: Icon(
-                              Icons.arrow_forward,
-                            ),
-                          )
+                          Row(
+                            children: [
+                              Text("By Habits.Journal"),
+                            Spacer(),
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: IconButton(
+                                  icon: const Icon(Icons.visibility_outlined),
+                                  onPressed: () {},
+                                ),
+                              ),
+                              const Gap(4),
+                              const CircleAvatar(
+                                backgroundColor: Colors.black,
+                                foregroundColor: Colors.white,
+                                radius: 26,
+                                child: Icon(
+                                  Icons.arrow_forward,
+                                ),
+                              )
 
+                            ],
+                          ),
                         ],
                       )
                     ),
