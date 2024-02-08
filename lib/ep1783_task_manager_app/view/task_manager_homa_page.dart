@@ -166,8 +166,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.black,
+                              borderRadius: BorderRadius.circular(12)
                             ),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
                                   "11",
@@ -189,6 +191,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           Gap(12),
                           Expanded(
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
