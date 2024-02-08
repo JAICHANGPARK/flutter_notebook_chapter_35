@@ -166,7 +166,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               decoration: BoxDecoration(
                                 color: Colors.black,
                               ),
-                            )
+                              child: Column(
+                                children: [
+                                  Text("11"),
+                                  Text("Fri"),
+                                ],
+                              ),
+                            ),
+                            Expanded(child: Column(children: [
+                              
+                            ],))
                           ],
                         )),
                     const Gap(4),
