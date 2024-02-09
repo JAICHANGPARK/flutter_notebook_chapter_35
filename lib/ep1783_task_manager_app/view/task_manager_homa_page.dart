@@ -362,7 +362,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                       "Liked\nby",
                                       textAlign: TextAlign.end,
                                     ),
-                                    Gap(6),
+                                    const Gap(6),
                                     Container(
                                       decoration: BoxDecoration(
                                         color: Colors.white.withOpacity(.6),
@@ -405,17 +405,17 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         ],
                       ),
                     ),
-                    Gap(4),
+                    const Gap(4),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.grey[50],
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      padding: EdgeInsets.fromLTRB(24, 16, 16, 16),
+                      padding: const EdgeInsets.fromLTRB(24, 16, 16, 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
+                          const Row(
                             children: [
                               Icon(Icons.apps),
                               CircleAvatar(
@@ -423,30 +423,30 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               ),
                             ],
                           ),
-                          Gap(32),
-                          Text("Statistics"),
-                          Text("Hello Dream"),
-                          Row(
+                          const Gap(32),
+                          const Text("Statistics"),
+                          const Text("Hello Dream"),
+                          const Row(
                             children: [
                               CircleAvatar(),
                               Text("Your overall"),
                             ],
                           ),
-                          Text("score is above"),
-                          Text("average"),
+                          const Text("score is above"),
+                          const Text("average"),
                           Row(
                             children: [
                               Container(
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.white,
                                 ),
                               ),
                               Container(
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.white,
                                 ),
                               ),
-                              CircleAvatar(
+                              const CircleAvatar(
                                 backgroundColor: Colors.white,
                                 foregroundColor: Colors.black,
                               )
@@ -455,21 +455,21 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         ],
                       ),
                     ),
-                    Gap(4),
+                    const Gap(4),
                     Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.yellow,
                       ),
                       child: Row(
                         children: [
-                          Text("Statistics shared to 1 friend"),
+                          const Text("Statistics shared to 1 friend"),
                           Container(
                             child: IconButton(
-                              icon: Icon(Icons.route),
+                              icon: const Icon(Icons.route),
                               onPressed: () {},
                             ),
                           ),
-                          CircleAvatar(),
+                          const CircleAvatar(),
                         ],
                       ),
                     )
