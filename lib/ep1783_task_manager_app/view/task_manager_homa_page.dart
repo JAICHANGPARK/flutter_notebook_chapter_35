@@ -415,7 +415,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     const Gap(4),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[50],
+                        color: Colors.grey[100],
                         borderRadius: BorderRadius.circular(32),
                       ),
                       padding: const EdgeInsets.fromLTRB(24, 16, 16, 16),
@@ -470,6 +470,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           Row(
                             children: [
                               Container(
+                                padding: EdgeInsetsDirectional.all(4),
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
                                 ),
@@ -484,6 +485,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 ),
                               ),
                               Container(
+                                padding: EdgeInsetsDirectional.all(4),
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
                                 ),
