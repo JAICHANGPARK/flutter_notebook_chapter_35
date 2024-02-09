@@ -419,19 +419,21 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         borderRadius: BorderRadius.circular(32),
                       ),
                       padding: const EdgeInsets.fromLTRB(24, 16, 16, 16),
-                      margin: EdgeInsets.symmetric(horizontal: 4),
+                      margin: const EdgeInsets.symmetric(horizontal: 4),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Icon(Icons.apps),
                               CircleAvatar(
                                 backgroundColor: Colors.white,
+                                child: Icon(Icons.upload),
                               ),
                             ],
                           ),
-                          const Gap(32),
+                          const Gap(64),
                           const Text("Statistics"),
                           const Text(
                             "Hello Dream",
@@ -468,15 +470,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
+                          Gap(32),
                           Row(
                             children: [
                               Container(
-                                padding: EdgeInsetsDirectional.all(4),
+                                padding: const EdgeInsetsDirectional.all(4),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(12),
                                 ),
-                                child: Row(
+                                child: const Row(
                                   children: [
                                     Icon(
                                       Icons.show_chart,
@@ -487,12 +490,12 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 ),
                               ),
                               Container(
-                                padding: EdgeInsetsDirectional.all(4),
+                                padding: const EdgeInsetsDirectional.all(4),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(12),
                                 ),
-                                child: Row(
+                                child: const Row(
                                   children: [
                                     Icon(
                                       Icons.bar_chart,
@@ -513,16 +516,16 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     ),
                     const Gap(4),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8),
+                      margin: const EdgeInsets.symmetric(horizontal: 8),
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(251, 236, 169, 1),
+                        color: const Color.fromRGBO(251, 236, 169, 1),
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Row(
                         children: [
                           const Text("Statistics shared to 1 friend"),
-                          Spacer(),
+                          const Spacer(),
                           Container(
                             decoration: BoxDecoration(
                               border: Border.all(),
