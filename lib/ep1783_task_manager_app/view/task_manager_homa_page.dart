@@ -472,7 +472,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                             children: [
                               Container(
                                 padding: EdgeInsetsDirectional.all(4),
-                                decoration:  BoxDecoration(
+                                decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(12),
                                 ),
@@ -488,7 +488,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               ),
                               Container(
                                 padding: EdgeInsetsDirectional.all(4),
-                                decoration:  BoxDecoration(
+                                decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(12),
                                 ),
@@ -524,12 +524,18 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           const Text("Statistics shared to 1 friend"),
                           Spacer(),
                           Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                              shape: BoxShape.circle,
+                            ),
                             child: IconButton(
                               icon: const Icon(Icons.route),
                               onPressed: () {},
                             ),
                           ),
-                          const CircleAvatar(),
+                          const CircleAvatar(
+                            radius: 26,
+                          ),
                         ],
                       ),
                     )
