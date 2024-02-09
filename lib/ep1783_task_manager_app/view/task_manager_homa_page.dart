@@ -472,8 +472,9 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                             children: [
                               Container(
                                 padding: EdgeInsetsDirectional.all(4),
-                                decoration: const BoxDecoration(
+                                decoration:  BoxDecoration(
                                   color: Colors.white,
+                                  borderRadius: BorderRadius.circular(12),
                                 ),
                                 child: Row(
                                   children: [
