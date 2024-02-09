@@ -447,6 +447,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               CircleAvatar(
                                 radius: 18,
                               ),
+                              Gap(12),
                               Text(
                                 "Your overall",
                                 style: TextStyle(
