@@ -419,6 +419,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         borderRadius: BorderRadius.circular(32),
                       ),
                       padding: const EdgeInsets.fromLTRB(24, 16, 16, 16),
+                      margin: EdgeInsets.symmetric(horizontal: 4),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
