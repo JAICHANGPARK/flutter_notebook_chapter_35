@@ -435,14 +435,20 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           const Text(
                             "Hello Dream",
                             style: TextStyle(
-                              fontSize: 32,
+                              fontSize: 34,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           const Row(
                             children: [
-                              CircleAvatar(),
-                              Text("Your overall"),
+                              CircleAvatar(
+                                radius: 18,
+                              ),
+                              Text("Your overall",
+                                style: TextStyle(
+                                  fontSize: 34,
+                                  fontWeight: FontWeight.bold,
+                                ),),
                             ],
                           ),
                           const Text("score is above"),
