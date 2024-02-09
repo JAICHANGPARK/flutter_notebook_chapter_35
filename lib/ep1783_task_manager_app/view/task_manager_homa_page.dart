@@ -444,20 +444,43 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               CircleAvatar(
                                 radius: 18,
                               ),
-                              Text("Your overall",
+                              Text(
+                                "Your overall",
                                 style: TextStyle(
                                   fontSize: 34,
                                   fontWeight: FontWeight.bold,
-                                ),),
+                                ),
+                              ),
                             ],
                           ),
-                          const Text("score is above"),
-                          const Text("average"),
+                          const Text(
+                            "score is above",
+                            style: TextStyle(
+                              fontSize: 34,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const Text(
+                            "average",
+                            style: TextStyle(
+                              fontSize: 34,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Row(
                             children: [
                               Container(
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
+                                ),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.show_chart,
+                                      color: Colors.red,
+                                    ),
+                                    Text("Growth: +15%"),
+                                  ],
                                 ),
                               ),
                               Container(
