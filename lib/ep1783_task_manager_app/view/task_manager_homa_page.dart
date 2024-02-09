@@ -308,6 +308,11 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 topLeft: Radius.circular(32),
                                 bottomLeft: Radius.circular(32),
                               ),
+                              image: DecorationImage(
+                                image:
+                                    NetworkImage("https://cdn.pixabay.com/photo/2017/06/20/22/14/man-2425121_1280.jpg"),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                             padding: const EdgeInsets.all(14),
                             child: Column(
@@ -316,8 +321,10 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                               children: [
                                 Container(
                                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                  decoration:
-                                      BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
                                   child: const Row(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
@@ -425,7 +432,13 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                           ),
                           const Gap(32),
                           const Text("Statistics"),
-                          const Text("Hello Dream"),
+                          const Text(
+                            "Hello Dream",
+                            style: TextStyle(
+                              fontSize: 32,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           const Row(
                             children: [
                               CircleAvatar(),
@@ -462,9 +475,11 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                         color: Color.fromRGBO(251, 236, 169, 1),
                         borderRadius: BorderRadius.circular(24),
                       ),
+                      padding: EdgeInsets.all(16),
                       child: Row(
                         children: [
                           const Text("Statistics shared to 1 friend"),
+                          Spacer(),
                           Container(
                             child: IconButton(
                               icon: const Icon(Icons.route),
