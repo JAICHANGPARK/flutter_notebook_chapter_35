@@ -457,6 +457,7 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                     ),
                     const Gap(4),
                     Container(
+                      margin: EdgeInsets.symmetric(horizontal: 8),
                       decoration:  BoxDecoration(
                         color: Color.fromRGBO(251, 236, 169, 1),
                       ),
