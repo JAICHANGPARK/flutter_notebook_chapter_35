@@ -487,6 +487,15 @@ class _TaskManagerHomePageState extends State<TaskManagerHomePage> {
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
                                 ),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.bar_chart,
+                                      color: Colors.blue,
+                                    ),
+                                    Text("Best Result: 5/6 Tasks"),
+                                  ],
+                                ),
                               ),
                               const CircleAvatar(
                                 backgroundColor: Colors.white,
