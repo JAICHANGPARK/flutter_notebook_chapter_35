@@ -12,17 +12,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home_filled,
             ),
+            label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.mic_none,
-            ),
-          ),
+              icon: Icon(
+                Icons.mic_none,
+              ),
+              label: ""),
         ],
       ),
     );
