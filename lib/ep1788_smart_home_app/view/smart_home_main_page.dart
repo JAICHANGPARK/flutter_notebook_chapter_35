@@ -15,7 +15,33 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-
+            Row(
+              children: [
+                CircleAvatar(
+                  child: Icon(Icons.keyboard_arrow_left),
+                ),
+                Column(
+                  children: [
+                    Text("Cost & Usage"),
+                    Text("Bedroom"),
+                  ],
+                ),
+                Container(
+                  height: 46,
+                  width: 72,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.favorite,
+                    color: Colors.red,
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
