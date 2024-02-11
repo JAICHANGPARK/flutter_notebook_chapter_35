@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_35
 
-## EP1783
+## EP1783-1787
+
+- Task Manager Mobile App
+- by Kate Zimina
+- https://dribbble.com/shots/23556291-Task-Manager-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/12802994/file/original-fdca4c0be4c5aaa01f334e0a55232f57.jpg?resize=1905x1429"/>
+
+## EP1783-1787
 
 - Task Manager Mobile App
 - by Kate Zimina
