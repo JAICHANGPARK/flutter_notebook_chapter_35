@@ -1,12 +1,12 @@
 # flutter_notebook_chapter_35
 
-## EP1783-1787
+## EP1788
 
-- Task Manager Mobile App
-- by Kate Zimina
-- https://dribbble.com/shots/23556291-Task-Manager-Mobile-App
+- Smart Home Mobile App
+- by Shakuro
+- https://dribbble.com/shots/23587004-Smart-Home-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/12802994/file/original-fdca4c0be4c5aaa01f334e0a55232f57.jpg?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/12891686/file/original-3e5088cfa7ace3b9221626f9fe91fa84.png?resize=1905x1429"/>
 
 ## EP1783-1787
 
