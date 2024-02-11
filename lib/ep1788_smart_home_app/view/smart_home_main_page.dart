@@ -76,7 +76,18 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
+                    Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "Room",
+                          ),
+                          TextSpan(
+                            text: "Statistics",
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
