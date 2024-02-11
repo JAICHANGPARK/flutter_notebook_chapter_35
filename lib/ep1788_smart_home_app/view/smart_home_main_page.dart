@@ -47,10 +47,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   Container(
                     height: 46,
                     width: 72,
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(8)
-                    ),
+                    decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                   ),
                   IconButton(
                     onPressed: () {},
@@ -61,7 +58,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   )
                 ],
               ),
-            )
+            ),
+            Expanded(
+                child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(.15),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(16),
+                ),
+              ),
+            ))
           ],
         ),
       ),
