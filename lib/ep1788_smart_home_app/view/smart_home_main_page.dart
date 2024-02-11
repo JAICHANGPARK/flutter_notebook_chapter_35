@@ -16,16 +16,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Gap(8),
+            const Gap(8),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     child: Icon(Icons.keyboard_arrow_left),
                   ),
-                  Gap(16),
-                  Expanded(
+                  const Gap(16),
+                  const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -55,7 +55,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.favorite,
                       color: Colors.pink,
                     ),
@@ -63,17 +63,24 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 ],
               ),
             ),
-            Gap(12),
+            const Gap(12),
             Expanded(
-                child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(.15),
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(16),
-                  topRight: Radius.circular(16),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(.15),
+                  borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+
+                  ],
                 ),
               ),
-            ))
+            )
           ],
         ),
       ),
@@ -85,23 +92,23 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.home_filled,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.mic_none,
               ),
               label: ""),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.lightbulb_outline,
               ),
               label: ""),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.settings_outlined,
               ),
