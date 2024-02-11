@@ -133,6 +133,35 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             ),
                           ),
                         ),
+                        Gap(8),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.2),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: Text(
+                            "Year",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Gap(8),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.2),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: Text(
+                            "All",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Gap(8),
                       ],
                     ),
                     Gap(16),
