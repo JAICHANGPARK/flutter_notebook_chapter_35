@@ -26,6 +26,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 Icons.mic_none,
               ),
               label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.lightbulb_outline,
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.settings_outlined,
+              ),
+              label: ""),
         ],
       ),
     );
