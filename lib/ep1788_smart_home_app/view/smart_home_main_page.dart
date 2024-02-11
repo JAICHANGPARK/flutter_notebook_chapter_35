@@ -20,6 +20,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        selectedItemColor: Colors.yellow,
+        unselectedItemColor: Colors.grey,
+        
         showSelectedLabels: false,
         showUnselectedLabels: false,
         items: [
