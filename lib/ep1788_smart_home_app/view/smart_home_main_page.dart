@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class SmartHomeMainPage extends StatefulWidget {
   const SmartHomeMainPage({super.key});
@@ -20,6 +21,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 CircleAvatar(
                   child: Icon(Icons.keyboard_arrow_left),
                 ),
+                Gap(16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
