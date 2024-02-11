@@ -20,11 +20,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 CircleAvatar(
                   child: Icon(Icons.keyboard_arrow_left),
                 ),
-                Column(
-                  children: [
-                    Text("Cost & Usage"),
-                    Text("Bedroom"),
-                  ],
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Cost & Usage",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text("Bedroom"),
+                    ],
+                  ),
                 ),
                 Container(
                   height: 46,
