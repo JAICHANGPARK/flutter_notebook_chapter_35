@@ -16,6 +16,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       body: SafeArea(
         child: Column(
           children: [
+            Gap(8),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
