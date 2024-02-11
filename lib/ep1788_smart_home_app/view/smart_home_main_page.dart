@@ -16,42 +16,50 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  child: Icon(Icons.keyboard_arrow_left),
-                ),
-                Gap(16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Cost & Usage",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    child: Icon(Icons.keyboard_arrow_left),
+                  ),
+                  Gap(16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Cost & Usage",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                      Text("Bedroom"),
-                    ],
+                        Text(
+                          "Bedroom",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  height: 46,
-                  width: 72,
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
+                  Container(
+                    height: 46,
+                    width: 72,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                    ),
                   ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.favorite,
-                    color: Colors.pink,
-                  ),
-                )
-              ],
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.favorite,
+                      color: Colors.pink,
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
