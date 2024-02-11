@@ -65,6 +65,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 color: Colors.white.withOpacity(.15),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(16),
+                  topRight: Radius.circular(16),
                 ),
               ),
             ))
