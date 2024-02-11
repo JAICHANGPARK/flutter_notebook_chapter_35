@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_35/ep1788_smart_home_app/view/smart_home_main_page.dart';
 
 
 class SmartHomeApp extends StatelessWidget {
@@ -7,7 +8,7 @@ class SmartHomeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ,
+      home: SmartHomeMainPage(),
     );
   }
 }
