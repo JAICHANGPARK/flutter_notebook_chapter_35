@@ -89,12 +89,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ],
                       ),
                     ),
+                    Gap(16),
                     Row(
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(.2),
+                            borderRadius: BorderRadius.circular(4),
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                           child: Text(
                             "Today",
                             style: TextStyle(
@@ -102,8 +105,37 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             ),
                           ),
                         ),
+                        Gap(8),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.2),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: Text(
+                            "Week",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Gap(8),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.pink,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: Text(
+                            "This Month",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
                       ],
-                    )
+                    ),
+                    Gap(16),
                   ],
                 ),
               ),
