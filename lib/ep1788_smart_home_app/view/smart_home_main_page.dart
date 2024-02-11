@@ -49,6 +49,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     width: 72,
                     decoration: BoxDecoration(
                       color: Colors.blue,
+                      borderRadius: BorderRadius.circular(8)
                     ),
                   ),
                   IconButton(
