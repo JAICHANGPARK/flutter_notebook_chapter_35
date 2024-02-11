@@ -37,7 +37,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   onPressed: () {},
                   icon: Icon(
                     Icons.favorite,
-                    color: Colors.red,
+                    color: Colors.pink,
                   ),
                 )
               ],
