@@ -73,6 +73,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     topRight: Radius.circular(16),
                   ),
                 ),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -87,6 +88,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           )
                         ],
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.2),
+                          ),
+                          child: Text(
+                            "Today",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
                     )
                   ],
                 ),
