@@ -186,8 +186,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         color: Colors.white.withOpacity(.5),
                         borderRadius: BorderRadius.circular(12),
                       ),
-                      padding: EdgeInsets.all(16),
-                      child: Column(
+                      padding: const EdgeInsets.all(16),
+                      child: const Column(
                         children: [
                           Row(
                             children: [
@@ -205,8 +205,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ],
                       ),
                     ),
-                    Gap(24),
-                    Row(
+                    const Gap(24),
+                    const Row(
                       children: [
                         Text(
                           "Room ",
@@ -250,15 +250,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ),
                       ],
                     ),
-                    Gap(24),
+                    const Gap(24),
                     Container(
                       height: 320,
-                      child: Placeholder(),
+                      child: const Placeholder(),
                     ),
-                    Gap(24),
+                    const Gap(24),
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           "Room ",
                           style: TextStyle(
                             color: Colors.grey,
@@ -266,7 +266,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             fontSize: 18,
                           ),
                         ),
-                        Text(
+                        const Text(
                           "Devices ",
                           style: TextStyle(
                             color: Colors.white,
@@ -274,7 +274,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             fontSize: 18,
                           ),
                         ),
-                        Text(
+                        const Text(
                           "10 ",
                           style: TextStyle(
                             color: Colors.grey,
@@ -282,10 +282,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             fontSize: 18,
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         TextButton(
                           onPressed: () {},
-                          child: Text("All Devices"),
+                          child: const Text("All Devices"),
                         ),
                       ],
                     ),
