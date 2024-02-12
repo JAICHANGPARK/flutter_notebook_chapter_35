@@ -107,7 +107,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             color: Colors.white.withOpacity(.2),
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 4,
+                          ),
                           child: const Text(
                             "Today",
                             style: TextStyle(
@@ -121,7 +124,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             color: Colors.white.withOpacity(.2),
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 4,
+                          ),
                           child: const Text(
                             "Week",
                             style: TextStyle(
