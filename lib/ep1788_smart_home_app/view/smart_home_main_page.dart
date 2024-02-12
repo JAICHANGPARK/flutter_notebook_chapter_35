@@ -73,7 +73,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     topRight: Radius.circular(16),
                   ),
                 ),
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -82,9 +82,19 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         children: [
                           TextSpan(
                             text: "Room",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18
+                            ),
                           ),
                           TextSpan(
-                            text: "Statistics",
+                            text: " Statistics",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                                fontSize: 18
+                            ),
                           )
                         ],
                       ),
