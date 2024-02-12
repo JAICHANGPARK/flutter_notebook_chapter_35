@@ -210,12 +210,14 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             fontSize: 18,
                           ),
                         ),
-                        Text("Usage",
+                        Text(
+                          "Usage",
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
-                          ),),
+                          ),
+                        ),
                         Spacer(),
                         CircleAvatar(
                           radius: 4,
@@ -241,6 +243,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           ),
                         ),
                       ],
+                    ),
+                    Container(
+                      height: 320,
+                      child: Placeholder(),
                     )
                   ],
                 ),
