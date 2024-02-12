@@ -82,19 +82,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         children: [
                           TextSpan(
                             text: "Room",
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                            ),
+                            style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                           TextSpan(
                             text: " Statistics",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                                fontSize: 18
-                            ),
+                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
                           )
                         ],
                       ),
@@ -175,6 +167,29 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       ],
                     ),
                     const Gap(16),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(.5),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Summary for ",
+                              ),
+                              Text(
+                                "Summary for ",
+                              ),
+                              Icon(
+                                Icons.share,
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
