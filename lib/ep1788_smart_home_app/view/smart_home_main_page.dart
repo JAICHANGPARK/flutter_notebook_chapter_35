@@ -77,7 +77,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text.rich(
+                    const Text.rich(
                       TextSpan(
                         children: [
                           TextSpan(
@@ -99,7 +99,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ],
                       ),
                     ),
-                    Gap(16),
+                    const Gap(16),
                     Row(
                       children: [
                         Container(
@@ -107,74 +107,74 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             color: Colors.white.withOpacity(.2),
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          child: Text(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: const Text(
                             "Today",
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(.2),
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          child: Text(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: const Text(
                             "Week",
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.pink,
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          child: Text(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: const Text(
                             "This Month",
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(.2),
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          child: Text(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: const Text(
                             "Year",
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(.2),
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          child: Text(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          child: const Text(
                             "All",
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                       ],
                     ),
-                    Gap(16),
+                    const Gap(16),
                   ],
                 ),
               ),
