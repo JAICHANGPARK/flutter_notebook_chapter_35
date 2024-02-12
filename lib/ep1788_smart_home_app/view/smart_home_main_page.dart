@@ -82,11 +82,19 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         children: [
                           TextSpan(
                             text: "Room",
-                            style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 18),
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
                           TextSpan(
                             text: " Statistics",
-                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           )
                         ],
                       ),
@@ -181,7 +189,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 "Summary for ",
                               ),
                               Text(
-                                "Summary for ",
+                                "July ",
                               ),
                               Icon(
                                 Icons.share,
@@ -194,8 +202,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     Gap(24),
                     Row(
                       children: [
-                        Text("Room "),
-                        Text("Usage"),
+                        Text(
+                          "Room ",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text("Usage",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),),
                         Spacer(),
                         CircleAvatar(
                           radius: 4,
@@ -209,7 +229,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           ),
                         ),
                         Gap(12),
-
                         CircleAvatar(
                           radius: 4,
                           backgroundColor: Colors.yellow,
