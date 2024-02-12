@@ -244,10 +244,45 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ),
                       ],
                     ),
+                    Gap(24),
                     Container(
                       height: 320,
                       child: Placeholder(),
-                    )
+                    ),
+                    Gap(24),
+                    Row(
+                      children: [
+                        Text(
+                          "Room ",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          "Devices ",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          "10 ",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Spacer(),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("All Devices"),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
