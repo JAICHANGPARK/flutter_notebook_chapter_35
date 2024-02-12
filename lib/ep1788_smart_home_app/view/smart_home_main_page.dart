@@ -190,6 +190,25 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           )
                         ],
                       ),
+                    ),
+                    Row(
+                      children: [
+                        Text("Room "),
+                        Text("Usage"),
+                        CircleAvatar(
+                          radius: 4,
+                          backgroundColor: Colors.pink,
+                        ),
+                        Gap(4),
+                        Text("Overused"),
+                        Gap(4),
+                        CircleAvatar(
+                          radius: 4,
+                          backgroundColor: Colors.yellow,
+                        ),
+                        Gap(4),
+                        Text("Good Use"),
+                      ],
                     )
                   ],
                 ),
