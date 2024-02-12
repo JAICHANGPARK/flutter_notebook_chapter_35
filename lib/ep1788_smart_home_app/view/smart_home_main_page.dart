@@ -191,23 +191,36 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ],
                       ),
                     ),
+                    Gap(24),
                     Row(
                       children: [
                         Text("Room "),
                         Text("Usage"),
+                        Spacer(),
                         CircleAvatar(
                           radius: 4,
                           backgroundColor: Colors.pink,
                         ),
-                        Gap(4),
-                        Text("Overused"),
-                        Gap(4),
+                        Gap(8),
+                        Text(
+                          "Overused",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Gap(12),
+
                         CircleAvatar(
                           radius: 4,
                           backgroundColor: Colors.yellow,
                         ),
-                        Gap(4),
-                        Text("Good Use"),
+                        Gap(8),
+                        Text(
+                          "Good Use",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
                       ],
                     )
                   ],
