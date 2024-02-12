@@ -91,7 +91,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ],
                       ),
                     ),
-                    const Gap(16),
+                    const Gap(24),
                     Row(
                       children: [
                         Container(
@@ -166,12 +166,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         const Gap(8),
                       ],
                     ),
-                    const Gap(16),
+                    const Gap(24),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(.5),
                         borderRadius: BorderRadius.circular(12),
                       ),
+                      padding: EdgeInsets.all(16),
                       child: Column(
                         children: [
                           Row(
