@@ -349,6 +349,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     drawHorizontalLine: false,
                                     verticalInterval: 4,
                                   ),
+                                  borderData: FlBorderData(
+                                    border: Border(
+                                      top: BorderSide(
+                                        color: Colors.white.withOpacity(.1),
+                                      ),
+                                      bottom: BorderSide(
+                                        color: Colors.white.withOpacity(.1),
+                                      ),
+                                    ),
+                                  ),
                                   titlesData: FlTitlesData(
                                     rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
                                     topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
