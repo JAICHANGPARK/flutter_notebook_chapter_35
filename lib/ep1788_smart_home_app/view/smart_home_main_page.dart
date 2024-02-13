@@ -360,12 +360,14 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       color: Colors.yellow,
                                       belowBarData: BarAreaData(
                                         gradient: LinearGradient(
+                                          begin: Alignment.topCenter,
                                           colors: [
                                             Colors.yellow[50]!,
-                                            Colors.white,
+                                            Colors.white.withOpacity(.1),
+                                            Colors.white.withOpacity(.1),
                                           ],
                                         ),
-                                        
+                                        show: true,
                                       ),
                                       spots: List.generate(
                                         21,
