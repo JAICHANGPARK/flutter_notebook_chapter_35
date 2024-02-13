@@ -352,11 +352,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
                                     topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
                                     leftTitles: AxisTitles(
-                                      sideTitles: SideTitles(
-                                        showTitles: true,
-                                        interval: 20,
-                                        reservedSize: 32
-                                      ),
+                                      sideTitles: SideTitles(showTitles: true, interval: 20, reservedSize: 32),
                                     ),
                                   ),
                                   lineBarsData: [
@@ -368,6 +364,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                           (Random().nextDouble() * 64.0) + 25,
                                         ),
                                       ),
+                                      isCurved: true,
                                     ),
                                   ],
                                 ),
