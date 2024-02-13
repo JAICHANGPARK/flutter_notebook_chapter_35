@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   gap: any
   dots_indicator:
+  fl_chart:
 
 dev_dependencies:
   flutter_test:
