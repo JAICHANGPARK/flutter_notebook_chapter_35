@@ -188,7 +188,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             const Gap(24),
                             Container(
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(.5),
+                                color: Colors.white.withOpacity(.3),
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               padding: const EdgeInsets.all(16),
@@ -198,13 +198,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     children: [
                                       Text(
                                         "Summary for ",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                        ),
                                       ),
                                       Text(
                                         "July ",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
                                       ),
                                       Spacer(),
                                       Icon(
                                         Icons.share,
+                                        color: Colors.grey,
                                       )
                                     ],
                                   ),
