@@ -345,7 +345,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   maxY: 100,
                                   minX: 0,
                                   minY: 0,
-                                  gridData: FlGridData(
+                                  gridData: const FlGridData(
                                     drawHorizontalLine: false,
                                     verticalInterval: 4,
                                   ),
@@ -359,9 +359,17 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       ),
                                     ),
                                   ),
-                                  titlesData: FlTitlesData(
-                                    rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-                                    topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                                  titlesData: const FlTitlesData(
+                                    rightTitles: AxisTitles(
+                                      sideTitles: SideTitles(
+                                        showTitles: false,
+                                      ),
+                                    ),
+                                    topTitles: AxisTitles(
+                                      sideTitles: SideTitles(
+                                        showTitles: false,
+                                      ),
+                                    ),
                                     leftTitles: AxisTitles(
                                       sideTitles: SideTitles(
                                         showTitles: true,
@@ -370,7 +378,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       ),
                                     ),
                                     bottomTitles: AxisTitles(
-                                      sideTitles: SideTitles(showTitles: true, interval: 5),
+                                      sideTitles: SideTitles(
+                                        showTitles: true,
+                                        interval: 5,
+                                      ),
                                     ),
                                   ),
                                   lineBarsData: [
