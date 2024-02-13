@@ -378,7 +378,12 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       ),
                                       dotData: FlDotData(
                                         show: true,
-                                        
+                                        checkToShowDot: (spot, data) {
+                                          if (spot.x % 5 == 0) {
+                                            return true;
+                                          }
+                                          return false;
+                                        },
                                       ),
                                       isCurved: true,
                                       spots: List.generate(
