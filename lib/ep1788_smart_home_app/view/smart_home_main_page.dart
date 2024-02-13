@@ -211,19 +211,35 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   Row(
                                     children: [
                                       Expanded(
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text("\$401.76"),
-                                          Row(
-                                            children: [
-                                              Text("+198.01"),
-                                              Gap(4),
-                                              Text("-67.22%"),
-                                            ],
-                                          )
-                                        ],
-                                      ))
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text("\$401.76"),
+                                            Row(
+                                              children: [
+                                                Text("+198.01"),
+                                                Gap(4),
+                                                Text("-67.22%"),
+                                              ],
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text("189.77 kWh"),
+                                            Row(
+                                              children: [
+                                                Text("+198.01 kWh"),
+                                                Gap(4),
+                                                Text("-67.22%"),
+                                              ],
+                                            )
+                                          ],
+                                        ),
+                                      )
                                     ],
                                   )
                                 ],
