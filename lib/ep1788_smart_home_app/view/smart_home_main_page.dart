@@ -241,7 +241,9 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                 Gap(4),
                                                 Text(
                                                   "-67.22%",
-                                                  style: TextStyle(color: Colors.teal),
+                                                  style: TextStyle(
+                                                    color: Colors.teal,
+                                                  ),
                                                 ),
                                               ],
                                             )
@@ -252,12 +254,29 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Text("189.77 kWh"),
+                                            Text(
+                                              "189.77 kWh",
+                                              style: TextStyle(
+                                                fontSize: 24,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            Gap(8),
                                             Row(
                                               children: [
-                                                Text("+198.01 kWh"),
+                                                Text(
+                                                  "+198.01 kWh",
+                                                  style: TextStyle(
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
                                                 Gap(4),
-                                                Text("-67.22%"),
+                                                Text(
+                                                  "-67.22%",
+                                                  style: TextStyle(
+                                                    color: Colors.teal,
+                                                  ),
+                                                ),
                                               ],
                                             )
                                           ],
