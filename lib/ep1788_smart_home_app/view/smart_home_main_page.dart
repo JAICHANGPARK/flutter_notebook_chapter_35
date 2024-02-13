@@ -232,14 +232,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                             Gap(8),
                                             Row(
                                               children: [
-                                                Text("+198.01" ,style: TextStyle(
-                                              color: Colors.grey,
-                                            ),),
-                                                Gap(4),
-                                                Text("-67.22%",
+                                                Text(
+                                                  "+198.01",
                                                   style: TextStyle(
-                                                    color: Colors.teal
+                                                    color: Colors.grey,
                                                   ),
+                                                ),
+                                                Gap(4),
+                                                Text(
+                                                  "-67.22%",
+                                                  style: TextStyle(color: Colors.teal),
                                                 ),
                                               ],
                                             )
