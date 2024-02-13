@@ -184,12 +184,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         const Gap(8),
                       ],
                     ),
+                    const Gap(24),
                     Expanded(
                       child: SingleChildScrollView(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Gap(24),
+
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(.15),
