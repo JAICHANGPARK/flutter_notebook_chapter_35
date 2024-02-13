@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -335,7 +336,14 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             const Gap(24),
                             Container(
                               height: 320,
-                              child: const Placeholder(),
+                              child: LineChart(
+                                LineChartData(
+                                  lineBarsData: List.generate(
+                                    10,
+                                    (index) => LineChartBarData(),
+                                  ),
+                                ),
+                              ),
                             ),
                             const Gap(24),
                             Row(
