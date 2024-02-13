@@ -349,21 +349,19 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     drawHorizontalLine: false,
                                   ),
                                   titlesData: FlTitlesData(
-                                      rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-                                      topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-                                      leftTitles: AxisTitles(
-                                        sideTitles: SideTitles(
-                                          showTitles: true,
-                                          interval: 20,
-                                          reservedSize: 32,
-                                        ),
+                                    rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                                    topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                                    leftTitles: AxisTitles(
+                                      sideTitles: SideTitles(
+                                        showTitles: true,
+                                        interval: 20,
+                                        reservedSize: 32,
                                       ),
-                                      bottomTitles: AxisTitles(
-                                        sideTitles: SideTitles(
-                                          showTitles: true,
-                                          interval: 10
-                                        ),
-                                      )),
+                                    ),
+                                    bottomTitles: AxisTitles(
+                                      sideTitles: SideTitles(showTitles: true, interval: 10),
+                                    ),
+                                  ),
                                   lineBarsData: [
                                     LineChartBarData(
                                       color: Colors.yellow,
@@ -378,6 +376,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                         ),
                                         show: true,
                                       ),
+                                      dotData: FlDotData(
+                                        show: true,
+                                        
+                                      ),
+                                      isCurved: true,
                                       spots: List.generate(
                                         21,
                                         (index) => FlSpot(
@@ -385,7 +388,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                           (Random().nextDouble() * 64.0) + 25,
                                         ),
                                       ),
-                                      isCurved: true,
                                     ),
                                   ],
                                 ),
