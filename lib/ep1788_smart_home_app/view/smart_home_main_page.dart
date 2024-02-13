@@ -197,6 +197,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               Text(
                                 "July ",
                               ),
+                              Spacer(),
                               Icon(
                                 Icons.share,
                               )
