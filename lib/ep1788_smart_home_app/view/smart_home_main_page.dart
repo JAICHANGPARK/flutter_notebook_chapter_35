@@ -347,6 +347,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   minY: 0,
                                   gridData: FlGridData(
                                     drawHorizontalLine: false,
+                                    verticalInterval: 4,
                                   ),
                                   titlesData: FlTitlesData(
                                     rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
@@ -359,7 +360,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       ),
                                     ),
                                     bottomTitles: AxisTitles(
-                                      sideTitles: SideTitles(showTitles: true, interval: 10),
+                                      sideTitles: SideTitles(showTitles: true, interval: 5),
                                     ),
                                   ),
                                   lineBarsData: [
@@ -379,7 +380,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       dotData: FlDotData(
                                         show: true,
                                         checkToShowDot: (spot, data) {
-                                          if (spot.x % 5 == 0) {
+                                          if (spot.x % 4 == 0) {
                                             return true;
                                           }
                                           return false;
