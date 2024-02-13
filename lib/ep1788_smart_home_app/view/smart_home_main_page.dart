@@ -202,6 +202,19 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 Icons.share,
                               )
                             ],
+                          ),
+                          Row(
+                            children: [
+                              Expanded(
+                                  child: Column(
+                                children: [
+                                  Text("\$401.76"),
+                                  Row(
+                                    children: [Text("+198.01"), Gap(4), Text("-67.22%")],
+                                  )
+                                ],
+                              ))
+                            ],
                           )
                         ],
                       ),
