@@ -338,10 +338,23 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               height: 320,
                               child: LineChart(
                                 LineChartData(
-                                  lineBarsData: List.generate(
-                                    10,
-                                    (index) => LineChartBarData(),
-                                  ),
+                                  maxX: 20,
+                                  maxY: 100,
+                                  minX: 0,
+                                  minY: 0,
+
+                                  lineBarsData: [
+                                    LineChartBarData(
+
+                                      spots: List.generate(
+                                        10,
+                                        (index) => FlSpot(
+                                          index.toDouble(),
+                                          10.0,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
