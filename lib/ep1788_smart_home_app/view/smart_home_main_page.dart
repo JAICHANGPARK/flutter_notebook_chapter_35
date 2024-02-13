@@ -357,6 +357,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   ),
                                   lineBarsData: [
                                     LineChartBarData(
+                                      color: Colors.yellow,
+                                      belowBarData: BarAreaData(
+                                        gradient: LinearGradient(
+                                          colors: [
+                                            Colors.yellow[50]!,
+                                            Colors.white,
+                                          ],
+                                        ),
+                                        
+                                      ),
                                       spots: List.generate(
                                         21,
                                         (index) => FlSpot(
