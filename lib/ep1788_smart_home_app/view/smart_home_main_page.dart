@@ -1,3 +1,6 @@
+import 'dart:io';
+import 'dart:math';
+
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -362,7 +365,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                         21,
                                         (index) => FlSpot(
                                           index.toDouble(),
-                                          10.0,
+                                          (Random().nextDouble() * 64.0) + 25,
                                         ),
                                       ),
                                     ),
