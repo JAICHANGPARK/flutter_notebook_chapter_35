@@ -215,18 +215,32 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       )
                                     ],
                                   ),
+                                  Gap(16),
                                   Row(
                                     children: [
                                       Expanded(
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            Text("\$401.76"),
+                                            Text(
+                                              "\$401.76",
+                                              style: TextStyle(
+                                                fontSize: 24,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            Gap(8),
                                             Row(
                                               children: [
-                                                Text("+198.01"),
+                                                Text("+198.01" ,style: TextStyle(
+                                              color: Colors.grey,
+                                            ),),
                                                 Gap(4),
-                                                Text("-67.22%"),
+                                                Text("-67.22%",
+                                                  style: TextStyle(
+                                                    color: Colors.teal
+                                                  ),
+                                                ),
                                               ],
                                             )
                                           ],
