@@ -180,6 +180,12 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         const Gap(8),
                       ],
                     ),
+                    Expanded(child: SingleChildScrollView(child:
+                      Column(
+                        children: [
+                          
+                        ],
+                      ),))
                     const Gap(24),
                     Container(
                       decoration: BoxDecoration(
