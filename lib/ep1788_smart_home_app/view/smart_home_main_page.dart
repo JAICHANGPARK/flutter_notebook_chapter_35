@@ -212,10 +212,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     children: [
                                       Expanded(
                                           child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text("\$401.76"),
                                           Row(
-                                            children: [Text("+198.01"), Gap(4), Text("-67.22%")],
+                                            children: [
+                                              Text("+198.01"),
+                                              Gap(4),
+                                              Text("-67.22%"),
+                                            ],
                                           )
                                         ],
                                       ))
