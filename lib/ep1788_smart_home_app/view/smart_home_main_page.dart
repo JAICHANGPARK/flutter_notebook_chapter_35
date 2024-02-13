@@ -342,12 +342,25 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   maxY: 100,
                                   minX: 0,
                                   minY: 0,
-
+                                  gridData: FlGridData(
+                                    drawHorizontalLine: false,
+                                  ),
+                                  titlesData: FlTitlesData(
+                                    rightTitles: AxisTitles(
+                                      sideTitles: SideTitles(
+                                        showTitles: false
+                                      )
+                                    ),
+                                      topTitles: AxisTitles(
+                                          sideTitles: SideTitles(
+                                              showTitles: false
+                                          )
+                                      )
+                                  ),
                                   lineBarsData: [
                                     LineChartBarData(
-
                                       spots: List.generate(
-                                        10,
+                                        21,
                                         (index) => FlSpot(
                                           index.toDouble(),
                                           10.0,
