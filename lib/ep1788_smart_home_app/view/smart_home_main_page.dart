@@ -188,7 +188,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             const Gap(24),
                             Container(
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(.3),
+                                color: Colors.white.withOpacity(.15),
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               padding: const EdgeInsets.all(16),
