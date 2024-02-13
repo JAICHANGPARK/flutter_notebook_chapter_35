@@ -361,10 +361,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       belowBarData: BarAreaData(
                                         gradient: LinearGradient(
                                           begin: Alignment.topCenter,
+                                          end: Alignment.bottomCenter,
                                           colors: [
-                                            Colors.yellow[50]!,
+
                                             Colors.white.withOpacity(.1),
-                                            Colors.white.withOpacity(.1),
+                                            Colors.white.withOpacity(.05),
                                           ],
                                         ),
                                         show: true,
