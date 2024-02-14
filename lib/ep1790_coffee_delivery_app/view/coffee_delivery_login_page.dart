@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class CoffeeDeliveryLoginPage extends StatefulWidget {
   const CoffeeDeliveryLoginPage({super.key});
@@ -41,7 +42,15 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                             borderRadius: BorderRadius.circular(4),
                           ),
                         ),
-                        Text("Sign in to your account"),
+                        Gap(32),
+                        Text(
+                          "Sign in to your account",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
+                        ),
+                        Gap(16),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
