@@ -9,6 +9,11 @@ class CoffeeDeliveryApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      initialRoute: "/login",
+      routes: {
+        "/login": (context) => CoffeeDeliveryLoginPage(),
+      },
+    );
   }
 }
