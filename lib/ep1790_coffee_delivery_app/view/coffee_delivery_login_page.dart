@@ -28,9 +28,9 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  Gap(100),
+                  const Gap(100),
                   Container(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       top: 32,
                       left: 12,
                       right: 12,
@@ -38,6 +38,7 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                     ),
                     decoration: BoxDecoration(
                       color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
                     ),
                     child: Column(
                       children: [
@@ -49,15 +50,15 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                             borderRadius: BorderRadius.circular(4),
                           ),
                         ),
-                        Gap(32),
-                        Text(
+                        const Gap(32),
+                        const Text(
                           "Sign in to your account",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 24,
                           ),
                         ),
-                        Gap(16),
+                        const Gap(16),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -65,10 +66,26 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                             ),
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: TextField(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          child: const TextField(
                             decoration: InputDecoration(
                               hintText: "Email address",
+                              border: InputBorder.none,
+                            ),
+                          ),
+                        ),
+                        const Gap(8),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          child: const TextField(
+                            decoration: InputDecoration(
+                              hintText: "Password",
                               border: InputBorder.none,
                             ),
                           ),
