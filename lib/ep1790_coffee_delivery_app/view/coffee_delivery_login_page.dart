@@ -24,28 +24,37 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
             right: 12,
             bottom: 0,
             top: 0,
-            child: Column(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                  ),
-                  child: Column(
-                    children: [
-                      Container(),
-                      Text("Sign in to your account"),
-                      Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.grey,
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: Column(
+                      children: [
+                        Container(),
+                        Text("Sign in to your account"),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                            borderRadius: BorderRadius.circular(32),
                           ),
-                          borderRadius: BorderRadius.circular(32),
-                        ),
-                      )
-                    ],
-                  ),
-                )
-              ],
+                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: "Email address",
+                              border: InputBorder.none,
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           )
         ],
