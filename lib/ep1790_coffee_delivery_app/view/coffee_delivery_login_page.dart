@@ -20,11 +20,21 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
             ),
           ),
           Positioned(
+            left: 12,
+            right: 12,
+            bottom: 0,
+            top: 0,
             child: Column(
               children: [
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
+                  ),
+                  child: Column(
+                    children: [
+                      Container(),
+                      Text("Sign in to your account"),
+                    ],
                   ),
                 )
               ],
