@@ -6,7 +6,7 @@
 - by Happy Tri Milliarta for Odama
 - https://dribbble.com/shots/23601005-Coffee-Delivery-App
 
-<img src="https://cdn.dribbble.com/userupload/12891686/file/original-3e5088cfa7ace3b9221626f9fe91fa84.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/12931866/file/original-ae88752b17ae7132a69cc121280e0407.png?resize=1600x1200"/>
 
 ## EP1788-1790
 
