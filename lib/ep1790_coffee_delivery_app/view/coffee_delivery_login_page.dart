@@ -11,6 +11,6 @@ class CoffeeDeliveryLoginPage extends StatefulWidget {
 class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
