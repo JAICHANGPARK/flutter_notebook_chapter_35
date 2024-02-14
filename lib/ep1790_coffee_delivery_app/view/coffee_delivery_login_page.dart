@@ -28,7 +28,14 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
             child: SafeArea(
               child: Column(
                 children: [
+                  Gap(100),
                   Container(
+                    padding: EdgeInsets.only(
+                      top: 32,
+                      left: 12,
+                      right: 12,
+                      bottom: 16,
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.white,
                     ),
