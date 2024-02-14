@@ -124,6 +124,22 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                             ],
                           ),
                         ),
+                        Container(
+                          height: 58,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[100],
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          child: Center(
+                            child: Text(
+                              "Continue with Google",
+                              style: TextStyle(
+                                // color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   )
