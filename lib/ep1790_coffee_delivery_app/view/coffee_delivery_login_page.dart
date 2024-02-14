@@ -33,7 +33,14 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                     ),
                     child: Column(
                       children: [
-                        Container(),
+                        Container(
+                          height: 64,
+                          width: 64,
+                          decoration: BoxDecoration(
+                            color: Colors.deepOrange,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                        ),
                         Text("Sign in to your account"),
                         Container(
                           decoration: BoxDecoration(
@@ -42,7 +49,7 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                             ),
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           child: TextField(
                             decoration: InputDecoration(
                               hintText: "Email address",
