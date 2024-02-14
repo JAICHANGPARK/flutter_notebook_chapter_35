@@ -135,8 +135,8 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                             child: Text(
                               "Continue with Google",
                               style: TextStyle(
-                                // color: Colors.white,
-                              ),
+                                  // color: Colors.white,
+                                  ),
                             ),
                           ),
                         ),
@@ -152,9 +152,30 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                             child: Text(
                               "Continue with Apple",
                               style: TextStyle(
-                                // color: Colors.white,
-                              ),
+                                  // color: Colors.white,
+                                  ),
                             ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Gap(42),
+                  Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: "Not a member",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        TextSpan(
+                          text: "Skip",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ],
