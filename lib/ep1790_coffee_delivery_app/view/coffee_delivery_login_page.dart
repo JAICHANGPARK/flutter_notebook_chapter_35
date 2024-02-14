@@ -34,6 +34,14 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                     children: [
                       Container(),
                       Text("Sign in to your account"),
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey,
+                          ),
+                          borderRadius: BorderRadius.circular(32),
+                        ),
+                      )
                     ],
                   ),
                 )
