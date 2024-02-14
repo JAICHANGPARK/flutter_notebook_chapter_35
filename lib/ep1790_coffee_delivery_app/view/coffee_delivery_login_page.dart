@@ -21,7 +21,13 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
           ),
           Positioned(
             child: Column(
-              children: [],
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                )
+              ],
             ),
           )
         ],
