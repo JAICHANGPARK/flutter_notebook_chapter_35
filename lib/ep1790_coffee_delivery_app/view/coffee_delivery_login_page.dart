@@ -89,7 +89,21 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                               border: InputBorder.none,
                             ),
                           ),
-                        )
+                        ),
+                        Container(
+                            decoration: BoxDecoration(
+                              color: Colors.deepOrange,
+                              borderRadius: BorderRadius.circular(32),
+                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            child: Center(
+                              child: Text(
+                                "Continue",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ))
                       ],
                     ),
                   )
