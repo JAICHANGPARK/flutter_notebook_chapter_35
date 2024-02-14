@@ -19,6 +19,11 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
               fit: BoxFit.cover,
             ),
           ),
+          Positioned(
+            child: Column(
+              children: [],
+            ),
+          )
         ],
       ),
     );
