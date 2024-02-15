@@ -40,19 +40,39 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                               ),
                               child: Row(
                                 children: [
-                                  
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.home_filled,
+                                    ),
+                                  ),
+                                  Text("Home"),
                                 ],
                               ),
                             ),
-                          )
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.airplane_ticket),
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.featured_play_list_outlined),
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.person_outline),
+                          ),
                         ],
                       ),
                     ),
                   ),
                   Gap(12),
                   CircleAvatar(
-                    radius: 24,
+                    radius: 26,
                     backgroundColor: Colors.deepOrange,
+                    child: Icon(Icons.sentiment_satisfied),
+                    foregroundColor: Colors.white,
                   )
                 ],
               ),
