@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class CoffeeDeliveryHomePage extends StatefulWidget {
   const CoffeeDeliveryHomePage({super.key});
 
@@ -15,7 +14,11 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-
+            Positioned.fill(
+              child: Column(
+                children: [],
+              ),
+            ),
           ],
         ),
       ),
