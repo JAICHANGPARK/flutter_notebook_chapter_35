@@ -22,8 +22,18 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                     children: [
                       Expanded(
                         child: Column(
-                          children: [],
+                          children: [
+                            Text("Welcome back,"),
+                            Text("Dreamwalker"),
+                          ],
                         ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.grey,
+                            )),
                       )
                     ],
                   )
