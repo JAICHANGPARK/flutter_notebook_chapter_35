@@ -28,8 +28,11 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                 children: [
                   Expanded(
                     child: Container(
+                      padding: EdgeInsets.all(3),
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(32),
+                        
                       ),
                       child: Row(
                         children: [
@@ -37,6 +40,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.deepOrange,
+                                borderRadius: BorderRadius.circular(32),
                               ),
                               child: Row(
                                 children: [
