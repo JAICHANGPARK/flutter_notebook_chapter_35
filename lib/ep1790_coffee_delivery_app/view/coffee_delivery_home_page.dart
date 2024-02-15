@@ -11,6 +11,14 @@ class CoffeeDeliveryHomePage extends StatefulWidget {
 class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+            
+          ],
+        ),
+      ),
+    );
   }
 }
