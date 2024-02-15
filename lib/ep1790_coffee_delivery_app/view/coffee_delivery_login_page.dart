@@ -98,7 +98,7 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                             borderRadius: BorderRadius.circular(32),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Continue",
                               style: TextStyle(
@@ -111,12 +111,12 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                           height: 64,
                           child: Stack(
                             children: [
-                              Center(child: Divider()),
+                              const Center(child: Divider()),
                               Center(
                                 child: Container(
                                   color: Colors.white,
-                                  padding: EdgeInsets.symmetric(horizontal: 8),
-                                  child: Text(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                  child: const Text(
                                     "or Login with",
                                   ),
                                 ),
@@ -131,7 +131,7 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                             borderRadius: BorderRadius.circular(32),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Continue with Google",
                               style: TextStyle(
@@ -148,7 +148,7 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                             borderRadius: BorderRadius.circular(32),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Continue with Apple",
                               style: TextStyle(
@@ -160,8 +160,8 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                       ],
                     ),
                   ),
-                  Gap(42),
-                  Text.rich(
+                  const Gap(42),
+                  const Text.rich(
                     TextSpan(
                       children: [
                         TextSpan(
