@@ -28,7 +28,13 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Welcome back,"),
-                            Text("Dreamwalker"),
+                            Text(
+                              "Dreamwalker",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -39,8 +45,8 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                               color: Colors.grey,
                             )),
                         child: IconButton(
-                          icon: Icon(Icons.mail_outline), onPressed: () {  },
-
+                          icon: Icon(Icons.mail_outline),
+                          onPressed: () {},
                         ),
                       )
                     ],
