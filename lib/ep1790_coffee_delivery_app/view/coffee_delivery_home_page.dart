@@ -25,6 +25,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                     children: [
                       Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Welcome back,"),
                             Text("Dreamwalker"),
