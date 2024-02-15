@@ -165,7 +165,7 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                     TextSpan(
                       children: [
                         TextSpan(
-                          text: "Not a member",
+                          text: "Not a member. ",
                           style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.bold,
