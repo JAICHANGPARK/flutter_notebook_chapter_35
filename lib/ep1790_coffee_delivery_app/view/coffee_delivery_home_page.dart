@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class CoffeeDeliveryHomePage extends StatefulWidget {
   const CoffeeDeliveryHomePage({super.key});
@@ -19,6 +20,22 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                 children: [],
               ),
             ),
+            Positioned(
+              left: 32,
+              right: 32,
+              bottom: 24,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(),
+                  ),
+                  Gap(12),
+                  CircleAvatar(
+                    backgroundColor: Colors.deepOrange,
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
