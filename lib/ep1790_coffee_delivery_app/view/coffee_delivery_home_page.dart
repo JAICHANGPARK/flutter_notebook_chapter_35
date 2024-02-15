@@ -15,7 +15,10 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned.fill(
+            Positioned(
+              top: 16,
+              left: 16,
+              right: 16,
               child: Column(
                 children: [
                   Row(
