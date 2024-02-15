@@ -17,7 +17,17 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
           children: [
             Positioned.fill(
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          children: [],
+                        ),
+                      )
+                    ],
+                  )
+                ],
               ),
             ),
             Positioned(
@@ -32,13 +42,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey[200]!,
-                            blurRadius: 2,
-                            spreadRadius: 2
-                          )
-                        ],
+                        boxShadow: [BoxShadow(color: Colors.grey[200]!, blurRadius: 2, spreadRadius: 2)],
                       ),
                       child: Row(
                         children: [
