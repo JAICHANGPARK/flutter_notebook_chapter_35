@@ -34,6 +34,10 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                             border: Border.all(
                               color: Colors.grey,
                             )),
+                        child: IconButton(
+                          icon: Icon(Icons.mail_outline), onPressed: () {  },
+
+                        ),
                       )
                     ],
                   )
