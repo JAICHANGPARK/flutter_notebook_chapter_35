@@ -91,18 +91,23 @@ class _CoffeeDeliveryLoginPageState extends State<CoffeeDeliveryLoginPage> {
                           ),
                         ),
                         const Gap(12),
-                        Container(
-                          height: 58,
-                          decoration: BoxDecoration(
-                            color: Colors.deepOrange,
-                            borderRadius: BorderRadius.circular(32),
-                          ),
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                          child: const Center(
-                            child: Text(
-                              "Continue",
-                              style: TextStyle(
-                                color: Colors.white,
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushReplacementNamed("/home");
+                          },
+                          child: Container(
+                            height: 58,
+                            decoration: BoxDecoration(
+                              color: Colors.deepOrange,
+                              borderRadius: BorderRadius.circular(32),
+                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            child: const Center(
+                              child: Text(
+                                "Continue",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
                           ),
