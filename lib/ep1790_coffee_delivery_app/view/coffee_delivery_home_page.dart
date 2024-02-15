@@ -31,6 +31,22 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.deepOrange,
+                              ),
+                              child: Row(
+                                children: [
+                                  
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Gap(12),
