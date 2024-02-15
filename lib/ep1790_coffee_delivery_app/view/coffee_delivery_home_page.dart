@@ -21,16 +21,21 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
               ),
             ),
             Positioned(
-              left: 32,
-              right: 32,
-              bottom: 24,
+              left: 42,
+              right: 42,
+              bottom: 32,
               child: Row(
                 children: [
                   Expanded(
-                    child: Container(),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                   Gap(12),
                   CircleAvatar(
+                    radius: 24,
                     backgroundColor: Colors.deepOrange,
                   )
                 ],
