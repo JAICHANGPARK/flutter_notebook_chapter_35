@@ -78,11 +78,15 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(24),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 20,
+                            vertical: 10,
+                          ),
                           child: Text(
                             "Redeem",
                             style: TextStyle(
                               color: Colors.white,
+                              decoration: TextDecoration.lineThrough,
                             ),
                           ),
                         ),
