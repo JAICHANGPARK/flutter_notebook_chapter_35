@@ -52,11 +52,13 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                       )
                     ],
                   ),
+                  Gap(24),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
+                      borderRadius: BorderRadius.circular(32),
                     ),
-                    
+                    padding: EdgeInsets.all(8),
                     child: Row(
                       children: [
                         CircleAvatar(
@@ -68,6 +70,18 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
+                          ),
+                        ),
+                        Spacer(),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                          ),
+                          child: Text(
+                            "Redeem",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           ),
                         )
                       ],
