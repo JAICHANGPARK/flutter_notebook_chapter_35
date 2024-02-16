@@ -94,7 +94,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                       ],
                     ),
                   ),
-                  Gap(16),
+                  Gap(24),
                   Container(
                     height: 200,
                     child: Row(
@@ -103,20 +103,25 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.white,
+                              borderRadius: BorderRadius.circular(16),
                             ),
                           ),
                         ),
                         Gap(12),
                         Expanded(
                             child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                              ),
-                            ))
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ))
                       ],
                     ),
                   ),
                   Gap(16),
+                  Expanded(child: Container(decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),))
                 ],
               ),
             ),
