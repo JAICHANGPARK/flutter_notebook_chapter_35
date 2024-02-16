@@ -51,6 +51,27 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                         ),
                       )
                     ],
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.deepOrange,
+                        ),
+                        Gap(4),
+                        Text(
+                          "30 Points",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
