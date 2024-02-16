@@ -20,6 +20,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
               top: 16,
               left: 16,
               right: 16,
+              bottom: 0,
               child: Column(
                 children: [
                   Row(
@@ -119,9 +120,40 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                     ),
                   ),
                   Gap(16),
-                  Expanded(child: Container(decoration: BoxDecoration(
-                    color: Colors.white,
-                  ),))
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(16),
+                          topLeft: Radius.circular(16),
+                        ),
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Today's Promo"),
+                              Text("(4 items)"),
+                            ],
+                          ),
+                          Expanded(
+                            child: ListView.builder(
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all()
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
