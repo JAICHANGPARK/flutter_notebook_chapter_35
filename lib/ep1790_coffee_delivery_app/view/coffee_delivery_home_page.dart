@@ -93,7 +93,30 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                         Gap(0),
                       ],
                     ),
-                  )
+                  ),
+                  Gap(16),
+                  Container(
+                    height: 200,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Gap(12),
+                        Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                            ))
+                      ],
+                    ),
+                  ),
+                  Gap(16),
                 ],
               ),
             ),
