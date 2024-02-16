@@ -106,16 +106,47 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(16),
                             ),
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  color: Colors.blue,
+                                ),
+                                Text(
+                                  "Delivery",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                         Gap(12),
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(16),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  color: Colors.blue,
+                                ),
+                                Text(
+                                  "Delivery",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                        ))
+                        )
                       ],
                     ),
                   ),
