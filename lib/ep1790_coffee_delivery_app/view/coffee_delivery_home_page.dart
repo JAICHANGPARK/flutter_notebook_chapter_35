@@ -135,7 +135,13 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Today's Promo"),
+                              Text(
+                                "Today's Promo",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               Text("(4 items)"),
                             ],
                           ),
@@ -145,7 +151,16 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                 return Container(
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(16),
-                                    border: Border.all()
+                                    border: Border.all(),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Expanded(child: Column()),
+                                      Container(
+                                        height: 100,
+                                        width: 80,
+                                      )
+                                    ],
                                   ),
                                 );
                               },
