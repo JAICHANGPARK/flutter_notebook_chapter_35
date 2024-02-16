@@ -138,7 +138,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                   color: Colors.blue,
                                 ),
                                 Text(
-                                  "Delivery",
+                                  "Self Pickup",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                   ),
