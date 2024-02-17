@@ -134,22 +134,25 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                               borderRadius: BorderRadius.circular(16),
                             ),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Container(
-                                  height: 64,
-                                  width: 64,
+                                  height: 100,
+                                  width: 100,
                                   color: Colors.blue,
                                 ),
+                                Gap(8),
                                 Text(
                                   "Self Pickup",
                                   style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20
                                   ),
                                 ),
                               ],
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
