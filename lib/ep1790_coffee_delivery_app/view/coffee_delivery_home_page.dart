@@ -176,7 +176,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                               Text("(4 items)"),
                             ],
                           ),
-                          Gap(6),
+                          Gap(16),
                           Expanded(
                             child: ListView.builder(
                               itemBuilder: (context, index) {
