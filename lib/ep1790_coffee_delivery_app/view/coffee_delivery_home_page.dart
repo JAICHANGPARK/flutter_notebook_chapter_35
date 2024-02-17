@@ -118,6 +118,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                   "Delivery",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 20
                                   ),
                                 ),
                               ],
