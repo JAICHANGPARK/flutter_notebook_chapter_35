@@ -207,8 +207,8 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                         ),
                                       ),
                                       Container(
-                                        height: 100,
-                                        width: 80,
+                                        height: 120,
+                                        width: 100,
                                         color: Colors.pink,
                                       )
 
