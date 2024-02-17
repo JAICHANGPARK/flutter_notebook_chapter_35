@@ -25,7 +25,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                 children: [
                   Row(
                     children: [
-                      Expanded(
+                      const Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -47,43 +47,43 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                               color: Colors.grey,
                             )),
                         child: IconButton(
-                          icon: Icon(Icons.mail_outline),
+                          icon: const Icon(Icons.mail_outline),
                           onPressed: () {},
                         ),
                       )
                     ],
                   ),
-                  Gap(24),
+                  const Gap(24),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child: Row(
                       children: [
-                        CircleAvatar(
+                        const CircleAvatar(
                           backgroundColor: Colors.deepOrange,
                         ),
-                        Gap(4),
-                        Text(
+                        const Gap(4),
+                        const Text(
                           "30 Points",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(24),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 20,
                             vertical: 10,
                           ),
-                          child: Text(
+                          child: const Text(
                             "Redeem",
                             style: TextStyle(
                               color: Colors.white,
@@ -91,11 +91,11 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                             ),
                           ),
                         ),
-                        Gap(0),
+                        const Gap(0),
                       ],
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Container(
                     height: 200,
                     child: Row(
@@ -114,8 +114,8 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                   width: 100,
                                   color: Colors.blue,
                                 ),
-                                Gap(8),
-                                Text(
+                                const Gap(8),
+                                const Text(
                                   "Delivery",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                 ),
@@ -123,7 +123,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                             ),
                           ),
                         ),
-                        Gap(12),
+                        const Gap(12),
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
@@ -138,8 +138,8 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                   width: 100,
                                   color: Colors.blue,
                                 ),
-                                Gap(8),
-                                Text(
+                                const Gap(8),
+                                const Text(
                                   "Self Pickup",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -153,20 +153,20 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                       ],
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(16),
                           topLeft: Radius.circular(16),
                         ),
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         children: [
-                          Row(
+                          const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
@@ -179,7 +179,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                               Text("(4 items)"),
                             ],
                           ),
-                          Gap(16),
+                          const Gap(16),
                           Expanded(
                             child: ListView.builder(
                               itemBuilder: (context, index) {
@@ -190,12 +190,12 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                       color: Colors.grey[300]!,
                                     ),
                                   ),
-                                  margin: EdgeInsets.only(bottom: 16),
+                                  margin: const EdgeInsets.only(bottom: 16),
                                   child: Row(
                                     children: [
-                                      Expanded(
+                                      const Expanded(
                                         child: Padding(
-                                          padding: const EdgeInsets.all(12.0),
+                                          padding: EdgeInsets.all(12.0),
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
@@ -224,7 +224,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                       Container(
                                         height: 120,
                                         width: 100,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           color: Colors.pink,
                                           borderRadius: BorderRadius.only(
                                             topRight: Radius.circular(16),
@@ -253,7 +253,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                 children: [
                   Expanded(
                     child: Container(
-                      padding: EdgeInsets.all(3),
+                      padding: const EdgeInsets.all(3),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
@@ -277,12 +277,12 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                 children: [
                                   IconButton(
                                     onPressed: () {},
-                                    icon: Icon(
+                                    icon: const Icon(
                                       Icons.home_filled,
                                     ),
                                     color: Colors.white,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Home",
                                     style: TextStyle(
                                       color: Colors.white,
@@ -295,22 +295,22 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                           ),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.airplane_ticket),
+                            icon: const Icon(Icons.airplane_ticket),
                           ),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.featured_play_list_outlined),
+                            icon: const Icon(Icons.featured_play_list_outlined),
                           ),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.person_outline),
+                            icon: const Icon(Icons.person_outline),
                           ),
                         ],
                       ),
                     ),
                   ),
-                  Gap(12),
-                  CircleAvatar(
+                  const Gap(12),
+                  const CircleAvatar(
                     radius: 26,
                     backgroundColor: Colors.deepOrange,
                     child: Icon(Icons.sentiment_satisfied),
