@@ -210,6 +210,11 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                         height: 120,
                                         width: 100,
                                         color: Colors.pink,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.only(
+                                            topRight: Radius.circular(16)
+                                          )
+                                        ),
                                       )
 
                                     ],
