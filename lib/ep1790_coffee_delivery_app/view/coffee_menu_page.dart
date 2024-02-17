@@ -11,6 +11,11 @@ class CoffeeMenuPage extends StatefulWidget {
 class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Menu"),
+      ),
+    );
   }
 }
