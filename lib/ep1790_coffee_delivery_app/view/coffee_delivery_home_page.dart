@@ -188,35 +188,39 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                   child: Row(
                                     children: [
                                       Expanded(
-                                        child: Column(
-                                          children: [
-                                            Text(
-                                              "SIP & SAVE",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(12.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "SIP & SAVE",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
-                                            ),
-                                            Text(
-                                              "Lorem ipsum dolor sit amet,"
-                                              " consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-                                              " ut labore et dolore magna aliqua."
-                                              " Ut enim ad minim veniam, quis nostrud exercit",
-                                              maxLines: 3,
-                                            ),
-                                          ],
+                                              Text(
+                                                "Lorem ipsum dolor sit amet,"
+                                                " consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+                                                " ut labore et dolore magna aliqua."
+                                                " Ut enim ad minim veniam, quis nostrud exercit",
+                                                maxLines: 3,
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ),
                                       Container(
                                         height: 120,
                                         width: 100,
-                                        color: Colors.pink,
                                         decoration: BoxDecoration(
+                                          color: Colors.pink,
                                           borderRadius: BorderRadius.only(
-                                            topRight: Radius.circular(16)
-                                          )
+                                            topRight: Radius.circular(16),
+                                            bottomRight: Radius.circular(16),
+                                          ),
                                         ),
                                       )
-
                                     ],
                                   ),
                                 );
