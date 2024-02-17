@@ -11,6 +11,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       appBar: AppBar(
         centerTitle: true,
         title: const Text("Menu"),
@@ -23,9 +24,11 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
             bottom: 32,
             child: Container(
               height: 52,
-              decoration: const BoxDecoration(
+              decoration:  BoxDecoration(
                 color: Colors.white,
+                borderRadius: BorderRadius.circular(32),
               ),
+              padding: EdgeInsets.all(3),
               child: Row(
                 children: [
                   Expanded(
@@ -34,13 +37,16 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         border: Border.all(
                           color: Colors.deepOrangeAccent,
                         ),
+                        borderRadius: BorderRadius.circular(32),
                       ),
                     ),
                   ),
+
                   Expanded(
                     child: Container(
-                      decoration: const BoxDecoration(
+                      decoration:  BoxDecoration(
                         color: Colors.deepOrangeAccent,
+                        borderRadius: BorderRadius.circular(32),
                       ),
                     ),
                   ),
