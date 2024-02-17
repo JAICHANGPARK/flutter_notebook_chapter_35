@@ -110,8 +110,8 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Container(
-                                  height: 120,
-                                  width: 120,
+                                  height: 100,
+                                  width: 100,
                                   color: Colors.blue,
                                 ),
                                 Text(
