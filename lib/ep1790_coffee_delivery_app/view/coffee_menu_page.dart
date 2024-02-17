@@ -22,9 +22,19 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
             right: 42,
             bottom: 32,
             child: Container(
-              
+              height: 52,
+              decoration: BoxDecoration(
+                color: Colors.white,
+
+              ),
               child: Row(
                 children: [
+                  Expanded(child: Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.deepOrangeAccent)
+                    ),
+                  )),
+                  Expanded(child: Container()),
 
                 ],
               ),
