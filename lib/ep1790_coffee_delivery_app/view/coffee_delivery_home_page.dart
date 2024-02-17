@@ -254,7 +254,13 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(32),
-                        boxShadow: [BoxShadow(color: Colors.grey[200]!, blurRadius: 2, spreadRadius: 2)],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[200]!,
+                            blurRadius: 2,
+                            spreadRadius: 2,
+                          ),
+                        ],
                       ),
                       child: Row(
                         children: [
@@ -271,8 +277,15 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                     icon: Icon(
                                       Icons.home_filled,
                                     ),
+                                    color: Colors.white,
                                   ),
-                                  Text("Home"),
+                                  Text(
+                                    "Home",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
