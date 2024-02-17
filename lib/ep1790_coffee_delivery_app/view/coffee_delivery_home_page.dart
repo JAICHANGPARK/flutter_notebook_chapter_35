@@ -107,10 +107,11 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                               borderRadius: BorderRadius.circular(16),
                             ),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Container(
-                                  height: 64,
-                                  width: 64,
+                                  height: 120,
+                                  width: 120,
                                   color: Colors.blue,
                                 ),
                                 Text(
