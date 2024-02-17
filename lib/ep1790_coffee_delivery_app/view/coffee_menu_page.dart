@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class CoffeeMenuPage extends StatefulWidget {
   const CoffeeMenuPage({super.key});
 
@@ -15,6 +14,23 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
       appBar: AppBar(
         centerTitle: true,
         title: Text("Menu"),
+      ),
+      body: Stack(
+        children: [
+          Positioned(
+            left: 42,
+            right: 42,
+            bottom: 32,
+            child: Container(
+              
+              child: Row(
+                children: [
+
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
