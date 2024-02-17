@@ -183,8 +183,11 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                 return Container(
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(16),
-                                    border: Border.all(),
+                                    border: Border.all(
+                                      color: Colors.grey[300]!,
+                                    ),
                                   ),
+                                  margin: EdgeInsets.only(bottom: 16),
                                   child: Row(
                                     children: [
                                       Expanded(
