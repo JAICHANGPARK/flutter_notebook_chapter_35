@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_35/ep1790_coffee_delivery_app/view/coffee_delivery_login_page.dart';
+import 'package:flutter_notebook_chapter_35/ep1790_coffee_delivery_app/view/coffee_menu_page.dart';
 
 import 'view/coffee_delivery_home_page.dart';
 
@@ -17,6 +18,7 @@ class CoffeeDeliveryApp extends StatelessWidget {
       routes: {
         "/login": (context) => CoffeeDeliveryLoginPage(),
         "/home": (context) => CoffeeDeliveryHomePage(),
+        "/menu": (context) => CoffeeMenuPage(),
       },
     );
   }
