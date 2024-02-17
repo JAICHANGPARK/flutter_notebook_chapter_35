@@ -117,10 +117,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                 Gap(8),
                                 Text(
                                   "Delivery",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                 ),
                               ],
                             ),
@@ -144,10 +141,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                 Gap(8),
                                 Text(
                                   "Self Pickup",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                 ),
                               ],
                             ),
@@ -182,6 +176,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                               Text("(4 items)"),
                             ],
                           ),
+                          Gap(6),
                           Expanded(
                             child: ListView.builder(
                               itemBuilder: (context, index) {
@@ -192,7 +187,25 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                   ),
                                   child: Row(
                                     children: [
-                                      Expanded(child: Column()),
+                                      Expanded(
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "SIP & SAVE",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(
+                                              "Lorem ipsum dolor sit amet,"
+                                              " consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+                                              " ut labore et dolore magna aliqua."
+                                              " Ut enim ad minim veniam, quis nostrud exercit",
+                                              maxLines: 3,
+                                            ),
+                                          ],
+                                        ),
+                                      ),
                                       Container(
                                         height: 100,
                                         width: 80,
