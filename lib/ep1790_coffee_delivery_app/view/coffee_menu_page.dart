@@ -18,13 +18,24 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
       ),
       body: Stack(
         children: [
+          Positioned.fill(
+            child: Column(
+              children: [
+                Container(
+                  height: 120,
+                  
+                  child: Placeholder(),
+                )
+              ],
+            ),
+          ),
           Positioned(
             left: 42,
             right: 42,
             bottom: 32,
             child: Container(
               height: 52,
-              decoration:  BoxDecoration(
+              decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
               ),
@@ -41,10 +52,9 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                       ),
                     ),
                   ),
-
                   Expanded(
                     child: Container(
-                      decoration:  BoxDecoration(
+                      decoration: BoxDecoration(
                         color: Colors.deepOrangeAccent,
                         borderRadius: BorderRadius.circular(32),
                       ),
