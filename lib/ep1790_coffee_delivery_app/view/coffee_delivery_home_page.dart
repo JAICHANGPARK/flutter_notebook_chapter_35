@@ -199,7 +199,8 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                               Text(
                                                 "SIP & SAVE",
                                                 style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
+                                                  fontWeight: FontWeight.w900,
+                                                  fontSize: 20,
                                                 ),
                                               ),
                                               Text(
