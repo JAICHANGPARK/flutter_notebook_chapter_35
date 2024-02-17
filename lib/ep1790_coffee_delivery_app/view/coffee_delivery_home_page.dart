@@ -95,7 +95,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                       ],
                     ),
                   ),
-                  Gap(24),
+                  Gap(16),
                   Container(
                     height: 200,
                     child: Row(
@@ -141,7 +141,10 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                 Gap(8),
                                 Text(
                                   "Self Pickup",
-                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                  ),
                                 ),
                               ],
                             ),
