@@ -101,25 +101,30 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                     child: Row(
                       children: [
                         Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(16),
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  height: 100,
-                                  width: 100,
-                                  color: Colors.blue,
-                                ),
-                                const Gap(8),
-                                const Text(
-                                  "Delivery",
-                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                                ),
-                              ],
+                          child: GestureDetector(
+                            onTap: (){
+                              Navigator.of(context).pushNamed("/menu");
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    height: 100,
+                                    width: 100,
+                                    color: Colors.blue,
+                                  ),
+                                  const Gap(8),
+                                  const Text(
+                                    "Delivery",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
