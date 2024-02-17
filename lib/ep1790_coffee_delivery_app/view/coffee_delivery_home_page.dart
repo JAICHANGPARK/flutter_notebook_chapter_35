@@ -114,6 +114,7 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                   width: 100,
                                   color: Colors.blue,
                                 ),
+                                Gap(8),
                                 Text(
                                   "Delivery",
                                   style: TextStyle(
