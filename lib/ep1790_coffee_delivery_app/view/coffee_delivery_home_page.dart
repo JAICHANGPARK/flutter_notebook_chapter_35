@@ -210,6 +210,9 @@ class _CoffeeDeliveryHomePageState extends State<CoffeeDeliveryHomePage> {
                                                 " ut labore et dolore magna aliqua."
                                                 " Ut enim ad minim veniam, quis nostrud exercit",
                                                 maxLines: 3,
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                ),
                                               ),
                                             ],
                                           ),
