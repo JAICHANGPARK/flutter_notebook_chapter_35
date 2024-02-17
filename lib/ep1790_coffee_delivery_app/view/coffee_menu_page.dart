@@ -13,7 +13,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Menu"),
+        title: const Text("Menu"),
       ),
       body: Stack(
         children: [
@@ -23,7 +23,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
             bottom: 32,
             child: Container(
               height: 52,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
               ),
               child: Row(
@@ -39,7 +39,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                   ),
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.deepOrangeAccent,
                       ),
                     ),
