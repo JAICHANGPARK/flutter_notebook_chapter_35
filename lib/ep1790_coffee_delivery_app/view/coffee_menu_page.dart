@@ -22,10 +22,20 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
             child: Column(
               children: [
                 Container(
-                  height: 120,
-                  
+                  height: 160,
                   child: Placeholder(),
-                )
+                ),
+                Container(
+                  height: 52,
+                  child: Placeholder(),
+                ),
+                Expanded(
+                    child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                  itemBuilder: (context, index) {
+                    return Placeholder();
+                  },
+                ))
               ],
             ),
           ),
