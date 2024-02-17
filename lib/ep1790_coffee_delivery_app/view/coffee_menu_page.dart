@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class CoffeeMenuPage extends StatefulWidget {
   const CoffeeMenuPage({super.key});
@@ -21,14 +22,15 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
           Positioned.fill(
             child: Column(
               children: [
+                Gap(12),
                 Container(
                   height: 160,
                   child: Placeholder(),
-                ),
+                ), Gap(12),
                 Container(
                   height: 52,
                   child: Placeholder(),
-                ),
+                ), Gap(12),
                 Expanded(
                     child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
