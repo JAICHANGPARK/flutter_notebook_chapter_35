@@ -18,6 +18,8 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text("Menu"),
+        backgroundColor: Colors.white,
+        
       ),
       body: Stack(
         children: [
@@ -219,13 +221,13 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                           children: [
                             Text(
                               "Checkout",
-                              style: TextStyle(
-                                color: Colors.white
-                              ),
+                              style: TextStyle(color: Colors.white),
                             ),
                             Spacer(),
-                            Icon(Icons.keyboard_arrow_right,
-                            color: Colors.white,)
+                            Icon(
+                              Icons.keyboard_arrow_right,
+                              color: Colors.white,
+                            )
                           ],
                         ),
                       ),
