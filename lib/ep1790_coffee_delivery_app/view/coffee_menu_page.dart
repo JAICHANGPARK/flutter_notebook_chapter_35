@@ -221,6 +221,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                               "Checkout",
                               style: TextStyle(),
                             ),
+                            Spacer(),
                             Icon(Icons.keyboard_arrow_right)
                           ],
                         ),
