@@ -20,6 +20,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
         title: const Text("Menu"),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
+        surfaceTintColor: Colors.white,
       ),
       body: Stack(
         children: [
