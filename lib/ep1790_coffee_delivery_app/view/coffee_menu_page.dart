@@ -200,6 +200,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         ),
                         borderRadius: BorderRadius.circular(32),
                       ),
+                      child: Center(child: Text("\$3.75(1 Product)")),
                     ),
                   ),
                   Expanded(
