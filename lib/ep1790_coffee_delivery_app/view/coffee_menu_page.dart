@@ -144,9 +144,10 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                 Gap(12),
                 Container(
                   height: 52,
-                  
+                  margin: EdgeInsets.symmetric(horizontal: 16),
                   decoration: BoxDecoration(
-                    color: Colors.grey
+                    color: Colors.grey[400]!,
+                    
                   ),
                 ),
                 Gap(12),
