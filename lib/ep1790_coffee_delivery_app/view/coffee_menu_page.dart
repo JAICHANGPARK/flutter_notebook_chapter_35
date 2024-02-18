@@ -150,7 +150,15 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                     borderRadius: BorderRadius.circular(32),
                   ),
                   child: ListView.builder(
-                    itemBuilder: (context, index) {},
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                      );
+                    },
                   ),
                 ),
                 Gap(12),
