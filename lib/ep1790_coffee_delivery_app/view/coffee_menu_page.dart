@@ -143,11 +143,14 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                 ),
                 Gap(12),
                 Container(
-                  height: 52,
-                  margin: EdgeInsets.symmetric(horizontal: 16),
+                  height: 42,
+                  margin: EdgeInsets.symmetric(horizontal: 12),
                   decoration: BoxDecoration(
-                    color: Colors.grey[400]!,
-                    
+                    color: Colors.grey[300]!,
+                    borderRadius: BorderRadius.circular(32),
+                  ),
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {},
                   ),
                 ),
                 Gap(12),
