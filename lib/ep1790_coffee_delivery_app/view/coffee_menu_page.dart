@@ -74,7 +74,41 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                               ),
                             ),
                             Divider(),
-                            Expanded(child: Placeholder()),
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  Gap(72),
+                                  Expanded(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Your Location",
+                                        ),
+                                        Text("Unknown Position"),
+                                      ],
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 72,
+                                    width: 72,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.grey[300]!,
+                                      ),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.arrow_forward_ios,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
