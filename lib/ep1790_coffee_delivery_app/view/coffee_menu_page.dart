@@ -25,14 +25,28 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                 Gap(12),
                 Container(
                   height: 160,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
                   child: Stack(
                     children: [
                       Positioned(
+                        left: 52,
+                        right: 16,
+                        top: 16,
+                        bottom: 16,
                         child: Column(
                           children: [
-                            Expanded(child: Placeholder()),
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "South Korea",
+                                  ),
+                                ],
+                              ),
+                            ),
                             Divider(),
-
                             Expanded(child: Placeholder()),
                           ],
                         ),
