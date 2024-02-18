@@ -158,7 +158,9 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                           color: index == 0 ? Colors.white : Colors.transparent,
                           borderRadius: BorderRadius.circular(16),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 12,),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 12,
+                        ),
                         child: Center(
                           child: Text(
                             "Coffee",
@@ -209,11 +211,19 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         color: Colors.deepOrangeAccent,
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      child: Row(
-                        children: [
-                          Text("Checkout",style: TextStyle(),),
-                          Icon(Icons.keyboard_arrow_right)
-                        ],
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 12,
+                      ),
+                      child: Center(
+                        child: Row(
+                          children: [
+                            Text(
+                              "Checkout",
+                              style: TextStyle(),
+                            ),
+                            Icon(Icons.keyboard_arrow_right)
+                          ],
+                        ),
                       ),
                     ),
                   ),
