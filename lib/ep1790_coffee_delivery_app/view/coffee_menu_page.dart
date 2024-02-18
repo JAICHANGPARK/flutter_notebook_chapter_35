@@ -209,6 +209,12 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         color: Colors.deepOrangeAccent,
                         borderRadius: BorderRadius.circular(32),
                       ),
+                      child: Row(
+                        children: [
+                          Text("Checkout",style: TextStyle(),),
+                          Icon(Icons.keyboard_arrow_right)
+                        ],
+                      ),
                     ),
                   ),
                 ],
