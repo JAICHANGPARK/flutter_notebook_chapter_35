@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -41,24 +42,34 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                               child: Row(
                                 children: [
                                   Gap(72),
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "South Korea",
-                                      ),
-                                      Text("2.4 KM 10 minutes")
-                                    ],
+                                  Expanded(
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "South Korea",
+                                        ),
+                                        Text("2.4 KM 10 minutes")
+                                      ],
+                                    ),
                                   ),
                                   Container(
                                     height: 72,
                                     width: 72,
                                     decoration: BoxDecoration(
-                                      
+                                      border: Border.all(
+                                        color: Colors.grey[300]!,
+                                      ),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.arrow_forward_ios,
+                                      ),
                                     ),
                                   )
-
                                 ],
                               ),
                             ),
