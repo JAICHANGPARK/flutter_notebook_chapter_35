@@ -121,16 +121,20 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                             children: [
                               CircleAvatar(
                                 radius: 24,
+                                backgroundColor: Colors.deepOrange[50],
+                                child: Icon(Icons.store),
+                                foregroundColor: Colors.deepOrangeAccent,
                               ),
                               Expanded(
                                 child: Container(
                                   width: 1,
-                                  
                                   color: Colors.deepOrange,
                                 ),
                               ),
                               CircleAvatar(
                                 radius: 24,
+                                backgroundColor: Colors.grey[200]!,
+                                child: Icon(Icons.location_on_outlined),
                               ),
                             ],
                           ))
