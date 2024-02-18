@@ -19,7 +19,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
         centerTitle: true,
         title: const Text("Menu"),
         backgroundColor: Colors.white,
-        
+        foregroundColor: Colors.black,
       ),
       body: Stack(
         children: [
