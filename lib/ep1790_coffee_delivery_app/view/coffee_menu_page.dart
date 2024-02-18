@@ -25,12 +25,27 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                 Gap(12),
                 Container(
                   height: 160,
-                  child: Placeholder(),
-                ), Gap(12),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        child: Column(
+                          children: [
+                            Expanded(child: Placeholder()),
+                            Divider(),
+
+                            Expanded(child: Placeholder()),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Gap(12),
                 Container(
                   height: 52,
                   child: Placeholder(),
-                ), Gap(12),
+                ),
+                Gap(12),
                 Expanded(
                     child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
