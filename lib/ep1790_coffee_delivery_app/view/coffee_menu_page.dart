@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class CoffeeMenuPage extends StatefulWidget {
@@ -113,16 +114,26 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         ),
                       ),
                       Positioned(
-                        left: 0,
+                          left: 24,
                           top: 16,
                           bottom: 16,
                           child: Column(
-                        children: [
-                          CircleAvatar(),
-                          VerticalDivider(),
-                          CircleAvatar(),
-                        ],
-                      ))
+                            children: [
+                              CircleAvatar(
+                                radius: 24,
+                              ),
+                              Expanded(
+                                child: Container(
+                                  width: 1,
+                                  
+                                  color: Colors.deepOrange,
+                                ),
+                              ),
+                              CircleAvatar(
+                                radius: 24,
+                              ),
+                            ],
+                          ))
                     ],
                   ),
                 ),
