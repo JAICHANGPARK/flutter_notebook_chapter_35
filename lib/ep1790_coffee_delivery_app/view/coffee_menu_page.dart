@@ -112,6 +112,17 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                           ],
                         ),
                       ),
+                      Positioned(
+                        left: 0,
+                          top: 16,
+                          bottom: 16,
+                          child: Column(
+                        children: [
+                          CircleAvatar(),
+                          VerticalDivider(),
+                          CircleAvatar(),
+                        ],
+                      ))
                     ],
                   ),
                 ),
