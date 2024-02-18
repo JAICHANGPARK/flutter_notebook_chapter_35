@@ -31,7 +31,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                   child: Stack(
                     children: [
                       Positioned(
-                        left: 52,
+                        left: 16,
                         right: 16,
                         top: 16,
                         bottom: 16,
@@ -40,9 +40,25 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                             Expanded(
                               child: Row(
                                 children: [
-                                  Text(
-                                    "South Korea",
+                                  Gap(72),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "South Korea",
+                                      ),
+                                      Text("2.4 KM 10 minutes")
+                                    ],
                                   ),
+                                  Container(
+                                    height: 72,
+                                    width: 72,
+                                    decoration: BoxDecoration(
+                                      
+                                    ),
+                                  )
+
                                 ],
                               ),
                             ),
