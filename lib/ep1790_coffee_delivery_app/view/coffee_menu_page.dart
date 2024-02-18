@@ -149,13 +149,17 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                     color: Colors.grey[300]!,
                     borderRadius: BorderRadius.circular(32),
                   ),
+                  padding: EdgeInsets.all(2),
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Container(
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: index == 0 ? Colors.white : Colors.transparent,
                           borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Text(
+                          "Coffee",
                         ),
                       );
                     },
