@@ -180,19 +180,26 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                     ),
                     child: GridView.builder(
                       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2, mainAxisSpacing: 12, crossAxisSpacing: 12, childAspectRatio: 0.8),
+                        crossAxisCount: 2,
+                        mainAxisSpacing: 12,
+                        crossAxisSpacing: 12,
+                        childAspectRatio: 0.7,
+                      ),
                       itemBuilder: (context, index) {
                         return Column(
                           children: [
                             Expanded(
                               child: Placeholder(),
                             ),
+                            Gap(8),
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text("Caramel latte"),
                                 Text("\$3.75"),
                               ],
                             ),
+                            Gap(8),
                             Row(
                               children: [
                                 Expanded(
