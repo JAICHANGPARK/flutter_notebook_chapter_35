@@ -197,7 +197,10 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                 ),
                               ),
                               Container(
-                                
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(),
+                                ),
                               )
                             ],
                           )
