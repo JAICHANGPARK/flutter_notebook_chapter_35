@@ -27,10 +27,10 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
           Positioned.fill(
             child: Column(
               children: [
-                Gap(12),
+                const Gap(12),
                 Container(
                   height: 160,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
                   child: Stack(
@@ -45,8 +45,8 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                             Expanded(
                               child: Row(
                                 children: [
-                                  Gap(72),
-                                  Expanded(
+                                  const Gap(72),
+                                  const Expanded(
                                     child: Column(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -69,7 +69,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                     ),
                                     child: IconButton(
                                       onPressed: () {},
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.arrow_forward_ios,
                                       ),
                                     ),
@@ -77,12 +77,12 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                 ],
                               ),
                             ),
-                            Divider(),
+                            const Divider(),
                             Expanded(
                               child: Row(
                                 children: [
-                                  Gap(72),
-                                  Expanded(
+                                  const Gap(72),
+                                  const Expanded(
                                     child: Column(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -105,7 +105,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                     ),
                                     child: IconButton(
                                       onPressed: () {},
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.arrow_forward_ios,
                                       ),
                                     ),
@@ -125,7 +125,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                               CircleAvatar(
                                 radius: 24,
                                 backgroundColor: Colors.deepOrange[50],
-                                child: Icon(Icons.store),
+                                child: const Icon(Icons.store),
                                 foregroundColor: Colors.deepOrangeAccent,
                               ),
                               Expanded(
@@ -137,22 +137,22 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                               CircleAvatar(
                                 radius: 24,
                                 backgroundColor: Colors.grey[200]!,
-                                child: Icon(Icons.location_on_outlined),
+                                child: const Icon(Icons.location_on_outlined),
                               ),
                             ],
                           ))
                     ],
                   ),
                 ),
-                Gap(12),
+                const Gap(12),
                 Container(
                   height: 42,
-                  margin: EdgeInsets.symmetric(horizontal: 12),
+                  margin: const EdgeInsets.symmetric(horizontal: 12),
                   decoration: BoxDecoration(
                     color: Colors.grey[300]!,
                     borderRadius: BorderRadius.circular(32),
                   ),
-                  padding: EdgeInsets.all(4),
+                  padding: const EdgeInsets.all(4),
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
@@ -161,10 +161,10 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                           color: index == 0 ? Colors.white : Colors.transparent,
                           borderRadius: BorderRadius.circular(16),
                         ),
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 12,
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Coffee",
                           ),
@@ -173,12 +173,12 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                     },
                   ),
                 ),
-                Gap(12),
+                const Gap(12),
                 Expanded(
                     child: GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                   itemBuilder: (context, index) {
-                    return Placeholder();
+                    return const Placeholder();
                   },
                 ))
               ],
@@ -194,7 +194,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(32),
               ),
-              padding: EdgeInsets.all(3),
+              padding: const EdgeInsets.all(3),
               child: Row(
                 children: [
                   Expanded(
@@ -205,7 +205,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         ),
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      child: Center(child: Text("\$3.75(1 Product)")),
+                      child: const Center(child: Text("\$3.75(1 Product)")),
                     ),
                   ),
                   Expanded(
@@ -214,10 +214,10 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         color: Colors.deepOrangeAccent,
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 12,
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Row(
                           children: [
                             Text(
