@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class CoffeeMenuPage extends StatefulWidget {
@@ -192,6 +190,14 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                           Row(
                             children: [
                               Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                    )
+                                  ],
+                                ),
                                 child: Center(
                                   child: Text("Customize"),
                                 ),
