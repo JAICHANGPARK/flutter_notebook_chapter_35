@@ -175,7 +175,12 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                 const Gap(12),
                 Expanded(
                   child: GridView.builder(
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 12,
+                      crossAxisSpacing: 12,
+                      childAspectRatio: 0.8
+                    ),
                     itemBuilder: (context, index) {
                       return Column(
                         children: [
