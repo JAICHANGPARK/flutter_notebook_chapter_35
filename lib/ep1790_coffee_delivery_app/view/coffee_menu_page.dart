@@ -213,20 +213,19 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                       color: Colors.white,
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Colors.grey,
+                                          color: Colors.grey[400]!,
                                           spreadRadius: 2,
-                                          blurRadius: 2
-                                        )
+                                          blurRadius: 2,
+                                        ),
                                       ],
                                       borderRadius: BorderRadius.circular(24),
                                     ),
                                     padding: EdgeInsets.symmetric(
-                                      vertical: 12,
+                                      vertical: 8,
                                     ),
                                     child: Center(
                                       child: Text(
                                         "Customize",
-
                                       ),
                                     ),
                                   ),
@@ -238,7 +237,12 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                     color: Colors.deepOrange,
                                   ),
                                   padding: EdgeInsets.all(12),
-                                  child: Text("1"),
+                                  child: Text(
+                                    "1",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 )
                               ],
                             )
