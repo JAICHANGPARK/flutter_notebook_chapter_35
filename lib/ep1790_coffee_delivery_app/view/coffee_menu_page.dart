@@ -185,7 +185,20 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                           ),
                           Row(
                             children: [
-                              
+                              Text("Caramel latte"),
+                              Text("\$3.75"),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                child: Center(
+                                  child: Text("Customize"),
+                                ),
+                              ),
+                              Container(
+                                
+                              )
                             ],
                           )
                         ],
