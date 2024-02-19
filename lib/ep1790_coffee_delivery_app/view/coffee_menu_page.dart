@@ -195,7 +195,12 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("Caramel latte"),
+                                Text(
+                                  "Caramel latte",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                                 Text("\$3.75"),
                               ],
                             ),
