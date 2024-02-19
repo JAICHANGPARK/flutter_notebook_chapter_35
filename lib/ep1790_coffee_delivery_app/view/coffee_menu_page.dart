@@ -236,6 +236,10 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                     child: Center(
                                       child: Text(
                                         "Customize",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                        ),
                                       ),
                                     ),
                                   ),
