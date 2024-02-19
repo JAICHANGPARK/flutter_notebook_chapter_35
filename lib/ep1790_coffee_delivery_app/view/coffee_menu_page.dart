@@ -191,6 +191,7 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                             Expanded(
                               child: Container(
                                 decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
                                   image: DecorationImage(
                                     image: NetworkImage(
                                       "https://cdn.pixabay.com/photo/2015/05/07/13/46/cappuccino-756490_1280.jpg",
