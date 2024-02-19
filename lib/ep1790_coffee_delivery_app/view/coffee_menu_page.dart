@@ -174,60 +174,61 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                 ),
                 const Gap(12),
                 Expanded(
-                  child: GridView.builder(
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 12,
-                      crossAxisSpacing: 12,
-                      childAspectRatio: 0.8
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
                     ),
-                    itemBuilder: (context, index) {
-                      return Column(
-                        children: [
-                          Expanded(
-                            child: Placeholder(),
-                          ),
-                          Row(
-                            children: [
-                              Text("Caramel latte"),
-                              Text("\$3.75"),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Container(
+                    child: GridView.builder(
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2, mainAxisSpacing: 12, crossAxisSpacing: 12, childAspectRatio: 0.8),
+                      itemBuilder: (context, index) {
+                        return Column(
+                          children: [
+                            Expanded(
+                              child: Placeholder(),
+                            ),
+                            Row(
+                              children: [
+                                Text("Caramel latte"),
+                                Text("\$3.75"),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    padding: EdgeInsets.symmetric(
+                                      vertical: 12,
+                                    ),
+                                    child: Center(
+                                      child: Text("Customize"),
+                                    ),
+                                  ),
+                                ),
+                                Container(
                                   decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey,
-                                      )
-                                    ],
-                                    borderRadius: BorderRadius.circular(24),
+                                    shape: BoxShape.circle,
+                                    border: Border.all(),
+                                    color: Colors.deepOrange,
                                   ),
-                                  padding: EdgeInsets.symmetric(
-                                    vertical: 12,
-                                  ),
-                                  child: Center(
-                                    child: Text("Customize"),
-                                  ),
-                                ),
-                              ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(),
-                                  color: Colors.deepOrange,
-                                ),
-                                padding: EdgeInsets.all(12),
-                                child: Text("1"),
-                              )
-                            ],
-                          )
-                        ],
-                      );
-                    },
+                                  padding: EdgeInsets.all(12),
+                                  child: Text("1"),
+                                )
+                              ],
+                            )
+                          ],
+                        );
+                      },
+                    ),
                   ),
                 ),
               ],
