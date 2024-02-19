@@ -189,7 +189,16 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                         return Column(
                           children: [
                             Expanded(
-                              child: Placeholder(),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2015/05/07/13/46/cappuccino-756490_1280.jpg",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
                             ),
                             Gap(8),
                             Row(
