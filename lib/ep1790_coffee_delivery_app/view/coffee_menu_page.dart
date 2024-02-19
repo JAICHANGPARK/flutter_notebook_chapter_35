@@ -125,8 +125,8 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                               CircleAvatar(
                                 radius: 24,
                                 backgroundColor: Colors.deepOrange[50],
-                                child: const Icon(Icons.store),
                                 foregroundColor: Colors.deepOrangeAccent,
+                                child: const Icon(Icons.store),
                               ),
                               Expanded(
                                 child: Container(
@@ -175,12 +175,24 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                 ),
                 const Gap(12),
                 Expanded(
-                    child: GridView.builder(
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-                  itemBuilder: (context, index) {
-                    return const Placeholder();
-                  },
-                ))
+                  child: GridView.builder(
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                    itemBuilder: (context, index) {
+                      return Column(
+                        children: [
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                          Row(
+                            children: [
+                              
+                            ],
+                          )
+                        ],
+                      );
+                    },
+                  ),
+                ),
               ],
             ),
           ),
