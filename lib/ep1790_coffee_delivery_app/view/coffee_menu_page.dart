@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -189,24 +190,33 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                           ),
                           Row(
                             children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey,
-                                    )
-                                  ],
-                                ),
-                                child: Center(
-                                  child: Text("Customize"),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey,
+                                      )
+                                    ],
+                                    borderRadius: BorderRadius.circular(24),
+                                  ),
+                                  padding: EdgeInsets.symmetric(
+                                    vertical: 12,
+                                  ),
+                                  child: Center(
+                                    child: Text("Customize"),
+                                  ),
                                 ),
                               ),
                               Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   border: Border.all(),
+                                  color: Colors.deepOrange,
                                 ),
+                                padding: EdgeInsets.all(12),
+                                child: Text("1"),
                               )
                             ],
                           )
