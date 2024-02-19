@@ -214,6 +214,8 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                       boxShadow: [
                                         BoxShadow(
                                           color: Colors.grey,
+                                          spreadRadius: 2,
+                                          blurRadius: 2
                                         )
                                       ],
                                       borderRadius: BorderRadius.circular(24),
@@ -222,7 +224,10 @@ class _CoffeeMenuPageState extends State<CoffeeMenuPage> {
                                       vertical: 12,
                                     ),
                                     child: Center(
-                                      child: Text("Customize"),
+                                      child: Text(
+                                        "Customize",
+
+                                      ),
                                     ),
                                   ),
                                 ),
