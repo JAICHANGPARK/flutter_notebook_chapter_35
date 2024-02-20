@@ -11,34 +11,36 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Column(),
-              Container(
-                child: IconButton(
-                  icon: Icon(Icons.notifications_outlined),
-                  onPressed: () {},
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Column(),
+                Container(
+                  child: IconButton(
+                    icon: Icon(Icons.notifications_outlined),
+                    onPressed: () {},
+                  ),
+                ),
+                CircleAvatar(),
+              ],
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 200,
+                      child: Placeholder(),
+                    ),
+                  ],
                 ),
               ),
-              CircleAvatar(),
-            ],
-          ),
-          Expanded(
-            child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    height: 200,
-                    child: Placeholder(),
-                  ),
-                ],
-              ),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
