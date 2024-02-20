@@ -35,6 +35,28 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       height: 200,
                       child: Placeholder(),
                     ),
+                    Row(
+                      children: [
+                        Text("Today Activity"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See Detail"),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      height: 150,
+                      child: Placeholder(),
+                    ),
+                    Row(
+                      children: [
+                        Text("Daily Highlights"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See Detail"),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
