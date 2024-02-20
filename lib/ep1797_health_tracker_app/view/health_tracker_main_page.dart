@@ -57,6 +57,10 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                         ),
                       ],
                     ),
+                    Container(
+                      height: 300,
+                      child: Placeholder(),
+                    )
                   ],
                 ),
               ),
