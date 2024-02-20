@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class HealthTrackerMainPage extends StatefulWidget {
   const HealthTrackerMainPage({super.key});
 
@@ -14,8 +12,14 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
-
+        children: [],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: "Home",
+          )
         ],
       ),
     );
