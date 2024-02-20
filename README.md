@@ -6,7 +6,7 @@
 - by Bayu Sasmita🍃 for Caraka
 - https://dribbble.com/shots/23642116-Surya-Health-Tracker-Apps
 
-<img src="https://cdn.dribbble.com/userupload/12931866/file/original-ae88752b17ae7132a69cc121280e0407.png?resize=1600x1200"/>
+<img src="https://cdn.dribbble.com/userupload/13051131/file/original-8ad112a8fd78e0e990797bc2f1029764.jpg?resize=1905x1429"/>
 
 ## EP1791-1796
 
