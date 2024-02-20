@@ -19,6 +19,22 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
             label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.group),
+            label: "Community",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_circle_outline),
+            label: "Record",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.pie_chart),
+            label: "Stats",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle_outlined),
+            label: "Profile",
           )
         ],
       ),
