@@ -81,8 +81,6 @@
 <img src="https://cdn.dribbble.com/userupload/11997032/file/original-3bc8b0f2bda851f8448bb09a2bdc0d2a.png?resize=1600x1200"/>
 
 
-A new Flutter project.
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
