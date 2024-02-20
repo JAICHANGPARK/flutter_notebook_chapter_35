@@ -15,7 +15,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
       ),
     );
