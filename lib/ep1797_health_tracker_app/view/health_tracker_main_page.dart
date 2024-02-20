@@ -12,7 +12,27 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [],
+        children: [
+          Row(
+            children: [
+              Column(),
+              Container(
+                child: IconButton(
+                  icon: Icon(Icons.notifications_outlined),
+                  onPressed: () {},
+                ),
+              ),
+              CircleAvatar(),
+            ],
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [],
+              ),
+            ),
+          )
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
@@ -37,9 +57,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
             icon: Icon(Icons.account_circle_outlined),
             label: "Profile",
           ),
-
         ],
-
       ),
     );
   }
