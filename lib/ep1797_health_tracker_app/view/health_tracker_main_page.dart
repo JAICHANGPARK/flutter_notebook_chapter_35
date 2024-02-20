@@ -28,7 +28,13 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                children: [],
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 200,
+                    child: Placeholder(),
+                  ),
+                ],
               ),
             ),
           )
