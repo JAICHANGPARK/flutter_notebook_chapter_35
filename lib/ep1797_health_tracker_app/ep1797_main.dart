@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(HealthTrackerApp());
+}
 
 class HealthTrackerApp extends StatelessWidget {
   const HealthTrackerApp({super.key});
