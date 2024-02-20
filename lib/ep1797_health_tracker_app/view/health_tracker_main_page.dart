@@ -15,6 +15,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
@@ -35,8 +36,10 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.account_circle_outlined),
             label: "Profile",
-          )
+          ),
+
         ],
+
       ),
     );
   }
