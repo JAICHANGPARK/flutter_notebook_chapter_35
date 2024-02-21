@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class HealthTrackerMainPage extends StatefulWidget {
   const HealthTrackerMainPage({super.key});
@@ -43,7 +44,10 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       onPressed: () {},
                     ),
                   ),
-                  CircleAvatar(),
+                  Gap(6),
+                  CircleAvatar(
+                    radius: 26,
+                  ),
                 ],
               ),
             ),
@@ -54,7 +58,34 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                   children: [
                     Container(
                       height: 200,
-                      child: Placeholder(),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "Distance Increase 28%",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Yesterday 2.9km",
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                     Row(
                       children: [
