@@ -60,7 +60,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                   children: [
                     Container(
                       height: 208,
-                      margin: EdgeInsets.symmetric(horizontal: 16,vertical: 8),
+                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       padding: EdgeInsets.all(12),
                       decoration: BoxDecoration(
                         border: Border.all(
@@ -121,12 +121,28 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               Expanded(
                                   child: Row(
                                 children: [
-                                  Expanded(child: Container(
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.blueGrey[400]!,
+                                        ),
+                                        borderRadius: BorderRadius.circular(16),
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                  Gap(8),
+                                  Expanded(
+                                      child: Container(
                                     decoration: BoxDecoration(
-                                      
+                                      border: Border.all(
+                                        color: Colors.blueGrey[400]!,
+                                      ),
+                                      borderRadius: BorderRadius.circular(16),
+                                      color: Colors.white,
                                     ),
                                   )),
-                                  Expanded(child: Placeholder()),
                                 ],
                               )),
                               Expanded(
