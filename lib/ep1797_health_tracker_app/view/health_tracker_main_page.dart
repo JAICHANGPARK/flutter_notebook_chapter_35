@@ -85,6 +85,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               ),
                               Expanded(
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
                                       "Distance Increase 28%",
