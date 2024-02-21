@@ -52,15 +52,15 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                 ],
               ),
             ),
-            Gap(24),
+            Gap(16),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 200,
-                      margin: EdgeInsets.symmetric(horizontal: 16),
+                      height: 208,
+                      margin: EdgeInsets.symmetric(horizontal: 16,vertical: 8),
                       padding: EdgeInsets.all(12),
                       decoration: BoxDecoration(
                         border: Border.all(
@@ -69,9 +69,9 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.grey[100]!,
+                            color: Colors.grey[200]!,
                             blurRadius: 4,
-                            spreadRadius: 3,
+                            spreadRadius: 4,
                           )
                         ],
                         color: Colors.white,
@@ -121,7 +121,11 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               Expanded(
                                   child: Row(
                                 children: [
-                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Container(
+                                    decoration: BoxDecoration(
+                                      
+                                    ),
+                                  )),
                                   Expanded(child: Placeholder()),
                                 ],
                               )),
