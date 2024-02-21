@@ -52,6 +52,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                 ],
               ),
             ),
+            Gap(24),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
@@ -66,6 +67,14 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                           color: Colors.blueGrey[400]!,
                         ),
                         borderRadius: BorderRadius.circular(16),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[100]!,
+                            blurRadius: 4,
+                            spreadRadius: 3,
+                          )
+                        ],
+                        color: Colors.white,
                       ),
                       child: Column(
                         children: [
