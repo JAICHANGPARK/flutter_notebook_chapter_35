@@ -20,7 +20,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Welcome back!"),
@@ -32,7 +32,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -41,18 +41,18 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       shape: BoxShape.circle,
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.notifications_outlined),
+                      icon: const Icon(Icons.notifications_outlined),
                       onPressed: () {},
                     ),
                   ),
-                  Gap(6),
-                  CircleAvatar(
+                  const Gap(6),
+                  const CircleAvatar(
                     radius: 26,
                   ),
                 ],
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
@@ -60,8 +60,8 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                   children: [
                     Container(
                       height: 216,
-                      margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                      padding: EdgeInsets.all(12),
+                      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.blueGrey[400]!,
@@ -89,13 +89,13 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   ),
                                 ),
                                 child: IconButton(
-                                  icon: Icon(Icons.arrow_circle_up),
+                                  icon: const Icon(Icons.arrow_circle_up),
                                   onPressed: () {},
                                   color: Colors.blue,
                                 ),
                               ),
-                              Gap(12),
-                              Expanded(
+                              const Gap(12),
+                              const Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -114,7 +114,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               )
                             ],
                           ),
-                          Gap(16),
+                          const Gap(16),
                           Expanded(
                               child: Column(
                             children: [
@@ -132,7 +132,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                       ),
                                     ),
                                   ),
-                                  Gap(8),
+                                  const Gap(8),
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -146,7 +146,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   ),
                                 ],
                               )),
-                              Gap(8),
+                              const Gap(8),
                               Expanded(
                                   child: Row(
                                 children: [
@@ -161,7 +161,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                       ),
                                     ),
                                   ),
-                                  Gap(8),
+                                  const Gap(8),
                                   Expanded(
                                     child: Container(
                                       decoration: BoxDecoration(
@@ -180,7 +180,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                         ],
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                     Padding(
                       padding: const EdgeInsets.symmetric(
                         horizontal: 16,
@@ -188,7 +188,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Today Activity",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -197,13 +197,14 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text("See Detail"),
+                            child: const Text("See Detail"),
                           ),
                         ],
                       ),
                     ),
+
                     Container(
-                      height: 150,
+                      height: 160,
                       child: Container(
                         decoration: BoxDecoration(
                           border: Border.all(
@@ -219,22 +220,35 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                           ],
                           color: Colors.white,
                         ),
-                        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                        padding: EdgeInsets.all(12),
+                        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        padding: const EdgeInsets.all(12),
                       ),
                     ),
-                    Row(
-                      children: [
-                        Text("Daily Highlights"),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text("See Detail"),
-                        ),
-                      ],
+                    const Gap(12),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          const Text(
+                            "Daily Highlights",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            child: const Text("See Detail"),
+                          ),
+                        ],
+                      ),
                     ),
                     Container(
                       height: 300,
-                      child: Placeholder(),
+                      child: const Placeholder(),
                     )
                   ],
                 ),
@@ -246,23 +260,23 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.group),
             label: "Community",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.add_circle_outline),
             label: "Record",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.pie_chart),
             label: "Stats",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.account_circle_outlined),
             label: "Profile",
           ),
