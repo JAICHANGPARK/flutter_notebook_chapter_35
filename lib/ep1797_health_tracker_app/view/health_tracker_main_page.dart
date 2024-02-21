@@ -204,7 +204,22 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                     ),
                     Container(
                       height: 150,
-                      child: Placeholder(),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.blueGrey[400]!,
+                          ),
+                          borderRadius: BorderRadius.circular(16),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey[200]!,
+                              blurRadius: 4,
+                              spreadRadius: 4,
+                            )
+                          ],
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
                     Row(
                       children: [
