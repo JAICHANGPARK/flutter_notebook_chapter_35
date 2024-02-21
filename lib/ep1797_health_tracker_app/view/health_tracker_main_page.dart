@@ -58,6 +58,11 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                   children: [
                     Container(
                       height: 200,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.blueGrey,
+                        ),
+                      ),
                       child: Column(
                         children: [
                           Row(
