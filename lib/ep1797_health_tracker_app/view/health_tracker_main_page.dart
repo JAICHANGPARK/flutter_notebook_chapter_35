@@ -80,6 +80,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                 child: IconButton(
                                   icon: Icon(Icons.arrow_circle_up),
                                   onPressed: () {},
+                                  color: Colors.blue,
                                 ),
                               ),
                               Expanded(
