@@ -12,6 +12,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
@@ -58,10 +59,12 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                   children: [
                     Container(
                       height: 200,
+                      margin: EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.blueGrey,
+                          color: Colors.blueGrey[400]!,
                         ),
+                        borderRadius: BorderRadius.circular(16),
                       ),
                       child: Column(
                         children: [
@@ -69,7 +72,14 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                             children: [
                               Container(
                                 decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
+                                    shape: BoxShape.circle,
+                                    color: Colors.blue[50],
+                                    border: Border.all(
+                                      color: Colors.blue,
+                                    )),
+                                child: IconButton(
+                                  icon: Icon(Icons.arrow_circle_up),
+                                  onPressed: () {},
                                 ),
                               ),
                               Expanded(
