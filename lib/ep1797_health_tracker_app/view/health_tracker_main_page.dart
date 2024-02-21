@@ -59,7 +59,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 208,
+                      height: 216,
                       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       padding: EdgeInsets.all(12),
                       decoration: BoxDecoration(
@@ -114,7 +114,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               )
                             ],
                           ),
-                          Gap(12),
+                          Gap(16),
                           Expanded(
                               child: Column(
                             children: [
@@ -127,29 +127,52 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         border: Border.all(
                                           color: Colors.blueGrey[400]!,
                                         ),
-                                        borderRadius: BorderRadius.circular(16),
+                                        borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
                                       ),
                                     ),
                                   ),
                                   Gap(8),
                                   Expanded(
-                                      child: Container(
-                                    decoration: BoxDecoration(
-                                      border: Border.all(
-                                        color: Colors.blueGrey[400]!,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.blueGrey[400]!,
+                                        ),
+                                        borderRadius: BorderRadius.circular(8),
+                                        color: Colors.white,
                                       ),
-                                      borderRadius: BorderRadius.circular(16),
-                                      color: Colors.white,
                                     ),
-                                  )),
+                                  ),
                                 ],
                               )),
+                              Gap(8),
                               Expanded(
                                   child: Row(
                                 children: [
-                                  Expanded(child: Placeholder()),
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.blueGrey[400]!,
+                                        ),
+                                        borderRadius: BorderRadius.circular(8),
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                  Gap(8),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.blueGrey[400]!,
+                                        ),
+                                        borderRadius: BorderRadius.circular(8),
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ))
                             ],
