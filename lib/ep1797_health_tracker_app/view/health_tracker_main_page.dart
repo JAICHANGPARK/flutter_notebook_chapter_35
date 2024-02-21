@@ -14,17 +14,38 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Column(),
-                Container(
-                  child: IconButton(
-                    icon: Icon(Icons.notifications_outlined),
-                    onPressed: () {},
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Welcome back!"),
+                      Text(
+                        "Dreamwalker",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                CircleAvatar(),
-              ],
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[400]!,
+                      ),
+                      shape: BoxShape.circle,
+                    ),
+                    child: IconButton(
+                      icon: Icon(Icons.notifications_outlined),
+                      onPressed: () {},
+                    ),
+                  ),
+                  CircleAvatar(),
+                ],
+              ),
             ),
             Expanded(
               child: SingleChildScrollView(
