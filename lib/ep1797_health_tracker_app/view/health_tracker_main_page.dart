@@ -180,14 +180,27 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                         ],
                       ),
                     ),
-                    Row(
-                      children: [
-                        Text("Today Activity"),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text("See Detail"),
-                        ),
-                      ],
+                    Gap(12),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Today Activity",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text("See Detail"),
+                          ),
+                        ],
+                      ),
                     ),
                     Container(
                       height: 150,
