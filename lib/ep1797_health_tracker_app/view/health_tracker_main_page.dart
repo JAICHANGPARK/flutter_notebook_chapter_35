@@ -219,6 +219,8 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                           ],
                           color: Colors.white,
                         ),
+                        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        padding: EdgeInsets.all(12),
                       ),
                     ),
                     Row(
