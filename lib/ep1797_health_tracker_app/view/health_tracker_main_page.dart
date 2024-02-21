@@ -60,6 +60,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                     Container(
                       height: 200,
                       margin: EdgeInsets.symmetric(horizontal: 16),
+                      padding: EdgeInsets.all(12),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.blueGrey[400]!,
@@ -72,17 +73,19 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                             children: [
                               Container(
                                 decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    color: Colors.blue[50],
-                                    border: Border.all(
-                                      color: Colors.blue,
-                                    )),
+                                  shape: BoxShape.circle,
+                                  color: Colors.blue[50],
+                                  border: Border.all(
+                                    color: Colors.blue,
+                                  ),
+                                ),
                                 child: IconButton(
                                   icon: Icon(Icons.arrow_circle_up),
                                   onPressed: () {},
                                   color: Colors.blue,
                                 ),
                               ),
+                              Gap(12),
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,6 +94,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                       "Distance Increase 28%",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
+                                        fontSize: 16,
                                       ),
                                     ),
                                     Text(
@@ -101,6 +105,26 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               )
                             ],
                           ),
+                          Gap(12),
+                          Expanded(
+                              child: Column(
+                            children: [
+                              Expanded(
+                                  child: Row(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                ],
+                              )),
+                              Expanded(
+                                  child: Row(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                ],
+                              ))
+                            ],
+                          ))
                         ],
                       ),
                     ),
