@@ -240,14 +240,18 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               Text("10.5 km"),
                               Row(
                                 children: [
-                                  Icon(Icons.access_time,),
+                                  Icon(
+                                    Icons.access_time,
+                                  ),
                                   Text("1h 42m"),
-
-                                  Icon(Icons.step,),
+                                  Icon(
+                                    Icons.directions_run,
+                                  ),
+                                  Text("9.7 m/km"),
                                 ],
                               )
                             ],
-                          ))
+                          ),)
                         ],
                       ),
                     ),
