@@ -233,25 +233,26 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                             ),
                           ),
                           Expanded(
-                              child: Column(
-                            children: [
-                              Text("15 Feb 24"),
-                              Text("Thursday Daily Run"),
-                              Text("10.5 km"),
-                              Row(
-                                children: [
-                                  Icon(
-                                    Icons.access_time,
-                                  ),
-                                  Text("1h 42m"),
-                                  Icon(
-                                    Icons.directions_run,
-                                  ),
-                                  Text("9.7 m/km"),
-                                ],
-                              )
-                            ],
-                          ),)
+                            child: Column(
+                              children: [
+                                Text("15 Feb 24"),
+                                Text("Thursday Daily Run"),
+                                Text("10.5 km"),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.access_time,
+                                    ),
+                                    Text("1h 42m"),
+                                    Icon(
+                                      Icons.directions_run,
+                                    ),
+                                    Text("9.7 m/km"),
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -279,7 +280,11 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                     ),
                     Container(
                       height: 300,
-                      child: const Placeholder(),
+                      child: Column(
+                        children: [
+                          
+                        ],
+                      ),
                     )
                   ],
                 ),
