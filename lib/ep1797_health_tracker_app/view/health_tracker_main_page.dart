@@ -130,9 +130,11 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
                                       ),
+                                      padding: EdgeInsets.symmetric(horizontal: 8),
                                       child: Row(
                                         children: [
                                           CircleAvatar(),
+                                          Gap(12),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.center,
