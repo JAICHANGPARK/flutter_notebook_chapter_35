@@ -258,11 +258,16 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   children: [
                                     Icon(
                                       Icons.access_time,
+                                      size: 16,
                                     ),
+                                    Gap(8),
                                     Text("1h 42m"),
+                                    Gap(8),
                                     Icon(
                                       Icons.directions_run,
+                                      size: 16,
                                     ),
+
                                     Text("9.7 m/km"),
                                   ],
                                 )
