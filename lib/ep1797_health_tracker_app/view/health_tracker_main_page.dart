@@ -386,10 +386,20 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                     ),
                     Container(
                       height: 300,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.blueGrey[100]!,
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                        color: Colors.white,
+                      ),
+                      padding: EdgeInsets.all(16),
+                      margin: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         children: [
                           Text("The member of steps You've taken today exceeds yesterday's  "
                               "indicating positive progress in your health and fitness efforts."),
+                          Gap(16),
                           Row(
                             children: [
                               CircleAvatar(
@@ -411,7 +421,9 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                 ],
                               )
                             ],
-                          )
+                          ),
+                          Gap(16),
+                          Expanded(child: Container()),
                         ],
                       ),
                     )
