@@ -202,7 +202,6 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                         ],
                       ),
                     ),
-
                     Container(
                       height: 160,
                       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -223,10 +222,18 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       ),
                       child: Row(
                         children: [
-                          Expanded(child: Container()),
-                          Expanded(child: Column(children: [
-                            
-                          ],))
+                          Expanded(
+                              child: Container(
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                  color: Colors.grey[400]!,
+                                )),
+                          )),
+                          Expanded(
+                              child: Column(
+                            children: [],
+                          ))
                         ],
                       ),
                     ),
