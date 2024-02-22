@@ -234,6 +234,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                           ),
                           Expanded(
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("15 Feb 24"),
                                 Text("Thursday Daily Run"),
@@ -286,6 +287,15 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               "indicating positive progress in your health and fitness efforts."),
                           Row(
                             children: [
+                              CircleAvatar(
+                                radius: 8,
+                              ),
+                              Column(
+                                children: [
+                                  Text("Today"),
+                                  Text("3,785 Steps"),
+                                ],
+                              ),
                               CircleAvatar(
                                 radius: 8,
                               ),
