@@ -221,7 +221,14 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                         ],
                         color: Colors.white,
                       ),
-                      
+                      child: Row(
+                        children: [
+                          Expanded(child: Container()),
+                          Expanded(child: Column(children: [
+                            
+                          ],))
+                        ],
+                      ),
                     ),
                     const Gap(12),
                     Padding(
