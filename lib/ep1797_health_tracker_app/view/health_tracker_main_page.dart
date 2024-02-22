@@ -125,7 +125,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                          color: Colors.blueGrey[400]!,
+                                          color: Colors.blueGrey[100]!,
                                         ),
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
@@ -158,18 +158,28 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                          color: Colors.blueGrey[400]!,
+                                          color: Colors.blueGrey[100]!,
                                         ),
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
                                       ),
+                                      padding: EdgeInsets.symmetric(horizontal: 8),
                                       child: Row(
                                         children: [
                                           CircleAvatar(),
+                                          Gap(12),
                                           Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text("Heart Rate"),
-                                              Text("150 bpm"),
+                                              Gap(4),
+                                              Text(
+                                                "150 bpm",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                             ],
                                           )
                                         ],
@@ -186,10 +196,31 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                          color: Colors.blueGrey[400]!,
+                                          color: Colors.blueGrey[100]!,
                                         ),
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
+                                      ),
+                                      padding: EdgeInsets.symmetric(horizontal: 8),
+                                      child: Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          Gap(12),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text("Heart Rate"),
+                                              Gap(4),
+                                              Text(
+                                                "150 bpm",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ],
+                                          )
+                                        ],
                                       ),
                                     ),
                                   ),
@@ -198,10 +229,31 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                          color: Colors.blueGrey[400]!,
+                                          color: Colors.blueGrey[100]!,
                                         ),
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
+                                      ),
+                                      padding: EdgeInsets.symmetric(horizontal: 8),
+                                      child: Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          Gap(12),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text("Heart Rate"),
+                                              Gap(4),
+                                              Text(
+                                                "150 bpm",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ],
+                                          )
+                                        ],
                                       ),
                                     ),
                                   ),
