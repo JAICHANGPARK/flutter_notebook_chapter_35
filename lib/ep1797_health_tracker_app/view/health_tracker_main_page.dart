@@ -404,8 +404,9 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               CircleAvatar(
-                                radius: 8,
+                                radius: 6,
                               ),
+                              Gap(4),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -413,9 +414,11 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   Text("3,785 Steps"),
                                 ],
                               ),
+                              Gap(24),
                               CircleAvatar(
-                                radius: 8,
+                                radius: 6,
                               ),
+                              Gap(4),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
