@@ -282,7 +282,22 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       height: 300,
                       child: Column(
                         children: [
-                          
+                          Text("The member of steps You've taken today exceeds yesterday's  "
+                              "indicating positive progress in your health and fitness efforts."),
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 8,
+                              ),
+                              Column(
+                                children: [
+                                  Text("Today"),
+                                  Text("3,785 Steps"),
+                                ],
+                              )
+
+                            ],
+                          )
                         ],
                       ),
                     )
