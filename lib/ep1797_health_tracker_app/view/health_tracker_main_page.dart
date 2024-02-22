@@ -64,7 +64,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.blueGrey[400]!,
+                          color: Colors.blueGrey[200]!,
                         ),
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
@@ -130,6 +130,17 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
                                       ),
+                                      child: Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          Column(
+                                            children: [
+                                              Text("Heart Rate"),
+                                              Text("150 bpm"),
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                   const Gap(8),
@@ -141,6 +152,17 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         ),
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          Column(
+                                            children: [
+                                              Text("Heart Rate"),
+                                              Text("150 bpm"),
+                                            ],
+                                          )
+                                        ],
                                       ),
                                     ),
                                   ),
@@ -208,7 +230,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.blueGrey[400]!,
+                          color: Colors.blueGrey[200]!,
                         ),
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
