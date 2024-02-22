@@ -134,9 +134,17 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         children: [
                                           CircleAvatar(),
                                           Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text("Heart Rate"),
-                                              Text("150 bpm"),
+                                              Gap(4),
+                                              Text(
+                                                "150 bpm",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                             ],
                                           )
                                         ],
