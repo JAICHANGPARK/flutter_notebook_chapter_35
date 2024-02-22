@@ -213,7 +213,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.grey[200]!,
+                            color: Colors.grey[100]!,
                             blurRadius: 4,
                             spreadRadius: 4,
                           )
@@ -232,12 +232,16 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               ),
                             ),
                           ),
+                          Gap(12),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("15 Feb 24"),
-                                Text("Thursday Daily Run"),
+                                Text("15 Feb 24",),
+                                Text("Thursday Daily Run",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),),
                                 Text("10.5 km"),
                                 Row(
                                   children: [
@@ -305,7 +309,6 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   Text("3,785 Steps"),
                                 ],
                               )
-
                             ],
                           )
                         ],
