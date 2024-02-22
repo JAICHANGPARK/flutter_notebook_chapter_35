@@ -223,16 +223,27 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       child: Row(
                         children: [
                           Expanded(
-                              child: Container(
-                            decoration: BoxDecoration(
+                            child: Container(
+                              decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
                                 border: Border.all(
                                   color: Colors.grey[400]!,
-                                )),
-                          )),
+                                ),
+                              ),
+                            ),
+                          ),
                           Expanded(
                               child: Column(
-                            children: [],
+                            children: [
+                              Text("15 Feb 24"),
+                              Text("Thursday Daily Run"),
+                              Text("10.5 km"),
+                              Row(
+                                children: [
+                                  
+                                ],
+                              )
+                            ],
                           ))
                         ],
                       ),
