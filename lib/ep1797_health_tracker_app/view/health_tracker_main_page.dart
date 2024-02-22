@@ -287,7 +287,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       ),
                     ),
                     Container(
-                      height: 160,
+                      height: 150,
                       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
