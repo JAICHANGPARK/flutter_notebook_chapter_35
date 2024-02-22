@@ -254,6 +254,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                     fontSize: 18,
                                   ),
                                 ),
+                                Gap(8),
                                 Row(
                                   children: [
                                     Icon(
@@ -267,7 +268,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                       Icons.directions_run,
                                       size: 16,
                                     ),
-
+                                    Gap(8),
                                     Text("9.7 m/km"),
                                   ],
                                 )
