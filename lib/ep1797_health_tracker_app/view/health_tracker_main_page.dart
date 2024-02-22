@@ -237,12 +237,23 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("15 Feb 24",),
-                                Text("Thursday Daily Run",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),),
-                                Text("10.5 km"),
+                                Text(
+                                  "15 Feb 24",
+                                ),
+                                Text(
+                                  "Thursday Daily Run",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Spacer(),
+                                Text(
+                                  "10.5 km",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
+                                ),
                                 Row(
                                   children: [
                                     Icon(
