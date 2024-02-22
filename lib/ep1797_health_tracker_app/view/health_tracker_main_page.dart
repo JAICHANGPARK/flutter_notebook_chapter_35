@@ -205,24 +205,23 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
 
                     Container(
                       height: 160,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.blueGrey[400]!,
-                          ),
-                          borderRadius: BorderRadius.circular(16),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey[200]!,
-                              blurRadius: 4,
-                              spreadRadius: 4,
-                            )
-                          ],
-                          color: Colors.white,
+                      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.blueGrey[400]!,
                         ),
-                        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                        padding: const EdgeInsets.all(12),
+                        borderRadius: BorderRadius.circular(16),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[200]!,
+                            blurRadius: 4,
+                            spreadRadius: 4,
+                          )
+                        ],
+                        color: Colors.white,
                       ),
+                      
                     ),
                     const Gap(12),
                     Padding(
