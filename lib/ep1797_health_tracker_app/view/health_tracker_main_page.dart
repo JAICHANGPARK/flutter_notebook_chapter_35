@@ -458,11 +458,15 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                   child: Row(
                     children: [
                       Text("Community"),
+                      Spacer(),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.black,
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 8,
+                        ),
                         child: Row(
                           children: [
                             Icon(
@@ -486,6 +490,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                             color: Colors.white,
                           ),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
                                 children: [
