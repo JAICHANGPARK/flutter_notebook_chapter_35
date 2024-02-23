@@ -454,26 +454,26 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
             Column(
               children: [
                 Container(
-                  margin: EdgeInsets.all(16),
+                  margin: const EdgeInsets.all(16),
                   child: Row(
                     children: [
-                      Text(
+                      const Text(
                         "Community",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 16,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.black,
                         ),
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 16,
                           vertical: 8,
                         ),
-                        child: Row(
+                        child: const Row(
                           children: [
                             Icon(
                               Icons.add,
@@ -497,19 +497,19 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                     child: ListView.builder(
                       itemBuilder: (context, index) {
                         return Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.white,
                           ),
-                          padding: EdgeInsets.all(16),
-                          margin: EdgeInsets.all(16),
+                          padding: const EdgeInsets.all(16),
+                          margin: const EdgeInsets.all(16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
                                 children: [
-                                  CircleAvatar(),
-                                  Gap(8),
-                                  Expanded(
+                                  const CircleAvatar(),
+                                  const Gap(8),
+                                  const Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -528,11 +528,11 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   ),
                                   IconButton(
                                     onPressed: () {},
-                                    icon: Icon(Icons.more_vert_sharp),
+                                    icon: const Icon(Icons.more_vert_sharp),
                                   ),
                                 ],
                               ),
-                              Gap(12),
+                              const Gap(12),
                               Container(
                                 height: 100,
                                 decoration: BoxDecoration(
@@ -540,11 +540,11 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
-                              Gap(12),
-                              Text(
+                              const Gap(12),
+                              const Text(
                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "),
-                              Gap(12),
-                              Row(
+                              const Gap(12),
+                              const Row(
                                 children: [
                                   Icon(Icons.favorite  ,size: 16,),
                                   Gap(4),
