@@ -130,8 +130,8 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
                                       ),
-                                      padding: EdgeInsets.symmetric(horizontal: 8),
-                                      child: Row(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                                      child: const Row(
                                         children: [
                                           CircleAvatar(),
                                           Gap(12),
@@ -163,8 +163,8 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
                                       ),
-                                      padding: EdgeInsets.symmetric(horizontal: 8),
-                                      child: Row(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                                      child: const Row(
                                         children: [
                                           CircleAvatar(),
                                           Gap(12),
@@ -201,8 +201,8 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
                                       ),
-                                      padding: EdgeInsets.symmetric(horizontal: 8),
-                                      child: Row(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                                      child: const Row(
                                         children: [
                                           CircleAvatar(),
                                           Gap(12),
@@ -234,8 +234,8 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         borderRadius: BorderRadius.circular(8),
                                         color: Colors.white,
                                       ),
-                                      padding: EdgeInsets.symmetric(horizontal: 8),
-                                      child: Row(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                                      child: const Row(
                                         children: [
                                           CircleAvatar(),
                                           Gap(12),
@@ -316,8 +316,8 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               ),
                             ),
                           ),
-                          Gap(12),
-                          Expanded(
+                          const Gap(12),
+                          const Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -393,14 +393,14 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                         borderRadius: BorderRadius.circular(8),
                         color: Colors.white,
                       ),
-                      padding: EdgeInsets.all(16),
-                      margin: EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.all(16),
+                      margin: const EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         children: [
-                          Text("The member of steps You've taken today exceeds yesterday's  "
+                          const Text("The member of steps You've taken today exceeds yesterday's  "
                               "indicating positive progress in your health and fitness efforts."),
-                          Gap(16),
-                          Row(
+                          const Gap(16),
+                          const Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               CircleAvatar(
@@ -428,7 +428,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               )
                             ],
                           ),
-                          Gap(16),
+                          const Gap(16),
                           Expanded(child: Container(
                             decoration: BoxDecoration(
                               border: Border.all(
