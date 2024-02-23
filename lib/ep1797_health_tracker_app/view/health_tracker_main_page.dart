@@ -491,12 +491,17 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                 children: [
                                   CircleAvatar(),
                                   Expanded(
-                                      child: Column(
-                                    children: [
-                                      Text()
-
-                                    ],
-                                  )),
+                                    child: Column(
+                                      children: [
+                                        Text("Dreamwalker"),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.fitness_center),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  ),
                                   IconButton(
                                     onPressed: () {},
                                     icon: Icon(Icons.more_vert_sharp),
