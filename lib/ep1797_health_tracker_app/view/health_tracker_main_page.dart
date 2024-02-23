@@ -546,15 +546,15 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               Gap(12),
                               Row(
                                 children: [
-                                  Icon(Icons.favorite),
+                                  Icon(Icons.favorite  ,size: 16,),
                                   Gap(4),
                                   Text("3.1k"),
                                   Gap(12),
-                                  Icon(Icons.chat_bubble_outline),
+                                  Icon(Icons.chat_bubble_outline,size: 16,),
                                   Gap(4),
                                   Text("211"),
                                   Gap(12),
-                                  Icon(Icons.thumb_up_alt_outlined),
+                                  Icon(Icons.thumb_up_alt_outlined,size: 16,),
                                   Gap(4),
                                   Text("175"),
                                 ],
