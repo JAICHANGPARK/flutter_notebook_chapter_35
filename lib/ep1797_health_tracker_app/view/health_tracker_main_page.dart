@@ -528,6 +528,9 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   Gap(4),
                                   Text("211"),
                                   Gap(12),
+                                  Icon(Icons.thumb_up_alt_outlined),
+                                  Gap(4),
+                                  Text("175"),
                                 ],
                               )
                             ],
