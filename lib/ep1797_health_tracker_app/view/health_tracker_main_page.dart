@@ -454,6 +454,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
             Column(
               children: [
                 Container(
+                  margin: EdgeInsets.all(16),
                   child: Row(
                     children: [
                       Text("Community"),
@@ -461,6 +462,17 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                         decoration: BoxDecoration(
                           color: Colors.black,
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.add,
+                              color: Colors.white,
+                            ),
+                            Text("Create Post"),
+                          ],
+                        ),
+                        
                       )
                     ],
                   ),
@@ -470,7 +482,11 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                     color: Colors.grey[100],
                     child: ListView.builder(
                       itemBuilder: (context, index) {
-                        return Container();
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                        );
                       },
                     ),
                   ),
