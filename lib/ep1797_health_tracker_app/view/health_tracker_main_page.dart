@@ -516,7 +516,10 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         Text("Dreamwalker"),
                                         Row(
                                           children: [
-                                            Icon(Icons.fitness_center),
+                                            Icon(
+                                              Icons.fitness_center,
+                                              size: 16,
+                                            ),
                                             Text("Today at 8:40 am Korea"),
                                           ],
                                         )
