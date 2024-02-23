@@ -473,7 +473,12 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               Icons.add,
                               color: Colors.white,
                             ),
-                            Text("Create Post"),
+                            Text(
+                              "Create Post",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           ],
                         ),
                       )
