@@ -494,6 +494,8 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                           decoration: BoxDecoration(
                             color: Colors.white,
                           ),
+                          padding: EdgeInsets.all(16),
+                          margin:  EdgeInsets.all(16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -502,6 +504,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   CircleAvatar(),
                                   Expanded(
                                     child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text("Dreamwalker"),
                                         Row(
