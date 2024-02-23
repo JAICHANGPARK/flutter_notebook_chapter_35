@@ -502,6 +502,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                               Row(
                                 children: [
                                   CircleAvatar(),
+                                  Gap(8),
                                   Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
