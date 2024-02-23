@@ -464,6 +464,13 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                       )
                     ],
                   ),
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return Container();
+                    },
+                  ),
                 )
               ],
             )
