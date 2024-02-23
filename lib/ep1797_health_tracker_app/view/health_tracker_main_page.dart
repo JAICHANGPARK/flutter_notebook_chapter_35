@@ -429,7 +429,8 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                             ],
                           ),
                           const Gap(16),
-                          Expanded(child: Container(
+                          Expanded(
+                              child: Container(
                             decoration: BoxDecoration(
                               border: Border.all(
                                 color: Colors.blueGrey[100]!,
