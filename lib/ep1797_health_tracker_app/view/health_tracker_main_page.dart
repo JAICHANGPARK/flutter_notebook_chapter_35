@@ -497,12 +497,13 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                         Row(
                                           children: [
                                             Icon(Icons.fitness_center),
+                                            Text("Today at 8:40 am Korea"),
                                           ],
                                         )
                                       ],
                                     ),
                                   ),
-                                  IconButton(
+                                  IconButton( 
                                     onPressed: () {},
                                     icon: Icon(Icons.more_vert_sharp),
                                   ),
