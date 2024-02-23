@@ -472,7 +472,6 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                             Text("Create Post"),
                           ],
                         ),
-                        
                       )
                     ],
                   ),
@@ -485,6 +484,26 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                         return Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
+                          ),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  CircleAvatar(),
+                                  Expanded(
+                                      child: Column(
+                                    children: [
+                                      Text()
+
+                                    ],
+                                  )),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.more_vert_sharp),
+                                  ),
+                                ],
+                              )
+                            ],
                           ),
                         );
                       },
