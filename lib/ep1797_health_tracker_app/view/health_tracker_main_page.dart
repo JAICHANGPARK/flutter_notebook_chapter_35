@@ -503,11 +503,17 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                       ],
                                     ),
                                   ),
-                                  IconButton( 
+                                  IconButton(
                                     onPressed: () {},
                                     icon: Icon(Icons.more_vert_sharp),
                                   ),
                                 ],
+                              ),
+                              Container(
+                                height: 100,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
                               )
                             ],
                           ),
