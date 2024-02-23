@@ -476,7 +476,15 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
             label: "Profile",
           ),
         ],
+        currentIndex: pageIndex,
+        onTap: (index) {
+          setState(() {
+            pageIndex = index;
+          });
+        },
       ),
     );
   }
+
+  int pageIndex = 0;
 }
