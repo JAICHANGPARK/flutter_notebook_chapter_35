@@ -523,6 +523,7 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   ),
                                 ],
                               ),
+                              Gap(12),
                               Container(
                                 height: 100,
                                 decoration: BoxDecoration(
@@ -530,8 +531,11 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
+                              Gap(12),
                               Text(
                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "),
+                              Gap(12),
+
                               Row(
                                 children: [
                                   Icon(Icons.favorite),
