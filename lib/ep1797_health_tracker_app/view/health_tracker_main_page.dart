@@ -513,7 +513,22 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
                                 height: 100,
                                 decoration: BoxDecoration(
                                   color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
+                              ),
+                              Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "),
+                              Row(
+                                children: [
+                                  Icon(Icons.favorite),
+                                  Gap(4),
+                                  Text("3.1k"),
+                                  Gap(12),
+                                  Icon(Icons.chat_bubble_outline),
+                                  Gap(4),
+                                  Text("211"),
+                                  Gap(12),
+                                ],
                               )
                             ],
                           ),
