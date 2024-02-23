@@ -451,6 +451,9 @@ class _HealthTrackerMainPageState extends State<HealthTrackerMainPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.black,
         items: [
           const BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
